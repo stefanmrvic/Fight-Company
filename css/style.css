@@ -1433,38 +1433,12 @@ nav {
 .our-team__button {
   padding-top: 30px;
   margin-bottom: 4px; }
-  /* line 907, sass/pages/_pocetna.scss */
-  .our-team__button button {
-    border: none;
-    background: none; }
-    /* line 911, sass/pages/_pocetna.scss */
-    .our-team__button button a {
-      display: inline-block;
-      font-family: "Rajdhani", sans-serif;
-      font-weight: 600;
-      color: #16120f;
-      font-size: 16px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      background-color: #f1ede1;
-      padding: 11px 20px;
-      width: 100%;
-      height: 100%;
-      transition: all .3s ease; }
-      @media only screen and (min-width: 770px) {
-        /* line 911, sass/pages/_pocetna.scss */
-        .our-team__button button a {
-          padding: 13px 22px; } }
-    /* line 930, sass/pages/_pocetna.scss */
-    .our-team__button button a:hover {
-      color: #f1ede1;
-      background-color: #d62326; }
 
-/* line 939, sass/pages/_pocetna.scss */
+/* line 910, sass/pages/_pocetna.scss */
 .events-section {
   background-color: #f0f0f0; }
 
-/* line 943, sass/pages/_pocetna.scss */
+/* line 914, sass/pages/_pocetna.scss */
 .events__container {
   display: flex;
   flex-direction: column;
@@ -1472,45 +1446,71 @@ nav {
   align-items: center;
   padding: 60px 15px; }
   @media only screen and (min-width: 770px) {
-    /* line 943, sass/pages/_pocetna.scss */
+    /* line 914, sass/pages/_pocetna.scss */
     .events__container {
       padding: 80px 15px; } }
   @media only screen and (min-width: 1025px) {
-    /* line 943, sass/pages/_pocetna.scss */
+    /* line 914, sass/pages/_pocetna.scss */
     .events__container {
       padding: 130px 15px; } }
 
-/* line 959, sass/pages/_pocetna.scss */
+/* line 930, sass/pages/_pocetna.scss */
 .events__title {
   color: #16120f;
   font-size: 30px;
   padding-bottom: 25px;
   text-transform: uppercase; }
   @media only screen and (min-width: 480px) {
-    /* line 959, sass/pages/_pocetna.scss */
+    /* line 930, sass/pages/_pocetna.scss */
     .events__title {
       font-size: 35px; } }
   @media only screen and (min-width: 767px) {
-    /* line 959, sass/pages/_pocetna.scss */
+    /* line 930, sass/pages/_pocetna.scss */
     .events__title {
       font-size: 45px;
       padding-bottom: 35px; } }
   @media only screen and (min-width: 1024px) {
-    /* line 959, sass/pages/_pocetna.scss */
+    /* line 930, sass/pages/_pocetna.scss */
     .events__title {
       font-size: 58px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 959, sass/pages/_pocetna.scss */
+    /* line 930, sass/pages/_pocetna.scss */
     .events__title {
       font-size: 67px; } }
 
-/* line 984, sass/pages/_pocetna.scss */
+/* line 955, sass/pages/_pocetna.scss */
 .events__box > div {
   width: 280px;
   height: 374px;
-  margin-bottom: 45px; }
+  margin-bottom: 45px;
+  cursor: pointer; }
+  @media only screen and (min-width: 480px) {
+    /* line 955, sass/pages/_pocetna.scss */
+    .events__box > div {
+      width: 440px;
+      height: 588px; } }
+  @media only screen and (min-width: 770px) {
+    /* line 955, sass/pages/_pocetna.scss */
+    .events__box > div {
+      width: 216px;
+      height: 289px; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 955, sass/pages/_pocetna.scss */
+    .events__box > div {
+      width: 301px;
+      height: 402px; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 955, sass/pages/_pocetna.scss */
+    .events__box > div {
+      width: 400px;
+      height: 533px; } }
 
-/* line 991, sass/pages/_pocetna.scss */
+@media only screen and (min-width: 770px) {
+  /* line 982, sass/pages/_pocetna.scss */
+  .events__box > div:not(:last-child) {
+    margin-right: 30px; } }
+
+/* line 989, sass/pages/_pocetna.scss */
 .events__box > div > a {
   display: flex;
   flex-direction: column;
@@ -1521,40 +1521,111 @@ nav {
   color: #f1ede1;
   padding: 0 10px 22px 22px; }
 
-/* line 1003, sass/pages/_pocetna.scss */
+/* line 1001, sass/pages/_pocetna.scss */
 .events__box > div > a > p {
   font-family: "Montserrat", serif;
   color: #d62326;
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 5px; }
+  @media only screen and (min-width: 480px) {
+    /* line 1001, sass/pages/_pocetna.scss */
+    .events__box > div > a > p {
+      font-size: 14px; } }
+  @media only screen and (min-width: 770px) {
+    /* line 1001, sass/pages/_pocetna.scss */
+    .events__box > div > a > p {
+      font-size: 13px; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 1001, sass/pages/_pocetna.scss */
+    .events__box > div > a > p {
+      font-size: 14px; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 1001, sass/pages/_pocetna.scss */
+    .events__box > div > a > p {
+      font-size: 14px; } }
 
-/* line 1011, sass/pages/_pocetna.scss */
+/* line 1025, sass/pages/_pocetna.scss */
 .events__box > div > a > h4 {
   font-weight: 700;
   text-transform: uppercase; }
 
-/* line 1018, sass/pages/_pocetna.scss */
-.events__box__event--1 {
-  background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/vrbas.jpg) center center/cover no-repeat; }
-  /* line 1021, sass/pages/_pocetna.scss */
-  .events__box__event--1__name {
-    font-size: 21px; }
+/* line 1030, sass/pages/_pocetna.scss */
+.events__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media only screen and (min-width: 770px) {
+    /* line 1030, sass/pages/_pocetna.scss */
+    .events__box {
+      flex-direction: row; } }
+  /* line 1039, sass/pages/_pocetna.scss */
+  .events__box__event--1 {
+    background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/vrbas.jpg) center center/cover no-repeat; }
+    /* line 1042, sass/pages/_pocetna.scss */
+    .events__box__event--1__name {
+      font-size: 21px; }
+      @media only screen and (min-width: 480px) {
+        /* line 1042, sass/pages/_pocetna.scss */
+        .events__box__event--1__name {
+          font-size: 29px; } }
+      @media only screen and (min-width: 770px) {
+        /* line 1042, sass/pages/_pocetna.scss */
+        .events__box__event--1__name {
+          font-size: 19px; } }
+      @media only screen and (min-width: 1024px) {
+        /* line 1042, sass/pages/_pocetna.scss */
+        .events__box__event--1__name {
+          font-size: 25px; } }
+      @media only screen and (min-width: 1280px) {
+        /* line 1042, sass/pages/_pocetna.scss */
+        .events__box__event--1__name {
+          font-size: 31px; } }
+  /* line 1063, sass/pages/_pocetna.scss */
+  .events__box__event--2 {
+    background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-55.jpg) center center/cover no-repeat; }
+    /* line 1066, sass/pages/_pocetna.scss */
+    .events__box__event--2__name {
+      font-size: 21px; }
+      @media only screen and (min-width: 480px) {
+        /* line 1066, sass/pages/_pocetna.scss */
+        .events__box__event--2__name {
+          font-size: 28px; } }
+      @media only screen and (min-width: 770px) {
+        /* line 1066, sass/pages/_pocetna.scss */
+        .events__box__event--2__name {
+          font-size: 17px; } }
+      @media only screen and (min-width: 1024px) {
+        /* line 1066, sass/pages/_pocetna.scss */
+        .events__box__event--2__name {
+          font-size: 24px; } }
+      @media only screen and (min-width: 1280px) {
+        /* line 1066, sass/pages/_pocetna.scss */
+        .events__box__event--2__name {
+          font-size: 28px; } }
+  /* line 1087, sass/pages/_pocetna.scss */
+  .events__box__event--3 {
+    background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-genesis.jpg) center center/cover no-repeat; }
+    /* line 1090, sass/pages/_pocetna.scss */
+    .events__box__event--3__name {
+      font-size: 19px; }
+      @media only screen and (min-width: 480px) {
+        /* line 1090, sass/pages/_pocetna.scss */
+        .events__box__event--3__name {
+          font-size: 27px; } }
+      @media only screen and (min-width: 770px) {
+        /* line 1090, sass/pages/_pocetna.scss */
+        .events__box__event--3__name {
+          font-size: 17px; } }
+      @media only screen and (min-width: 1024px) {
+        /* line 1090, sass/pages/_pocetna.scss */
+        .events__box__event--3__name {
+          font-size: 20px; } }
+      @media only screen and (min-width: 1280px) {
+        /* line 1090, sass/pages/_pocetna.scss */
+        .events__box__event--3__name {
+          font-size: 27px; } }
 
-/* line 1026, sass/pages/_pocetna.scss */
-.events__box__event--2 {
-  background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-55.jpg) center center/cover no-repeat; }
-  /* line 1029, sass/pages/_pocetna.scss */
-  .events__box__event--2__name {
-    font-size: 21px; }
-
-/* line 1034, sass/pages/_pocetna.scss */
-.events__box__event--3 {
-  background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-genesis.jpg) center center/cover no-repeat; }
-  /* line 1037, sass/pages/_pocetna.scss */
-  .events__box__event--3__name {
-    font-size: 19px; }
-
-/* line 1045, sass/pages/_pocetna.scss */
-.events__button button {
-  border: none; }
+/* line 1112, sass/pages/_pocetna.scss */
+.events__button {
+  margin-top: 15px; }
