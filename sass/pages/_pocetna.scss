@@ -921,6 +921,10 @@
             width: 100%;
             height: 100%;
             transition: all .3s ease;
+
+            @media only screen and (min-width: 770px) {
+                padding: 13px 22px;
+            }
         }
 
         a:hover {
@@ -929,5 +933,59 @@
         }
     }
 }
-
 //Our Team Section End//
+
+//Upcoming Events Section Start//
+.events-section {
+    background-color: $color-section-white;
+}
+
+.events__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 15px;
+
+    @media only screen and (min-width: 770px) {
+        padding: 80px 15px;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        padding: 130px 15px;
+    }
+}
+
+.events__title {
+    color: $color-secondary;
+    font-size: 30px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+
+    @media only screen and (min-width: 480px) {
+        font-size: 35px;
+    }
+
+    @media only screen and (min-width: 767px) {
+        font-size: 45px;
+        padding-bottom: 35px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 58px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        font-size: 67px; //72px;
+    }
+}
+
+//Selects All Events Containers
+.events__box > div {
+    width: 280px;
+    height: 374px;
+
+    
+}
+
+//Upcoming Events Section End//

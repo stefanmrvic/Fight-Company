@@ -1397,7 +1397,60 @@ nav {
       width: 100%;
       height: 100%;
       transition: all .3s ease; }
-    /* line 926, sass/pages/_pocetna.scss */
+      @media only screen and (min-width: 770px) {
+        /* line 911, sass/pages/_pocetna.scss */
+        .our-team__button button a {
+          padding: 13px 22px; } }
+    /* line 930, sass/pages/_pocetna.scss */
     .our-team__button button a:hover {
       color: #f1ede1;
       background-color: #d62326; }
+
+/* line 939, sass/pages/_pocetna.scss */
+.events-section {
+  background-color: #f0f0f0; }
+
+/* line 943, sass/pages/_pocetna.scss */
+.events__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 15px; }
+  @media only screen and (min-width: 770px) {
+    /* line 943, sass/pages/_pocetna.scss */
+    .events__container {
+      padding: 80px 15px; } }
+  @media only screen and (min-width: 1025px) {
+    /* line 943, sass/pages/_pocetna.scss */
+    .events__container {
+      padding: 130px 15px; } }
+
+/* line 959, sass/pages/_pocetna.scss */
+.events__title {
+  color: #16120f;
+  font-size: 30px;
+  padding-bottom: 25px;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 480px) {
+    /* line 959, sass/pages/_pocetna.scss */
+    .events__title {
+      font-size: 35px; } }
+  @media only screen and (min-width: 767px) {
+    /* line 959, sass/pages/_pocetna.scss */
+    .events__title {
+      font-size: 45px;
+      padding-bottom: 35px; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 959, sass/pages/_pocetna.scss */
+    .events__title {
+      font-size: 58px; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 959, sass/pages/_pocetna.scss */
+    .events__title {
+      font-size: 67px; } }
+
+/* line 984, sass/pages/_pocetna.scss */
+.events__box > div {
+  width: 280px;
+  height: 374px; }
