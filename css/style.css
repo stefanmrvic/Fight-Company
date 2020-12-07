@@ -1,0 +1,1403 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap");
+/* line 1, sass/base/_typography.scss */
+body {
+  font-family: "Rajdhani", sans-serif; }
+
+/* line 1, sass/base/_reset.scss */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth; }
+
+/* line 8, sass/base/_reset.scss */
+*,
+*::before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none; }
+
+/* line 1, sass/components/_navigation-top.scss */
+.nav-top {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: #070707; }
+  /* line 7, sass/components/_navigation-top.scss */
+  .nav-top__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%; }
+  /* line 14, sass/components/_navigation-top.scss */
+  .nav-top__contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    /* line 19, sass/components/_navigation-top.scss */
+    .nav-top__contact__item div > a > i {
+      color: #fff;
+      font-size: 16px;
+      opacity: .9; }
+    /* line 25, sass/components/_navigation-top.scss */
+    .nav-top__contact__item div a i.phone {
+      transform: rotate(178deg);
+      padding-left: 5px; }
+    /* line 30, sass/components/_navigation-top.scss */
+    .nav-top__contact__item div a i.location {
+      padding-right: 5px; }
+  /* line 36, sass/components/_navigation-top.scss */
+  .nav-top__contact > li > div > a > span {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    opacity: .4; }
+  /* line 44, sass/components/_navigation-top.scss */
+  .nav-top__contact > li > div > a:hover > * {
+    opacity: 1;
+    transition: all .3s ease-in-out; }
+  /* line 49, sass/components/_navigation-top.scss */
+  .nav-top__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    /* line 54, sass/components/_navigation-top.scss */
+    .nav-top__social .facebook {
+      font-size: 18px; }
+    /* line 58, sass/components/_navigation-top.scss */
+    .nav-top__social .instagram {
+      font-size: 20px;
+      margin-top: 1px; }
+  /* line 64, sass/components/_navigation-top.scss */
+  .nav-top__social > li > a {
+    color: #fff;
+    opacity: .45; }
+  /* line 69, sass/components/_navigation-top.scss */
+  .nav-top__social > li > a:hover {
+    opacity: 1;
+    transition: all .3s ease-in-out; }
+  /* line 74, sass/components/_navigation-top.scss */
+  .nav-top__contact > li:not(:last-child) {
+    padding-right: 35px; }
+  /* line 78, sass/components/_navigation-top.scss */
+  .nav-top__social > li:not(:last-child) {
+    padding-right: 35px; }
+
+@media only screen and (max-width: 990px) {
+  /* line 84, sass/components/_navigation-top.scss */
+  .nav-top {
+    display: none; } }
+
+/* line 1, sass/components/_navigation.scss */
+.nav-distance {
+  width: 0;
+  height: 0; }
+
+/* line 6, sass/components/_navigation.scss */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999; }
+
+/* line 12, sass/components/_navigation.scss */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+/* line 22, sass/components/_navigation.scss */
+.nav--scrolled {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 21px 0px;
+  border-bottom: 1px solid transparent;
+  background-color: #030303; }
+
+/* line 28, sass/components/_navigation.scss */
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 6px 10px; }
+  @media only screen and (max-width: 990px) {
+    /* line 28, sass/components/_navigation.scss */
+    .navbar {
+      padding: 6px 15px; } }
+  /* line 41, sass/components/_navigation.scss */
+  .navbar__logo {
+    width: 86px;
+    height: 78px;
+    transition: all .25s; }
+    /* line 45, sass/components/_navigation.scss */
+    .navbar__logo img {
+      width: 100%;
+      height: 100%; }
+  /* line 51, sass/components/_navigation.scss */
+  .navbar__logo--scrolled {
+    width: 75px;
+    height: 67px; }
+  /* line 56, sass/components/_navigation.scss */
+  .navbar__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media only screen and (max-width: 990px) {
+      /* line 56, sass/components/_navigation.scss */
+      .navbar__links {
+        display: none; } }
+  /* line 66, sass/components/_navigation.scss */
+  .navbar__item a {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    transition: .25s;
+    padding-bottom: 10px; }
+  /* line 77, sass/components/_navigation.scss */
+  .navbar__item a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    transition: .25s; }
+  /* line 88, sass/components/_navigation.scss */
+  .navbar__item a:hover:before {
+    width: 98%; }
+  /* line 92, sass/components/_navigation.scss */
+  .navbar__item:not(:last-child) {
+    padding-right: 38px; }
+  /* line 96, sass/components/_navigation.scss */
+  .navbar__item a:hover {
+    opacity: 1; }
+  /* line 100, sass/components/_navigation.scss */
+  .navbar__hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer; }
+    @media only screen and (min-width: 990px) {
+      /* line 100, sass/components/_navigation.scss */
+      .navbar__hamburger {
+        display: none; } }
+    /* line 111, sass/components/_navigation.scss */
+    .navbar__hamburger__icon {
+      width: 22px;
+      height: 3px;
+      background-color: #fff; }
+    /* line 117, sass/components/_navigation.scss */
+    .navbar__hamburger__icon:not(:last-child) {
+      margin-bottom: 4px; }
+  /* line 122, sass/components/_navigation.scss */
+  .navbar__mobile__darken {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0; }
+  /* line 133, sass/components/_navigation.scss */
+  .navbar__mobile {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    background-color: #fff;
+    height: 100vh;
+    transition: all .5s;
+    z-index: 999; }
+    /* line 146, sass/components/_navigation.scss */
+    .navbar__mobile__button {
+      position: absolute;
+      top: 15px;
+      right: 14px;
+      background-color: #000;
+      height: 29px;
+      width: 29px;
+      cursor: pointer; }
+    /* line 156, sass/components/_navigation.scss */
+    .navbar__mobile__button--1 {
+      display: inline-block;
+      width: 19px;
+      height: 3px;
+      position: absolute;
+      top: 13px;
+      right: 5px;
+      background-color: #fff;
+      transform: rotate(-45deg); }
+    /* line 167, sass/components/_navigation.scss */
+    .navbar__mobile__button--2 {
+      display: inline-block;
+      width: 19px;
+      height: 3px;
+      position: absolute;
+      top: 13px;
+      right: 5px;
+      background-color: #fff;
+      transform: rotate(45deg); }
+    /* line 178, sass/components/_navigation.scss */
+    .navbar__mobile__menu {
+      width: 100%;
+      padding: 45px 30px; }
+    /* line 183, sass/components/_navigation.scss */
+    .navbar__mobile__menu__links > li {
+      padding: 15px 0; }
+    /* line 187, sass/components/_navigation.scss */
+    .navbar__mobile__menu__links > li a {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      color: #1b1b1b;
+      text-transform: uppercase; }
+    /* line 194, sass/components/_navigation.scss */
+    .navbar__mobile__menu__links > li:not(:last-child) {
+      border-bottom: 1px solid #1b1b1b15; }
+    /* line 198, sass/components/_navigation.scss */
+    .navbar__mobile__info {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 0 30px; }
+    /* line 205, sass/components/_navigation.scss */
+    .navbar__mobile .mobile-phone {
+      transform: rotate(110deg);
+      color: #1b1b1b; }
+    /* line 210, sass/components/_navigation.scss */
+    .navbar__mobile__phone__text {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      color: #1b1b1b; }
+    /* line 216, sass/components/_navigation.scss */
+    .navbar__mobile__location {
+      flex-basis: 100%;
+      padding-top: 12px;
+      padding-left: 3px; }
+    /* line 222, sass/components/_navigation.scss */
+    .navbar__mobile__location__text {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      color: #1b1b1b; }
+    /* line 228, sass/components/_navigation.scss */
+    .navbar__mobile__social {
+      flex-basis: 100%;
+      padding-top: 12px; }
+    /* line 233, sass/components/_navigation.scss */
+    .navbar__mobile__social__instagram {
+      padding-right: 5px; }
+    /* line 237, sass/components/_navigation.scss */
+    .navbar__mobile__social > a > i {
+      font-size: 20px;
+      color: #1b1b1b; }
+
+/* line 1, sass/components/_footer.scss */
+.footer-container {
+  background: url(/imgs/footer-imgs/background.jpg); }
+
+/* line 5, sass/components/_footer.scss */
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0 53px 0;
+  background: url(/imgs/footer-imgs/background.jpg); }
+  /* line 12, sass/components/_footer.scss */
+  .footer-social__heading {
+    font-family: "Rajdhani", sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px; }
+    /* line 18, sass/components/_footer.scss */
+    .footer-social__heading__subtitle {
+      color: #d62326;
+      font-size: 18px;
+      font-weight: 400; }
+    /* line 24, sass/components/_footer.scss */
+    .footer-social__heading__title {
+      color: #f1ede1;
+      font-size: 35px;
+      line-height: 0.9;
+      margin-bottom: 40px;
+      text-transform: uppercase; }
+  /* line 33, sass/components/_footer.scss */
+  .footer-social__imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 30px;
+    margin-bottom: 25px; }
+    @media only screen and (min-width: 410px) {
+      /* line 33, sass/components/_footer.scss */
+      .footer-social__imgs {
+        padding: 0 65px; } }
+    @media only screen and (min-width: 470px) {
+      /* line 33, sass/components/_footer.scss */
+      .footer-social__imgs {
+        padding: 0 80px; } }
+    @media only screen and (min-width: 580px) {
+      /* line 33, sass/components/_footer.scss */
+      .footer-social__imgs {
+        padding: 0 20px; } }
+    /* line 55, sass/components/_footer.scss */
+    .footer-social__imgs__wrapper {
+      display: flex;
+      flex-basis: 210px;
+      flex-grow: 1;
+      padding: 0 10px 20px 10px;
+      justify-content: center; }
+      @media only screen and (min-width: 410px) {
+        /* line 55, sass/components/_footer.scss */
+        .footer-social__imgs__wrapper {
+          padding: 0 15px 20px 15px; } }
+      @media only screen and (min-width: 580px) {
+        /* line 55, sass/components/_footer.scss */
+        .footer-social__imgs__wrapper {
+          padding: 0 10px 20px 10px; } }
+      @media only screen and (min-width: 630px) {
+        /* line 55, sass/components/_footer.scss */
+        .footer-social__imgs__wrapper {
+          flex-basis: 71px; } }
+    /* line 75, sass/components/_footer.scss */
+    .footer-social__imgs__wrapper:last-child {
+      display: none; }
+      @media only screen and (min-width: 580px) {
+        /* line 75, sass/components/_footer.scss */
+        .footer-social__imgs__wrapper:last-child {
+          display: block; } }
+      @media only screen and (min-width: 630px) {
+        /* line 75, sass/components/_footer.scss */
+        .footer-social__imgs__wrapper:last-child {
+          display: none; } }
+    /* line 87, sass/components/_footer.scss */
+    .footer-social__imgs__wrapper > a > img {
+      width: 100%;
+      height: 100%; }
+  /* line 93, sass/components/_footer.scss */
+  .footer-social__socials {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    color: #f1ede1; }
+    @media only screen and (min-width: 580px) {
+      /* line 93, sass/components/_footer.scss */
+      .footer-social__socials {
+        flex-direction: row;
+        padding: 0 29px; } }
+    @media only screen and (min-width: 630px) {
+      /* line 93, sass/components/_footer.scss */
+      .footer-social__socials {
+        padding: 0 29px; } }
+    /* line 110, sass/components/_footer.scss */
+    .footer-social__socials__text {
+      font-family: "Rajdhani", sans-serif;
+      color: #929292;
+      font-size: 17px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 12px; }
+      @media only screen and (min-width: 410px) {
+        /* line 110, sass/components/_footer.scss */
+        .footer-social__socials__text {
+          font-size: 19px; } }
+      @media only screen and (min-width: 581px) {
+        /* line 110, sass/components/_footer.scss */
+        .footer-social__socials__text {
+          margin-bottom: 0; } }
+    /* line 128, sass/components/_footer.scss */
+    .footer-social__socials__line {
+      display: none;
+      height: 2px;
+      background-color: #3b3632;
+      flex-grow: 1;
+      margin: 0 15px; }
+      @media only screen and (min-width: 581px) {
+        /* line 128, sass/components/_footer.scss */
+        .footer-social__socials__line {
+          display: block; } }
+    /* line 140, sass/components/_footer.scss */
+    .footer-social__socials__links {
+      display: flex;
+      justify-content: space-between;
+      flex-basis: 1; }
+      /* line 145, sass/components/_footer.scss */
+      .footer-social__socials__links__link:first-child {
+        margin-right: 11px; }
+    /* line 150, sass/components/_footer.scss */
+    .footer-social__socials__links > li > a {
+      display: inline-block;
+      color: #929292;
+      border: 2px solid #3b3632;
+      transition: all .3s ease; }
+    /* line 157, sass/components/_footer.scss */
+    .footer-social__socials__links > li > a:hover {
+      color: #f1ede1;
+      background-color: #d72323;
+      border-color: transparent; }
+    /* line 163, sass/components/_footer.scss */
+    .footer-social__socials__links__link--1 {
+      padding: 8px 12px 7px 12px; }
+    /* line 167, sass/components/_footer.scss */
+    .footer-social__socials__links__link--2 {
+      padding: 8px 10px 7px 10px; }
+
+/* line 173, sass/components/_footer.scss */
+.footer-sitemap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(/imgs/footer-imgs/background.jpg); }
+  /* line 179, sass/components/_footer.scss */
+  .footer-sitemap__logo {
+    width: 135px;
+    margin-bottom: 35px; }
+    /* line 183, sass/components/_footer.scss */
+    .footer-sitemap__logo__link img {
+      width: 100%;
+      height: 100%; }
+  /* line 189, sass/components/_footer.scss */
+  .footer-sitemap__links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px; }
+  /* line 195, sass/components/_footer.scss */
+  .footer-sitemap__links > li:not(:last-child) {
+    margin-right: 10px; }
+  /* line 199, sass/components/_footer.scss */
+  .footer-sitemap__links > li > a {
+    font-family: "Rajdhani", sans-serif;
+    color: #929292;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .3s ease; }
+  /* line 208, sass/components/_footer.scss */
+  .footer-sitemap__links > li > a:hover,
+  .footer-sitemap__links > li > a:active {
+    color: #f1ede1; }
+  /* line 213, sass/components/_footer.scss */
+  .footer-sitemap__copyright {
+    margin-bottom: 35px;
+    font-family: "Montserrat", serif;
+    text-align: center; }
+    /* line 218, sass/components/_footer.scss */
+    .footer-sitemap__copyright__text {
+      font-size: 14px;
+      color: #929292; }
+    /* line 223, sass/components/_footer.scss */
+    .footer-sitemap__copyright__link {
+      color: #f1ede1;
+      font-weight: 400; }
+
+/* line 1, sass/layout/_landing.scss */
+.main {
+  background-color: black;
+  height: 100vh; }
+
+/* line 2, sass/pages/_pocetna.scss */
+.hero__container {
+  height: 80vh;
+  background: url(/imgs/landing-imgs/joker.jpg) center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; }
+  @media only screen and (min-width: 1000px) {
+    /* line 2, sass/pages/_pocetna.scss */
+    .hero__container {
+      height: calc(100vh - 51px);
+      background-size: cover;
+      background-position-y: 59%; } }
+
+/* line 18, sass/pages/_pocetna.scss */
+.hero__heading {
+  position: relative;
+  margin-top: 45px; }
+  @media only screen and (min-width: 1000px) {
+    /* line 18, sass/pages/_pocetna.scss */
+    .hero__heading {
+      margin-top: 0; } }
+  /* line 26, sass/pages/_pocetna.scss */
+  .hero__heading__text--1 span {
+    font-size: 35px; }
+    @media only screen and (min-width: 580px) {
+      /* line 26, sass/pages/_pocetna.scss */
+      .hero__heading__text--1 span {
+        font-size: 55px; } }
+    @media only screen and (min-width: 980px) {
+      /* line 26, sass/pages/_pocetna.scss */
+      .hero__heading__text--1 span {
+        font-size: 77px; } }
+    @media only screen and (min-width: 1200px) {
+      /* line 26, sass/pages/_pocetna.scss */
+      .hero__heading__text--1 span {
+        font-size: 86px; } }
+  /* line 42, sass/pages/_pocetna.scss */
+  .hero__heading__text--2 span {
+    font-size: 30px; }
+    @media only screen and (min-width: 580px) {
+      /* line 42, sass/pages/_pocetna.scss */
+      .hero__heading__text--2 span {
+        font-size: 57px; } }
+    @media only screen and (min-width: 980px) {
+      /* line 42, sass/pages/_pocetna.scss */
+      .hero__heading__text--2 span {
+        font-size: 78px; } }
+    @media only screen and (min-width: 1200px) {
+      /* line 42, sass/pages/_pocetna.scss */
+      .hero__heading__text--2 span {
+        font-size: 87px; } }
+
+/* line 59, sass/pages/_pocetna.scss */
+.hero__heading > h1 {
+  display: flex;
+  align-items: center; }
+
+/* line 64, sass/pages/_pocetna.scss */
+.hero__heading > h1 > span:nth-child(odd) {
+  color: #f1ede1;
+  font-size: 21px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  padding-top: 4px; }
+  @media only screen and (min-width: 580px) {
+    /* line 64, sass/pages/_pocetna.scss */
+    .hero__heading > h1 > span:nth-child(odd) {
+      font-size: 25px;
+      line-height: 1;
+      padding-top: 5px; } }
+  @media only screen and (min-width: 980px) {
+    /* line 64, sass/pages/_pocetna.scss */
+    .hero__heading > h1 > span:nth-child(odd) {
+      font-size: 28px;
+      padding-top: 13px; } }
+  @media only screen and (min-width: 1200px) {
+    /* line 64, sass/pages/_pocetna.scss */
+    .hero__heading > h1 > span:nth-child(odd) {
+      font-size: 32px;
+      padding-top: 12px; } }
+
+/* line 89, sass/pages/_pocetna.scss */
+.hero__heading > h1 > span:nth-child(even) {
+  color: #f1ede1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding-left: 1px;
+  line-height: 1.2;
+  padding-left: 6px; }
+  @media only screen and (min-width: 580px) {
+    /* line 89, sass/pages/_pocetna.scss */
+    .hero__heading > h1 > span:nth-child(even) {
+      line-height: 1;
+      padding-left: 10px; } }
+  @media only screen and (min-width: 1200px) {
+    /* line 89, sass/pages/_pocetna.scss */
+    .hero__heading > h1 > span:nth-child(even) {
+      padding-left: 12px; } }
+
+/* line 107, sass/pages/_pocetna.scss */
+.hero__heading > p {
+  color: #fff;
+  font-size: 18px;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 7px;
+  letter-spacing: .3px; }
+  @media only screen and (min-width: 580px) {
+    /* line 107, sass/pages/_pocetna.scss */
+    .hero__heading > p {
+      font-size: 22px;
+      margin-top: 5px; } }
+  @media only screen and (min-width: 980px) {
+    /* line 107, sass/pages/_pocetna.scss */
+    .hero__heading > p {
+      font-size: 25px; } }
+  @media only screen and (min-width: 1200px) {
+    /* line 107, sass/pages/_pocetna.scss */
+    .hero__heading > p {
+      font-size: 28px;
+      margin-top: 16px;
+      width: initial;
+      text-align: initial;
+      letter-spacing: .8px;
+      padding-left: 1px; } }
+
+/* line 137, sass/pages/_pocetna.scss */
+.hero__heading__text--3::before {
+  content: '';
+  position: absolute;
+  top: 203px;
+  left: -200px;
+  width: 150px;
+  height: 3px;
+  background-color: #f1ede1;
+  display: none; }
+  @media only screen and (min-width: 1200px) {
+    /* line 137, sass/pages/_pocetna.scss */
+    .hero__heading__text--3::before {
+      display: block; } }
+
+/* line 152, sass/pages/_pocetna.scss */
+.hero__button {
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  /* line 161, sass/pages/_pocetna.scss */
+  .hero__button button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none; }
+    /* line 167, sass/pages/_pocetna.scss */
+    .hero__button button a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      transition: all .35s ease; }
+      /* line 177, sass/pages/_pocetna.scss */
+      .hero__button button a i {
+        color: #fff;
+        font-size: 19px; }
+    /* line 183, sass/pages/_pocetna.scss */
+    .hero__button button a:hover {
+      background-color: #f1ede1; }
+    /* line 187, sass/pages/_pocetna.scss */
+    .hero__button button a:hover > i {
+      color: #353535; }
+
+/* line 195, sass/pages/_pocetna.scss */
+.coach-section {
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0; }
+
+/* line 201, sass/pages/_pocetna.scss */
+.coach__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 15px;
+  max-width: 310px; }
+  @media only screen and (min-width: 479px) {
+    /* line 201, sass/pages/_pocetna.scss */
+    .coach__container {
+      max-width: 470px; } }
+  @media only screen and (min-width: 770px) {
+    /* line 201, sass/pages/_pocetna.scss */
+    .coach__container {
+      flex-direction: row;
+      padding: 80px 0;
+      max-width: 738px; } }
+  @media only screen and (min-width: 1025px) {
+    /* line 201, sass/pages/_pocetna.scss */
+    .coach__container {
+      padding: 130px 0;
+      max-width: 994px; } }
+  @media only screen and (min-width: 1279px) {
+    /* line 201, sass/pages/_pocetna.scss */
+    .coach__container {
+      max-width: 1290px; } }
+
+/* line 228, sass/pages/_pocetna.scss */
+.coach__left {
+  margin-bottom: 22px; }
+  @media only screen and (min-width: 770px) {
+    /* line 228, sass/pages/_pocetna.scss */
+    .coach__left {
+      padding: 0 40px 0 15px; } }
+  @media only screen and (min-width: 1279px) {
+    /* line 235, sass/pages/_pocetna.scss */
+    .coach__left__img {
+      max-width: 494px; } }
+  /* line 241, sass/pages/_pocetna.scss */
+  .coach__left__img img {
+    width: 100%;
+    height: 100%; }
+    @media only screen and (min-width: 1025px) {
+      /* line 241, sass/pages/_pocetna.scss */
+      .coach__left__img img {
+        width: 424px;
+        height: 543px; } }
+    @media only screen and (min-width: 1279px) {
+      /* line 241, sass/pages/_pocetna.scss */
+      .coach__left__img img {
+        width: 496px;
+        height: 640px; } }
+
+@media only screen and (min-width: 770px) {
+  /* line 258, sass/pages/_pocetna.scss */
+  .coach__right {
+    padding: 0 15px; } }
+
+@media only screen and (min-width: 1025px) {
+  /* line 258, sass/pages/_pocetna.scss */
+  .coach__right {
+    padding-top: 77px; } }
+
+/* line 268, sass/pages/_pocetna.scss */
+.coach__right__subtitle {
+  color: #d62326;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  padding-left: 1px;
+  line-height: 1.2; }
+  @media only screen and (min-width: 770px) {
+    /* line 268, sass/pages/_pocetna.scss */
+    .coach__right__subtitle {
+      font-size: 21px; } }
+  @media only screen and (min-width: 1025px) {
+    /* line 268, sass/pages/_pocetna.scss */
+    .coach__right__subtitle {
+      font-size: 22px; } }
+  @media only screen and (min-width: 1279px) {
+    /* line 268, sass/pages/_pocetna.scss */
+    .coach__right__subtitle {
+      font-size: 24px; } }
+
+/* line 290, sass/pages/_pocetna.scss */
+.coach__right__title {
+  color: #16120f;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-bottom: 11px; }
+  @media only screen and (min-width: 479px) {
+    /* line 290, sass/pages/_pocetna.scss */
+    .coach__right__title {
+      font-size: 37px; } }
+  @media only screen and (min-width: 770px) {
+    /* line 290, sass/pages/_pocetna.scss */
+    .coach__right__title {
+      font-size: 45px; } }
+  @media only screen and (min-width: 1025px) {
+    /* line 290, sass/pages/_pocetna.scss */
+    .coach__right__title {
+      font-size: 58px;
+      padding-bottom: 14px; } }
+  @media only screen and (min-width: 1279px) {
+    /* line 290, sass/pages/_pocetna.scss */
+    .coach__right__title {
+      font-size: 72px;
+      line-height: 1.1;
+      padding-bottom: 19px; } }
+
+/* line 318, sass/pages/_pocetna.scss */
+.coach__right__text {
+  color: #16120f;
+  font-family: "Montserrat", serif;
+  font-size: 13px;
+  padding-bottom: 20px;
+  line-height: 25px; }
+  @media only screen and (min-width: 770px) {
+    /* line 318, sass/pages/_pocetna.scss */
+    .coach__right__text {
+      font-size: 14px;
+      padding-bottom: 30px; } }
+  @media only screen and (min-width: 1025px) {
+    /* line 318, sass/pages/_pocetna.scss */
+    .coach__right__text {
+      padding-right: 90px; } }
+  @media only screen and (min-width: 1025px) {
+    /* line 318, sass/pages/_pocetna.scss */
+    .coach__right__text {
+      padding-bottom: 32px;
+      line-height: 26px; } }
+  @media only screen and (min-width: 1279px) {
+    /* line 318, sass/pages/_pocetna.scss */
+    .coach__right__text {
+      padding-right: 0;
+      padding-bottom: 40px;
+      line-height: 27px;
+      max-width: 483px; } }
+
+/* line 347, sass/pages/_pocetna.scss */
+.coach__right__img img {
+  width: 100%;
+  height: 100%; }
+  @media only screen and (min-width: 1279px) {
+    /* line 347, sass/pages/_pocetna.scss */
+    .coach__right__img img {
+      width: 75%; } }
+
+/* line 359, sass/pages/_pocetna.scss */
+.fighting-segments-section {
+  background-color: #0f0f0f; }
+
+/* line 363, sass/pages/_pocetna.scss */
+.fighting-segments__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 15px; }
+  @media only screen and (min-width: 770px) {
+    /* line 363, sass/pages/_pocetna.scss */
+    .fighting-segments__container {
+      padding: 80px 15px; } }
+  @media only screen and (min-width: 1025px) {
+    /* line 363, sass/pages/_pocetna.scss */
+    .fighting-segments__container {
+      padding: 130px 3%; } }
+
+/* line 379, sass/pages/_pocetna.scss */
+.fighting-segments__title {
+  color: #f1ede1;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-transform: uppercase;
+  padding-bottom: 19px; }
+  @media only screen and (min-width: 288px) {
+    /* line 379, sass/pages/_pocetna.scss */
+    .fighting-segments__title {
+      font-size: 30px; } }
+  @media only screen and (min-width: 480px) {
+    /* line 379, sass/pages/_pocetna.scss */
+    .fighting-segments__title {
+      font-size: 35px; } }
+  @media only screen and (min-width: 770px) {
+    /* line 379, sass/pages/_pocetna.scss */
+    .fighting-segments__title {
+      font-size: 45px; } }
+  @media only screen and (min-width: 1025px) {
+    /* line 379, sass/pages/_pocetna.scss */
+    .fighting-segments__title {
+      font-size: 58px; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 379, sass/pages/_pocetna.scss */
+    .fighting-segments__title {
+      font-size: 71px;
+      padding-bottom: 17px; } }
+
+/* line 409, sass/pages/_pocetna.scss */
+.fighting-segments__text {
+  color: #f1ede1;
+  font-family: "Montserrat", serif;
+  font-size: 13px;
+  text-align: center;
+  padding-bottom: 32px;
+  line-height: 24px;
+  max-width: 94%; }
+  @media only screen and (min-width: 380px) {
+    /* line 409, sass/pages/_pocetna.scss */
+    .fighting-segments__text {
+      max-width: 85%; } }
+  @media only screen and (min-width: 480px) {
+    /* line 409, sass/pages/_pocetna.scss */
+    .fighting-segments__text {
+      font-size: 14px; } }
+  @media only screen and (min-width: 770px) {
+    /* line 409, sass/pages/_pocetna.scss */
+    .fighting-segments__text {
+      max-width: 54%; } }
+  @media only screen and (min-width: 830px) {
+    /* line 409, sass/pages/_pocetna.scss */
+    .fighting-segments__text {
+      padding-bottom: 44px; } }
+  @media only screen and (min-width: 1025px) {
+    /* line 409, sass/pages/_pocetna.scss */
+    .fighting-segments__text {
+      max-width: 493px; } }
+
+/* line 439, sass/pages/_pocetna.scss */
+.fighting-segments__classes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: #f1ede1;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-transform: uppercase;
+  max-width: 1350px; }
+  @media only screen and (min-width: 480px) {
+    /* line 439, sass/pages/_pocetna.scss */
+    .fighting-segments__classes {
+      flex-direction: row;
+      flex-wrap: wrap; } }
+  @media only screen and (min-width: 830px) {
+    /* line 439, sass/pages/_pocetna.scss */
+    .fighting-segments__classes {
+      flex-wrap: nowrap;
+      justify-content: space-between; } }
+  /* line 461, sass/pages/_pocetna.scss */
+  .fighting-segments__classes__class--1::before, .fighting-segments__classes__class--2::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    padding-top: 100%; }
+  /* line 470, sass/pages/_pocetna.scss */
+  .fighting-segments__classes__class--3::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    padding-top: 100%; }
+    @media only screen and (min-width: 480px) {
+      /* line 470, sass/pages/_pocetna.scss */
+      .fighting-segments__classes__class--3::before {
+        padding-top: 33%; } }
+    @media only screen and (min-width: 830px) {
+      /* line 470, sass/pages/_pocetna.scss */
+      .fighting-segments__classes__class--3::before {
+        padding-top: 100%; } }
+  /* line 486, sass/pages/_pocetna.scss */
+  .fighting-segments__classes__class--1 {
+    background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/pocetnici.jpg) center center/cover no-repeat;
+    margin-bottom: 30px; }
+    @media only screen and (min-width: 480px) {
+      /* line 486, sass/pages/_pocetna.scss */
+      .fighting-segments__classes__class--1 {
+        flex-basis: 45%;
+        flex-grow: 1;
+        margin-right: 10px; } }
+    @media only screen and (min-width: 830px) {
+      /* line 486, sass/pages/_pocetna.scss */
+      .fighting-segments__classes__class--1 {
+        flex-basis: 32%;
+        flex-grow: initial;
+        margin-right: 0; } }
+    @media only screen and (min-width: 1025px) {
+      /* line 486, sass/pages/_pocetna.scss */
+      .fighting-segments__classes__class--1 {
+        flex-basis: 31.5%; } }
+  /* line 507, sass/pages/_pocetna.scss */
+  .fighting-segments__classes__class--2 {
+    background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/takmicari.jpg) center center/cover no-repeat;
+    margin-bottom: 30px; }
+    @media only screen and (min-width: 480px) {
+      /* line 507, sass/pages/_pocetna.scss */
+      .fighting-segments__classes__class--2 {
+        flex-basis: 45%;
+        flex-grow: 1;
+        margin-left: 10px; } }
+    @media only screen and (min-width: 830px) {
+      /* line 507, sass/pages/_pocetna.scss */
+      .fighting-segments__classes__class--2 {
+        flex-basis: 32%;
+        flex-grow: initial;
+        margin-left: 0; } }
+    @media only screen and (min-width: 1025px) {
+      /* line 507, sass/pages/_pocetna.scss */
+      .fighting-segments__classes__class--2 {
+        flex-basis: 31.5%; } }
+  /* line 528, sass/pages/_pocetna.scss */
+  .fighting-segments__classes__class--3 {
+    background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/bjj.jpg) center center/cover no-repeat; }
+    @media only screen and (min-width: 480px) {
+      /* line 528, sass/pages/_pocetna.scss */
+      .fighting-segments__classes__class--3 {
+        flex-grow: 1; } }
+    @media only screen and (min-width: 830px) {
+      /* line 528, sass/pages/_pocetna.scss */
+      .fighting-segments__classes__class--3 {
+        flex-basis: 32%;
+        flex-grow: initial;
+        margin-bottom: 30px; } }
+    @media only screen and (min-width: 1025px) {
+      /* line 528, sass/pages/_pocetna.scss */
+      .fighting-segments__classes__class--3 {
+        flex-basis: 31.5%; } }
+
+/* line 547, sass/pages/_pocetna.scss */
+.fighting-segments__classes > div {
+  display: flex;
+  align-items: flex-end;
+  padding: 18px;
+  border: 1px solid #f1ede1cf; }
+  @media only screen and (min-width: 830px) {
+    /* line 547, sass/pages/_pocetna.scss */
+    .fighting-segments__classes > div {
+      justify-content: center; } }
+
+/* line 558, sass/pages/_pocetna.scss */
+.fighting-segments__classes > div > h4 {
+  line-height: 1;
+  font-size: 25px; }
+  @media only screen and (min-width: 1280px) {
+    /* line 558, sass/pages/_pocetna.scss */
+    .fighting-segments__classes > div > h4 {
+      font-size: 33px; } }
+
+/* line 570, sass/pages/_pocetna.scss */
+.our-team-section {
+  background-color: #0f0f0f; }
+
+/* line 574, sass/pages/_pocetna.scss */
+.our-team__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 15px; }
+  @media only screen and (min-width: 770px) {
+    /* line 574, sass/pages/_pocetna.scss */
+    .our-team__container {
+      padding: 80px 15px; } }
+  @media only screen and (min-width: 1025px) {
+    /* line 574, sass/pages/_pocetna.scss */
+    .our-team__container {
+      padding: 130px 15px; } }
+
+/* line 590, sass/pages/_pocetna.scss */
+.our-team__title {
+  color: #f1ede1;
+  font-size: 30px;
+  padding-bottom: 25px;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 480px) {
+    /* line 590, sass/pages/_pocetna.scss */
+    .our-team__title {
+      font-size: 35px; } }
+  @media only screen and (min-width: 767px) {
+    /* line 590, sass/pages/_pocetna.scss */
+    .our-team__title {
+      font-size: 45px;
+      padding-bottom: 35px; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 590, sass/pages/_pocetna.scss */
+    .our-team__title {
+      font-size: 58px; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 590, sass/pages/_pocetna.scss */
+    .our-team__title {
+      font-size: 67px; } }
+
+/* line 614, sass/pages/_pocetna.scss */
+.our-team__members {
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+  @media only screen and (min-width: 480px) {
+    /* line 614, sass/pages/_pocetna.scss */
+    .our-team__members {
+      flex-wrap: wrap;
+      flex-direction: row;
+      max-width: 480px; } }
+  @media only screen and (min-width: 768px) {
+    /* line 614, sass/pages/_pocetna.scss */
+    .our-team__members {
+      max-width: 708px; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 614, sass/pages/_pocetna.scss */
+    .our-team__members {
+      max-width: 1024px; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 614, sass/pages/_pocetna.scss */
+    .our-team__members {
+      max-width: 1260px; } }
+  /* line 639, sass/pages/_pocetna.scss */
+  .our-team__members__member--1 {
+    background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/savo.jpg) center center/cover no-repeat; }
+    @media only screen and (min-width: 480px) {
+      /* line 639, sass/pages/_pocetna.scss */
+      .our-team__members__member--1 {
+        margin-right: 15px; } }
+    /* line 646, sass/pages/_pocetna.scss */
+    .our-team__members__member--1__hover-mask {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/savo.jpg) center center/cover no-repeat;
+      z-index: 0;
+      transition: all .35s ease-in-out; }
+  /* line 659, sass/pages/_pocetna.scss */
+  .our-team__members__member--2 {
+    background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/vaso.jpg) center center/cover no-repeat; }
+    @media only screen and (min-width: 480px) {
+      /* line 659, sass/pages/_pocetna.scss */
+      .our-team__members__member--2 {
+        margin-left: 15px; } }
+    /* line 666, sass/pages/_pocetna.scss */
+    .our-team__members__member--2__hover-mask {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/vaso.jpg) center center/cover no-repeat;
+      z-index: 0;
+      transition: all .35s ease-in-out; }
+  /* line 679, sass/pages/_pocetna.scss */
+  .our-team__members__member--3 {
+    background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/ilic.jpg) center center/cover no-repeat; }
+    @media only screen and (min-width: 480px) {
+      /* line 679, sass/pages/_pocetna.scss */
+      .our-team__members__member--3 {
+        margin-right: 15px; } }
+    /* line 686, sass/pages/_pocetna.scss */
+    .our-team__members__member--3__hover-mask {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/ilic.jpg) center center/cover no-repeat;
+      z-index: 0;
+      transition: all .35s ease-in-out; }
+  /* line 699, sass/pages/_pocetna.scss */
+  .our-team__members__member--4 {
+    background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/krle.jpg) center center/cover no-repeat; }
+    @media only screen and (min-width: 480px) {
+      /* line 699, sass/pages/_pocetna.scss */
+      .our-team__members__member--4 {
+        margin-left: 15px; } }
+    @media only screen and (min-width: 1024px) {
+      /* line 699, sass/pages/_pocetna.scss */
+      .our-team__members__member--4 {
+        margin-left: 0; } }
+    /* line 710, sass/pages/_pocetna.scss */
+    .our-team__members__member--4__hover-mask {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/krle.jpg) center center/cover no-repeat;
+      z-index: 0;
+      transition: all .35s ease-in-out; }
+
+/* line 724, sass/pages/_pocetna.scss */
+.our-team__members__member--1::before,
+.our-team__members__member--2::before,
+.our-team__members__member--3::before,
+.our-team__members__member--4::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  padding-top: 89%; }
+  @media only screen and (min-width: 480px) {
+    /* line 724, sass/pages/_pocetna.scss */
+    .our-team__members__member--1::before,
+    .our-team__members__member--2::before,
+    .our-team__members__member--3::before,
+    .our-team__members__member--4::before {
+      padding-top: 0%; } }
+
+/* line 740, sass/pages/_pocetna.scss */
+.our-team__members__member--1::after,
+.our-team__members__member--2::after,
+.our-team__members__member--3::after,
+.our-team__members__member--4::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #16120fb3;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+  z-index: 998; }
+
+/* line 757, sass/pages/_pocetna.scss */
+.our-team__members > div:hover:after {
+  opacity: 1; }
+
+/* line 761, sass/pages/_pocetna.scss */
+.our-team__members > div:hover span {
+  transform: scale(1.055);
+  z-index: 997; }
+
+/* line 767, sass/pages/_pocetna.scss */
+.our-team__members > div {
+  margin-bottom: 30px;
+  border: 1px solid #f1ede19a;
+  max-width: 278px;
+  position: relative;
+  overflow: hidden; }
+  @media only screen and (min-width: 480px) {
+    /* line 767, sass/pages/_pocetna.scss */
+    .our-team__members > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 203px;
+      height: 258px; } }
+  @media only screen and (min-width: 768px) {
+    /* line 767, sass/pages/_pocetna.scss */
+    .our-team__members > div {
+      width: 325px;
+      height: 429px;
+      max-width: initial; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 767, sass/pages/_pocetna.scss */
+    .our-team__members > div {
+      width: 216px;
+      height: 275px; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 767, sass/pages/_pocetna.scss */
+    .our-team__members > div {
+      width: 288px;
+      height: 367px; } }
+
+@media only screen and (min-width: 1024px) {
+  /* line 800, sass/pages/_pocetna.scss */
+  .our-team__members > div:not(:last-child) {
+    margin: 0 30px 30px 0; } }
+
+/* line 808, sass/pages/_pocetna.scss */
+.our-team__members > div > h4 {
+  position: relative;
+  color: #f1ede1;
+  font-size: 24px;
+  margin-bottom: 1px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  line-height: 26px;
+  transition: all .35s .07s ease;
+  backface-visibility: hidden;
+  z-index: 999; }
+  @media only screen and (min-width: 480px) {
+    /* line 808, sass/pages/_pocetna.scss */
+    .our-team__members > div > h4 {
+      line-height: 25px; } }
+
+/* line 826, sass/pages/_pocetna.scss */
+.our-team__members > div > h5 {
+  position: relative;
+  font-family: "Montserrat", serif;
+  color: #d62326;
+  font-size: 13px;
+  margin-bottom: 26px;
+  padding: 0 20px;
+  transition: all .35s .07s ease;
+  backface-visibility: hidden;
+  z-index: 999; }
+  @media only screen and (min-width: 480px) {
+    /* line 826, sass/pages/_pocetna.scss */
+    .our-team__members > div > h5 {
+      margin-bottom: 19px; } }
+  @media only screen and (min-width: 768px) {
+    /* line 826, sass/pages/_pocetna.scss */
+    .our-team__members > div > h5 {
+      margin-bottom: 26px; } }
+
+/* line 847, sass/pages/_pocetna.scss */
+.our-team__members > div:hover h4,
+.our-team__members > div:hover h5 {
+  transform: translateY(-51px); }
+
+/* line 853, sass/pages/_pocetna.scss */
+.our-team__members > div:hover div {
+  opacity: 1;
+  bottom: 25px; }
+
+/* line 859, sass/pages/_pocetna.scss */
+.our-team__members > div > div {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 9px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: bottom .35s .07s ease-out, opacity .25s .07s ease;
+  z-index: 999; }
+
+/* line 872, sass/pages/_pocetna.scss */
+.our-team__members > div > div > div {
+  background-color: #f1ede1;
+  width: 38px;
+  height: 36px;
+  border-radius: 3px; }
+
+/* line 880, sass/pages/_pocetna.scss */
+.our-team__members > div > div > div > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #16120f;
+  background-color: #f1ede1;
+  line-height: .8;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px; }
+
+/* line 893, sass/pages/_pocetna.scss */
+.our-team__members > div > div > div > a:hover {
+  color: #f1ede1;
+  background-color: #d62326; }
+
+/* line 899, sass/pages/_pocetna.scss */
+.our-team__members > div > div > div:first-child {
+  margin-right: 10px; }
+
+/* line 903, sass/pages/_pocetna.scss */
+.our-team__button {
+  padding-top: 30px;
+  margin-bottom: 4px; }
+  /* line 907, sass/pages/_pocetna.scss */
+  .our-team__button button {
+    border: none;
+    background: none; }
+    /* line 911, sass/pages/_pocetna.scss */
+    .our-team__button button a {
+      display: inline-block;
+      font-family: "Rajdhani", sans-serif;
+      font-weight: 600;
+      color: #16120f;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background-color: #f1ede1;
+      padding: 11px 20px;
+      width: 100%;
+      height: 100%;
+      transition: all .3s ease; }
+    /* line 926, sass/pages/_pocetna.scss */
+    .our-team__button button a:hover {
+      color: #f1ede1;
+      background-color: #d62326; }

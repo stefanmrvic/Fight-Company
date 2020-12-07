@@ -1,0 +1,87 @@
+.nav-top {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: $color-navTop-background;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    &__contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__item div > a > i {
+            color: $color-navTop-icons;
+            font-size: 16px;
+            opacity: .9;
+        }
+
+        &__item div a i.phone {
+            transform: rotate(178deg);
+            padding-left: 5px;
+        }
+
+        &__item div a i.location {
+           
+           padding-right: 5px;
+        }
+    }
+
+    &__contact > li > div > a > span {
+        font-family: $font-montserrat;
+        font-weight: 400;
+        font-size: 14px;
+        color: $color-navTop-links;
+        opacity: .4;
+    }
+
+    &__contact > li > div > a:hover > * {
+        opacity: 1;
+        transition: all .3s ease-in-out;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .facebook {
+            font-size: 18px;
+        }
+
+        .instagram {
+            font-size: 20px;
+            margin-top: 1px;
+        }
+    }
+
+    &__social > li > a {
+        color: $color-navTop-icons;
+        opacity: .45;
+    }
+
+    &__social > li > a:hover {
+        opacity: 1;
+        transition: all .3s ease-in-out;
+    }
+
+    &__contact > li:not(:last-child) {
+        padding-right: 35px;
+    }
+
+    &__social > li:not(:last-child) {
+        padding-right: 35px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .nav-top {
+        display: none;
+    }
+}
