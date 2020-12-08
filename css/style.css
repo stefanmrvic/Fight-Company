@@ -1129,7 +1129,7 @@ nav {
   @media only screen and (min-width: 770px) {
     /* line 574, sass/pages/_pocetna.scss */
     .schedule__container {
-      padding: 80px 15px; } }
+      padding: 80px 15px 100px 15px; } }
 
 /* line 586, sass/pages/_pocetna.scss */
 .schedule__title {
@@ -1149,7 +1149,7 @@ nav {
   @media only screen and (min-width: 1024px) {
     /* line 586, sass/pages/_pocetna.scss */
     .schedule__title {
-      padding-bottom: 40px;
+      padding-bottom: 47px;
       font-size: 58px; } }
   @media only screen and (min-width: 1280px) {
     /* line 586, sass/pages/_pocetna.scss */
@@ -1372,7 +1372,7 @@ nav {
       height: 100%;
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/savo.jpg) center center/cover no-repeat;
       z-index: 0;
-      transition: all .35s ease-in-out; }
+      transition: all .35s ease; }
   /* line 846, sass/pages/_pocetna.scss */
   .our-team__members__member--2 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/vaso.jpg) center center/cover no-repeat; }
@@ -1390,7 +1390,7 @@ nav {
       height: 100%;
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/vaso.jpg) center center/cover no-repeat;
       z-index: 0;
-      transition: all .35s ease-in-out; }
+      transition: all .35s ease; }
   /* line 866, sass/pages/_pocetna.scss */
   .our-team__members__member--3 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/ilic.jpg) center center/cover no-repeat; }
@@ -1408,7 +1408,7 @@ nav {
       height: 100%;
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/ilic.jpg) center center/cover no-repeat;
       z-index: 0;
-      transition: all .35s ease-in-out; }
+      transition: all .35s ease; }
   /* line 886, sass/pages/_pocetna.scss */
   .our-team__members__member--4 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/krle.jpg) center center/cover no-repeat; }
@@ -1464,7 +1464,7 @@ nav {
   height: 100%;
   background: #16120fb3;
   opacity: 0;
-  transition: all .4s ease-in-out;
+  transition: all .3s ease;
   z-index: 998; }
 
 /* line 944, sass/pages/_pocetna.scss */
@@ -1523,7 +1523,7 @@ nav {
   padding: 0 20px;
   text-transform: uppercase;
   line-height: 26px;
-  transition: all .35s .07s ease;
+  transition: all .35s .03s ease;
   backface-visibility: hidden;
   z-index: 999; }
   @media only screen and (min-width: 480px) {
@@ -1539,7 +1539,7 @@ nav {
   font-size: 13px;
   margin-bottom: 26px;
   padding: 0 20px;
-  transition: all .35s .07s ease;
+  transition: all .35s .03s ease;
   backface-visibility: hidden;
   z-index: 999; }
   @media only screen and (min-width: 480px) {
@@ -1570,7 +1570,7 @@ nav {
   left: 50%;
   transform: translate(-50%, 0);
   opacity: 0;
-  transition: bottom .35s .07s ease-out, opacity .25s .07s ease;
+  transition: bottom .35s .07s ease-out, opacity .25s .04s ease;
   z-index: 999; }
 
 /* line 1060, sass/pages/_pocetna.scss */

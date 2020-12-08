@@ -579,7 +579,7 @@
     padding: 60px 15px;
 
     @media only screen and (min-width: 770px) {
-        padding: 80px 15px;
+        padding: 80px 15px 100px 15px;
     }
 }
 
@@ -599,7 +599,7 @@
     }
 
     @media only screen and (min-width: 1024px) {
-        padding-bottom: 40px;  //52px
+        padding-bottom: 47px;  //52px
         font-size: 58px;
     }
 
@@ -839,7 +839,7 @@
             height: 100%;
             background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/savo.jpg) center center / cover no-repeat;
             z-index: 0;
-            transition: all .35s ease-in-out;
+            transition: all .35s ease;
         }
     }
 
@@ -859,7 +859,7 @@
             height: 100%;
             background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/vaso.jpg) center center / cover no-repeat;
             z-index: 0;
-            transition: all .35s ease-in-out;
+            transition: all .35s ease;
         }
     }
 
@@ -879,7 +879,7 @@
             height: 100%;
             background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/ilic.jpg) center center / cover no-repeat;
             z-index: 0;
-            transition: all .35s ease-in-out;
+            transition: all .35s ease;
         }
     }
 
@@ -937,7 +937,7 @@
     height: 100%;
     background: #16120fb3;
     opacity: 0;
-    transition: all .4s ease-in-out;
+    transition: all .3s ease;
     z-index: 998;
 }
 
@@ -1001,7 +1001,7 @@
     padding: 0 20px;
     text-transform: uppercase;
     line-height: 26px;
-    transition: all .35s .07s ease;
+    transition: all .35s .03s ease;
     backface-visibility: hidden;
     z-index: $z-index-max;
 
@@ -1018,7 +1018,7 @@
     font-size: 13px;
     margin-bottom: 26px;
     padding: 0 20px;
-    transition: all .35s .07s ease;
+    transition: all .35s .03s ease;
     backface-visibility: hidden;
     z-index: $z-index-max;
 
@@ -1052,7 +1052,7 @@
     left: 50%;
     transform: translate(-50%, 0);
     opacity: 0;
-    transition: bottom .35s .07s ease-out, opacity .25s .07s ease;
+    transition: bottom .35s .07s ease-out, opacity .25s .04s ease;
     z-index: $z-index-max;
 }
 
