@@ -27,7 +27,7 @@ html {
 .nav-top {
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 12px 15px;
   background-color: #070707; }
   /* line 7, sass/components/_navigation-top.scss */
   .nav-top__wrapper {
@@ -137,27 +137,37 @@ nav {
       padding: 6px 15px; } }
   /* line 41, sass/components/_navigation.scss */
   .navbar__logo {
-    width: 86px;
-    height: 78px;
+    width: 77px;
+    height: 69px;
     transition: all .25s; }
-    /* line 45, sass/components/_navigation.scss */
+    @media only screen and (min-width: 480px) {
+      /* line 41, sass/components/_navigation.scss */
+      .navbar__logo {
+        width: 86px;
+        height: 78px; } }
+    /* line 51, sass/components/_navigation.scss */
     .navbar__logo img {
       width: 100%;
       height: 100%; }
-  /* line 51, sass/components/_navigation.scss */
+  /* line 57, sass/components/_navigation.scss */
   .navbar__logo--scrolled {
-    width: 75px;
-    height: 67px; }
-  /* line 56, sass/components/_navigation.scss */
+    width: 72px;
+    height: 64px; }
+    @media only screen and (min-width: 480px) {
+      /* line 57, sass/components/_navigation.scss */
+      .navbar__logo--scrolled {
+        width: 75px;
+        height: 67px; } }
+  /* line 67, sass/components/_navigation.scss */
   .navbar__links {
     display: flex;
     justify-content: space-between;
     align-items: center; }
     @media only screen and (max-width: 990px) {
-      /* line 56, sass/components/_navigation.scss */
+      /* line 67, sass/components/_navigation.scss */
       .navbar__links {
         display: none; } }
-  /* line 66, sass/components/_navigation.scss */
+  /* line 77, sass/components/_navigation.scss */
   .navbar__item a {
     position: relative;
     font-family: "Poppins", sans-serif;
@@ -167,7 +177,7 @@ nav {
     letter-spacing: 2.2px;
     transition: .25s;
     padding-bottom: 10px; }
-  /* line 77, sass/components/_navigation.scss */
+  /* line 88, sass/components/_navigation.scss */
   .navbar__item a:before {
     content: '';
     position: absolute;
@@ -177,16 +187,16 @@ nav {
     height: 1px;
     background-color: #fff;
     transition: .25s; }
-  /* line 88, sass/components/_navigation.scss */
+  /* line 99, sass/components/_navigation.scss */
   .navbar__item a:hover:before {
     width: 98%; }
-  /* line 92, sass/components/_navigation.scss */
+  /* line 103, sass/components/_navigation.scss */
   .navbar__item:not(:last-child) {
     padding-right: 38px; }
-  /* line 96, sass/components/_navigation.scss */
+  /* line 107, sass/components/_navigation.scss */
   .navbar__item a:hover {
     opacity: 1; }
-  /* line 100, sass/components/_navigation.scss */
+  /* line 111, sass/components/_navigation.scss */
   .navbar__hamburger {
     display: flex;
     justify-content: center;
@@ -194,18 +204,18 @@ nav {
     flex-direction: column;
     cursor: pointer; }
     @media only screen and (min-width: 990px) {
-      /* line 100, sass/components/_navigation.scss */
+      /* line 111, sass/components/_navigation.scss */
       .navbar__hamburger {
         display: none; } }
-    /* line 111, sass/components/_navigation.scss */
+    /* line 122, sass/components/_navigation.scss */
     .navbar__hamburger__icon {
       width: 22px;
       height: 3px;
       background-color: #fff; }
-    /* line 117, sass/components/_navigation.scss */
+    /* line 128, sass/components/_navigation.scss */
     .navbar__hamburger__icon:not(:last-child) {
       margin-bottom: 4px; }
-  /* line 122, sass/components/_navigation.scss */
+  /* line 133, sass/components/_navigation.scss */
   .navbar__mobile__darken {
     height: 100vh;
     width: 100vw;
@@ -215,7 +225,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0; }
-  /* line 133, sass/components/_navigation.scss */
+  /* line 144, sass/components/_navigation.scss */
   .navbar__mobile {
     display: flex;
     align-items: flex-start;
@@ -228,7 +238,7 @@ nav {
     height: 100vh;
     transition: all .5s;
     z-index: 999; }
-    /* line 146, sass/components/_navigation.scss */
+    /* line 157, sass/components/_navigation.scss */
     .navbar__mobile__button {
       position: absolute;
       top: 15px;
@@ -237,7 +247,7 @@ nav {
       height: 29px;
       width: 29px;
       cursor: pointer; }
-    /* line 156, sass/components/_navigation.scss */
+    /* line 167, sass/components/_navigation.scss */
     .navbar__mobile__button--1 {
       display: inline-block;
       width: 19px;
@@ -247,7 +257,7 @@ nav {
       right: 5px;
       background-color: #fff;
       transform: rotate(-45deg); }
-    /* line 167, sass/components/_navigation.scss */
+    /* line 178, sass/components/_navigation.scss */
     .navbar__mobile__button--2 {
       display: inline-block;
       width: 19px;
@@ -257,55 +267,55 @@ nav {
       right: 5px;
       background-color: #fff;
       transform: rotate(45deg); }
-    /* line 178, sass/components/_navigation.scss */
+    /* line 189, sass/components/_navigation.scss */
     .navbar__mobile__menu {
       width: 100%;
       padding: 45px 30px; }
-    /* line 183, sass/components/_navigation.scss */
+    /* line 194, sass/components/_navigation.scss */
     .navbar__mobile__menu__links > li {
       padding: 15px 0; }
-    /* line 187, sass/components/_navigation.scss */
+    /* line 198, sass/components/_navigation.scss */
     .navbar__mobile__menu__links > li a {
       font-family: "Poppins", sans-serif;
       font-size: 16px;
       color: #1b1b1b;
       text-transform: uppercase; }
-    /* line 194, sass/components/_navigation.scss */
+    /* line 205, sass/components/_navigation.scss */
     .navbar__mobile__menu__links > li:not(:last-child) {
       border-bottom: 1px solid #1b1b1b15; }
-    /* line 198, sass/components/_navigation.scss */
+    /* line 209, sass/components/_navigation.scss */
     .navbar__mobile__info {
       display: flex;
       flex-wrap: wrap;
       width: 100%;
       padding: 0 30px; }
-    /* line 205, sass/components/_navigation.scss */
+    /* line 216, sass/components/_navigation.scss */
     .navbar__mobile .mobile-phone {
       transform: rotate(110deg);
       color: #1b1b1b; }
-    /* line 210, sass/components/_navigation.scss */
+    /* line 221, sass/components/_navigation.scss */
     .navbar__mobile__phone__text {
       font-family: "Poppins", sans-serif;
       font-size: 14px;
       color: #1b1b1b; }
-    /* line 216, sass/components/_navigation.scss */
+    /* line 227, sass/components/_navigation.scss */
     .navbar__mobile__location {
       flex-basis: 100%;
       padding-top: 12px;
       padding-left: 3px; }
-    /* line 222, sass/components/_navigation.scss */
+    /* line 233, sass/components/_navigation.scss */
     .navbar__mobile__location__text {
       font-family: "Poppins", sans-serif;
       font-size: 14px;
       color: #1b1b1b; }
-    /* line 228, sass/components/_navigation.scss */
+    /* line 239, sass/components/_navigation.scss */
     .navbar__mobile__social {
       flex-basis: 100%;
       padding-top: 12px; }
-    /* line 233, sass/components/_navigation.scss */
+    /* line 244, sass/components/_navigation.scss */
     .navbar__mobile__social__instagram {
       padding-right: 5px; }
-    /* line 237, sass/components/_navigation.scss */
+    /* line 248, sass/components/_navigation.scss */
     .navbar__mobile__social > a > i {
       font-size: 20px;
       color: #1b1b1b; }
@@ -1845,3 +1855,59 @@ nav {
 /* line 1350, sass/pages/_pocetna.scss */
 .events__button {
   margin-top: 15px; }
+
+/* line 1, sass/pages/_o nama.scss */
+.section-name__container {
+  text-align: center;
+  padding: 121px 0 40px 0;
+  background: url(/imgs/section-name-img/section-name.jpg) center center/cover no-repeat; }
+  @media only screen and (min-width: 770px) {
+    /* line 1, sass/pages/_o nama.scss */
+    .section-name__container {
+      padding: 158px 0 58px 0; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 1, sass/pages/_o nama.scss */
+    .section-name__container {
+      padding: 188px 0 88px 0; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 1, sass/pages/_o nama.scss */
+    .section-name__container {
+      padding: 198px 0 98px 0; } }
+
+/* line 19, sass/pages/_o nama.scss */
+.section-name__title {
+  color: #f1ede1;
+  font-size: 30px;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 480px) {
+    /* line 19, sass/pages/_o nama.scss */
+    .section-name__title {
+      font-size: 35px; } }
+  @media only screen and (min-width: 770px) {
+    /* line 19, sass/pages/_o nama.scss */
+    .section-name__title {
+      font-size: 45px; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 19, sass/pages/_o nama.scss */
+    .section-name__title {
+      font-size: 58px; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 19, sass/pages/_o nama.scss */
+    .section-name__title {
+      font-size: 72px; } }
+
+/* line 41, sass/pages/_o nama.scss */
+.section-name__subtitle {
+  font-family: "Montserrat", serif;
+  color: #d62326;
+  font-size: 14px;
+  font-weight: 600; }
+  /* line 47, sass/pages/_o nama.scss */
+  .section-name__subtitle__link {
+    color: inherit; }
+  /* line 51, sass/pages/_o nama.scss */
+  .section-name__subtitle__link:hover {
+    color: #f1ede1; }
+  /* line 55, sass/pages/_o nama.scss */
+  .section-name__subtitle__slash {
+    padding: 0 3px; }
