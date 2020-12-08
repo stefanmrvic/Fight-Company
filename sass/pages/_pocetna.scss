@@ -357,7 +357,7 @@
 
 //Fighting Segments Section Start//
 .fighting-segments-section {
-    background-color: $color-section-white;
+    background-color: $color-section-black;
 }
 
 .fighting-segments__container {
@@ -566,6 +566,49 @@
 
 //Fighting Segments Section End//
 
+//Schedule Section Start//
+.schedule-section {
+    background-color: $color-section-white;
+}
+
+.schedule__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 60px 15px;
+
+    @media only screen and (min-width: 770px) {
+        padding: 80px 15px;
+    }
+}
+
+.schedule__title {
+    color: $color-secondary;
+    font-size: 30px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+
+    @media only screen and (min-width: 480px) {
+        font-size: 35px;
+    }
+
+    @media only screen and (min-width: 767px) {
+        font-size: 45px;
+        padding-bottom: 35px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding-bottom: 40px;  //52px
+        font-size: 58px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        font-size: 66px; //72px;
+    }
+}
+//Schedule Section End//
+
 //Our Team Section Start//
 .our-team-section {
     background-color: $color-section-black;
@@ -733,7 +776,7 @@
     }
 }
 
-//members hover mask
+//Team Members hover mask
 .our-team__members__member--1::after,
 .our-team__members__member--2::after,
 .our-team__members__member--3::after,
@@ -760,7 +803,7 @@
     z-index: 997;
 }
 
-//all members containers
+//All Members Containers
 .our-team__members > div {
     margin-bottom: 30px;
     border: 1px solid #f1ede19a;
