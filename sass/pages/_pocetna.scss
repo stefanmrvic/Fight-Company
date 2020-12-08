@@ -864,7 +864,7 @@
     }
 
     &__member--3 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/ilic.jpg) center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/jankela.jpg) center center / cover no-repeat;
     
         @media only screen and (min-width: 480px) {
             margin-right: 15px;
@@ -877,14 +877,14 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/ilic.jpg) center center / cover no-repeat;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/jankela.jpg) center center / cover no-repeat;
             z-index: 0;
             transition: all .4s ease;
         }
     }
 
     &__member--4 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/krle.jpg) center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/ilic.jpg) center center / cover no-repeat;
     
         @media only screen and (min-width: 480px) {
             margin-left: 15px;
@@ -901,7 +901,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/krle.jpg) center center / cover no-repeat;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/ilic.jpg) center center / cover no-repeat;
             z-index: 0;
             transition: all .4s ease;
         }
@@ -957,7 +957,6 @@
     max-width: 278px;
     position: relative;
     overflow: hidden;
-    cursor: pointer;
 
     @media only screen and (min-width: 480px) {
         display: flex;
