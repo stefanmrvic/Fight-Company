@@ -1372,7 +1372,7 @@ nav {
       height: 100%;
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/savo.jpg) center center/cover no-repeat;
       z-index: 0;
-      transition: all .35s ease; }
+      transition: all .4s ease; }
   /* line 846, sass/pages/_pocetna.scss */
   .our-team__members__member--2 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/vaso.jpg) center center/cover no-repeat; }
@@ -1390,7 +1390,7 @@ nav {
       height: 100%;
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/vaso.jpg) center center/cover no-repeat;
       z-index: 0;
-      transition: all .35s ease; }
+      transition: all .4s ease; }
   /* line 866, sass/pages/_pocetna.scss */
   .our-team__members__member--3 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/ilic.jpg) center center/cover no-repeat; }
@@ -1408,7 +1408,7 @@ nav {
       height: 100%;
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/ilic.jpg) center center/cover no-repeat;
       z-index: 0;
-      transition: all .35s ease; }
+      transition: all .4s ease; }
   /* line 886, sass/pages/_pocetna.scss */
   .our-team__members__member--4 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/krle.jpg) center center/cover no-repeat; }
@@ -1430,7 +1430,7 @@ nav {
       height: 100%;
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/krle.jpg) center center/cover no-repeat;
       z-index: 0;
-      transition: all .35s ease-in-out; }
+      transition: all .4s ease; }
 
 /* line 911, sass/pages/_pocetna.scss */
 .our-team__members__member--1::before,
@@ -1462,9 +1462,9 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #16120fb3;
+  background: #0f0f0fbb;
   opacity: 0;
-  transition: all .3s ease;
+  transition: all .4s ease;
   z-index: 998; }
 
 /* line 944, sass/pages/_pocetna.scss */
