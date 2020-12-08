@@ -1,7 +1,7 @@
 //Hero Section Start//
 .hero__container {
     height: 80vh;
-    background: url(/imgs/landing-imgs/joker.jpg) center center / cover no-repeat;
+    background: url(/imgs/landing-imgs/landing.jpg) center center / cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@
     position: relative;
 
     @media only screen and (min-width: 1000px) {
-        height: calc(100vh - 51px);
+        height: calc(100vh - 48.5px);
         background-size: cover;
         background-position-y: 59%;
     }
@@ -484,7 +484,7 @@
     }
 
     &__class--1 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/pocetnici.jpg) center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-segments/pocetnici.jpg) center center / cover no-repeat;
         margin-bottom: 30px;
 
         @media only screen and (min-width: 480px) {
@@ -505,7 +505,7 @@
     }
 
     &__class--2 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/takmicari.jpg) center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-segments/takmicari.jpg) center center / cover no-repeat;
         margin-bottom: 30px;
 
         @media only screen and (min-width: 480px) {
@@ -526,7 +526,7 @@
     }
 
     &__class--3 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/bjj.jpg) center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-segments/bjj.jpg) center center / cover no-repeat;
     
         @media only screen and (min-width: 480px) {
             flex-grow: 1;
@@ -824,7 +824,7 @@
     }
 
     &__member--1 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/savo.jpg) center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center / cover no-repeat;
 
         @media only screen and (min-width: 480px) {
             margin-right: 15px;
@@ -837,14 +837,14 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/savo.jpg) center center / cover no-repeat;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center / cover no-repeat;
             z-index: 0;
             transition: all .4s ease;
         }
     }
 
     &__member--2 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/vaso.jpg) center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center / cover no-repeat;
     
         @media only screen and (min-width: 480px) {
             margin-left: 15px;
@@ -857,14 +857,14 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/vaso.jpg) center center / cover no-repeat;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center / cover no-repeat;
             z-index: 0;
             transition: all .4s ease;
         }
     }
 
     &__member--3 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/jankela.jpg) center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center / cover no-repeat;
     
         @media only screen and (min-width: 480px) {
             margin-right: 15px;
@@ -877,14 +877,14 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/jankela.jpg) center center / cover no-repeat;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center / cover no-repeat;
             z-index: 0;
             transition: all .4s ease;
         }
     }
 
     &__member--4 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/ilic.jpg) center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
     
         @media only screen and (min-width: 480px) {
             margin-left: 15px;
@@ -901,7 +901,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/ilic.jpg) center center / cover no-repeat;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
             z-index: 0;
             transition: all .4s ease;
         }
