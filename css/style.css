@@ -2150,16 +2150,235 @@ nav {
         margin-bottom: 0; } }
 
 /* line 256, sass/pages/_o nama.scss */
-.our-trainers__section {
+.our-coaches__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f0f0f0; }
 
-/* line 260, sass/pages/_o nama.scss */
-.our-trainers__container {
+/* line 263, sass/pages/_o nama.scss */
+.our-coaches__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 15px; }
+  padding: 60px 15px;
+  max-width: 775px; }
   @media only screen and (min-width: 770px) {
-    /* line 260, sass/pages/_o nama.scss */
-    .our-trainers__container {
+    /* line 263, sass/pages/_o nama.scss */
+    .our-coaches__container {
       padding: 80px 15px; } }
+  @media only screen and (min-width: 980px) {
+    /* line 263, sass/pages/_o nama.scss */
+    .our-coaches__container {
+      max-width: 1365px; } }
+
+/* line 279, sass/pages/_o nama.scss */
+.our-coaches__title {
+  color: #16120f;
+  font-size: 30px;
+  padding-bottom: 25px;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 480px) {
+    /* line 279, sass/pages/_o nama.scss */
+    .our-coaches__title {
+      font-size: 35px; } }
+  @media only screen and (min-width: 767px) {
+    /* line 279, sass/pages/_o nama.scss */
+    .our-coaches__title {
+      font-size: 45px;
+      padding-bottom: 35px; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 279, sass/pages/_o nama.scss */
+    .our-coaches__title {
+      padding-bottom: 40px;
+      font-size: 58px; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 279, sass/pages/_o nama.scss */
+    .our-coaches__title {
+      font-size: 66px; } }
+
+/* line 304, sass/pages/_o nama.scss */
+.our-coaches__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 43px;
+  text-align: center;
+  max-width: 300px; }
+  @media only screen and (min-width: 480px) {
+    /* line 304, sass/pages/_o nama.scss */
+    .our-coaches__box {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: initial; } }
+  @media only screen and (min-width: 980px) {
+    /* line 304, sass/pages/_o nama.scss */
+    .our-coaches__box {
+      flex-wrap: nowrap; } }
+  /* line 326, sass/pages/_o nama.scss */
+  .our-coaches__box__savo__info {
+    order: 2;
+    margin-bottom: 30px; }
+    @media only screen and (min-width: 480px) {
+      /* line 326, sass/pages/_o nama.scss */
+      .our-coaches__box__savo__info {
+        order: 1;
+        flex-basis: 48%;
+        margin-bottom: 0; } }
+    @media only screen and (min-width: 980px) {
+      /* line 326, sass/pages/_o nama.scss */
+      .our-coaches__box__savo__info {
+        margin-right: 34px;
+        flex-basis: 36%; } }
+  /* line 343, sass/pages/_o nama.scss */
+  .our-coaches__box__savo__img {
+    order: 1; }
+    @media only screen and (min-width: 480px) {
+      /* line 343, sass/pages/_o nama.scss */
+      .our-coaches__box__savo__img {
+        order: 2;
+        flex-basis: 48%; } }
+    @media only screen and (min-width: 980px) {
+      /* line 343, sass/pages/_o nama.scss */
+      .our-coaches__box__savo__img {
+        margin-right: 30px; } }
+  /* line 358, sass/pages/_o nama.scss */
+  .our-coaches__box__aleksandar__info {
+    order: 4; }
+    @media only screen and (min-width: 480px) {
+      /* line 358, sass/pages/_o nama.scss */
+      .our-coaches__box__aleksandar__info {
+        flex-basis: 48%; } }
+    @media only screen and (min-width: 980px) {
+      /* line 358, sass/pages/_o nama.scss */
+      .our-coaches__box__aleksandar__info {
+        margin-left: 34px;
+        flex-basis: 36%; } }
+  /* line 371, sass/pages/_o nama.scss */
+  .our-coaches__box__aleksandar__img {
+    order: 3; }
+    @media only screen and (min-width: 480px) {
+      /* line 371, sass/pages/_o nama.scss */
+      .our-coaches__box__aleksandar__img {
+        margin-top: 10px;
+        flex-basis: 48%; } }
+
+/* line 383, sass/pages/_o nama.scss */
+.our-coaches__box > div > img {
+  width: 100%;
+  height: 100%; }
+
+/* line 389, sass/pages/_o nama.scss */
+.our-coaches__box > div > p > span {
+  color: #16120f;
+  padding-right: 5px; }
+
+/* line 395, sass/pages/_o nama.scss */
+.our-coaches__box > div > p:nth-of-type(1) {
+  font-family: 'Poppins';
+  font-size: 15px;
+  margin: 4px 0 16px 0; }
+  @media only screen and (min-width: 480px) {
+    /* line 395, sass/pages/_o nama.scss */
+    .our-coaches__box > div > p:nth-of-type(1) {
+      font-size: 14px;
+      margin: 0 0 8px 0; } }
+  @media only screen and (min-width: 610px) {
+    /* line 395, sass/pages/_o nama.scss */
+    .our-coaches__box > div > p:nth-of-type(1) {
+      font-size: 15px; } }
+  @media only screen and (min-width: 980px) {
+    /* line 395, sass/pages/_o nama.scss */
+    .our-coaches__box > div > p:nth-of-type(1) {
+      font-size: 14px; } }
+  @media only screen and (min-width: 1100px) {
+    /* line 395, sass/pages/_o nama.scss */
+    .our-coaches__box > div > p:nth-of-type(1) {
+      font-size: 15px; } }
+
+/* line 419, sass/pages/_o nama.scss */
+.our-coaches__box > div > h4 {
+  font-size: 25px; }
+  @media only screen and (min-width: 1280px) {
+    /* line 419, sass/pages/_o nama.scss */
+    .our-coaches__box > div > h4 {
+      font-size: 28px; } }
+
+/* line 428, sass/pages/_o nama.scss */
+.our-coaches__box > div > p:nth-of-type(2) {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 1.75;
+  color: #d62326;
+  font-weight: 600; }
+  @media only screen and (min-width: 480px) {
+    /* line 428, sass/pages/_o nama.scss */
+    .our-coaches__box > div > p:nth-of-type(2) {
+      font-size: 13px; } }
+  @media only screen and (min-width: 610px) {
+    /* line 428, sass/pages/_o nama.scss */
+    .our-coaches__box > div > p:nth-of-type(2) {
+      font-size: 14px; } }
+  @media only screen and (min-width: 980px) {
+    /* line 428, sass/pages/_o nama.scss */
+    .our-coaches__box > div > p:nth-of-type(2) {
+      font-size: 13px; } }
+  @media only screen and (min-width: 1100px) {
+    /* line 428, sass/pages/_o nama.scss */
+    .our-coaches__box > div > p:nth-of-type(2) {
+      font-size: 14px; } }
+
+/* line 453, sass/pages/_o nama.scss */
+.our-coaches__box > div > p:nth-of-type(3) {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 1.75;
+  margin: 14px 0 22px 0; }
+  @media only screen and (min-width: 480px) {
+    /* line 453, sass/pages/_o nama.scss */
+    .our-coaches__box > div > p:nth-of-type(3) {
+      font-size: 13px; } }
+  @media only screen and (min-width: 610px) {
+    /* line 453, sass/pages/_o nama.scss */
+    .our-coaches__box > div > p:nth-of-type(3) {
+      font-size: 14px; } }
+  @media only screen and (min-width: 980px) {
+    /* line 453, sass/pages/_o nama.scss */
+    .our-coaches__box > div > p:nth-of-type(3) {
+      font-size: 13px; } }
+  @media only screen and (min-width: 1100px) {
+    /* line 453, sass/pages/_o nama.scss */
+    .our-coaches__box > div > p:nth-of-type(3) {
+      font-size: 14px;
+      margin: 17px 0 24px 0; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 453, sass/pages/_o nama.scss */
+    .our-coaches__box > div > p:nth-of-type(3) {
+      margin: 22px 0 29px 0; } }
+
+/* line 482, sass/pages/_o nama.scss */
+.our-coaches__box > div > a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 37px;
+  color: #f1ede1;
+  background-color: #16120f; }
+  @media only screen and (min-width: 1100px) {
+    /* line 482, sass/pages/_o nama.scss */
+    .our-coaches__box > div > a {
+      width: 41px;
+      height: 40px; } }
+
+/* line 498, sass/pages/_o nama.scss */
+.our-coaches__box > div > a:nth-of-type(1) {
+  margin-right: 2px; }
+
+/* line 503, sass/pages/_o nama.scss */
+.our-coaches__box > div > a:hover {
+  color: #f1ede1;
+  background-color: #d62326;
+  transition: all .2s ease; }
