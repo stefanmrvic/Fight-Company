@@ -1434,7 +1434,7 @@ nav {
       height: 100%;
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center/cover no-repeat;
       z-index: 0;
-      transition: all .4s ease; }
+      transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1); }
   /* line 846, sass/pages/_pocetna.scss */
   .our-team__members__member--2 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center/cover no-repeat; }
@@ -1452,7 +1452,7 @@ nav {
       height: 100%;
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center/cover no-repeat;
       z-index: 0;
-      transition: all .4s ease; }
+      transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1); }
   /* line 866, sass/pages/_pocetna.scss */
   .our-team__members__member--3 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center/cover no-repeat; }
@@ -1470,7 +1470,7 @@ nav {
       height: 100%;
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center/cover no-repeat;
       z-index: 0;
-      transition: all .4s ease; }
+      transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1); }
   /* line 886, sass/pages/_pocetna.scss */
   .our-team__members__member--4 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
@@ -1492,7 +1492,7 @@ nav {
       height: 100%;
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat;
       z-index: 0;
-      transition: all .4s ease; }
+      transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1); }
 
 /* line 911, sass/pages/_pocetna.scss */
 .our-team__members__member--1::before,
@@ -1535,7 +1535,7 @@ nav {
 
 /* line 948, sass/pages/_pocetna.scss */
 .our-team__members > div:hover span {
-  transform: scale(1.055);
+  transform: scale(1.075);
   z-index: 997; }
 
 /* line 954, sass/pages/_pocetna.scss */
@@ -2382,3 +2382,33 @@ nav {
   color: #f1ede1;
   background-color: #d62326;
   transition: all .2s ease; }
+
+/* line 1, sass/pages/_kontakt.scss */
+.contact-us__section {
+  background-color: #f0f0f0; }
+
+/* line 5, sass/pages/_kontakt.scss */
+.contact-us__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 15px; }
+  @media only screen and (min-width: 770px) {
+    /* line 5, sass/pages/_kontakt.scss */
+    .contact-us__container {
+      padding: 80px 15px; } }
+
+@media only screen and (min-width: 1280px) {
+  /* line 16, sass/pages/_kontakt.scss */
+  .contact-us__banjica {
+    margin-right: 300px; } }
+
+/* line 22, sass/pages/_kontakt.scss */
+.contact-us__banjica__map {
+  width: 350px;
+  height: 350px; }
+
+/* line 30, sass/pages/_kontakt.scss */
+.contact-us__borca__map {
+  width: 350px;
+  height: 350px; }
