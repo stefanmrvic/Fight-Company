@@ -1,34 +1,153 @@
 .contact-us__section {
+    display: flex;
+    justify-content: center;
     background-color: $color-section-white;
 }
 
 .contact-us__container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 60px 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 870px;
 
     @media only screen and (min-width: 770px) {
-        padding: 80px 15px;
+        padding: 70px 15px 87px 15px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media only screen and (min-width:1024px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: initial;
+        max-width: 1600px;
+        
     }
 }
 
 .contact-us__banjica {
+    margin-bottom: 50px;
 
-    @media only screen and (min-width: 1280px) {
-        margin-right: 300px;
+    @media only screen and (min-width: 770px) {
+        margin-bottom: 0;
+    }
+
+    &__phone {
+        color: $color-secondary;
+        font-family: $font-montserrat;
+        font-size: 14px;
+        margin-bottom: 10px;
+
+        @media only screen and (min-width: 480px) {
+            font-size: 15px;
+        }
+    }
+
+    &__location {
+        color: $color-secondary;
+        font-family: $font-montserrat;
+        font-size: 14px;
+        margin-bottom: 38px;
+
+        @media only screen and (min-width: 480px) {
+            font-size: 15px;
+            margin-bottom: 39px;
+        }
     }
 
     &__map {
-        width: 350px;
-        height: 350px;
+        width: 280px;
+        height: 280px;
+        border: 1px solid $color-secondary;
+
+        @media only screen and (min-width:560px) {
+            width: 350px;
+            height: 350px;
+        }
+
+        @media only screen and (min-width:770px) {
+            width: 280px;
+            height: 280px;
+        }
+
+        @media only screen and (min-width:1024px) {
+            width: 350px;
+            height: 350px;
+        }
     }
 }
 
 .contact-us__borca {
 
+    @media only screen and (min-width: 770px) {
+        align-self: flex-end;
+    }
+
+    &__location {
+        color: $color-secondary;
+        font-family: $font-montserrat;
+        font-size: 14px;
+        margin-bottom: 40px;
+
+        @media only screen and (min-width: 480px) {
+            font-size: 15px;
+        }
+    }
+
     &__map {
-        width: 350px;
-        height: 350px;
+        width: 280px;
+        height: 280px;
+        border: 1px solid $color-secondary;
+
+        @media only screen and (min-width:560px) {
+            width: 350px;
+            height: 350px;
+        }
+
+        @media only screen and (min-width:770px) {
+            width: 280px;
+            height: 280px;
+        }
+
+        @media only screen and (min-width:1024px) {
+            width: 350px;
+            height: 350px;
+        }
+    }
+}
+
+//Selecting Both Contact Us Containers
+.contact-us__container > div {
+    @media only screen and (min-width: 770px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 46%;
+    }
+
+    @media only screen and (min-width:1024px) {
+        display: initial;
+        flex-direction: initial;
+        align-items: initial;
+        flex-basis: initial;
+    }
+}
+
+//Selecting Both Map Titles
+.contact-us__container > div > h4 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @media only screen and (min-width: 480px) {
+        margin-bottom: 20px;
+    }
+
+    @media only screen and (min-width:560px) {
+        font-size: 40px;
     }
 }

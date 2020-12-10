@@ -2385,30 +2385,146 @@ nav {
 
 /* line 1, sass/pages/_kontakt.scss */
 .contact-us__section {
-  background-color: #f0f0f0; }
-
-/* line 5, sass/pages/_kontakt.scss */
-.contact-us__container {
   display: flex;
   justify-content: center;
+  background-color: #f0f0f0; }
+
+/* line 7, sass/pages/_kontakt.scss */
+.contact-us__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 60px 15px; }
+  padding: 60px 15px;
+  text-align: center;
+  width: 100%;
+  max-width: 870px; }
   @media only screen and (min-width: 770px) {
-    /* line 5, sass/pages/_kontakt.scss */
+    /* line 7, sass/pages/_kontakt.scss */
     .contact-us__container {
-      padding: 80px 15px; } }
+      padding: 70px 15px 87px 15px;
+      flex-direction: row;
+      justify-content: space-between; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 7, sass/pages/_kontakt.scss */
+    .contact-us__container {
+      flex-direction: row;
+      justify-content: space-evenly;
+      text-align: initial;
+      max-width: 1600px; } }
 
-@media only screen and (min-width: 1280px) {
-  /* line 16, sass/pages/_kontakt.scss */
-  .contact-us__banjica {
-    margin-right: 300px; } }
+/* line 32, sass/pages/_kontakt.scss */
+.contact-us__banjica {
+  margin-bottom: 50px; }
+  @media only screen and (min-width: 770px) {
+    /* line 32, sass/pages/_kontakt.scss */
+    .contact-us__banjica {
+      margin-bottom: 0; } }
+  /* line 39, sass/pages/_kontakt.scss */
+  .contact-us__banjica__phone {
+    color: #16120f;
+    font-family: "Montserrat", serif;
+    font-size: 14px;
+    margin-bottom: 10px; }
+    @media only screen and (min-width: 480px) {
+      /* line 39, sass/pages/_kontakt.scss */
+      .contact-us__banjica__phone {
+        font-size: 15px; } }
+  /* line 50, sass/pages/_kontakt.scss */
+  .contact-us__banjica__location {
+    color: #16120f;
+    font-family: "Montserrat", serif;
+    font-size: 14px;
+    margin-bottom: 38px; }
+    @media only screen and (min-width: 480px) {
+      /* line 50, sass/pages/_kontakt.scss */
+      .contact-us__banjica__location {
+        font-size: 15px;
+        margin-bottom: 39px; } }
+  /* line 62, sass/pages/_kontakt.scss */
+  .contact-us__banjica__map {
+    width: 280px;
+    height: 280px;
+    border: 1px solid #16120f; }
+    @media only screen and (min-width: 560px) {
+      /* line 62, sass/pages/_kontakt.scss */
+      .contact-us__banjica__map {
+        width: 350px;
+        height: 350px; } }
+    @media only screen and (min-width: 770px) {
+      /* line 62, sass/pages/_kontakt.scss */
+      .contact-us__banjica__map {
+        width: 280px;
+        height: 280px; } }
+    @media only screen and (min-width: 1024px) {
+      /* line 62, sass/pages/_kontakt.scss */
+      .contact-us__banjica__map {
+        width: 350px;
+        height: 350px; } }
 
-/* line 22, sass/pages/_kontakt.scss */
-.contact-us__banjica__map {
-  width: 350px;
-  height: 350px; }
+@media only screen and (min-width: 770px) {
+  /* line 84, sass/pages/_kontakt.scss */
+  .contact-us__borca {
+    align-self: flex-end; } }
 
-/* line 30, sass/pages/_kontakt.scss */
+/* line 90, sass/pages/_kontakt.scss */
+.contact-us__borca__location {
+  color: #16120f;
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+  margin-bottom: 40px; }
+  @media only screen and (min-width: 480px) {
+    /* line 90, sass/pages/_kontakt.scss */
+    .contact-us__borca__location {
+      font-size: 15px; } }
+
+/* line 101, sass/pages/_kontakt.scss */
 .contact-us__borca__map {
-  width: 350px;
-  height: 350px; }
+  width: 280px;
+  height: 280px;
+  border: 1px solid #16120f; }
+  @media only screen and (min-width: 560px) {
+    /* line 101, sass/pages/_kontakt.scss */
+    .contact-us__borca__map {
+      width: 350px;
+      height: 350px; } }
+  @media only screen and (min-width: 770px) {
+    /* line 101, sass/pages/_kontakt.scss */
+    .contact-us__borca__map {
+      width: 280px;
+      height: 280px; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 101, sass/pages/_kontakt.scss */
+    .contact-us__borca__map {
+      width: 350px;
+      height: 350px; } }
+
+@media only screen and (min-width: 770px) {
+  /* line 124, sass/pages/_kontakt.scss */
+  .contact-us__container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 46%; } }
+
+@media only screen and (min-width: 1024px) {
+  /* line 124, sass/pages/_kontakt.scss */
+  .contact-us__container > div {
+    display: initial;
+    flex-direction: initial;
+    align-items: initial;
+    flex-basis: initial; } }
+
+/* line 141, sass/pages/_kontakt.scss */
+.contact-us__container > div > h4 {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 480px) {
+    /* line 141, sass/pages/_kontakt.scss */
+    .contact-us__container > div > h4 {
+      margin-bottom: 20px; } }
+  @media only screen and (min-width: 560px) {
+    /* line 141, sass/pages/_kontakt.scss */
+    .contact-us__container > div > h4 {
+      font-size: 40px; } }
