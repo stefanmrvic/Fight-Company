@@ -2427,16 +2427,34 @@ nav {
 
 /* line 44, sass/pages/_eventi.scss */
 .all-events__box {
-  display: grid; }
+  display: grid;
+  grid-auto-columns: minmax(270px, 280px);
+  grid-auto-rows: 374px;
+  row-gap: 45px; }
+  @media only screen and (min-width: 480px) {
+    /* line 44, sass/pages/_eventi.scss */
+    .all-events__box {
+      grid-template-columns: repeat(2, minmax(220px, 244px));
+      grid-auto-rows: 321px;
+      gap: 13px; } }
   @media only screen and (min-width: 770px) {
     /* line 44, sass/pages/_eventi.scss */
     .all-events__box {
-      flex-direction: row;
-      max-width: 812px; } }
-  /* line 56, sass/pages/_eventi.scss */
+      grid-template-columns: repeat(3, minmax(220px, 244px)); } }
+  @media only screen and (min-width: 1024px) {
+    /* line 44, sass/pages/_eventi.scss */
+    .all-events__box {
+      grid-template-columns: repeat(4, minmax(220px, 244px)); } }
+  @media only screen and (min-width: 1280px) {
+    /* line 44, sass/pages/_eventi.scss */
+    .all-events__box {
+      grid-template-columns: repeat(5, minmax(241px, 262px));
+      grid-auto-rows: 343px;
+      grid-gap: 15px; } }
+  /* line 70, sass/pages/_eventi.scss */
   .all-events__box__event--1 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/vrbas.jpg) center center/cover no-repeat; }
-  /* line 60, sass/pages/_eventi.scss */
+  /* line 74, sass/pages/_eventi.scss */
   .all-events__box__event--1::before {
     content: '';
     position: absolute;
@@ -2447,13 +2465,13 @@ nav {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/vrbas.jpg) center center/cover no-repeat;
     z-index: 0;
     transition: all .35s ease; }
-  /* line 72, sass/pages/_eventi.scss */
+  /* line 86, sass/pages/_eventi.scss */
   .all-events__box__event--1:hover::before {
     transform: scale(1.09); }
-  /* line 76, sass/pages/_eventi.scss */
+  /* line 90, sass/pages/_eventi.scss */
   .all-events__box__event--2 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-55.jpg) center center/cover no-repeat; }
-  /* line 80, sass/pages/_eventi.scss */
+  /* line 94, sass/pages/_eventi.scss */
   .all-events__box__event--2::before {
     content: '';
     position: absolute;
@@ -2464,13 +2482,13 @@ nav {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-55.jpg) center center/cover no-repeat;
     z-index: 0;
     transition: all .35s ease; }
-  /* line 92, sass/pages/_eventi.scss */
+  /* line 106, sass/pages/_eventi.scss */
   .all-events__box__event--2:hover::before {
     transform: scale(1.09); }
-  /* line 96, sass/pages/_eventi.scss */
+  /* line 110, sass/pages/_eventi.scss */
   .all-events__box__event--3 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-genesis.jpg) center center/cover no-repeat; }
-  /* line 100, sass/pages/_eventi.scss */
+  /* line 114, sass/pages/_eventi.scss */
   .all-events__box__event--3::before {
     content: '';
     position: absolute;
@@ -2481,60 +2499,18 @@ nav {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-genesis.jpg) center center/cover no-repeat;
     z-index: 0;
     transition: all .35s ease; }
-  /* line 112, sass/pages/_eventi.scss */
+  /* line 126, sass/pages/_eventi.scss */
   .all-events__box__event--3:hover::before {
     transform: scale(1.09); }
 
-/* line 118, sass/pages/_eventi.scss */
+/* line 132, sass/pages/_eventi.scss */
 .all-events__box > div {
   position: relative;
-  width: 280px;
-  height: 374px;
-  margin-bottom: 45px;
   cursor: pointer;
   overflow: hidden;
   backface-visibility: hidden; }
-  @media only screen and (min-width: 480px) {
-    /* line 118, sass/pages/_eventi.scss */
-    .all-events__box > div {
-      flex-basis: 48.5%;
-      width: 400px;
-      height: 316px;
-      max-width: 244px; } }
-  @media only screen and (min-width: 770px) {
-    /* line 118, sass/pages/_eventi.scss */
-    .all-events__box > div {
-      flex-basis: 30%;
-      height: 294px;
-      max-width: 225px; } }
-  @media only screen and (min-width: 1024px) {
-    /* line 118, sass/pages/_eventi.scss */
-    .all-events__box > div {
-      width: 301px;
-      height: 402px; } }
-  @media only screen and (min-width: 1280px) {
-    /* line 118, sass/pages/_eventi.scss */
-    .all-events__box > div {
-      width: 400px;
-      height: 533px; } }
 
-@media only screen and (min-width: 480px) {
-  /* line 152, sass/pages/_eventi.scss */
-  .all-events__box > div:nth-of-type(odd) {
-    margin-right: 3%; } }
-
-@media only screen and (min-width: 770px) {
-  /* line 152, sass/pages/_eventi.scss */
-  .all-events__box > div:nth-of-type(odd) {
-    margin-right: 0; } }
-
-@media only screen and (min-width: 770px) {
-  /* line 163, sass/pages/_eventi.scss */
-  div.all-events__box > div:nth-child(3n+2) {
-    margin-right: 2.2%;
-    margin-left: 2.2%; } }
-
-/* line 171, sass/pages/_eventi.scss */
+/* line 140, sass/pages/_eventi.scss */
 .all-events__box > div > a {
   display: flex;
   flex-direction: column;
@@ -2545,27 +2521,27 @@ nav {
   color: #f1ede1;
   padding: 0 10px 22px 22px; }
 
-/* line 184, sass/pages/_eventi.scss */
+/* line 153, sass/pages/_eventi.scss */
 .all-events__box > div > a > h4 {
   font-size: 21px; }
   @media only screen and (min-width: 480px) {
-    /* line 184, sass/pages/_eventi.scss */
+    /* line 153, sass/pages/_eventi.scss */
     .all-events__box > div > a > h4 {
       font-size: 21px; } }
   @media only screen and (min-width: 770px) {
-    /* line 184, sass/pages/_eventi.scss */
+    /* line 153, sass/pages/_eventi.scss */
     .all-events__box > div > a > h4 {
       font-size: 17px; } }
   @media only screen and (min-width: 1024px) {
-    /* line 184, sass/pages/_eventi.scss */
+    /* line 153, sass/pages/_eventi.scss */
     .all-events__box > div > a > h4 {
       font-size: 20px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 184, sass/pages/_eventi.scss */
+    /* line 153, sass/pages/_eventi.scss */
     .all-events__box > div > a > h4 {
-      font-size: 27px; } }
+      font-size: 23px; } }
 
-/* line 204, sass/pages/_eventi.scss */
+/* line 174, sass/pages/_eventi.scss */
 .all-events__box > div > a > p {
   font-family: "Montserrat", serif;
   color: #d62326;
@@ -2574,23 +2550,19 @@ nav {
   margin-bottom: 5px;
   z-index: 999; }
   @media only screen and (min-width: 480px) {
-    /* line 204, sass/pages/_eventi.scss */
-    .all-events__box > div > a > p {
-      font-size: 13px; } }
-  @media only screen and (min-width: 770px) {
-    /* line 204, sass/pages/_eventi.scss */
+    /* line 174, sass/pages/_eventi.scss */
     .all-events__box > div > a > p {
       font-size: 13px; } }
   @media only screen and (min-width: 1024px) {
-    /* line 204, sass/pages/_eventi.scss */
+    /* line 174, sass/pages/_eventi.scss */
     .all-events__box > div > a > p {
       font-size: 14px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 204, sass/pages/_eventi.scss */
+    /* line 174, sass/pages/_eventi.scss */
     .all-events__box > div > a > p {
-      font-size: 14px; } }
+      font-size: 13px; } }
 
-/* line 229, sass/pages/_eventi.scss */
+/* line 195, sass/pages/_eventi.scss */
 .all-events__box > div > a > h4 {
   font-weight: 700;
   text-transform: uppercase;
