@@ -201,7 +201,7 @@
 
 //Featured Events Start//
 .featured-events-section {
-    background-color: $color-section-white;
+    background-color: $color-section-black;
 }
 
 .featured-events__container {
@@ -218,27 +218,30 @@
 }
 
 .featured-events__title {
-    color: $color-secondary;
-    font-size: 30px;
+    color: $color-primary;
+    font-size: 31px;
     padding-bottom: 25px;
     text-transform: uppercase;
 
     @media only screen and (min-width: 480px) {
         font-size: 35px;
-    }
-
-    @media only screen and (min-width: 767px) {
-        font-size: 45px;
         padding-bottom: 35px;
     }
 
+    @media only screen and (min-width: 770px) {
+        font-size: 37px;
+        margin-right: 423px;
+    }
+
     @media only screen and (min-width: 1024px) {
+        font-size: 50px;
         padding-bottom: 52px;
-        font-size: 58px;
+        margin-right: 583px;
     }
 
     @media only screen and (min-width: 1280px) {
-        font-size: 66px; //72px;
+        font-size: 53px; //72px;
+        margin-right: 859px;
     }
 }
 
