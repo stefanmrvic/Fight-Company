@@ -41,6 +41,79 @@
     }
 }
 
+.all-events__box {
+    display: grid;
+
+    @media only screen and (min-width: 480px) {
+        
+    }
+
+    @media only screen and (min-width: 770px) {
+        flex-direction: row;
+        max-width: 812px;
+    }
+
+    &__event--1 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/vrbas.jpg) center center / cover no-repeat;
+    }
+
+    &__event--1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/vrbas.jpg) center center / cover no-repeat;
+        z-index: 0;
+        transition: all .35s ease;
+    }
+
+    &__event--1:hover::before {
+        transform: scale(1.09);
+    }
+
+    &__event--2 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-55.jpg) center center / cover no-repeat;
+    }
+
+    &__event--2::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-55.jpg) center center / cover no-repeat;
+        z-index: 0;
+        transition: all .35s ease;
+    }
+
+    &__event--2:hover::before {
+        transform: scale(1.09);
+    }
+
+    &__event--3 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-genesis.jpg) center center / cover no-repeat;
+    }
+
+    &__event--3::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-genesis.jpg) center center / cover no-repeat;
+        z-index: 0;
+        transition: all .35s ease;
+    }
+
+    &__event--3:hover::before {
+        transform: scale(1.09);
+    }
+}
+
 //Selects All Events Containers
 .all-events__box > div {
     position: relative;
@@ -52,13 +125,16 @@
     backface-visibility: hidden;
 
     @media only screen and (min-width: 480px) {
-        width: 440px;
-        height: 588px;
+        flex-basis: 48.5%;
+        width: 400px;
+        height: 316px;
+        max-width: 244px;
     }
 
     @media only screen and (min-width: 770px) {
-        width: 216px;
-        height: 289px;
+        flex-basis: 30%;
+        height: 294px;
+        max-width: 225px;
     }
 
     @media only screen and (min-width: 1024px) {
@@ -72,9 +148,22 @@
     }
 }
 
-.all-events__box > div:not(:last-child) {
+//Selects Left Column of Events on 480px Screen Width
+.all-events__box > div:nth-of-type(odd) {
+    @media only screen and (min-width: 480px) {
+        margin-right: 3%;
+    }
+
     @media only screen and (min-width: 770px) {
-        margin-right: 30px;
+        margin-right: 0;
+    }
+}
+
+//Selects All Middle Column of Events on 780px Screen Width
+div.all-events__box > div:nth-child(3n+2) {
+    @media only screen and (min-width: 770px) {
+        margin-right: 2.2%;
+        margin-left: 2.2%;
     }
 }
 
@@ -91,6 +180,27 @@
 
 }
 
+//Selecting All Events Titles
+.all-events__box > div > a > h4 {
+    font-size: 21px;
+
+    @media only screen and (min-width: 480px) {
+        font-size: 21px;
+    }
+
+    @media only screen and (min-width: 770px) {
+        font-size: 17px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 20px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        font-size: 27px;
+    }
+}
+
 .all-events__box > div > a > p {
     font-family: $font-montserrat;
     color: $color-subtitle;
@@ -100,7 +210,7 @@
     z-index: $z-index-max;
 
     @media only screen and (min-width: 480px) {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     @media only screen and (min-width: 770px) {
@@ -122,137 +232,4 @@
     z-index: $z-index-max;
 }
 
-.all-events__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @media only screen and (min-width: 770px) {
-        flex-direction: row;
-    }
-
-    &__event--1 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/vrbas.jpg) center center / cover no-repeat;
-        
-        &__name {
-            font-size: 21px;
-
-            @media only screen and (min-width: 480px) {
-                font-size: 29px;
-            }
-
-            @media only screen and (min-width: 770px) {
-                font-size: 19px;
-            }
-        
-            @media only screen and (min-width: 1024px) {
-                font-size: 25px;
-            }
-        
-            @media only screen and (min-width: 1280px) {
-                font-size: 31px;
-            }
-        }
-    }
-
-    &__event--1::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/vrbas.jpg) center center / cover no-repeat;
-        z-index: 0;
-        transition: all .35s ease;
-    }
-
-    &__event--1:hover::before {
-        transform: scale(1.09);
-    }
-
-    &__event--2 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-55.jpg) center center / cover no-repeat;
-        
-        &__name {
-            font-size: 21px;
-
-            @media only screen and (min-width: 480px) {
-                font-size: 28px;
-            }
-
-            @media only screen and (min-width: 770px) {
-                font-size: 17px;
-            }
-        
-            @media only screen and (min-width: 1024px) {
-                font-size: 24px;
-            }
-        
-            @media only screen and (min-width: 1280px) {
-                font-size: 28px;
-            }
-        }
-    }
-
-    &__event--2::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-55.jpg) center center / cover no-repeat;
-        z-index: 0;
-        transition: all .35s ease;
-    }
-
-    &__event--2:hover::before {
-        transform: scale(1.09);
-    }
-
-    &__event--3 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-genesis.jpg) center center / cover no-repeat;
-        
-        &__name {
-            font-size: 19px;
-
-            @media only screen and (min-width: 480px) {
-                font-size: 27px;
-            }
-
-            @media only screen and (min-width: 770px) {
-                font-size: 17px;
-            }
-        
-            @media only screen and (min-width: 1024px) {
-                font-size: 20px;
-            }
-        
-            @media only screen and (min-width: 1280px) {
-                font-size: 27px;
-            }
-        }
-    }
-
-    &__event--3::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-genesis.jpg) center center / cover no-repeat;
-        z-index: 0;
-        transition: all .35s ease;
-    }
-
-    &__event--3:hover::before {
-        transform: scale(1.09);
-    }
-}
-
-.all-events__button {
-    margin-top: 15px;
-}
 //All Events Section End//
