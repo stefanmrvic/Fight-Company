@@ -954,7 +954,7 @@
 .our-team__members > div {
     margin-bottom: 30px;
     border: 1px solid #f1ede19a;
-    max-width: 278px;
+    max-width: 253px;
     position: relative;
     overflow: hidden;
 
@@ -964,6 +964,7 @@
         justify-content: flex-end;
         width: 203px;
         height: 258px;
+        max-width: 278px;
     }
 
     @media only screen and (min-width: 768px) {
