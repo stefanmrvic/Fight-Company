@@ -14,6 +14,14 @@
     <link rel="manifest" href="/site.webmanifest">
     <!--Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/ca90894ee4.js" crossorigin="anonymous"></script>
+    <!--Leaflet CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <!--Leaflet.js-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
 </head>
 <body>
     <div class="nav-distance"></div>
@@ -151,7 +159,48 @@
                 </div>
             </div>
         </section>
-        <!--Section Name Start-->
+        <!--Section Name End-->
+
+        <!--Event Details Section Start-->
+        <section class="event-details__container">
+            <div class="event-details_container">
+                <img src="/imgs/landing-imgs/events-section/ksw-55.jpg" alt="" class="event-details__img">
+                <p class="event-details__text--1">
+                    Aleksandar Joker Ilić boriće se protiv bivšeg KSW šampiona Michela Materle potvrdila je danas KSW organizacija.
+                    Joker i Materla će biti co-main event KSW 55 koji predovdi borba za titulu za prvaka KSW srednje kategorije između Scott Askhama i Mamed Khalidova.
+                    Aleksandar Ilić je ovaj meč prihvatio kao “short notice” samo 2 nedelje pred borbu, što je za svako poštovanje.
+                </p>
+                <p class="event-details__text--2">
+                    Aleksandar Ilić se nije borio još od KSW 51 u Zagrebu, 9. novembra 2019 godine.
+                    Za protivnika ima jako nezgodnog borca, bivšeg šampiona. Verovatno će pobednik ovog meča biti jedan od potencijalnih izazivača za titulu.
+                    Michal Materla iza sebe ima pobedu nad Wilhem Ottom. Pre toga je poražen od šampiona Scott Askhama u borbi za titulu.
+                    Izuzetno fizički jak borac sa odličnim BJJ, gde je nosioc crnog pojasa.
+                    U svojoj karijeri je pobedio velika imena kao što su Martin Zawada, Rousimar Palharesa,Tomasz Drwala,Antoni Chmielewskog, Damiana Janikowskog…
+                </p>
+                <div class="event-details__info">
+                    <div class="event-details__info__date">
+                        <h5 class="event-details__info__date__title">Datum</h5>
+                        <p class="event-details__info__date__fight-day">10.10.2020 <br>19:00</p>
+                    </div>
+                    <div class="event-details__info__organization">
+                        <h5 class="event-details__info__organization__title">Organizacija</h5>
+                        <p class="event-details__info__organization__name">KSW</p>
+                        <p class="event-details__info__organization__website">Website: <br>
+                            <a href="https://www.kswmma.com/" target="_blank">www.kswmma.com</a>
+                        </p>
+                    </div>
+                    <div class="event-details__info__location">
+                        <h5 class="event-details__info__location__title">Lokacija</h5>
+                        <p class="event-details__info__location__city">Warsaw, Poland</p>
+                    </div>
+                    <div class="event-details__info__map">
+                        <div id="ksw-map" class="event-details__info__map__location"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Event Details Section End-->
+        <script src="js/map/eventMaps.js"></script>
     </main>
     <!--Footer Start-->
     <footer id="footer">

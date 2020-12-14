@@ -1,7 +1,7 @@
 //Maps on Contact Us Page//
 
-var banjicaMap = L.map('banjicamap').setView([44.7635, 20.4740], 16);
-var borcaMap = L.map('borcamap').setView([44.87280, 20.45670], 19);
+var banjicaMap = L.map('banjica-map').setView([44.7635, 20.4740], 16);
+var borcaMap = L.map('borca-map').setView([44.87280, 20.45670], 19);
 
 var tileLayerBanjica = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
