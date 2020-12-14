@@ -138,6 +138,7 @@
 
 //Selects All Anchor Elements Inside Events Boxes
 .all-events__box > div > a {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
