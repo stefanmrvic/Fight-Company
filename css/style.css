@@ -2855,7 +2855,7 @@ nav {
   @media only screen and (min-width: 1280px) {
     /* line 8, sass/pages/_event-details.scss */
     .event-details__container {
-      max-width: 1272px; } }
+      max-width: 1250px; } }
 
 /* line 32, sass/pages/_event-details.scss */
 .event-details__text-and-img__container {
@@ -2915,8 +2915,8 @@ nav {
     .event-details__img {
       float: initial;
       flex-basis: 35%;
-      max-width: 381px;
-      max-height: 379px; } }
+      max-width: 373px;
+      max-height: 378px; } }
 
 /* line 93, sass/pages/_event-details.scss */
 .event-details__text {
@@ -2931,7 +2931,7 @@ nav {
   @media only screen and (min-width: 1280px) {
     /* line 93, sass/pages/_event-details.scss */
     .event-details__text {
-      flex-basis: 59%;
+      flex-basis: 61%;
       margin-top: 35px; } }
   /* line 108, sass/pages/_event-details.scss */
   .event-details__text--1 {
