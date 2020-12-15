@@ -138,6 +138,44 @@
         @media only screen and (min-width: 770px) {
             margin-bottom: 0;
         }
+
+        a span {
+            transform: rotate(180deg);
+            margin-right: 10px;
+        }
+    }
+
+    &__next {
+
+        a span {
+            margin-left: 10px;
+        }
+    }
+}
+
+//Selects Both Button Anchor Links
+.event-details__buttons > div > button > a {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (min-width: 770px) {
+        padding: 11px 22px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        padding: 12px 22px;
+    }
+}
+
+//Selects Both Button Icons
+.event-details__buttons > div > button > a > span {
+    display: none;
+    width: 28px;
+    fill: $color-primary;
+    line-height: 0;
+
+    @media only screen and (min-width: 630px) {
+        display: initial;
     }
 }
 

@@ -2966,8 +2966,39 @@ nav {
       /* line 135, sass/pages/_event-details.scss */
       .event-details__buttons__previous {
         margin-bottom: 0; } }
+    /* line 142, sass/pages/_event-details.scss */
+    .event-details__buttons__previous a span {
+      transform: rotate(180deg);
+      margin-right: 10px; }
+  /* line 150, sass/pages/_event-details.scss */
+  .event-details__buttons__next a span {
+    margin-left: 10px; }
 
-/* line 144, sass/pages/_event-details.scss */
+/* line 157, sass/pages/_event-details.scss */
+.event-details__buttons > div > button > a {
+  display: flex;
+  align-items: center; }
+  @media only screen and (min-width: 770px) {
+    /* line 157, sass/pages/_event-details.scss */
+    .event-details__buttons > div > button > a {
+      padding: 11px 22px; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 157, sass/pages/_event-details.scss */
+    .event-details__buttons > div > button > a {
+      padding: 12px 22px; } }
+
+/* line 171, sass/pages/_event-details.scss */
+.event-details__buttons > div > button > a > span {
+  display: none;
+  width: 28px;
+  fill: #f1ede1;
+  line-height: 0; }
+  @media only screen and (min-width: 630px) {
+    /* line 171, sass/pages/_event-details.scss */
+    .event-details__buttons > div > button > a > span {
+      display: initial; } }
+
+/* line 182, sass/pages/_event-details.scss */
 .event-details__info {
   display: flex;
   flex-direction: column;
@@ -2975,98 +3006,98 @@ nav {
   align-items: flex-start;
   flex-basis: 100%; }
   @media only screen and (min-width: 630px) {
-    /* line 144, sass/pages/_event-details.scss */
+    /* line 182, sass/pages/_event-details.scss */
     .event-details__info {
       flex-direction: row;
       margin-bottom: 0; } }
   @media only screen and (min-width: 770px) {
-    /* line 144, sass/pages/_event-details.scss */
+    /* line 182, sass/pages/_event-details.scss */
     .event-details__info {
       flex-direction: row;
       margin-bottom: 30px;
       order: 3; } }
   @media only screen and (min-width: 1024px) {
-    /* line 144, sass/pages/_event-details.scss */
+    /* line 182, sass/pages/_event-details.scss */
     .event-details__info {
       margin-bottom: 34px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 144, sass/pages/_event-details.scss */
+    /* line 182, sass/pages/_event-details.scss */
     .event-details__info {
       margin-bottom: 39px; } }
-  /* line 171, sass/pages/_event-details.scss */
+  /* line 209, sass/pages/_event-details.scss */
   .event-details__info__date {
     margin-bottom: 15px; }
     @media only screen and (min-width: 630px) {
-      /* line 171, sass/pages/_event-details.scss */
+      /* line 209, sass/pages/_event-details.scss */
       .event-details__info__date {
         flex-direction: row;
         flex-basis: 19%; } }
     @media only screen and (min-width: 770px) {
-      /* line 171, sass/pages/_event-details.scss */
+      /* line 209, sass/pages/_event-details.scss */
       .event-details__info__date {
         margin-bottom: 0; } }
-  /* line 184, sass/pages/_event-details.scss */
+  /* line 222, sass/pages/_event-details.scss */
   .event-details__info__organization {
     margin-bottom: 15px; }
     @media only screen and (min-width: 770px) {
-      /* line 184, sass/pages/_event-details.scss */
+      /* line 222, sass/pages/_event-details.scss */
       .event-details__info__organization {
         margin-bottom: 0; } }
-    /* line 191, sass/pages/_event-details.scss */
+    /* line 229, sass/pages/_event-details.scss */
     .event-details__info__organization__name {
       margin-bottom: 7px; }
-    /* line 195, sass/pages/_event-details.scss */
+    /* line 233, sass/pages/_event-details.scss */
     .event-details__info__organization__website {
       font-style: italic; }
-    /* line 199, sass/pages/_event-details.scss */
+    /* line 237, sass/pages/_event-details.scss */
     .event-details__info__organization__website a {
       display: inline-block;
       font-style: normal;
       margin-top: 4px; }
-  /* line 206, sass/pages/_event-details.scss */
+  /* line 244, sass/pages/_event-details.scss */
   .event-details__info__location {
     margin-bottom: 17px; }
     @media only screen and (min-width: 770px) {
-      /* line 206, sass/pages/_event-details.scss */
+      /* line 244, sass/pages/_event-details.scss */
       .event-details__info__location {
         margin-bottom: 0; } }
-  /* line 216, sass/pages/_event-details.scss */
+  /* line 254, sass/pages/_event-details.scss */
   .event-details__info__map #ksw-map {
     height: 163px;
     width: 251px;
     border: 1px solid black; }
     @media only screen and (min-width: 430px) {
-      /* line 216, sass/pages/_event-details.scss */
+      /* line 254, sass/pages/_event-details.scss */
       .event-details__info__map #ksw-map {
         height: 187px;
         width: 313px; } }
     @media only screen and (min-width: 630px) {
-      /* line 216, sass/pages/_event-details.scss */
+      /* line 254, sass/pages/_event-details.scss */
       .event-details__info__map #ksw-map {
         height: 143px;
         width: 251px; } }
     @media only screen and (min-width: 770px) {
-      /* line 216, sass/pages/_event-details.scss */
+      /* line 254, sass/pages/_event-details.scss */
       .event-details__info__map #ksw-map {
         height: 166px;
         width: 298px; } }
     @media only screen and (min-width: 1280px) {
-      /* line 216, sass/pages/_event-details.scss */
+      /* line 254, sass/pages/_event-details.scss */
       .event-details__info__map #ksw-map {
         height: 180px;
         width: 320px; } }
 
-/* line 245, sass/pages/_event-details.scss */
+/* line 283, sass/pages/_event-details.scss */
 .event-details__info > div > h5 {
   text-transform: uppercase;
   font-size: 17px;
   margin-bottom: 6px; }
   @media only screen and (min-width: 1280px) {
-    /* line 245, sass/pages/_event-details.scss */
+    /* line 283, sass/pages/_event-details.scss */
     .event-details__info > div > h5 {
       font-size: 18px; } }
 
-/* line 256, sass/pages/_event-details.scss */
+/* line 294, sass/pages/_event-details.scss */
 .event-details__info > div > p {
   font-family: "Montserrat", serif;
   color: #16120f;
