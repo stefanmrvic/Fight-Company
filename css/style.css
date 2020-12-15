@@ -3062,28 +3062,28 @@ nav {
       .event-details__info__location {
         margin-bottom: 0; } }
   /* line 254, sass/pages/_event-details.scss */
-  .event-details__info__map #ksw-map {
+  .event-details__info__map__location {
     height: 163px;
     width: 251px;
     border: 1px solid black; }
     @media only screen and (min-width: 430px) {
       /* line 254, sass/pages/_event-details.scss */
-      .event-details__info__map #ksw-map {
+      .event-details__info__map__location {
         height: 187px;
         width: 313px; } }
     @media only screen and (min-width: 630px) {
       /* line 254, sass/pages/_event-details.scss */
-      .event-details__info__map #ksw-map {
+      .event-details__info__map__location {
         height: 143px;
         width: 251px; } }
     @media only screen and (min-width: 770px) {
       /* line 254, sass/pages/_event-details.scss */
-      .event-details__info__map #ksw-map {
+      .event-details__info__map__location {
         height: 166px;
         width: 298px; } }
     @media only screen and (min-width: 1280px) {
       /* line 254, sass/pages/_event-details.scss */
-      .event-details__info__map #ksw-map {
+      .event-details__info__map__location {
         height: 180px;
         width: 320px; } }
 

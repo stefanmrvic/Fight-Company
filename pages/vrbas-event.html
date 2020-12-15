@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Eventi | Fight Company</title>
+    <title>Fight Games XI | Fight Company</title>
     <!--Main CSS Style-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!--Favicon Links-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -14,9 +14,17 @@
     <link rel="manifest" href="/site.webmanifest">
     <!--Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/ca90894ee4.js" crossorigin="anonymous"></script>
+    <!--Leaflet CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <!--Leaflet.js-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
 </head>
 <body>
-    <div id="#top" class="nav-distance"></div>
+    <div class="nav-distance"></div>
     <!--Nav Top Bar Start-->
     <div class="nav-top">
         <div class="nav-top__wrapper">
@@ -31,7 +39,7 @@
                 </li>
                 <li class="nav-top__contact__item">
                     <div class="item-wrapper">
-                        <a href="kontakt.html" class="nav-top__contact__item__link">
+                        <a href="" class="nav-top__contact__item__link">
                             <i class="fas fa-map-marker-alt location"></i>
                             <span>Banjica</span>
                         </a>
@@ -40,12 +48,12 @@
             </ul>
             <ul class="nav-top__social">
                 <li class="nav-top__social__item">
-                    <a href="https://www.facebook.com/Fight-Company-MMA-112986410561728" class="nav-top__social__item__link" target="_blank">
+                    <a href="" class="nav-top__social__item__link">
                         <i class="fab fa-facebook-f facebook"></i>
                     </a>
                 </li>
                 <li class="nav-top__social__item">
-                    <a href="https://www.instagram.com/fightcompanymma/" class="nav-top__social__item__link" target="_blank">
+                    <a href="" class="nav-top__social__item__link">
                         <i class="fab fa-instagram instagram"></i>
                     </a>
                 </li>
@@ -68,7 +76,7 @@
                         <a href="nas tim.html" class="navbar__item__link">Naš tim</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#" class="navbar__item__link">Eventi</a>
+                        <a href="eventi.html" class="navbar__item__link">Eventi</a>
                     </li>
                     <li class="navbar__item">
                         <a href="kontakt.html" class="navbar__item__link">Kontakt</a>
@@ -99,7 +107,7 @@
                                 <a href="nas tim.html">Naš tim</a>
                             </li>
                             <li class="navbar__mobile__menu__item">
-                                <a href="#">Eventi</a>
+                                <a href="eventi.html">Eventi</a>
                             </li>
                             <li class="navbar__mobile__menu__item">
                                 <a href="kontakt.html">Kontakt</a>
@@ -119,10 +127,10 @@
                             <a href="kontakt.html" class="navbar__mobile__location__text">Banjica</a>
                         </div>
                         <div class="navbar__mobile__social">
-                            <a href="https://www.instagram.com/fightcompanymma/" class="navbar__mobile__social__instagram" target="_blank">
+                            <a href="" class="navbar__mobile__social__instagram">
                                 <i class="fab fa-instagram mobile-instagram"></i>
                             </a>
-                            <a href="https://www.facebook.com/Fight-Company-MMA-112986410561728" class="navbar__mobile__social__facebook" target="_blank">
+                            <a href="" class="navbar__mobile__social__facebook">
                                 <i class="fab fa-facebook mobile-facebook"></i>
                             </a>
                         </div>
@@ -138,148 +146,86 @@
     </header>
 
     <main>
-        <!--Page Name Section Start-->
-        <section class="page-name__section">
+        <!--Section Name Start-->
+        <section class="page-name-section">
             <div class="page-name__container">
-                <h1 class="page-name__title">Eventi</h1>
+                <h1 class="page-name__title">Fight Games XI</h1>
                 <div class="page-name__subtitle">
-                    <a href="index.html" class="page-name__subtitle__link">Početna</a>
+                    <a href="/index.html" class="page-name__subtitle__link">Početna</a>
                     <span class="page-name__subtitle__slash"> / </span>
-                    <span class="page-name__subtitle__current-page">Eventi</span>
+                    <a href="/eventi.html" class="page-name__subtitle__link">Eventi</a>
+                    <span class="page-name__subtitle__slash"> / </span>
+                    <span class="page-name__subtitle__current-page">Fight Games XI</span>
                 </div>
             </div>
         </section>
-        <!--Page Name Section End-->
+        <!--Section Name End-->
 
-        <!--All Events Section Start-->
-        <section class="all-events__section">
-            <div class="all-events__container">
-                <h1 class="all-events__title">Svi Eventi</h1>
-                <div class="all-events__box">
-                    <div class="all-events__box__event--1">
-                        <a href="pages/vrbas-event.html" class="all-events__box__event--1__link">
-                            <p class="all-events__box__event--1__date">Decembar</p>
-                            <h4 class="all-events__box__event--1__name">Vrbas: Fight Games XI</h4>
-                        </a>
+        <!--Event Details Section Start-->
+        <section class="event-details__section">
+            <div class="event-details__container">
+                <div class="event-details__text-and-img__container">
+                    <img src="/imgs/landing-imgs/events-section/vrbas.jpg" alt="" class="event-details__img">
+                    <div class="event-details__text">
+                        <p class="event-details__text--1">
+                            Najmasovnije amatersko MMA takmičenje i Prvenstvo Vojvodine poznatije kao “Fight Games” odloženo je zbog pooštravanja mera usled trenutne situacije sa virusom.
+                            Fight Games 11 je trebao da se održi 29.11 u Vrbasu, ali zbog epidemiološke situacije će se najverovatnije održati u decembru mesecu kada se steknu uslovi za tako nešto.
+                        </p>
+                        <p class="event-details__text--2">
+                            Fight Games ove godine proslavlja 10 godišnjicu postojanja i idalje drži rekord kada je u pitanju amatersko takmičenje na teritoriji Republike Srbije sa najviše prijavljenih takmičara.
+                            Organizator ovog dobro poznatog amaterskog takmičenja je Petar Tunguz i Unity Fight Team iz Vrbasa.
+                        </p>
                     </div>
-                    <div class="all-events__box__event--2">
-                        <a href="pages/ksw-event.html" class="all-events__box__event--2__link">
-                            <p class="all-events__box__event--2__date">Utorak, 10 Oktobar, 2020</p>
-                            <h4 class="all-events__box__event--2__name">KSW 55: Aleksandar Ilić vs. Michal Materla</h4>
-                        </a>
-                    </div>
-                    <div class="all-events__box__event--3">
-                        <a href="pages/bareknuckle-event.html" class="all-events__box__event--3__link">
-                            <p class="all-events__box__event--3__date">Petak, 23 Oktobar, 2020</p>
-                            <h4 class="all-events__box__event--3__name">KSW Genesis: Vaso Bakočević vs. Dariusz Rutkiewicz</h4>
-                        </a>
-                    </div>
-                    <div class="all-events__box__event--1">
-                        <a href="event.html" class="all-events__box__event--1__link">
-                            <p class="all-events__box__event--1__date">Decembar</p>
-                            <h4 class="all-events__box__event--1__name">Vrbas: Fight Games XI</h4>
-                        </a>
-                    </div>
-                    <div class="all-events__box__event--2">
-                        <a href="event.html" class="all-events__box__event--2__link">
-                            <p class="all-events__box__event--2__date">Utorak, 10 Oktobar, 2020</p>
-                            <h4 class="all-events__box__event--2__name">KSW 55: Aleksandar Ilić vs. Michal Materla</h4>
-                        </a>
-                    </div>
-                    <div class="all-events__box__event--3">
-                        <a href="" class="all-events__box__event--3__link">
-                            <p class="all-events__box__event--3__date">Petak, 23 Oktobar, 2020</p>
-                            <h4 class="all-events__box__event--3__name">KSW Genesis: Vaso Bakočević vs. Dariusz Rutkiewicz</h4>
-                        </a>
-                    </div>
-                    <div class="all-events__box__event--1">
-                        <a href="" class="all-events__box__event--1__link">
-                            <p class="all-events__box__event--1__date">Decembar</p>
-                            <h4 class="all-events__box__event--1__name">Vrbas: Fight Games XI</h4>
-                        </a>
-                    </div>
-                    <div class="all-events__box__event--2">
-                        <a href="" class="all-events__box__event--2__link">
-                            <p class="all-events__box__event--2__date">Utorak, 10 Oktobar, 2020</p>
-                            <h4 class="all-events__box__event--2__name">KSW 55: Aleksandar Ilić vs. Michal Materla</h4>
-                        </a>
-                    </div>
-                    <div class="all-events__box__event--3">
-                        <a href="" class="all-events__box__event--3__link">
-                            <p class="all-events__box__event--3__date">Petak, 23 Oktobar, 2020</p>
-                            <h4 class="all-events__box__event--3__name">KSW Genesis: Vaso Bakočević vs. Dariusz Rutkiewicz</h4>
-                        </a>
-                    </div>
-                    <div class="all-events__box__event--1">
-                        <a href="" class="all-events__box__event--1__link">
-                            <p class="all-events__box__event--1__date">Decembar</p>
-                            <h4 class="all-events__box__event--1__name">Vrbas: Fight Games XI</h4>
-                        </a>
-                    </div>
-                    <div class="all-events__box__event--2">
-                        <a href="" class="all-events__box__event--2__link">
-                            <p class="all-events__box__event--2__date">Utorak, 10 Oktobar, 2020</p>
-                            <h4 class="all-events__box__event--2__name">KSW 55: Aleksandar Ilić vs. Michal Materla</h4>
-                        </a>
-                    </div>
-                    <div class="all-events__box__event--3">
-                        <a href="" class="all-events__box__event--3__link">
-                            <p class="all-events__box__event--3__date">Petak, 23 Oktobar, 2020</p>
-                            <h4 class="all-events__box__event--3__name">KSW Genesis: Vaso Bakočević vs. Dariusz Rutkiewicz</h4>
-                        </a>
-                    </div>
-                    <div class="all-events__box__event--1">
-                        <a href="" class="all-events__box__event--1__link">
-                            <p class="all-events__box__event--1__date">Decembar</p>
-                            <h4 class="all-events__box__event--1__name">Vrbas: Fight Games XI</h4>
-                        </a>
-                    </div>
-                    <div class="all-events__box__event--2">
-                        <a href="" class="all-events__box__event--2__link">
-                            <p class="all-events__box__event--2__date">Utorak, 10 Oktobar, 2020</p>
-                            <h4 class="all-events__box__event--2__name">KSW 55: Aleksandar Ilić vs. Michal Materla</h4>
-                        </a>
-                    </div>
-                    <div class="all-events__box__event--3">
-                        <a href="" class="all-events__box__event--3__link">
-                            <p class="all-events__box__event--3__date">Petak, 23 Oktobar, 2020</p>
-                            <h4 class="all-events__box__event--3__name">KSW Genesis: Vaso Bakočević vs. Dariusz Rutkiewicz</h4>
-                        </a>
-                    </div>
-
                 </div>
-            </div>
-        </section>
-       <!--All Events Section Start-->
-
-       <!--Featured Events Section Start-->
-        <section class="featured-events-section">
-            <div class="featured-events__container">
-                <h1 class="featured-events__title">Istaknuti Eventi</h1>
-                <div class="featured-events__box">
-                    <div class="featured-events__box__event--1">
-                        <a href="" class="featured-events__box__event--1__link" target="_blank">
-                            <p class="featured-events__box__event--1__date">Decembar</p>
-                            <h4 class="featured-events__box__event--1__name">Vrbas: Fight Games XI</h4>
-                        </a>
+                <div class="event-details__buttons">
+                    <div class="event-details__buttons__previous">
+                        <button class="button--black">
+                            <a href="" class="button--black__link">
+                                <span class="event-details__buttons__previous__arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213">
+                                        <path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
+                                        </path>
+                                    </svg>
+                                </span>
+                                Prethodni event
+                            </a>
+                        </button>
                     </div>
-                    <div class="featured-events__box__event--2">
-                        <a href="" class="featured-events__box__event--2__link" target="_blank">
-                            <p class="featured-events__box__event--2__date">Utorak, 10 Oktobar, 2020</p>
-                            <h4 class="featured-events__box__event--2__name">KSW 55: Aleksandar Ilić vs. Michal Materla</h4>
-                        </a>
+                    <div class="event-details__buttons__next">
+                        <button class="button--black">
+                            <a href="" class="button--black__link">
+                                Sledeći Event
+                                <span class="event-details__buttons__next__arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213">
+                                        <path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </a>
+                        </button>
                     </div>
-                    <div class="featured-events__box__event--3">
-                        <a href="" class="featured-events__box__event--3__link" target="_blank">
-                            <p class="featured-events__box__event--3__date">Petak, 23 Oktobar, 2020</p>
-                            <h4 class="featured-events__box__event--3__name">KSW Genesis: Vaso Bakočević vs. Dariusz Rutkiewicz</h4>
-                        </a>
+                </div>
+                <div class="event-details__info">
+                    <div class="event-details__info__date">
+                        <h5 class="event-details__info__date__title">Datum</h5>
+                        <p class="event-details__info__date__fight-day">Decembar</p>
+                    </div>
+                    <div class="event-details__info__organization">
+                        <h5 class="event-details__info__organization__title">Organizacija</h5>
+                        <p class="event-details__info__organization__name">Fight Games</p>
+                    </div>
+                    <div class="event-details__info__location">
+                        <h5 class="event-details__info__location__title">Lokacija</h5>
+                        <p class="event-details__info__location__city">Vrbas, Srbija</p>
+                    </div>
+                    <div class="event-details__info__map">
+                        <div id="vrbas-map" class="event-details__info__map__location"></div>
                     </div>
                 </div>
             </div>
         </section>
-       <!--Featured Events Section End-->
-
+        <!--Event Details Section End-->
+        <script src="/js/map/eventMaps/vrbasMap.js"></script>
     </main>
     <!--Footer Start-->
     <footer id="footer">
@@ -353,7 +299,7 @@
                             <a href="nas tim.html">Naš tim</a>
                         </li>
                         <li class="footer-sitemap__links__3">
-                            <a href="#">Eventi</a>
+                            <a href="eventi.html">Eventi</a>
                         </li>
                         <li class="footer-sitemap__links__4">
                             <a href="kontakt.html">Kontakt</a>
@@ -362,7 +308,7 @@
                 </div>
                 <div class="footer-sitemap__copyright">
                     <p class="footer-sitemap__copyright__text">
-                        <a href="index.html" class="footer-sitemap__copyright__link">Fight Company </a>
+                        <a href="" class="footer-sitemap__copyright__link">Fight Company </a>
                         &copy; 2020. All Rights Reserved.
                     </p>
                 </div>

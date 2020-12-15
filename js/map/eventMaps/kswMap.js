@@ -1,6 +1,6 @@
 var kswMap = L.map('ksw-map', {
     zoomControl: false
-}).setView([52.23344, 21.00655], 13);
+}).setView([52.23394, 21.00655], 13);
 
 var tileLayerKSW = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
