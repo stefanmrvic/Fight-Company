@@ -2826,6 +2826,252 @@ nav {
   .featured-events__box__event--3:hover::before {
     transform: scale(1.09); }
 
+/* line 1, sass/pages/_event-details.scss */
+.event-details__section {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 8, sass/pages/_event-details.scss */
+.event-details__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 15px;
+  max-width: 445px; }
+  @media only screen and (min-width: 630px) {
+    /* line 8, sass/pages/_event-details.scss */
+    .event-details__container {
+      max-width: 911px; } }
+  @media only screen and (min-width: 770px) {
+    /* line 8, sass/pages/_event-details.scss */
+    .event-details__container {
+      padding: 80px 15px; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 8, sass/pages/_event-details.scss */
+    .event-details__container {
+      max-width: 928px; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 8, sass/pages/_event-details.scss */
+    .event-details__container {
+      max-width: 1272px; } }
+
+/* line 32, sass/pages/_event-details.scss */
+.event-details__text-and-img__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 24px; }
+  @media only screen and (min-width: 630px) {
+    /* line 32, sass/pages/_event-details.scss */
+    .event-details__text-and-img__container {
+      margin-bottom: 30px;
+      display: initial; } }
+  @media only screen and (min-width: 881px) {
+    /* line 32, sass/pages/_event-details.scss */
+    .event-details__text-and-img__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 32, sass/pages/_event-details.scss */
+    .event-details__text-and-img__container {
+      margin-bottom: 34px; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 32, sass/pages/_event-details.scss */
+    .event-details__text-and-img__container {
+      margin-bottom: 39px; } }
+
+/* line 58, sass/pages/_event-details.scss */
+.event-details__img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 24px; }
+  @media only screen and (min-width: 630px) {
+    /* line 58, sass/pages/_event-details.scss */
+    .event-details__img {
+      float: left;
+      margin-bottom: 0;
+      margin-right: 15px;
+      max-width: 325px;
+      max-height: 344px; } }
+  @media only screen and (min-width: 881px) {
+    /* line 58, sass/pages/_event-details.scss */
+    .event-details__img {
+      float: initial;
+      flex-basis: 34%;
+      max-width: 389px;
+      max-height: 402px;
+      margin-right: 0; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 58, sass/pages/_event-details.scss */
+    .event-details__img {
+      flex-basis: 34%;
+      max-width: 345px;
+      max-height: 389px; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 58, sass/pages/_event-details.scss */
+    .event-details__img {
+      float: initial;
+      flex-basis: 35%;
+      max-width: 381px;
+      max-height: 379px; } }
+
+/* line 93, sass/pages/_event-details.scss */
+.event-details__text {
+  font-family: "Montserrat", serif;
+  color: #16120f;
+  font-size: 14px;
+  line-height: 1.75; }
+  @media only screen and (min-width: 881px) {
+    /* line 93, sass/pages/_event-details.scss */
+    .event-details__text {
+      flex-basis: 55%; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 93, sass/pages/_event-details.scss */
+    .event-details__text {
+      flex-basis: 59%;
+      margin-top: 35px; } }
+  /* line 108, sass/pages/_event-details.scss */
+  .event-details__text--1 {
+    margin-bottom: 14px; }
+    @media only screen and (min-width: 630px) {
+      /* line 108, sass/pages/_event-details.scss */
+      .event-details__text--1 {
+        margin-bottom: 17px; } }
+
+/* line 117, sass/pages/_event-details.scss */
+.event-details__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 100%;
+  margin-bottom: 24px; }
+  @media only screen and (min-width: 630px) {
+    /* line 117, sass/pages/_event-details.scss */
+    .event-details__buttons {
+      flex-direction: row;
+      margin-bottom: 30px; } }
+  @media only screen and (min-width: 770px) {
+    /* line 117, sass/pages/_event-details.scss */
+    .event-details__buttons {
+      flex-direction: row;
+      order: 4;
+      margin-bottom: 0; } }
+  /* line 135, sass/pages/_event-details.scss */
+  .event-details__buttons__previous {
+    margin-bottom: 6px; }
+    @media only screen and (min-width: 770px) {
+      /* line 135, sass/pages/_event-details.scss */
+      .event-details__buttons__previous {
+        margin-bottom: 0; } }
+
+/* line 144, sass/pages/_event-details.scss */
+.event-details__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-basis: 100%; }
+  @media only screen and (min-width: 630px) {
+    /* line 144, sass/pages/_event-details.scss */
+    .event-details__info {
+      flex-direction: row;
+      margin-bottom: 0; } }
+  @media only screen and (min-width: 770px) {
+    /* line 144, sass/pages/_event-details.scss */
+    .event-details__info {
+      flex-direction: row;
+      margin-bottom: 30px;
+      order: 3; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 144, sass/pages/_event-details.scss */
+    .event-details__info {
+      margin-bottom: 34px; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 144, sass/pages/_event-details.scss */
+    .event-details__info {
+      margin-bottom: 39px; } }
+  /* line 171, sass/pages/_event-details.scss */
+  .event-details__info__date {
+    margin-bottom: 15px; }
+    @media only screen and (min-width: 630px) {
+      /* line 171, sass/pages/_event-details.scss */
+      .event-details__info__date {
+        flex-direction: row;
+        flex-basis: 19%; } }
+    @media only screen and (min-width: 770px) {
+      /* line 171, sass/pages/_event-details.scss */
+      .event-details__info__date {
+        margin-bottom: 0; } }
+  /* line 184, sass/pages/_event-details.scss */
+  .event-details__info__organization {
+    margin-bottom: 15px; }
+    @media only screen and (min-width: 770px) {
+      /* line 184, sass/pages/_event-details.scss */
+      .event-details__info__organization {
+        margin-bottom: 0; } }
+    /* line 191, sass/pages/_event-details.scss */
+    .event-details__info__organization__name {
+      margin-bottom: 7px; }
+    /* line 195, sass/pages/_event-details.scss */
+    .event-details__info__organization__website {
+      font-style: italic; }
+    /* line 199, sass/pages/_event-details.scss */
+    .event-details__info__organization__website a {
+      display: inline-block;
+      font-style: normal;
+      margin-top: 4px; }
+  /* line 206, sass/pages/_event-details.scss */
+  .event-details__info__location {
+    margin-bottom: 17px; }
+    @media only screen and (min-width: 770px) {
+      /* line 206, sass/pages/_event-details.scss */
+      .event-details__info__location {
+        margin-bottom: 0; } }
+  /* line 216, sass/pages/_event-details.scss */
+  .event-details__info__map #ksw-map {
+    height: 163px;
+    width: 251px;
+    border: 1px solid black; }
+    @media only screen and (min-width: 430px) {
+      /* line 216, sass/pages/_event-details.scss */
+      .event-details__info__map #ksw-map {
+        height: 187px;
+        width: 313px; } }
+    @media only screen and (min-width: 630px) {
+      /* line 216, sass/pages/_event-details.scss */
+      .event-details__info__map #ksw-map {
+        height: 143px;
+        width: 251px; } }
+    @media only screen and (min-width: 770px) {
+      /* line 216, sass/pages/_event-details.scss */
+      .event-details__info__map #ksw-map {
+        height: 166px;
+        width: 298px; } }
+    @media only screen and (min-width: 1280px) {
+      /* line 216, sass/pages/_event-details.scss */
+      .event-details__info__map #ksw-map {
+        height: 180px;
+        width: 320px; } }
+
+/* line 245, sass/pages/_event-details.scss */
+.event-details__info > div > h5 {
+  text-transform: uppercase;
+  font-size: 17px;
+  margin-bottom: 6px; }
+  @media only screen and (min-width: 1280px) {
+    /* line 245, sass/pages/_event-details.scss */
+    .event-details__info > div > h5 {
+      font-size: 18px; } }
+
+/* line 256, sass/pages/_event-details.scss */
+.event-details__info > div > p {
+  font-family: "Montserrat", serif;
+  color: #16120f;
+  font-size: 14px; }
+
 /* line 1, sass/pages/_kontakt.scss */
 .contact-us__section {
   display: flex;
