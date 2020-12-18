@@ -1,0 +1,307 @@
+//Our Team Section Start//
+.meet-our-team__section {
+    background-color: $color-section-white;
+}
+
+.meet-our-team__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 60px 15px;
+
+    @media only screen and (min-width: 770px) {
+        padding: 80px 15px;
+    }
+}
+
+.meet-our-team__members {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    @media only screen and (min-width: 480px) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 480px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        max-width: 708px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        max-width: 1024px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        max-width: 1260px;
+    }
+
+    &__member--1 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center / cover no-repeat;
+
+        @media only screen and (min-width: 480px) {
+            margin-right: 15px;
+        }
+
+        &__hover-mask {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center / cover no-repeat;
+            z-index: 0;
+            transition: transform 1.5s cubic-bezier(.19,1,.22,1);
+        }
+    }
+
+    &__member--2 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center / cover no-repeat;
+    
+        @media only screen and (min-width: 480px) {
+            margin-left: 15px;
+        }
+    
+        &__hover-mask {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center / cover no-repeat;
+            z-index: 0;
+            transition: transform 1.5s cubic-bezier(.19,1,.22,1);
+        }
+    }
+
+    &__member--3 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center / cover no-repeat;
+    
+        @media only screen and (min-width: 480px) {
+            margin-right: 15px;
+        }
+    
+        &__hover-mask {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center / cover no-repeat;
+            z-index: 0;
+            transition: transform 1.5s cubic-bezier(.19,1,.22,1);
+        }
+    }
+
+    &__member--4 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+    
+        @media only screen and (min-width: 480px) {
+            margin-left: 15px;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            margin-left: 0;
+        }
+
+        &__hover-mask {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+            z-index: 0;
+            transition: transform 1.5s cubic-bezier(.19,1,.22,1);
+        }
+    }
+}
+
+.meet-our-team__members__member--1::before,
+.meet-our-team__members__member--2::before,
+.meet-our-team__members__member--3::before,
+.meet-our-team__members__member--4::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    padding-top: 89%;
+
+    @media only screen and (min-width: 480px) {
+        padding-top: 0%;
+    }
+}
+
+//Team Members hover mask
+.meet-our-team__members__member--1::after,
+.meet-our-team__members__member--2::after,
+.meet-our-team__members__member--3::after,
+.meet-our-team__members__member--4::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0f0f0fbb;
+    opacity: 0;
+    transition: all .4s ease;
+    z-index: 998;
+}
+
+.meet-our-team__members > div:hover:after {
+    opacity: 1;
+}
+
+.meet-our-team__members > div:hover span {
+    transform: scale(1.075);
+    z-index: 997;
+}
+
+//All Members Containers
+.meet-our-team__members > div {
+    margin-bottom: 30px;
+    border: 1px solid #f1ede19a;
+    max-width: 253px;
+    position: relative;
+    overflow: hidden;
+
+    @media only screen and (min-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 203px;
+        height: 258px;
+        max-width: 278px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 325px;
+        height: 429px;
+        max-width: initial;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: 216px;
+        height: 275px;
+    }
+  
+    @media only screen and (min-width: 1280px) {
+        width: 288px;
+        height: 367px;
+    }
+}
+
+//Every Team Member Container Except Last Member Container
+.meet-our-team__members > div:not(:last-child) {
+
+    @media only screen and (min-width: 1024px) {
+        margin: 0 30px 30px 0;
+    }
+}
+
+//Team Member Name
+.meet-our-team__members > div > h4 {
+    position: relative;
+    color: $color-primary;
+    font-size: 24px;
+    margin-bottom: 1px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    line-height: 26px;
+    transition: all .35s .03s ease;
+    backface-visibility: hidden;
+    z-index: $z-index-max;
+
+    @media only screen and (min-width: 480px) {
+        line-height: 25px;
+    }
+}
+
+//Team Member Role
+.meet-our-team__members > div > h5 {
+    position: relative;
+    font-family: $font-montserrat;
+    color: $color-subtitle;
+    font-size: 13px;
+    margin-bottom: 26px;
+    padding: 0 20px;
+    transition: all .35s .03s ease;
+    backface-visibility: hidden;
+    z-index: $z-index-max;
+
+    @media only screen and (min-width: 480px) {
+        margin-bottom: 19px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        margin-bottom: 26px;
+    }
+}
+
+//Team Member Name & Role on hover
+.meet-our-team__members > div:hover h4,
+.meet-our-team__members > div:hover h5 {
+    transform: translateY(-51px);
+}
+
+//Team Member Socials Container on hover
+.meet-our-team__members > div:hover div {
+    opacity: 1;
+    bottom: 25px;
+}
+
+//Team Members Socials Container
+.meet-our-team__members > div > div {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 9px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: bottom .35s .07s ease-out, opacity .25s .04s ease;
+    z-index: $z-index-max;
+}
+
+//Team Members Social Container
+.meet-our-team__members > div > div > div {
+    background-color: $color-primary;
+    width: 38px;
+    height: 36px;
+    border-radius: 3px;
+}
+
+//Team Member Social Icons
+.meet-our-team__members > div > div > div > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-secondary;
+    background-color: $color-primary;
+    line-height: .8;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+//Team Member Social Icons on hover
+.meet-our-team__members > div > div > div > a:hover {
+    color: $color-primary;
+    background-color: $color-subtitle;
+}
+
+//Team Member Instagram Icon Container
+.meet-our-team__members > div > div > div:first-child {
+    margin-right: 10px;
+}
+//Our Team Section End//
