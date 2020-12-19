@@ -18,7 +18,8 @@
 .meet-our-team__members {
     text-align: center;
 
-    &__intro {
+        &__intro {
+            justify-content: center;
 
         &__title {
             color: $color-secondary;
@@ -147,7 +148,7 @@
 }
 
 //Selects All Members Containers Except for Intro
-.meet-our-team__members > div:not(:first-child) {
+.meet-our-team__members > div {
     max-width: 253px;
     position: relative;
     overflow: hidden;
