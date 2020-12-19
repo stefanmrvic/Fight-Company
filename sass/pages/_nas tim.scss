@@ -16,119 +16,84 @@
 }
 
 .meet-our-team__members {
-    display: flex;
-    flex-wrap: no-wrap;
-    justify-content: center;
-    flex-direction: column;
     text-align: center;
-
-    @media only screen and (min-width: 480px) {
-        flex-wrap: wrap;
-        flex-direction: row;
-        max-width: 480px;
-    }
-
-    @media only screen and (min-width: 768px) {
-        max-width: 708px;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        max-width: 1024px;
-    }
-
-    @media only screen and (min-width: 1280px) {
-        max-width: 1260px;
-    }
 
     &__member--1 {
         background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center / cover no-repeat;
 
-        @media only screen and (min-width: 480px) {
-            margin-right: 15px;
-        }
-
         &__hover-mask {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
             background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center / cover no-repeat;
-            z-index: 0;
-            transition: transform 1.5s cubic-bezier(.19,1,.22,1);
         }
     }
 
     &__member--2 {
         background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center / cover no-repeat;
-    
-        @media only screen and (min-width: 480px) {
-            margin-left: 15px;
-        }
-    
+
         &__hover-mask {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
             background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center / cover no-repeat;
-            z-index: 0;
-            transition: transform 1.5s cubic-bezier(.19,1,.22,1);
         }
     }
 
     &__member--3 {
         background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center / cover no-repeat;
-    
-        @media only screen and (min-width: 480px) {
-            margin-right: 15px;
-        }
-    
+
         &__hover-mask {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
             background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center / cover no-repeat;
-            z-index: 0;
-            transition: transform 1.5s cubic-bezier(.19,1,.22,1);
         }
     }
 
     &__member--4 {
         background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
     
-        @media only screen and (min-width: 480px) {
-            margin-left: 15px;
-        }
-
-        @media only screen and (min-width: 1024px) {
-            margin-left: 0;
-        }
-
         &__hover-mask {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
             background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
-            z-index: 0;
-            transition: transform 1.5s cubic-bezier(.19,1,.22,1);
         }
     }
+
+    &__member--5 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+    
+        &__hover-mask {
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+        }
+    }
+
+    &__member--6 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+    
+        &__hover-mask {
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+        }
+    }
+
+    &__member--7 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+
+        &__hover-mask {
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+        }
+    }
+}
+
+//Selects All Hover Masks of Team Members
+.meet-our-team__members > div > span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transition: transform 1.5s cubic-bezier(.19,1,.22,1);
 }
 
 .meet-our-team__members__member--1::before,
 .meet-our-team__members__member--2::before,
 .meet-our-team__members__member--3::before,
-.meet-our-team__members__member--4::before {
+.meet-our-team__members__member--4::before, 
+.meet-our-team__members__member--5::before, 
+.meet-our-team__members__member--6::before, 
+.meet-our-team__members__member--7::before {
     content: '';
     display: inline-block;
     width: 0;
@@ -144,7 +109,10 @@
 .meet-our-team__members__member--1::after,
 .meet-our-team__members__member--2::after,
 .meet-our-team__members__member--3::after,
-.meet-our-team__members__member--4::after {
+.meet-our-team__members__member--4::after, 
+.meet-our-team__members__member--5::after,
+.meet-our-team__members__member--6::after,
+.meet-our-team__members__member--7::after {
     content: '';
     display: inline-block;
     position: absolute;
@@ -169,8 +137,6 @@
 
 //All Members Containers
 .meet-our-team__members > div {
-    margin-bottom: 30px;
-    border: 1px solid #f1ede19a;
     max-width: 253px;
     position: relative;
     overflow: hidden;
@@ -198,14 +164,6 @@
     @media only screen and (min-width: 1280px) {
         width: 288px;
         height: 367px;
-    }
-}
-
-//Every Team Member Container Except Last Member Container
-.meet-our-team__members > div:not(:last-child) {
-
-    @media only screen and (min-width: 1024px) {
-        margin: 0 30px 30px 0;
     }
 }
 
