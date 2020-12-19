@@ -2524,13 +2524,13 @@ nav {
   z-index: 997; }
 
 /* line 150, sass/pages/_nas tim.scss */
-.meet-our-team__members > div {
+.meet-our-team__members > div:not(:first-child) {
   max-width: 253px;
   position: relative;
   overflow: hidden; }
   @media only screen and (min-width: 480px) {
     /* line 150, sass/pages/_nas tim.scss */
-    .meet-our-team__members > div {
+    .meet-our-team__members > div:not(:first-child) {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -2539,18 +2539,18 @@ nav {
       max-width: 278px; } }
   @media only screen and (min-width: 768px) {
     /* line 150, sass/pages/_nas tim.scss */
-    .meet-our-team__members > div {
+    .meet-our-team__members > div:not(:first-child) {
       width: 325px;
       height: 429px;
       max-width: initial; } }
   @media only screen and (min-width: 1024px) {
     /* line 150, sass/pages/_nas tim.scss */
-    .meet-our-team__members > div {
+    .meet-our-team__members > div:not(:first-child) {
       width: 216px;
       height: 275px; } }
   @media only screen and (min-width: 1280px) {
     /* line 150, sass/pages/_nas tim.scss */
-    .meet-our-team__members > div {
+    .meet-our-team__members > div:not(:first-child) {
       width: 288px;
       height: 367px; } }
 

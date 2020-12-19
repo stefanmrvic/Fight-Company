@@ -146,8 +146,8 @@
     z-index: 997;
 }
 
-//All Members Containers
-.meet-our-team__members > div {
+//Selects All Members Containers Except for Intro
+.meet-our-team__members > div:not(:first-child) {
     max-width: 253px;
     position: relative;
     overflow: hidden;
