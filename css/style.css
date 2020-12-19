@@ -2413,50 +2413,53 @@ nav {
 /* line 18, sass/pages/_nas tim.scss */
 .meet-our-team__members {
   text-align: center; }
-  /* line 21, sass/pages/_nas tim.scss */
+  /* line 23, sass/pages/_nas tim.scss */
+  .meet-our-team__members__intro__title {
+    color: #16120f; }
+  /* line 32, sass/pages/_nas tim.scss */
   .meet-our-team__members__member--1 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center/cover no-repeat; }
-    /* line 24, sass/pages/_nas tim.scss */
+    /* line 35, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--1__hover-mask {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center/cover no-repeat; }
-  /* line 29, sass/pages/_nas tim.scss */
+  /* line 40, sass/pages/_nas tim.scss */
   .meet-our-team__members__member--2 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center/cover no-repeat; }
-    /* line 32, sass/pages/_nas tim.scss */
+    /* line 43, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--2__hover-mask {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center/cover no-repeat; }
-  /* line 37, sass/pages/_nas tim.scss */
+  /* line 48, sass/pages/_nas tim.scss */
   .meet-our-team__members__member--3 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center/cover no-repeat; }
-    /* line 40, sass/pages/_nas tim.scss */
+    /* line 51, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--3__hover-mask {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center/cover no-repeat; }
-  /* line 45, sass/pages/_nas tim.scss */
+  /* line 56, sass/pages/_nas tim.scss */
   .meet-our-team__members__member--4 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
-    /* line 48, sass/pages/_nas tim.scss */
+    /* line 59, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--4__hover-mask {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
-  /* line 53, sass/pages/_nas tim.scss */
+  /* line 64, sass/pages/_nas tim.scss */
   .meet-our-team__members__member--5 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
-    /* line 56, sass/pages/_nas tim.scss */
+    /* line 67, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--5__hover-mask {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
-  /* line 61, sass/pages/_nas tim.scss */
+  /* line 72, sass/pages/_nas tim.scss */
   .meet-our-team__members__member--6 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
-    /* line 64, sass/pages/_nas tim.scss */
+    /* line 75, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--6__hover-mask {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
-  /* line 69, sass/pages/_nas tim.scss */
+  /* line 80, sass/pages/_nas tim.scss */
   .meet-our-team__members__member--7 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
-    /* line 72, sass/pages/_nas tim.scss */
+    /* line 83, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--7__hover-mask {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
 
-/* line 79, sass/pages/_nas tim.scss */
+/* line 90, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > span {
   display: block;
   position: absolute;
@@ -2467,7 +2470,7 @@ nav {
   z-index: 0;
   transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1); }
 
-/* line 90, sass/pages/_nas tim.scss */
+/* line 101, sass/pages/_nas tim.scss */
 .meet-our-team__members__member--1::before,
 .meet-our-team__members__member--2::before,
 .meet-our-team__members__member--3::before,
@@ -2481,7 +2484,7 @@ nav {
   height: 0;
   padding-top: 89%; }
   @media only screen and (min-width: 480px) {
-    /* line 90, sass/pages/_nas tim.scss */
+    /* line 101, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--1::before,
     .meet-our-team__members__member--2::before,
     .meet-our-team__members__member--3::before,
@@ -2491,7 +2494,7 @@ nav {
     .meet-our-team__members__member--7::before {
       padding-top: 0%; } }
 
-/* line 109, sass/pages/_nas tim.scss */
+/* line 120, sass/pages/_nas tim.scss */
 .meet-our-team__members__member--1::after,
 .meet-our-team__members__member--2::after,
 .meet-our-team__members__member--3::after,
@@ -2511,22 +2514,22 @@ nav {
   transition: all .4s ease;
   z-index: 998; }
 
-/* line 129, sass/pages/_nas tim.scss */
+/* line 140, sass/pages/_nas tim.scss */
 .meet-our-team__members > div:hover:after {
   opacity: 1; }
 
-/* line 133, sass/pages/_nas tim.scss */
+/* line 144, sass/pages/_nas tim.scss */
 .meet-our-team__members > div:hover span {
   transform: scale(1.075);
   z-index: 997; }
 
-/* line 139, sass/pages/_nas tim.scss */
+/* line 150, sass/pages/_nas tim.scss */
 .meet-our-team__members > div {
   max-width: 253px;
   position: relative;
   overflow: hidden; }
   @media only screen and (min-width: 480px) {
-    /* line 139, sass/pages/_nas tim.scss */
+    /* line 150, sass/pages/_nas tim.scss */
     .meet-our-team__members > div {
       display: flex;
       flex-direction: column;
@@ -2535,24 +2538,24 @@ nav {
       height: 258px;
       max-width: 278px; } }
   @media only screen and (min-width: 768px) {
-    /* line 139, sass/pages/_nas tim.scss */
+    /* line 150, sass/pages/_nas tim.scss */
     .meet-our-team__members > div {
       width: 325px;
       height: 429px;
       max-width: initial; } }
   @media only screen and (min-width: 1024px) {
-    /* line 139, sass/pages/_nas tim.scss */
+    /* line 150, sass/pages/_nas tim.scss */
     .meet-our-team__members > div {
       width: 216px;
       height: 275px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 139, sass/pages/_nas tim.scss */
+    /* line 150, sass/pages/_nas tim.scss */
     .meet-our-team__members > div {
       width: 288px;
       height: 367px; } }
 
-/* line 171, sass/pages/_nas tim.scss */
-.meet-our-team__members > div > h4 {
+/* line 182, sass/pages/_nas tim.scss */
+.meet-our-team__members > div > h4:not(:first-child) {
   position: relative;
   color: #f1ede1;
   font-size: 24px;
@@ -2564,11 +2567,11 @@ nav {
   backface-visibility: hidden;
   z-index: 999; }
   @media only screen and (min-width: 480px) {
-    /* line 171, sass/pages/_nas tim.scss */
-    .meet-our-team__members > div > h4 {
+    /* line 182, sass/pages/_nas tim.scss */
+    .meet-our-team__members > div > h4:not(:first-child) {
       line-height: 25px; } }
 
-/* line 189, sass/pages/_nas tim.scss */
+/* line 200, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > h5 {
   position: relative;
   font-family: "Montserrat", serif;
@@ -2580,25 +2583,25 @@ nav {
   backface-visibility: hidden;
   z-index: 999; }
   @media only screen and (min-width: 480px) {
-    /* line 189, sass/pages/_nas tim.scss */
+    /* line 200, sass/pages/_nas tim.scss */
     .meet-our-team__members > div > h5 {
       margin-bottom: 19px; } }
   @media only screen and (min-width: 768px) {
-    /* line 189, sass/pages/_nas tim.scss */
+    /* line 200, sass/pages/_nas tim.scss */
     .meet-our-team__members > div > h5 {
       margin-bottom: 26px; } }
 
-/* line 210, sass/pages/_nas tim.scss */
+/* line 221, sass/pages/_nas tim.scss */
 .meet-our-team__members > div:hover h4,
 .meet-our-team__members > div:hover h5 {
   transform: translateY(-51px); }
 
-/* line 216, sass/pages/_nas tim.scss */
+/* line 227, sass/pages/_nas tim.scss */
 .meet-our-team__members > div:hover div {
   opacity: 1;
   bottom: 25px; }
 
-/* line 222, sass/pages/_nas tim.scss */
+/* line 233, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > div {
   display: flex;
   justify-content: center;
@@ -2610,14 +2613,14 @@ nav {
   transition: bottom .35s .07s ease-out, opacity .25s .04s ease;
   z-index: 999; }
 
-/* line 235, sass/pages/_nas tim.scss */
+/* line 246, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > div > div {
   background-color: #f1ede1;
   width: 38px;
   height: 36px;
   border-radius: 3px; }
 
-/* line 243, sass/pages/_nas tim.scss */
+/* line 254, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > div > div > a {
   display: flex;
   justify-content: center;
@@ -2629,12 +2632,12 @@ nav {
   height: 100%;
   border-radius: 3px; }
 
-/* line 256, sass/pages/_nas tim.scss */
+/* line 267, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > div > div > a:hover {
   color: #f1ede1;
   background-color: #d62326; }
 
-/* line 262, sass/pages/_nas tim.scss */
+/* line 273, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > div > div:first-child {
   margin-right: 10px; }
 

@@ -18,6 +18,17 @@
 .meet-our-team__members {
     text-align: center;
 
+    &__intro {
+
+        &__title {
+            color: $color-secondary;
+        }
+
+        &__text {
+
+        }
+    }
+
     &__member--1 {
         background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center / cover no-repeat;
 
@@ -167,8 +178,8 @@
     }
 }
 
-//Team Member Name
-.meet-our-team__members > div > h4 {
+//Selects All Team Member Names Except for Intro
+.meet-our-team__members > div > h4:not(:first-child) {
     position: relative;
     color: $color-primary;
     font-size: 24px;
@@ -185,7 +196,7 @@
     }
 }
 
-//Team Member Role
+//Selects All Team Members Role
 .meet-our-team__members > div > h5 {
     position: relative;
     font-family: $font-montserrat;
