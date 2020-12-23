@@ -191,7 +191,7 @@
 }
 
 //Selects All Buttons Containers on Team Members Portraits
-.meet-our-team__members > div > div {
+.meet-our-team__members div > div:nth-of-type(1) {
     position: absolute;
     bottom: 143px;
     left: 143px;
@@ -199,9 +199,7 @@
 
 //Selects All Links Inside the Team Members Portraits
 .meet-our-team__members > div > div > button > a {
-    @media only screen and (min-width: 770px) {
-        padding: 11px 20px;
-    }
+    padding: 10px 20px;
 }
 
 //Selects All Team Member Names Except for Intro
@@ -256,7 +254,7 @@
 }
 
 //Team Members Socials Container
-.meet-our-team__members > div > div {
+.meet-our-team__members > div > div:nth-of-type(2) {
     display: flex;
     justify-content: center;
     position: absolute;
