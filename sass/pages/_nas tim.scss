@@ -19,15 +19,20 @@
     text-align: center;
 
         &__intro {
-            justify-content: center;
+            justify-content: flex-start;
 
-        &__title {
-            color: $color-secondary;
-        }
+            &__title {
+                color: $color-secondary;
+                font-size: 34px;
+                text-transform: uppercase;
+                margin-bottom: 19px;
+            }
 
-        &__text {
-
-        }
+            &__text {
+                font-family: $font-montserrat;
+                font-size: 14px;
+                text-align: left;
+            }
     }
 
     &__member--1 {
@@ -156,7 +161,6 @@
     @media only screen and (min-width: 480px) {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
         width: 203px;
         height: 258px;
         max-width: 278px;
@@ -176,6 +180,13 @@
     @media only screen and (min-width: 1280px) {
         width: 288px;
         height: 367px;
+    }
+}
+
+//Added Same Selector So It Can Control Just Justify of The Elements
+.meet-our-team__members > div:not(:first-child) {
+    @media only screen and (min-width: 480px) {
+        justify-content: flex-end;
     }
 }
 
@@ -218,8 +229,8 @@
     }
 }
 
-//Team Member Name & Role on hover
-.meet-our-team__members > div:hover h4,
+//Team Member Name & Role on hover (excludes the intro)
+.meet-our-team__members > div:hover h4:not(:first-child),
 .meet-our-team__members > div:hover h5 {
     transform: translateY(-51px);
 }
