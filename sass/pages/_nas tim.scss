@@ -191,7 +191,7 @@
 }
 
 //Selects All Buttons Containers on Team Members Portraits
-.meet-our-team__members div > div:nth-of-type(1) {
+.meet-our-team__members div > div.score {
     position: absolute;
     bottom: 143px;
     left: 143px;
@@ -247,14 +247,19 @@
     transform: translateY(-51px);
 }
 
+//Team Member Score Container on hover
+.meet-our-team__members > div:hover div:nth-child(2) {
+    opacity: 1;
+}
+
 //Team Member Socials Container on hover
-.meet-our-team__members > div:hover div {
+.meet-our-team__members > div:hover div:nth-child(5) {
     opacity: 1;
     bottom: 25px;
 }
 
 //Team Members Socials Container
-.meet-our-team__members > div > div:nth-of-type(2) {
+.meet-our-team__members > div > div {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -271,7 +276,6 @@
     background-color: $color-primary;
     width: 38px;
     height: 36px;
-    border-radius: 3px;
 }
 
 //Team Member Social Icons
@@ -284,7 +288,6 @@
     line-height: .8;
     width: 100%;
     height: 100%;
-    border-radius: 3px;
 }
 
 //Team Member Social Icons on hover
