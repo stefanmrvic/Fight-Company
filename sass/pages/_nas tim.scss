@@ -81,6 +81,10 @@
         &__hover-mask {
             background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
         }
+
+        &__socials {
+            @extend %our-team-socials;
+        }
     }
 
     &__member--7 {
@@ -191,10 +195,19 @@
 }
 
 //Selects All Buttons Containers on Team Members Portraits
-.meet-our-team__members div > div.score {
-    position: absolute;
-    bottom: 143px;
-    left: 143px;
+.meet-our-team__members > div > div.score {
+    position: relative;
+    opacity: 0;
+    margin-bottom: 22px;
+    z-index: $z-index-max;
+}
+
+//Selects All Buttons Containers on Team Member Hover
+.meet-our-team__members > div:hover div.score {
+    opacity: 1;
+    transform: translateY(-51px);
+    transition: opacity .5s .06s ease;
+
 }
 
 //Selects All Links Inside the Team Members Portraits
@@ -254,21 +267,17 @@
 
 //Team Member Socials Container on hover
 .meet-our-team__members > div:hover div:nth-child(5) {
-    opacity: 1;
-    bottom: 25px;
+    @extend %our-team-socials:hover;
+}
+
+//Team Member 6 (Nikola Zivkovic) Socials Container on hover
+.meet-our-team__members__member--6:hover div {
+    @extend %our-team-socials:hover;
 }
 
 //Team Members Socials Container
-.meet-our-team__members > div > div {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 9px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    opacity: 0;
-    transition: bottom .35s .07s ease-out, opacity .25s .04s ease;
-    z-index: $z-index-max;
+.meet-our-team__members > div > div:nth-child(5) {
+    @extend %our-team-socials;
 }
 
 //Team Members Social Container
