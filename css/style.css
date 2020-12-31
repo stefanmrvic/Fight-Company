@@ -2437,65 +2437,67 @@ nav {
 /* line 17, sass/pages/_nas tim.scss */
 .meet-our-team__members {
   display: grid;
+  grid-auto-rows: 300px;
+  row-gap: 12px;
   text-align: center; }
-  /* line 21, sass/pages/_nas tim.scss */
+  /* line 23, sass/pages/_nas tim.scss */
   .meet-our-team__members__intro {
     justify-content: flex-start; }
-    /* line 24, sass/pages/_nas tim.scss */
+    /* line 26, sass/pages/_nas tim.scss */
     .meet-our-team__members__intro__title {
       color: #16120f;
       font-size: 34px;
       text-transform: uppercase;
       margin-bottom: 19px; }
-    /* line 31, sass/pages/_nas tim.scss */
+    /* line 33, sass/pages/_nas tim.scss */
     .meet-our-team__members__intro__text {
       font-family: "Montserrat", serif;
       font-size: 14px;
       text-align: left; }
-  /* line 38, sass/pages/_nas tim.scss */
+  /* line 40, sass/pages/_nas tim.scss */
   .meet-our-team__members__member--1 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center/cover no-repeat; }
-    /* line 41, sass/pages/_nas tim.scss */
+    /* line 43, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--1__hover-mask {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center/cover no-repeat; }
-  /* line 46, sass/pages/_nas tim.scss */
+  /* line 48, sass/pages/_nas tim.scss */
   .meet-our-team__members__member--2 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center/cover no-repeat; }
-    /* line 49, sass/pages/_nas tim.scss */
+    /* line 51, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--2__hover-mask {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center/cover no-repeat; }
-  /* line 54, sass/pages/_nas tim.scss */
+  /* line 56, sass/pages/_nas tim.scss */
   .meet-our-team__members__member--3 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center/cover no-repeat; }
-    /* line 57, sass/pages/_nas tim.scss */
+    /* line 59, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--3__hover-mask {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center/cover no-repeat; }
-  /* line 62, sass/pages/_nas tim.scss */
+  /* line 64, sass/pages/_nas tim.scss */
   .meet-our-team__members__member--4 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
-    /* line 65, sass/pages/_nas tim.scss */
+    /* line 67, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--4__hover-mask {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
-  /* line 70, sass/pages/_nas tim.scss */
+  /* line 72, sass/pages/_nas tim.scss */
   .meet-our-team__members__member--5 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
-    /* line 73, sass/pages/_nas tim.scss */
+    /* line 75, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--5__hover-mask {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
-  /* line 78, sass/pages/_nas tim.scss */
+  /* line 80, sass/pages/_nas tim.scss */
   .meet-our-team__members__member--6 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
-    /* line 81, sass/pages/_nas tim.scss */
+    /* line 83, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--6__hover-mask {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
-  /* line 90, sass/pages/_nas tim.scss */
+  /* line 92, sass/pages/_nas tim.scss */
   .meet-our-team__members__member--7 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
-    /* line 93, sass/pages/_nas tim.scss */
+    /* line 95, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--7__hover-mask {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
 
-/* line 100, sass/pages/_nas tim.scss */
+/* line 102, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > span {
   display: block;
   position: absolute;
@@ -2506,7 +2508,7 @@ nav {
   z-index: 0;
   transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1); }
 
-/* line 111, sass/pages/_nas tim.scss */
+/* line 113, sass/pages/_nas tim.scss */
 .meet-our-team__members__member--1::before,
 .meet-our-team__members__member--2::before,
 .meet-our-team__members__member--3::before,
@@ -2520,7 +2522,7 @@ nav {
   height: 0;
   padding-top: 89%; }
   @media only screen and (min-width: 480px) {
-    /* line 111, sass/pages/_nas tim.scss */
+    /* line 113, sass/pages/_nas tim.scss */
     .meet-our-team__members__member--1::before,
     .meet-our-team__members__member--2::before,
     .meet-our-team__members__member--3::before,
@@ -2530,7 +2532,7 @@ nav {
     .meet-our-team__members__member--7::before {
       padding-top: 0%; } }
 
-/* line 130, sass/pages/_nas tim.scss */
+/* line 132, sass/pages/_nas tim.scss */
 .meet-our-team__members__member--1::after,
 .meet-our-team__members__member--2::after,
 .meet-our-team__members__member--3::after,
@@ -2550,22 +2552,22 @@ nav {
   transition: all .4s ease;
   z-index: 998; }
 
-/* line 150, sass/pages/_nas tim.scss */
+/* line 152, sass/pages/_nas tim.scss */
 .meet-our-team__members > div:hover:after {
   opacity: 1; }
 
-/* line 154, sass/pages/_nas tim.scss */
+/* line 156, sass/pages/_nas tim.scss */
 .meet-our-team__members > div:hover span {
   transform: scale(1.075);
   z-index: 997; }
 
-/* line 160, sass/pages/_nas tim.scss */
+/* line 162, sass/pages/_nas tim.scss */
 .meet-our-team__members > div {
   max-width: 253px;
   position: relative;
   overflow: hidden; }
   @media only screen and (min-width: 480px) {
-    /* line 160, sass/pages/_nas tim.scss */
+    /* line 162, sass/pages/_nas tim.scss */
     .meet-our-team__members > div {
       display: flex;
       flex-direction: column;
@@ -2573,44 +2575,45 @@ nav {
       height: 258px;
       max-width: 278px; } }
   @media only screen and (min-width: 768px) {
-    /* line 160, sass/pages/_nas tim.scss */
+    /* line 162, sass/pages/_nas tim.scss */
     .meet-our-team__members > div {
       width: 325px;
       height: 429px;
       max-width: initial; } }
   @media only screen and (min-width: 1024px) {
-    /* line 160, sass/pages/_nas tim.scss */
+    /* line 162, sass/pages/_nas tim.scss */
     .meet-our-team__members > div {
       width: 216px;
       height: 275px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 160, sass/pages/_nas tim.scss */
+    /* line 162, sass/pages/_nas tim.scss */
     .meet-our-team__members > div {
       width: 288px;
       height: 367px; } }
 
-/* line 191, sass/pages/_nas tim.scss */
+/* line 193, sass/pages/_nas tim.scss */
 .meet-our-team__members > div:not(:first-child) {
   justify-content: flex-end; }
 
-/* line 196, sass/pages/_nas tim.scss */
+/* line 198, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > div.score {
   position: relative;
   opacity: 0;
+  margin-top: -78px;
   margin-bottom: 22px;
   z-index: 999; }
 
-/* line 204, sass/pages/_nas tim.scss */
+/* line 207, sass/pages/_nas tim.scss */
 .meet-our-team__members > div:hover div.score {
   opacity: 1;
   transform: translateY(-51px);
   transition: opacity .5s .06s ease; }
 
-/* line 212, sass/pages/_nas tim.scss */
+/* line 215, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > div > button > a {
   padding: 10px 20px; }
 
-/* line 217, sass/pages/_nas tim.scss */
+/* line 220, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > h4:not(:first-child) {
   position: relative;
   color: #f1ede1;
@@ -2623,11 +2626,11 @@ nav {
   backface-visibility: hidden;
   z-index: 999; }
   @media only screen and (min-width: 480px) {
-    /* line 217, sass/pages/_nas tim.scss */
+    /* line 220, sass/pages/_nas tim.scss */
     .meet-our-team__members > div > h4:not(:first-child) {
       line-height: 25px; } }
 
-/* line 235, sass/pages/_nas tim.scss */
+/* line 238, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > h5 {
   position: relative;
   font-family: "Montserrat", serif;
@@ -2639,30 +2642,30 @@ nav {
   backface-visibility: hidden;
   z-index: 999; }
   @media only screen and (min-width: 480px) {
-    /* line 235, sass/pages/_nas tim.scss */
+    /* line 238, sass/pages/_nas tim.scss */
     .meet-our-team__members > div > h5 {
       margin-bottom: 19px; } }
   @media only screen and (min-width: 768px) {
-    /* line 235, sass/pages/_nas tim.scss */
+    /* line 238, sass/pages/_nas tim.scss */
     .meet-our-team__members > div > h5 {
       margin-bottom: 26px; } }
 
-/* line 256, sass/pages/_nas tim.scss */
+/* line 259, sass/pages/_nas tim.scss */
 .meet-our-team__members > div:hover h4:not(:first-child),
 .meet-our-team__members > div:hover h5 {
   transform: translateY(-51px); }
 
-/* line 262, sass/pages/_nas tim.scss */
+/* line 265, sass/pages/_nas tim.scss */
 .meet-our-team__members > div:hover div:nth-child(2) {
   opacity: 1; }
 
-/* line 282, sass/pages/_nas tim.scss */
+/* line 285, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > div > div {
   background-color: #f1ede1;
   width: 38px;
   height: 36px; }
 
-/* line 289, sass/pages/_nas tim.scss */
+/* line 292, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > div > div > a {
   display: flex;
   justify-content: center;
@@ -2673,12 +2676,12 @@ nav {
   width: 100%;
   height: 100%; }
 
-/* line 301, sass/pages/_nas tim.scss */
+/* line 304, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > div > div > a:hover {
   color: #f1ede1;
   background-color: #d62326; }
 
-/* line 307, sass/pages/_nas tim.scss */
+/* line 310, sass/pages/_nas tim.scss */
 .meet-our-team__members > div > div > div:first-child {
   margin-right: 10px; }
 
