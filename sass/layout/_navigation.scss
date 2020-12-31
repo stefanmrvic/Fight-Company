@@ -148,11 +148,15 @@ nav {
         position: fixed;
         top: 0;
         right: -300px;
-        width: 300px;
+        width: 290px;
         background-color: $color-mobileNav-background;
         height: 100vh;
         transition: all .5s;
         z-index: 999;
+
+        @media only screen and (min-width: 300px) {
+            width: 300px;
+        }
 
         &__button {
             position: absolute;
