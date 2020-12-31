@@ -7,7 +7,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 15px;
+    padding: 0 15px 60px 15px;
+    //padding: 60px 15px;
+
+    @media only screen and (min-width: 480px) {
+        padding: 60px 15px;
+    }
 
     @media only screen and (min-width: 770px) {
         padding: 80px 15px;
@@ -16,24 +21,53 @@
 
 .meet-our-team__members {
     display: grid;
-    grid-auto-rows: 300px;
+    grid-auto-columns: 250px;
+    grid-auto-rows: 310px;
     row-gap: 12px;
     text-align: center;
 
+    @media only screen and (min-width: 480px) {
+        grid-template-columns: repeat(2, 234px);
+        grid-auto-rows: 288px;
+        gap: 12px;
+    }
+
+    @media only screen and (min-width: 562px) {
+        grid-template-columns: repeat(2, 250px);
+        grid-auto-rows: 310px;
+    }
+
         &__intro {
-            justify-content: flex-start;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
             &__title {
                 color: $color-secondary;
-                font-size: 34px;
+                font-size: 30px;
                 text-transform: uppercase;
                 margin-bottom: 19px;
+
+                @media only screen and (min-width: 480px) {
+                    font-size: 27px;
+                }
+
+                @media only screen and (min-width: 562px) {
+                    font-size: 30px;
+                }
             }
 
             &__text {
                 font-family: $font-montserrat;
                 font-size: 14px;
-                text-align: left;
+
+                @media only screen and (min-width: 480px) {
+                    font-size: 13px;
+                }
+            
+                @media only screen and (min-width: 562px) {
+                    font-size: 14px;
+                }
             }
     }
 
@@ -160,33 +194,10 @@
 
 //Selects All Members Containers Except for Intro
 .meet-our-team__members > div {
-    max-width: 253px;
+    display: flex;
+    flex-direction: column;
     position: relative;
     overflow: hidden;
-
-    @media only screen and (min-width: 480px) {
-        display: flex;
-        flex-direction: column;
-        width: 203px;
-        height: 258px;
-        max-width: 278px;
-    }
-
-    @media only screen and (min-width: 768px) {
-        width: 325px;
-        height: 429px;
-        max-width: initial;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        width: 216px;
-        height: 275px;
-    }
-  
-    @media only screen and (min-width: 1280px) {
-        width: 288px;
-        height: 367px;
-    }
 }
 
 //Added Same Selector So It Can Control Just Justify of The Elements
@@ -224,14 +235,10 @@
     margin-bottom: 1px;
     padding: 0 20px;
     text-transform: uppercase;
-    line-height: 26px;
+    line-height: 25px;
     transition: all .35s .03s ease;
     backface-visibility: hidden;
     z-index: $z-index-max;
-
-    @media only screen and (min-width: 480px) {
-        line-height: 25px;
-    }
 }
 
 //Selects All Team Members Role
@@ -245,10 +252,6 @@
     transition: all .35s .03s ease;
     backface-visibility: hidden;
     z-index: $z-index-max;
-
-    @media only screen and (min-width: 480px) {
-        margin-bottom: 19px;
-    }
 
     @media only screen and (min-width: 768px) {
         margin-bottom: 26px;
