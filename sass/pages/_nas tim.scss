@@ -40,37 +40,39 @@
     @media only screen and (min-width: 736px) {
         grid-template-columns: repeat(3, 234px);
         grid-auto-rows: 288px;
-        gap: 13px;
     }
 
     @media only screen and (min-width: 830px) {
         grid-template-columns: repeat(3, 261px);
         grid-auto-rows: 324px;
-        gap: 15px;
     }
 
-    @media only screen and (min-width: 999px) {
+    @media only screen and (min-width: 1015px) {
         grid-template-columns: repeat(4, 234px);
         grid-auto-rows: 288px;
-        gap: 13px;
     }
 
-    @media only screen and (min-width: 1112px) {
+    @media only screen and (min-width: 1130px) {
         grid-template-columns: repeat(4, 261px);
         grid-auto-rows: 324px;
-        gap: 15px;
+        gap: 17px;
     }
 
     @media only screen and (min-width: 1240px) {
         grid-template-columns: repeat(4, 288px);
         grid-auto-rows: 367px;
-        gap: 20px;
+        gap: 25px;
     }
 
         &__intro {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media only screen and (min-width: 1130px) {
+                text-align: start;
+                padding: 0 15px;
+            }
 
             &__title {
                 color: $color-secondary;
@@ -95,16 +97,18 @@
                     font-size: 29px;
                 }
 
-                @media only screen and (min-width: 999px) {
+                @media only screen and (min-width: 1015px) {
                     font-size: 27px;
                 }
 
-                @media only screen and (min-width: 1112px) {
-                    font-size: 29px;
+                @media only screen and (min-width: 1130px) {
+                    line-height: 1.04;
+                    font-size: 39px;
                 }
 
                 @media only screen and (min-width: 1240px) {
-                    font-size: 33px;
+                    font-size: 45px;
+                    
                 }
             }
 
@@ -128,11 +132,11 @@
                     font-size: 14px;
                 }
 
-                @media only screen and (min-width: 999px) {
+                @media only screen and (min-width: 1015px) {
                     font-size: 13px;
                 }
 
-                @media only screen and (min-width: 1112px) {
+                @media only screen and (min-width: 1130px) {
                     font-size: 14px;
                 }
             }
