@@ -401,7 +401,7 @@
     }
 
     @media only screen and (min-width: 1280px) {
-        font-size: 69px;
+        font-size: 67px;
         padding-bottom: 17px;
     }
 }
@@ -455,7 +455,7 @@
 
     @media only screen and (min-width: 830px) {
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     &__class--1::before,
@@ -500,7 +500,8 @@
         }
 
         @media only screen and (min-width: 1025px) {
-            flex-basis: 31.5%;
+            flex-basis: 29.5%;
+            margin-right: 30px;
         }
     }
 
@@ -521,7 +522,8 @@
         }
 
         @media only screen and (min-width: 1025px) {
-            flex-basis: 31.5%;
+            flex-basis: 29.5%;
+            margin-right: 30px;
         }
     }
 
@@ -539,7 +541,7 @@
         }
 
         @media only screen and (min-width: 1025px) {
-            flex-basis: 31.5%;
+            flex-basis: 29.5%;
         }
     }
 }
