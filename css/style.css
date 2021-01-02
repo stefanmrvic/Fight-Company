@@ -895,8 +895,8 @@ nav {
     @media only screen and (min-width: 1279px) {
       /* line 241, sass/pages/_pocetna.scss */
       .coach__left__img img {
-        width: 496px;
-        height: 640px; } }
+        width: 461px;
+        height: 605px; } }
 
 @media only screen and (min-width: 770px) {
   /* line 258, sass/pages/_pocetna.scss */
@@ -994,7 +994,7 @@ nav {
   @media only screen and (min-width: 1279px) {
     /* line 347, sass/pages/_pocetna.scss */
     .coach__right__img img {
-      width: 75%; } }
+      width: 67%; } }
 
 /* line 359, sass/pages/_pocetna.scss */
 .fighting-segments-section {
@@ -1043,7 +1043,7 @@ nav {
   @media only screen and (min-width: 1280px) {
     /* line 379, sass/pages/_pocetna.scss */
     .fighting-segments__title {
-      font-size: 71px;
+      font-size: 69px;
       padding-bottom: 17px; } }
 
 /* line 409, sass/pages/_pocetna.scss */
@@ -1236,7 +1236,7 @@ nav {
   @media only screen and (min-width: 1280px) {
     /* line 586, sass/pages/_pocetna.scss */
     .schedule__title {
-      font-size: 66px; } }
+      font-size: 64px; } }
 
 /* line 612, sass/pages/_pocetna.scss */
 .schedule__table--mobile__container {
