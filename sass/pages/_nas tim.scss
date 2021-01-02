@@ -385,3 +385,39 @@
     margin-right: 10px;
 }
 //Our Team Section End//
+
+//Special Offer Section Start//
+.special-offer__section {
+    background: url(/imgs/footer-imgs/background.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.special-offer__container {
+    padding: 60px;
+    max-width: 965px;
+    text-align: center;
+
+    @media only screen and (min-width: 760px) {
+        
+    }
+}
+
+.special-offer__subtitle {
+    color: $color-primary;
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.special-offer__text {
+    color: $color-primary;
+    font-size: 58px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.1;
+}
+
+//Special Offer Section End//

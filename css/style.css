@@ -2757,6 +2757,35 @@ nav {
 .meet-our-team__members > div > div > div:first-child {
   margin-right: 10px; }
 
+/* line 390, sass/pages/_nas tim.scss */
+.special-offer__section {
+  background: url(/imgs/footer-imgs/background.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+/* line 398, sass/pages/_nas tim.scss */
+.special-offer__container {
+  padding: 60px;
+  max-width: 965px;
+  text-align: center; }
+
+/* line 408, sass/pages/_nas tim.scss */
+.special-offer__subtitle {
+  color: #f1ede1;
+  font-size: 22px;
+  font-style: italic;
+  margin-bottom: 10px; }
+
+/* line 415, sass/pages/_nas tim.scss */
+.special-offer__text {
+  color: #f1ede1;
+  font-size: 58px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.1; }
+
 /* line 2, sass/pages/_eventi.scss */
 .all-events__section {
   background-color: #f0f0f0; }
