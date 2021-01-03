@@ -3574,94 +3574,137 @@ nav {
       text-align: initial;
       max-width: 1600px; } }
 
-/* line 32, sass/pages/_kontakt.scss */
+/* line 34, sass/pages/_kontakt.scss */
+.contact-us-social__socials {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  color: #f1ede1;
+  margin-bottom: 34px; }
+  @media only screen and (min-width: 1024px) {
+    /* line 34, sass/pages/_kontakt.scss */
+    .contact-us-social__socials {
+      flex-direction: row; } }
+  /* line 47, sass/pages/_kontakt.scss */
+  .contact-us-social__socials__links {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 1; }
+    /* line 52, sass/pages/_kontakt.scss */
+    .contact-us-social__socials__links__link--instagram {
+      margin-right: 11px; }
+  /* line 57, sass/pages/_kontakt.scss */
+  .contact-us-social__socials__links > li > a {
+    display: inline-block;
+    color: #f1ede1;
+    background-color: #16120f;
+    border: 2px solid #16120f;
+    transition: all .3s ease; }
+  /* line 65, sass/pages/_kontakt.scss */
+  .contact-us-social__socials__links > li > a:hover {
+    color: #f1ede1;
+    background-color: #d72323;
+    border-color: transparent; }
+  /* line 71, sass/pages/_kontakt.scss */
+  .contact-us-social__socials__links__link--1 {
+    padding: 9px 13px 7px 13px; }
+  /* line 75, sass/pages/_kontakt.scss */
+  .contact-us-social__socials__links__link--2 {
+    padding: 10px 11px 6px 11px; }
+  /* line 79, sass/pages/_kontakt.scss */
+  .contact-us-social__socials__links__link--2 i {
+    font-size: 17px; }
+
+/* line 85, sass/pages/_kontakt.scss */
 .contact-us__banjica {
   margin-bottom: 50px; }
   @media only screen and (min-width: 770px) {
-    /* line 32, sass/pages/_kontakt.scss */
+    /* line 85, sass/pages/_kontakt.scss */
     .contact-us__banjica {
       margin-bottom: 0; } }
-  /* line 39, sass/pages/_kontakt.scss */
+  /* line 92, sass/pages/_kontakt.scss */
   .contact-us__banjica__phone {
     color: #16120f;
     font-family: "Montserrat", serif;
     font-size: 14px;
     margin-bottom: 10px; }
     @media only screen and (min-width: 480px) {
-      /* line 39, sass/pages/_kontakt.scss */
+      /* line 92, sass/pages/_kontakt.scss */
       .contact-us__banjica__phone {
         font-size: 15px; } }
-  /* line 50, sass/pages/_kontakt.scss */
+  /* line 103, sass/pages/_kontakt.scss */
   .contact-us__banjica__location {
     color: #16120f;
     font-family: "Montserrat", serif;
     font-size: 14px;
-    margin-bottom: 38px; }
+    margin-bottom: 26px; }
     @media only screen and (min-width: 480px) {
-      /* line 50, sass/pages/_kontakt.scss */
+      /* line 103, sass/pages/_kontakt.scss */
       .contact-us__banjica__location {
         font-size: 15px;
         margin-bottom: 39px; } }
-  /* line 62, sass/pages/_kontakt.scss */
+  /* line 115, sass/pages/_kontakt.scss */
   .contact-us__banjica__map {
     width: 280px;
     height: 280px;
     border: 1px solid #16120f; }
     @media only screen and (min-width: 560px) {
-      /* line 62, sass/pages/_kontakt.scss */
+      /* line 115, sass/pages/_kontakt.scss */
       .contact-us__banjica__map {
         width: 350px;
         height: 350px; } }
     @media only screen and (min-width: 770px) {
-      /* line 62, sass/pages/_kontakt.scss */
+      /* line 115, sass/pages/_kontakt.scss */
       .contact-us__banjica__map {
         width: 280px;
         height: 280px; } }
     @media only screen and (min-width: 1024px) {
-      /* line 62, sass/pages/_kontakt.scss */
+      /* line 115, sass/pages/_kontakt.scss */
       .contact-us__banjica__map {
         width: 350px;
         height: 350px; } }
 
 @media only screen and (min-width: 770px) {
-  /* line 84, sass/pages/_kontakt.scss */
+  /* line 137, sass/pages/_kontakt.scss */
   .contact-us__borca {
     align-self: flex-end; } }
 
-/* line 90, sass/pages/_kontakt.scss */
+/* line 143, sass/pages/_kontakt.scss */
 .contact-us__borca__location {
   color: #16120f;
   font-family: "Montserrat", serif;
   font-size: 14px;
-  margin-bottom: 40px; }
+  margin-bottom: 26px; }
   @media only screen and (min-width: 480px) {
-    /* line 90, sass/pages/_kontakt.scss */
+    /* line 143, sass/pages/_kontakt.scss */
     .contact-us__borca__location {
       font-size: 15px; } }
 
-/* line 101, sass/pages/_kontakt.scss */
+/* line 154, sass/pages/_kontakt.scss */
 .contact-us__borca__map {
   width: 280px;
   height: 280px;
   border: 1px solid #16120f; }
   @media only screen and (min-width: 560px) {
-    /* line 101, sass/pages/_kontakt.scss */
+    /* line 154, sass/pages/_kontakt.scss */
     .contact-us__borca__map {
       width: 350px;
       height: 350px; } }
   @media only screen and (min-width: 770px) {
-    /* line 101, sass/pages/_kontakt.scss */
+    /* line 154, sass/pages/_kontakt.scss */
     .contact-us__borca__map {
       width: 280px;
       height: 280px; } }
   @media only screen and (min-width: 1024px) {
-    /* line 101, sass/pages/_kontakt.scss */
+    /* line 154, sass/pages/_kontakt.scss */
     .contact-us__borca__map {
       width: 350px;
       height: 350px; } }
 
 @media only screen and (min-width: 770px) {
-  /* line 124, sass/pages/_kontakt.scss */
+  /* line 177, sass/pages/_kontakt.scss */
   .contact-us__container > div {
     display: flex;
     flex-direction: column;
@@ -3669,23 +3712,23 @@ nav {
     flex-basis: 46%; } }
 
 @media only screen and (min-width: 1024px) {
-  /* line 124, sass/pages/_kontakt.scss */
+  /* line 177, sass/pages/_kontakt.scss */
   .contact-us__container > div {
     display: initial;
     flex-direction: initial;
     align-items: initial;
     flex-basis: initial; } }
 
-/* line 141, sass/pages/_kontakt.scss */
+/* line 194, sass/pages/_kontakt.scss */
 .contact-us__container > div > h4 {
   font-size: 36px;
   text-transform: uppercase;
   margin-bottom: 20px; }
   @media only screen and (min-width: 480px) {
-    /* line 141, sass/pages/_kontakt.scss */
+    /* line 194, sass/pages/_kontakt.scss */
     .contact-us__container > div > h4 {
       margin-bottom: 20px; } }
   @media only screen and (min-width: 560px) {
-    /* line 141, sass/pages/_kontakt.scss */
+    /* line 194, sass/pages/_kontakt.scss */
     .contact-us__container > div > h4 {
       font-size: 40px; } }

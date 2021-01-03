@@ -29,6 +29,59 @@
     }
 }
 
+.contact-us-social {
+    
+    &__socials {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
+        color: $color-primary;
+        margin-bottom: 34px;
+
+        @media only screen and (min-width: 1024px) {
+            flex-direction: row;
+        }
+
+        &__links {
+            display: flex;
+            justify-content: space-between;
+            flex-basis: 1;
+
+            &__link--instagram {
+                margin-right: 11px;
+            }
+        }
+
+        &__links > li > a {
+            display: inline-block;
+            color: $color-primary;
+            background-color: $color-secondary;
+            border: 2px solid $color-secondary;
+            transition: all .3s ease;
+        }
+
+        &__links > li > a:hover {
+            color: $color-primary;
+            background-color: $color-footer-social-links-bg-hover;
+            border-color: $color-transparent;
+        }
+
+        &__links__link--1 {
+            padding: 9px 13px 7px 13px;
+        }
+
+        &__links__link--2 {
+            padding: 10px 11px 6px 11px;
+        }
+
+        &__links__link--2 i {
+            font-size: 17px;
+        }
+    }
+}
+
 .contact-us__banjica {
     margin-bottom: 50px;
 
@@ -51,7 +104,7 @@
         color: $color-secondary;
         font-family: $font-montserrat;
         font-size: 14px;
-        margin-bottom: 38px;
+        margin-bottom: 26px;
 
         @media only screen and (min-width: 480px) {
             font-size: 15px;
@@ -91,7 +144,7 @@
         color: $color-secondary;
         font-family: $font-montserrat;
         font-size: 14px;
-        margin-bottom: 40px;
+        margin-bottom: 26px;
 
         @media only screen and (min-width: 480px) {
             font-size: 15px;
