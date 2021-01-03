@@ -39,6 +39,58 @@ html {
   list-style: none;
   outline: none; }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 100%; } }
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px); }
+  100% {
+    opacity: 100%;
+    transform: translateY(0); } }
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(200px); }
+  100% {
+    opacity: 100%;
+    transform: translateY(0); } }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px); }
+  100% {
+    opacity: 100%;
+    transform: translateY(0); } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px); }
+  100% {
+    opacity: 100%;
+    transform: translateY(0); } }
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+@keyframes zoomInSocials {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  40% {
+    opacity: 1; } }
+
 /* line 2, sass/components/_button.scss */
 .button--white {
   border: none;
@@ -467,18 +519,19 @@ nav {
     font-family: "Rajdhani", sans-serif;
     text-align: center;
     width: 100%;
-    max-width: 1200px; }
-    /* line 18, sass/layout/_footer.scss */
+    max-width: 1200px;
+    animation: zoomIn 1s; }
+    /* line 19, sass/layout/_footer.scss */
     .footer-social__heading__subtitle {
       color: #d62326;
       font-size: 18px;
       font-weight: 400;
       margin-bottom: 1px; }
       @media only screen and (min-width: 770px) {
-        /* line 18, sass/layout/_footer.scss */
+        /* line 19, sass/layout/_footer.scss */
         .footer-social__heading__subtitle {
           font-size: 20px; } }
-    /* line 29, sass/layout/_footer.scss */
+    /* line 30, sass/layout/_footer.scss */
     .footer-social__heading__title {
       color: #f1ede1;
       font-size: 35px;
@@ -486,14 +539,14 @@ nav {
       margin-bottom: 40px;
       text-transform: uppercase; }
       @media only screen and (min-width: 330px) {
-        /* line 29, sass/layout/_footer.scss */
+        /* line 30, sass/layout/_footer.scss */
         .footer-social__heading__title {
           font-size: 42px; } }
       @media only screen and (min-width: 770px) {
-        /* line 29, sass/layout/_footer.scss */
+        /* line 30, sass/layout/_footer.scss */
         .footer-social__heading__title {
-          font-size: 47px; } }
-  /* line 46, sass/layout/_footer.scss */
+          font-size: 53px; } }
+  /* line 47, sass/layout/_footer.scss */
   .footer-social__imgs {
     display: flex;
     justify-content: center;
@@ -502,20 +555,21 @@ nav {
     width: 100%;
     max-width: 1200px;
     padding: 0 30px;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    animation: fadeInBottom 1s; }
     @media only screen and (min-width: 410px) {
-      /* line 46, sass/layout/_footer.scss */
+      /* line 47, sass/layout/_footer.scss */
       .footer-social__imgs {
         padding: 0 65px; } }
     @media only screen and (min-width: 470px) {
-      /* line 46, sass/layout/_footer.scss */
+      /* line 47, sass/layout/_footer.scss */
       .footer-social__imgs {
         padding: 0 80px; } }
     @media only screen and (min-width: 580px) {
-      /* line 46, sass/layout/_footer.scss */
+      /* line 47, sass/layout/_footer.scss */
       .footer-social__imgs {
         padding: 0 20px; } }
-    /* line 68, sass/layout/_footer.scss */
+    /* line 70, sass/layout/_footer.scss */
     .footer-social__imgs__wrapper {
       display: flex;
       flex-basis: 210px;
@@ -523,50 +577,52 @@ nav {
       padding: 0 10px 20px 10px;
       justify-content: center; }
       @media only screen and (min-width: 410px) {
-        /* line 68, sass/layout/_footer.scss */
+        /* line 70, sass/layout/_footer.scss */
         .footer-social__imgs__wrapper {
           padding: 0 15px 20px 15px; } }
       @media only screen and (min-width: 580px) {
-        /* line 68, sass/layout/_footer.scss */
+        /* line 70, sass/layout/_footer.scss */
         .footer-social__imgs__wrapper {
           padding: 0 10px 20px 10px; } }
       @media only screen and (min-width: 630px) {
-        /* line 68, sass/layout/_footer.scss */
+        /* line 70, sass/layout/_footer.scss */
         .footer-social__imgs__wrapper {
           flex-basis: 71px; } }
-    /* line 88, sass/layout/_footer.scss */
+    /* line 90, sass/layout/_footer.scss */
     .footer-social__imgs__wrapper:last-child {
       display: none; }
       @media only screen and (min-width: 580px) {
-        /* line 88, sass/layout/_footer.scss */
+        /* line 90, sass/layout/_footer.scss */
         .footer-social__imgs__wrapper:last-child {
           display: block; } }
       @media only screen and (min-width: 630px) {
-        /* line 88, sass/layout/_footer.scss */
+        /* line 90, sass/layout/_footer.scss */
         .footer-social__imgs__wrapper:last-child {
           display: none; } }
-    /* line 100, sass/layout/_footer.scss */
+    /* line 102, sass/layout/_footer.scss */
     .footer-social__imgs__wrapper > a > img {
       width: 100%;
       height: 100%; }
-  /* line 106, sass/layout/_footer.scss */
+  /* line 108, sass/layout/_footer.scss */
   .footer-social__socials {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
-    color: #f1ede1; }
+    color: #f1ede1;
+    animation: zoomInSocials 1s .5s;
+    animation-fill-mode: backwards; }
     @media only screen and (min-width: 580px) {
-      /* line 106, sass/layout/_footer.scss */
+      /* line 108, sass/layout/_footer.scss */
       .footer-social__socials {
         flex-direction: row;
         padding: 0 29px; } }
     @media only screen and (min-width: 630px) {
-      /* line 106, sass/layout/_footer.scss */
+      /* line 108, sass/layout/_footer.scss */
       .footer-social__socials {
         padding: 0 29px; } }
-    /* line 123, sass/layout/_footer.scss */
+    /* line 127, sass/layout/_footer.scss */
     .footer-social__socials__text {
       font-family: "Rajdhani", sans-serif;
       color: #929292;
@@ -576,14 +632,14 @@ nav {
       text-align: center;
       margin-bottom: 12px; }
       @media only screen and (min-width: 410px) {
-        /* line 123, sass/layout/_footer.scss */
+        /* line 127, sass/layout/_footer.scss */
         .footer-social__socials__text {
           font-size: 19px; } }
       @media only screen and (min-width: 581px) {
-        /* line 123, sass/layout/_footer.scss */
+        /* line 127, sass/layout/_footer.scss */
         .footer-social__socials__text {
           margin-bottom: 0; } }
-    /* line 141, sass/layout/_footer.scss */
+    /* line 145, sass/layout/_footer.scss */
     .footer-social__socials__line {
       display: none;
       height: 2px;
@@ -591,62 +647,62 @@ nav {
       flex-grow: 1;
       margin: 0 15px; }
       @media only screen and (min-width: 581px) {
-        /* line 141, sass/layout/_footer.scss */
+        /* line 145, sass/layout/_footer.scss */
         .footer-social__socials__line {
           display: block; } }
-    /* line 153, sass/layout/_footer.scss */
+    /* line 157, sass/layout/_footer.scss */
     .footer-social__socials__links {
       display: flex;
       justify-content: space-between;
       flex-basis: 1; }
-      /* line 158, sass/layout/_footer.scss */
+      /* line 162, sass/layout/_footer.scss */
       .footer-social__socials__links__link:first-child {
         margin-right: 11px; }
-    /* line 163, sass/layout/_footer.scss */
+    /* line 167, sass/layout/_footer.scss */
     .footer-social__socials__links > li > a {
       display: inline-block;
       color: #929292;
       border: 2px solid #3b3632;
       transition: all .3s ease; }
-    /* line 170, sass/layout/_footer.scss */
+    /* line 174, sass/layout/_footer.scss */
     .footer-social__socials__links > li > a:hover {
       color: #f1ede1;
       background-color: #d72323;
       border-color: transparent; }
-    /* line 176, sass/layout/_footer.scss */
+    /* line 180, sass/layout/_footer.scss */
     .footer-social__socials__links__link--1 {
       padding: 8px 12px 7px 12px; }
-    /* line 180, sass/layout/_footer.scss */
+    /* line 184, sass/layout/_footer.scss */
     .footer-social__socials__links__link--2 {
       padding: 8px 10px 7px 10px; }
 
-/* line 186, sass/layout/_footer.scss */
+/* line 190, sass/layout/_footer.scss */
 .footer-sitemap {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: url(/imgs/footer-imgs/background.jpg); }
-  /* line 192, sass/layout/_footer.scss */
+  /* line 196, sass/layout/_footer.scss */
   .footer-sitemap__logo {
     width: 120px;
     margin-bottom: 35px; }
     @media only screen and (min-width: 480px) {
-      /* line 192, sass/layout/_footer.scss */
+      /* line 196, sass/layout/_footer.scss */
       .footer-sitemap__logo {
         width: 133px; } }
-    /* line 200, sass/layout/_footer.scss */
+    /* line 204, sass/layout/_footer.scss */
     .footer-sitemap__logo__link img {
       width: 100%;
       height: 100%; }
-  /* line 206, sass/layout/_footer.scss */
+  /* line 210, sass/layout/_footer.scss */
   .footer-sitemap__links {
     display: flex;
     justify-content: center;
     margin-bottom: 35px; }
-  /* line 212, sass/layout/_footer.scss */
+  /* line 216, sass/layout/_footer.scss */
   .footer-sitemap__links > li:not(:last-child) {
     margin-right: 10px; }
-  /* line 216, sass/layout/_footer.scss */
+  /* line 220, sass/layout/_footer.scss */
   .footer-sitemap__links > li > a {
     font-family: "Rajdhani", sans-serif;
     color: #929292;
@@ -654,20 +710,20 @@ nav {
     font-weight: 600;
     text-transform: uppercase;
     transition: all .3s ease; }
-  /* line 225, sass/layout/_footer.scss */
+  /* line 229, sass/layout/_footer.scss */
   .footer-sitemap__links > li > a:hover,
   .footer-sitemap__links > li > a:active {
     color: #f1ede1; }
-  /* line 230, sass/layout/_footer.scss */
+  /* line 234, sass/layout/_footer.scss */
   .footer-sitemap__copyright {
     margin-bottom: 35px;
     font-family: "Montserrat", serif;
     text-align: center; }
-    /* line 235, sass/layout/_footer.scss */
+    /* line 239, sass/layout/_footer.scss */
     .footer-sitemap__copyright__text {
       font-size: 14px;
       color: #929292; }
-    /* line 240, sass/layout/_footer.scss */
+    /* line 244, sass/layout/_footer.scss */
     .footer-sitemap__copyright__link {
       color: #f1ede1;
       font-weight: 400; }

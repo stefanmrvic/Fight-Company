@@ -14,6 +14,7 @@
         text-align: center;
         width: 100%;
         max-width: 1200px;
+        animation: zoomIn 1s;
 
         &__subtitle {
             color: $color-subtitle;
@@ -38,7 +39,7 @@
             }
 
             @media only screen and (min-width: 770px) {
-                font-size: 47px;
+                font-size: 53px;
             }
         }
     }
@@ -52,6 +53,7 @@
         max-width: 1200px;
         padding: 0 30px;
         margin-bottom: 25px;
+        animation: fadeInBottom 1s;
 
         @media only screen and (min-width: 410px) {
             padding: 0 65px;
@@ -110,6 +112,8 @@
         width: 100%;
         max-width: 1200px;
         color: $color-primary;
+        animation: zoomInSocials 1s .5s;
+        animation-fill-mode: backwards;
 
         @media only screen and (min-width: 580px) {
             flex-direction: row;
