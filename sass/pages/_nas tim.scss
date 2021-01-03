@@ -167,18 +167,22 @@
     }
 
     &__member--4 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/our-team/igor.jpg) center center / cover no-repeat;
     
         &__hover-mask {
-            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/our-team/igor.jpg) center center / cover no-repeat;
         }
     }
 
     &__member--5 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/our-team/nikola.jpg) center center / cover no-repeat;
     
         &__hover-mask {
-            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/our-team/nikola.jpg) center center / cover no-repeat;
+        }
+
+        &__socials {
+            @extend %our-team-socials;
         }
     }
 
@@ -188,17 +192,13 @@
         &__hover-mask {
             background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
         }
-
-        &__socials {
-            @extend %our-team-socials;
-        }
     }
 
     &__member--7 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/our-team/dejan.jpg) center center / cover no-repeat;
 
         &__hover-mask {
-            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/our-team/dejan.jpg) center center / cover no-repeat;
         }
     }
 }
@@ -345,8 +345,8 @@
     @extend %our-team-socials:hover;
 }
 
-//Team Member 6 (Nikola Zivkovic) Socials Container on hover
-.meet-our-team__members__member--6:hover div {
+//Team Member 5 (Nikola Zivkovic) Socials Container on hover
+.meet-our-team__members__member--5:hover div {
     @extend %our-team-socials:hover;
 }
 
@@ -442,6 +442,10 @@
     @media only screen and (min-width: 1280px) {
         font-size: 55px;
     }
+}
+
+.special-offer__button {
+    margin-top: 30px;
 }
 
 //Special Offer Section End//
