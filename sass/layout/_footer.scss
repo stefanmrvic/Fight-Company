@@ -19,6 +19,11 @@
             color: $color-subtitle;
             font-size: 18px;
             font-weight: 400;
+            margin-bottom: 1px;
+
+            @media only screen and (min-width: 770px) {
+                font-size: 20px; 
+            }
         }
 
         &__title {
@@ -27,6 +32,14 @@
             line-height: 0.9;
             margin-bottom: 40px;
             text-transform: uppercase;
+
+            @media only screen and (min-width: 330px) {
+                font-size: 42px;
+            }
+
+            @media only screen and (min-width: 770px) {
+                font-size: 47px;
+            }
         }
     }
 
@@ -177,8 +190,12 @@
     background: url(/imgs/footer-imgs/background.jpg);
 
     &__logo {
-        width: 135px;
+        width: 120px;
         margin-bottom: 35px;
+
+        @media only screen and (min-width: 480px) {
+            width: 133px;
+        }
 
         &__link img {
             width: 100%;
