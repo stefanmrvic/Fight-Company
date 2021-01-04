@@ -59,6 +59,9 @@
     50% {
         opacity: 1;
     }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes zoomInSocials {
@@ -67,6 +70,9 @@
         transform:scale3d(.3,.3,.3);
     }
     40% {
+        opacity: 1;
+    }
+    100% {
         opacity: 1;
     }
 }
