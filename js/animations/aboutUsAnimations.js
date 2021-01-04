@@ -51,7 +51,7 @@ if(mediaQueryMedium.matches) {
                     entry.target.style.animation = 'fadeInRight 1s forwards';
                 }
                 else {
-                    entry.target.style.animation = 'fadeIn 1s .1s forwards';
+                    entry.target.style.animation = 'fadeIn 1s forwards';
                 }
             }
         });
@@ -86,7 +86,7 @@ if(mediaQueryMedium.matches) {
                     entry.target.style.animation = 'fadeInRight 1s .11s forwards';
                 }
                 else {
-                    entry.target.style.animation = 'fadeIn 1s .4s forwards';
+                    entry.target.style.animation = 'fadeIn 1s .2s forwards';
                 }
             }
         });
