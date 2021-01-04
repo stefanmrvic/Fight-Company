@@ -21,6 +21,11 @@
     font-size: 30px;
     padding-bottom: 25px;
     text-transform: uppercase;
+    opacity: 0; 
+
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
 
     @media only screen and (min-width: 480px) {
         font-size: 35px;
@@ -134,6 +139,11 @@
     cursor: pointer;
     overflow: hidden;
     backface-visibility: hidden;
+    opacity: 0; 
+
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
 }
 
 //Selects All Anchor Elements Inside Events Boxes
@@ -223,6 +233,11 @@
     font-size: 31px;
     padding-bottom: 25px;
     text-transform: uppercase;
+    opacity: 0; 
+
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
 
     @media only screen and (min-width: 480px) {
         font-size: 35px;
@@ -255,6 +270,11 @@
     cursor: pointer;
     overflow: hidden;
     backface-visibility: hidden;
+    opacity: 0; 
+
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
 
     @media only screen and (min-width: 480px) {
         width: 309px;

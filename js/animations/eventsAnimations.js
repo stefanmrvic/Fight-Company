@@ -2,28 +2,30 @@ const mediaQueryMedium = window.matchMedia("(min-width: 1024px)");
 
 if(mediaQueryMedium.matches) {
 
-    let targetOurPhilosofy = document.querySelectorAll('.anim1');
-    let targetAboutClub = document.querySelectorAll('.anim2');
-    let targetOurCoaches = document.querySelectorAll('.anim3');
-    let targetFooter = document.querySelectorAll('.anim4');
+    let targetAllEvents = document.querySelectorAll('.anim1');
+    let targetFeaturedEvents = document.querySelectorAll('.anim2');
+    let targetFooter = document.querySelectorAll('.anim3');
 
     let options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.7
+        threshold: 0.6
     }
 
-    //Animations for Our Philosofy Section
-    let callbackPhilosofy = (entries, observer) => {
+    //Animations for All Events Section
+    let callbackEvents = (entries, observer) => {
         
         entries.forEach(entry => {
             if (entry.intersectionRatio > 0) {
 
-                if (entry.target.classList.contains('our-philosofy__left')) {
-                    entry.target.style.animation = 'fadeInLeft 1s forwards';
+                if (entry.target.classList.contains('all-events__title')) {
+                    entry.target.style.animation = 'fadeIn 1s forwards';
                 }
-                else if (entry.target.classList.contains('our-philosofy__right')) {
-                    entry.target.style.animation = 'fadeInBottom 1s forwards';
+                else if (entry.target.classList.contains('all-events__box__event--1')) {
+                    entry.target.style.animation = 'fadeIn 1s forwards';
+                }
+                else if (entry.target.classList.contains('all-events__box__event--2')) {
+                    entry.target.style.animation = 'fadeIn 1s forwards';
                 }
                 else {
                     entry.target.style.animation = 'fadeIn 1s forwards';
@@ -32,72 +34,45 @@ if(mediaQueryMedium.matches) {
         });
     };
 
-    let observerPhilosofy = new IntersectionObserver(callbackPhilosofy, options);
+    let observerEvents = new IntersectionObserver(callbackEvents, options);
 
-    targetOurPhilosofy.forEach(el => {
-    observerPhilosofy.observe(el);
+    targetAllEvents.forEach(el => {
+    observerEvents.observe(el);
     });
     
-    //Animations for About Club Section
-    let callbackAboutClub = (entries, observer) => {
+    //Animations for Featured Events Section
+    let callbackFeatured = (entries, observer) => {
         
         entries.forEach(entry => {
             if (entry.intersectionRatio > 0) {
 
-                if (entry.target.classList.contains('about-club__left')) {
+                if (entry.target.classList.contains('featured-events__title')) {
+                    entry.target.style.animation = 'fadeInLeftEvents 1s forwards';
+                }
+                else if (entry.target.classList.contains('featured-events__box__event--1')) {
+                    entry.target.style.animation = 'fadeInLeftEvents 1s forwards';
+                }
+                else if (entry.target.classList.contains('featured-events__box__event--2')) {
                     entry.target.style.animation = 'fadeInBottom 1s forwards';
                 }
-                else if (entry.target.classList.contains('about-club__right')) {
-                    entry.target.style.animation = 'fadeInRight 1s forwards';
+                else if (entry.target.classList.contains('featured-events__box__event--3')) {
+                    entry.target.style.animation = 'fadeInRightEvents 1s forwards';
                 }
                 else {
-                    entry.target.style.animation = 'fadeIn 1s .1s forwards';
+                    entry.target.style.animation = 'fadeIn 1s .25s forwards';
                 }
             }
         });
     };
 
-    let observerAboutClub = new IntersectionObserver(callbackAboutClub, options);
+    let observerFeatured = new IntersectionObserver(callbackFeatured, options);
 
-    targetAboutClub.forEach(el => {
-    observerAboutClub.observe(el);
+    targetFeaturedEvents.forEach(el => {
+        observerFeatured.observe(el);
     });
 
-    //Animations for Our Coaches Section
-
-    let callbackCoaches = (entries, observer) => {
-        
-        entries.forEach(entry => {
-            if (entry.intersectionRatio > 0) {
-
-                if (entry.target.classList.contains('our-coaches__title')) {
-                    entry.target.style.animation = 'fadeIn 1s forwards';
-                }
-                else if (entry.target.classList.contains('our-coaches__box__savo__info')) {
-                    entry.target.style.animation = 'fadeInLeft 1s  .11s forwards';
-                }
-                else if (entry.target.classList.contains('our-coaches__box__savo__img')) {
-                    entry.target.style.animation = 'fadeInLeft 1s forwards';
-                }
-                else if (entry.target.classList.contains('our-coaches__box__aleksandar__img')) {
-                    entry.target.style.animation = 'fadeInRight 1s forwards';
-                }
-                else if (entry.target.classList.contains('our-coaches__box__aleksandar__info')) {
-                    entry.target.style.animation = 'fadeInRight 1s .11s forwards';
-                }
-                else {
-                    entry.target.style.animation = 'fadeIn 1s .4s forwards';
-                }
-            }
-        });
-    };
-
-    let observerCoaches = new IntersectionObserver(callbackCoaches, options);
-
-    targetOurCoaches.forEach(el => {
-        observerCoaches.observe(el);
-    });
-
+    //Animations for Upcoming Events Section
+    
     //Animations for Footer Section
     let callbackFooter = (entries, observer) => {
         
@@ -123,5 +98,3 @@ if(mediaQueryMedium.matches) {
         observerFooter.observe(el);
     });
 }
-
-
