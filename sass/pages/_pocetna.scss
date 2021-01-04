@@ -1149,6 +1149,10 @@
     backface-visibility: hidden;
     opacity: 0;
 
+    @media only screen and (max-width: 630px) {
+        opacity: 1;
+    }
+
     @media only screen and (min-width: 480px) {
         width: 309px;
         height: 409px;
@@ -1363,5 +1367,9 @@
 .events__button {
     margin-top: 15px;
     opacity: 0;
+
+    @media only screen and (max-width: 630px) {
+        opacity: 1;
+    }
 }
 //Upcoming Events Section End//

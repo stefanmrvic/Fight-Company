@@ -14,8 +14,11 @@
         text-align: center;
         width: 100%;
         max-width: 1200px;
-        //animation: zoomIn 1s;
         opacity: 0;
+
+        @media only screen and (max-width: 630px) {
+            opacity: 1;
+        }
 
         &__subtitle {
             color: $color-subtitle;
@@ -54,9 +57,11 @@
         max-width: 1200px;
         padding: 0 30px;
         margin-bottom: 25px;
-        //animation: fadeInBottom 1s;
-        //animation-fill-mode: backwards;
         opacity: 0;
+
+        @media only screen and (max-width: 630px) {
+            opacity: 1;
+        }
 
         @media only screen and (min-width: 410px) {
             padding: 0 65px;
@@ -115,9 +120,11 @@
         width: 100%;
         max-width: 1200px;
         color: $color-primary;
-        //animation: zoomInSocials 1s .3s;
-        //animation-fill-mode: backwards;
         opacity: 0;
+
+        @media only screen and (max-width: 630px) {
+            opacity: 1;
+        }
 
         @media only screen and (min-width: 580px) {
             flex-direction: row;
