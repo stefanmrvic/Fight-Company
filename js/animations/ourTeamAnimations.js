@@ -10,7 +10,7 @@ if(mediaQueryMedium.matches) {
     let options = {
         root: null,
         rootMargin: '0px',
-        threshold: 1.0
+        threshold: 0.7
     }
 
     //Animations for Meet Our Team Section
