@@ -406,6 +406,7 @@
     font-size: 20px;
     font-style: italic;
     margin-bottom: 10px;
+    opacity: 0;
 
     @media only screen and (min-width: 860px) {
         font-size: 22px;
@@ -422,6 +423,7 @@
     text-transform: uppercase;
     text-align: center;
     line-height: 1.1;
+    opacity: 0;
 
     @media only screen and (min-width: 480px) {
         font-size: 31px;
@@ -446,6 +448,7 @@
 
 .special-offer__button {
     margin-top: 30px;
+    opacity: 0;
 }
 
 //Special Offer Section End//

@@ -2855,7 +2855,8 @@ nav {
   color: #f1ede1;
   font-size: 20px;
   font-style: italic;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  opacity: 0; }
   @media only screen and (min-width: 860px) {
     /* line 404, sass/pages/_nas tim.scss */
     .special-offer__subtitle {
@@ -2865,37 +2866,39 @@ nav {
     .special-offer__subtitle {
       font-size: 23px; } }
 
-/* line 419, sass/pages/_nas tim.scss */
+/* line 420, sass/pages/_nas tim.scss */
 .special-offer__text {
   color: #f1ede1;
   font-size: 23px;
   text-transform: uppercase;
   text-align: center;
-  line-height: 1.1; }
+  line-height: 1.1;
+  opacity: 0; }
   @media only screen and (min-width: 480px) {
-    /* line 419, sass/pages/_nas tim.scss */
+    /* line 420, sass/pages/_nas tim.scss */
     .special-offer__text {
       font-size: 31px; } }
   @media only screen and (min-width: 714px) {
-    /* line 419, sass/pages/_nas tim.scss */
+    /* line 420, sass/pages/_nas tim.scss */
     .special-offer__text {
       font-size: 38px; } }
   @media only screen and (min-width: 860px) {
-    /* line 419, sass/pages/_nas tim.scss */
+    /* line 420, sass/pages/_nas tim.scss */
     .special-offer__text {
       font-size: 45px; } }
   @media only screen and (min-width: 1024px) {
-    /* line 419, sass/pages/_nas tim.scss */
+    /* line 420, sass/pages/_nas tim.scss */
     .special-offer__text {
       font-size: 54px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 419, sass/pages/_nas tim.scss */
+    /* line 420, sass/pages/_nas tim.scss */
     .special-offer__text {
       font-size: 55px; } }
 
-/* line 447, sass/pages/_nas tim.scss */
+/* line 449, sass/pages/_nas tim.scss */
 .special-offer__button {
-  margin-top: 30px; }
+  margin-top: 30px;
+  opacity: 0; }
 
 /* line 2, sass/pages/_eventi.scss */
 .all-events__section {
