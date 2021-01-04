@@ -131,7 +131,7 @@ if(mediaQueryMedium.matches) {
                     entry.target.style.animation = 'fadeInBottom 1s forwards';
                 }
                 else {
-                    entry.target.style.animation = 'zoomInSocials 1s .3s forwards';
+                    entry.target.style.animation = 'zoomInSocials .8s .3s forwards';
                 }
             }
         });
