@@ -1,3 +1,13 @@
+//Landing Page Uncover Animations
+@keyframes uncoverText {
+    from {
+        transform: scaleX(1);
+    }
+    to {
+        transform: scaleX(0);
+    }
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;

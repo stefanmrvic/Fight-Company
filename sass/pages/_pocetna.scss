@@ -39,6 +39,17 @@
         }
     }
 
+    &__text--1-wrapper {
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background: $color-primary;
+        height: 38%;
+        width: 101.5%;
+        transform-origin: right;
+        animation: uncoverText .65s cubic-bezier(0.694, 0.048, 0.335, 1) .3s forwards;
+    }
+
     &__text--2 span {
         font-size: 30px;
 
@@ -53,6 +64,28 @@
         @media only screen and (min-width: 1200px) {
             font-size: 87px; 
         }
+    }
+
+    &__text--2-wrapper {
+        position: absolute;
+        top: 74px;
+        left: -2px;
+        background: $color-primary;
+        height: 38.5%;
+        width: 101.5%;
+        transform-origin: right;
+        animation: uncoverText .65s cubic-bezier(0.694, 0.048, 0.335, 1) .4s forwards;
+    }
+
+    &__text--3-wrapper {
+        position: absolute;
+        top: 151px;
+        left: -2px;
+        background: $color-primary;
+        height: 30%;
+        width: 59%;
+        transform-origin: right;
+        animation: uncoverText .65s cubic-bezier(0.694, 0.048, 0.335, 1) .48s forwards;
     }
 }
 
@@ -118,6 +151,7 @@
     @media only screen and (min-width: 580px) {
         font-size: 22px;
         margin-top: 5px;
+        text-align: start;
     }
 
     @media only screen and (min-width: 980px) {

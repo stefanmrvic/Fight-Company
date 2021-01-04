@@ -39,6 +39,12 @@ html {
   list-style: none;
   outline: none; }
 
+@keyframes uncoverText {
+  from {
+    transform: scaleX(1); }
+  to {
+    transform: scaleX(0); } }
+
 @keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -807,27 +813,57 @@ nav {
       .hero__heading__text--1 span {
         font-size: 86px; } }
   /* line 42, sass/pages/_pocetna.scss */
+  .hero__heading__text--1-wrapper {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: #f1ede1;
+    height: 38%;
+    width: 101.5%;
+    transform-origin: right;
+    animation: uncoverText 0.65s cubic-bezier(0.694, 0.048, 0.335, 1) 0.3s forwards; }
+  /* line 53, sass/pages/_pocetna.scss */
   .hero__heading__text--2 span {
     font-size: 30px; }
     @media only screen and (min-width: 580px) {
-      /* line 42, sass/pages/_pocetna.scss */
+      /* line 53, sass/pages/_pocetna.scss */
       .hero__heading__text--2 span {
         font-size: 57px; } }
     @media only screen and (min-width: 980px) {
-      /* line 42, sass/pages/_pocetna.scss */
+      /* line 53, sass/pages/_pocetna.scss */
       .hero__heading__text--2 span {
         font-size: 78px; } }
     @media only screen and (min-width: 1200px) {
-      /* line 42, sass/pages/_pocetna.scss */
+      /* line 53, sass/pages/_pocetna.scss */
       .hero__heading__text--2 span {
         font-size: 87px; } }
+  /* line 69, sass/pages/_pocetna.scss */
+  .hero__heading__text--2-wrapper {
+    position: absolute;
+    top: 74px;
+    left: -2px;
+    background: #f1ede1;
+    height: 38.5%;
+    width: 101.5%;
+    transform-origin: right;
+    animation: uncoverText 0.65s cubic-bezier(0.694, 0.048, 0.335, 1) 0.4s forwards; }
+  /* line 80, sass/pages/_pocetna.scss */
+  .hero__heading__text--3-wrapper {
+    position: absolute;
+    top: 151px;
+    left: -2px;
+    background: #f1ede1;
+    height: 30%;
+    width: 59%;
+    transform-origin: right;
+    animation: uncoverText 0.65s cubic-bezier(0.694, 0.048, 0.335, 1) 0.48s forwards; }
 
-/* line 59, sass/pages/_pocetna.scss */
+/* line 92, sass/pages/_pocetna.scss */
 .hero__heading > h1 {
   display: flex;
   align-items: center; }
 
-/* line 64, sass/pages/_pocetna.scss */
+/* line 97, sass/pages/_pocetna.scss */
 .hero__heading > h1 > span:nth-child(odd) {
   color: #f1ede1;
   font-size: 21px;
@@ -836,23 +872,23 @@ nav {
   line-height: 1.2;
   padding-top: 4px; }
   @media only screen and (min-width: 580px) {
-    /* line 64, sass/pages/_pocetna.scss */
+    /* line 97, sass/pages/_pocetna.scss */
     .hero__heading > h1 > span:nth-child(odd) {
       font-size: 25px;
       line-height: 1;
       padding-top: 5px; } }
   @media only screen and (min-width: 980px) {
-    /* line 64, sass/pages/_pocetna.scss */
+    /* line 97, sass/pages/_pocetna.scss */
     .hero__heading > h1 > span:nth-child(odd) {
       font-size: 28px;
       padding-top: 13px; } }
   @media only screen and (min-width: 1200px) {
-    /* line 64, sass/pages/_pocetna.scss */
+    /* line 97, sass/pages/_pocetna.scss */
     .hero__heading > h1 > span:nth-child(odd) {
       font-size: 32px;
       padding-top: 12px; } }
 
-/* line 89, sass/pages/_pocetna.scss */
+/* line 122, sass/pages/_pocetna.scss */
 .hero__heading > h1 > span:nth-child(even) {
   color: #f1ede1;
   font-family: "Poppins", sans-serif;
@@ -861,16 +897,16 @@ nav {
   line-height: 1.2;
   padding-left: 6px; }
   @media only screen and (min-width: 580px) {
-    /* line 89, sass/pages/_pocetna.scss */
+    /* line 122, sass/pages/_pocetna.scss */
     .hero__heading > h1 > span:nth-child(even) {
       line-height: 1;
       padding-left: 10px; } }
   @media only screen and (min-width: 1200px) {
-    /* line 89, sass/pages/_pocetna.scss */
+    /* line 122, sass/pages/_pocetna.scss */
     .hero__heading > h1 > span:nth-child(even) {
       padding-left: 12px; } }
 
-/* line 107, sass/pages/_pocetna.scss */
+/* line 140, sass/pages/_pocetna.scss */
 .hero__heading > p {
   color: #fff;
   font-size: 18px;
@@ -882,16 +918,17 @@ nav {
   margin-top: 7px;
   letter-spacing: .3px; }
   @media only screen and (min-width: 580px) {
-    /* line 107, sass/pages/_pocetna.scss */
+    /* line 140, sass/pages/_pocetna.scss */
     .hero__heading > p {
       font-size: 22px;
-      margin-top: 5px; } }
+      margin-top: 5px;
+      text-align: start; } }
   @media only screen and (min-width: 980px) {
-    /* line 107, sass/pages/_pocetna.scss */
+    /* line 140, sass/pages/_pocetna.scss */
     .hero__heading > p {
       font-size: 25px; } }
   @media only screen and (min-width: 1200px) {
-    /* line 107, sass/pages/_pocetna.scss */
+    /* line 140, sass/pages/_pocetna.scss */
     .hero__heading > p {
       font-size: 28px;
       margin-top: 16px;
@@ -900,7 +937,7 @@ nav {
       letter-spacing: .8px;
       padding-left: 1px; } }
 
-/* line 137, sass/pages/_pocetna.scss */
+/* line 171, sass/pages/_pocetna.scss */
 .hero__heading__text--3::before {
   content: '';
   position: absolute;
@@ -911,11 +948,11 @@ nav {
   background-color: #f1ede1;
   display: none; }
   @media only screen and (min-width: 1200px) {
-    /* line 137, sass/pages/_pocetna.scss */
+    /* line 171, sass/pages/_pocetna.scss */
     .hero__heading__text--3::before {
       display: block; } }
 
-/* line 152, sass/pages/_pocetna.scss */
+/* line 186, sass/pages/_pocetna.scss */
 .hero__button {
   width: 53px;
   height: 53px;
@@ -924,13 +961,13 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center; }
-  /* line 161, sass/pages/_pocetna.scss */
+  /* line 195, sass/pages/_pocetna.scss */
   .hero__button button {
     width: 100%;
     height: 100%;
     background-color: transparent;
     border: none; }
-    /* line 167, sass/pages/_pocetna.scss */
+    /* line 201, sass/pages/_pocetna.scss */
     .hero__button button a {
       width: 100%;
       height: 100%;
@@ -940,24 +977,24 @@ nav {
       border: 1px solid #fff;
       border-radius: 50%;
       transition: all .35s ease; }
-      /* line 177, sass/pages/_pocetna.scss */
+      /* line 211, sass/pages/_pocetna.scss */
       .hero__button button a i {
         color: #fff;
         font-size: 19px; }
-    /* line 183, sass/pages/_pocetna.scss */
+    /* line 217, sass/pages/_pocetna.scss */
     .hero__button button a:hover {
       background-color: #f1ede1; }
-    /* line 187, sass/pages/_pocetna.scss */
+    /* line 221, sass/pages/_pocetna.scss */
     .hero__button button a:hover > i {
       color: #353535; }
 
-/* line 195, sass/pages/_pocetna.scss */
+/* line 229, sass/pages/_pocetna.scss */
 .coach-section {
   display: flex;
   justify-content: center;
   background-color: #f0f0f0; }
 
-/* line 201, sass/pages/_pocetna.scss */
+/* line 235, sass/pages/_pocetna.scss */
 .coach__container {
   display: flex;
   flex-direction: column;
@@ -965,62 +1002,62 @@ nav {
   padding: 60px 15px;
   max-width: 310px; }
   @media only screen and (min-width: 479px) {
-    /* line 201, sass/pages/_pocetna.scss */
+    /* line 235, sass/pages/_pocetna.scss */
     .coach__container {
       max-width: 470px; } }
   @media only screen and (min-width: 770px) {
-    /* line 201, sass/pages/_pocetna.scss */
+    /* line 235, sass/pages/_pocetna.scss */
     .coach__container {
       flex-direction: row;
       padding: 80px 0;
       max-width: 738px; } }
   @media only screen and (min-width: 1025px) {
-    /* line 201, sass/pages/_pocetna.scss */
+    /* line 235, sass/pages/_pocetna.scss */
     .coach__container {
       padding: 130px 0;
       max-width: 994px; } }
   @media only screen and (min-width: 1279px) {
-    /* line 201, sass/pages/_pocetna.scss */
+    /* line 235, sass/pages/_pocetna.scss */
     .coach__container {
       max-width: 1290px; } }
 
-/* line 228, sass/pages/_pocetna.scss */
+/* line 262, sass/pages/_pocetna.scss */
 .coach__left {
   margin-bottom: 22px; }
   @media only screen and (min-width: 770px) {
-    /* line 228, sass/pages/_pocetna.scss */
+    /* line 262, sass/pages/_pocetna.scss */
     .coach__left {
       padding: 0 40px 0 15px; } }
   @media only screen and (min-width: 1279px) {
-    /* line 235, sass/pages/_pocetna.scss */
+    /* line 269, sass/pages/_pocetna.scss */
     .coach__left__img {
       max-width: 494px; } }
-  /* line 241, sass/pages/_pocetna.scss */
+  /* line 275, sass/pages/_pocetna.scss */
   .coach__left__img img {
     width: 100%;
     height: 100%; }
     @media only screen and (min-width: 1025px) {
-      /* line 241, sass/pages/_pocetna.scss */
+      /* line 275, sass/pages/_pocetna.scss */
       .coach__left__img img {
         width: 424px;
         height: 543px; } }
     @media only screen and (min-width: 1279px) {
-      /* line 241, sass/pages/_pocetna.scss */
+      /* line 275, sass/pages/_pocetna.scss */
       .coach__left__img img {
         width: 461px;
         height: 605px; } }
 
 @media only screen and (min-width: 770px) {
-  /* line 258, sass/pages/_pocetna.scss */
+  /* line 292, sass/pages/_pocetna.scss */
   .coach__right {
     padding: 0 15px; } }
 
 @media only screen and (min-width: 1025px) {
-  /* line 258, sass/pages/_pocetna.scss */
+  /* line 292, sass/pages/_pocetna.scss */
   .coach__right {
     padding-top: 77px; } }
 
-/* line 268, sass/pages/_pocetna.scss */
+/* line 302, sass/pages/_pocetna.scss */
 .coach__right__subtitle {
   color: #d62326;
   font-family: "Rajdhani", sans-serif;
@@ -1030,19 +1067,19 @@ nav {
   padding-left: 1px;
   line-height: 1.2; }
   @media only screen and (min-width: 770px) {
-    /* line 268, sass/pages/_pocetna.scss */
+    /* line 302, sass/pages/_pocetna.scss */
     .coach__right__subtitle {
       font-size: 21px; } }
   @media only screen and (min-width: 1025px) {
-    /* line 268, sass/pages/_pocetna.scss */
+    /* line 302, sass/pages/_pocetna.scss */
     .coach__right__subtitle {
       font-size: 22px; } }
   @media only screen and (min-width: 1279px) {
-    /* line 268, sass/pages/_pocetna.scss */
+    /* line 302, sass/pages/_pocetna.scss */
     .coach__right__subtitle {
       font-size: 24px; } }
 
-/* line 290, sass/pages/_pocetna.scss */
+/* line 324, sass/pages/_pocetna.scss */
 .coach__right__title {
   color: #16120f;
   font-family: "Rajdhani", sans-serif;
@@ -1051,26 +1088,26 @@ nav {
   text-transform: uppercase;
   padding-bottom: 11px; }
   @media only screen and (min-width: 479px) {
-    /* line 290, sass/pages/_pocetna.scss */
+    /* line 324, sass/pages/_pocetna.scss */
     .coach__right__title {
       font-size: 37px; } }
   @media only screen and (min-width: 770px) {
-    /* line 290, sass/pages/_pocetna.scss */
+    /* line 324, sass/pages/_pocetna.scss */
     .coach__right__title {
       font-size: 45px; } }
   @media only screen and (min-width: 1025px) {
-    /* line 290, sass/pages/_pocetna.scss */
+    /* line 324, sass/pages/_pocetna.scss */
     .coach__right__title {
       font-size: 58px;
       padding-bottom: 14px; } }
   @media only screen and (min-width: 1279px) {
-    /* line 290, sass/pages/_pocetna.scss */
+    /* line 324, sass/pages/_pocetna.scss */
     .coach__right__title {
       font-size: 72px;
       line-height: 1.1;
       padding-bottom: 19px; } }
 
-/* line 318, sass/pages/_pocetna.scss */
+/* line 352, sass/pages/_pocetna.scss */
 .coach__right__text {
   color: #16120f;
   font-family: "Montserrat", serif;
@@ -1078,41 +1115,41 @@ nav {
   padding-bottom: 20px;
   line-height: 25px; }
   @media only screen and (min-width: 770px) {
-    /* line 318, sass/pages/_pocetna.scss */
+    /* line 352, sass/pages/_pocetna.scss */
     .coach__right__text {
       font-size: 14px;
       padding-bottom: 30px; } }
   @media only screen and (min-width: 1025px) {
-    /* line 318, sass/pages/_pocetna.scss */
+    /* line 352, sass/pages/_pocetna.scss */
     .coach__right__text {
       padding-right: 90px; } }
   @media only screen and (min-width: 1025px) {
-    /* line 318, sass/pages/_pocetna.scss */
+    /* line 352, sass/pages/_pocetna.scss */
     .coach__right__text {
       padding-bottom: 32px;
       line-height: 26px; } }
   @media only screen and (min-width: 1279px) {
-    /* line 318, sass/pages/_pocetna.scss */
+    /* line 352, sass/pages/_pocetna.scss */
     .coach__right__text {
       padding-right: 0;
       padding-bottom: 40px;
       line-height: 27px;
       max-width: 483px; } }
 
-/* line 347, sass/pages/_pocetna.scss */
+/* line 381, sass/pages/_pocetna.scss */
 .coach__right__img img {
   width: 100%;
   height: 100%; }
   @media only screen and (min-width: 1279px) {
-    /* line 347, sass/pages/_pocetna.scss */
+    /* line 381, sass/pages/_pocetna.scss */
     .coach__right__img img {
       width: 67%; } }
 
-/* line 359, sass/pages/_pocetna.scss */
+/* line 393, sass/pages/_pocetna.scss */
 .fighting-segments-section {
   background-color: #0f0f0f; }
 
-/* line 363, sass/pages/_pocetna.scss */
+/* line 397, sass/pages/_pocetna.scss */
 .fighting-segments__container {
   display: flex;
   flex-direction: column;
@@ -1120,15 +1157,15 @@ nav {
   align-items: center;
   padding: 60px 15px; }
   @media only screen and (min-width: 770px) {
-    /* line 363, sass/pages/_pocetna.scss */
+    /* line 397, sass/pages/_pocetna.scss */
     .fighting-segments__container {
       padding: 80px 15px; } }
   @media only screen and (min-width: 1025px) {
-    /* line 363, sass/pages/_pocetna.scss */
+    /* line 397, sass/pages/_pocetna.scss */
     .fighting-segments__container {
       padding: 80px 3%; } }
 
-/* line 379, sass/pages/_pocetna.scss */
+/* line 413, sass/pages/_pocetna.scss */
 .fighting-segments__title {
   color: #f1ede1;
   font-family: "Rajdhani", sans-serif;
@@ -1137,28 +1174,28 @@ nav {
   text-transform: uppercase;
   padding-bottom: 19px; }
   @media only screen and (min-width: 288px) {
-    /* line 379, sass/pages/_pocetna.scss */
+    /* line 413, sass/pages/_pocetna.scss */
     .fighting-segments__title {
       font-size: 30px; } }
   @media only screen and (min-width: 480px) {
-    /* line 379, sass/pages/_pocetna.scss */
+    /* line 413, sass/pages/_pocetna.scss */
     .fighting-segments__title {
       font-size: 35px; } }
   @media only screen and (min-width: 770px) {
-    /* line 379, sass/pages/_pocetna.scss */
+    /* line 413, sass/pages/_pocetna.scss */
     .fighting-segments__title {
       font-size: 45px; } }
   @media only screen and (min-width: 1025px) {
-    /* line 379, sass/pages/_pocetna.scss */
+    /* line 413, sass/pages/_pocetna.scss */
     .fighting-segments__title {
       font-size: 58px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 379, sass/pages/_pocetna.scss */
+    /* line 413, sass/pages/_pocetna.scss */
     .fighting-segments__title {
       font-size: 67px;
       padding-bottom: 17px; } }
 
-/* line 409, sass/pages/_pocetna.scss */
+/* line 443, sass/pages/_pocetna.scss */
 .fighting-segments__text {
   color: #f1ede1;
   font-family: "Montserrat", serif;
@@ -1168,27 +1205,27 @@ nav {
   line-height: 24px;
   max-width: 94%; }
   @media only screen and (min-width: 380px) {
-    /* line 409, sass/pages/_pocetna.scss */
+    /* line 443, sass/pages/_pocetna.scss */
     .fighting-segments__text {
       max-width: 85%; } }
   @media only screen and (min-width: 480px) {
-    /* line 409, sass/pages/_pocetna.scss */
+    /* line 443, sass/pages/_pocetna.scss */
     .fighting-segments__text {
       font-size: 14px; } }
   @media only screen and (min-width: 770px) {
-    /* line 409, sass/pages/_pocetna.scss */
+    /* line 443, sass/pages/_pocetna.scss */
     .fighting-segments__text {
       max-width: 54%; } }
   @media only screen and (min-width: 830px) {
-    /* line 409, sass/pages/_pocetna.scss */
+    /* line 443, sass/pages/_pocetna.scss */
     .fighting-segments__text {
       padding-bottom: 44px; } }
   @media only screen and (min-width: 1025px) {
-    /* line 409, sass/pages/_pocetna.scss */
+    /* line 443, sass/pages/_pocetna.scss */
     .fighting-segments__text {
       max-width: 493px; } }
 
-/* line 439, sass/pages/_pocetna.scss */
+/* line 473, sass/pages/_pocetna.scss */
 .fighting-segments__classes {
   display: flex;
   flex-direction: column;
@@ -1201,23 +1238,23 @@ nav {
   text-transform: uppercase;
   max-width: 1350px; }
   @media only screen and (min-width: 480px) {
-    /* line 439, sass/pages/_pocetna.scss */
+    /* line 473, sass/pages/_pocetna.scss */
     .fighting-segments__classes {
       flex-direction: row;
       flex-wrap: wrap; } }
   @media only screen and (min-width: 830px) {
-    /* line 439, sass/pages/_pocetna.scss */
+    /* line 473, sass/pages/_pocetna.scss */
     .fighting-segments__classes {
       flex-wrap: nowrap;
       justify-content: center; } }
-  /* line 461, sass/pages/_pocetna.scss */
+  /* line 495, sass/pages/_pocetna.scss */
   .fighting-segments__classes__class--1::before, .fighting-segments__classes__class--2::before {
     content: '';
     display: inline-block;
     width: 0;
     height: 0;
     padding-top: 100%; }
-  /* line 470, sass/pages/_pocetna.scss */
+  /* line 504, sass/pages/_pocetna.scss */
   .fighting-segments__classes__class--3::before {
     content: '';
     display: inline-block;
@@ -1225,232 +1262,232 @@ nav {
     height: 0;
     padding-top: 100%; }
     @media only screen and (min-width: 480px) {
-      /* line 470, sass/pages/_pocetna.scss */
+      /* line 504, sass/pages/_pocetna.scss */
       .fighting-segments__classes__class--3::before {
         padding-top: 33%; } }
     @media only screen and (min-width: 830px) {
-      /* line 470, sass/pages/_pocetna.scss */
+      /* line 504, sass/pages/_pocetna.scss */
       .fighting-segments__classes__class--3::before {
         padding-top: 100%; } }
-  /* line 486, sass/pages/_pocetna.scss */
+  /* line 520, sass/pages/_pocetna.scss */
   .fighting-segments__classes__class--1 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-segments/pocetnici.jpg) center center/cover no-repeat;
     margin-bottom: 30px; }
     @media only screen and (min-width: 480px) {
-      /* line 486, sass/pages/_pocetna.scss */
+      /* line 520, sass/pages/_pocetna.scss */
       .fighting-segments__classes__class--1 {
         flex-basis: 45%;
         flex-grow: 1;
         margin-right: 10px; } }
     @media only screen and (min-width: 830px) {
-      /* line 486, sass/pages/_pocetna.scss */
+      /* line 520, sass/pages/_pocetna.scss */
       .fighting-segments__classes__class--1 {
         flex-basis: 32%;
         flex-grow: initial;
         margin-right: 0; } }
     @media only screen and (min-width: 1025px) {
-      /* line 486, sass/pages/_pocetna.scss */
+      /* line 520, sass/pages/_pocetna.scss */
       .fighting-segments__classes__class--1 {
         flex-basis: 29.5%;
         margin-right: 30px; } }
-  /* line 508, sass/pages/_pocetna.scss */
+  /* line 542, sass/pages/_pocetna.scss */
   .fighting-segments__classes__class--2 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-segments/takmicari.jpg) center center/cover no-repeat;
     margin-bottom: 30px; }
     @media only screen and (min-width: 480px) {
-      /* line 508, sass/pages/_pocetna.scss */
+      /* line 542, sass/pages/_pocetna.scss */
       .fighting-segments__classes__class--2 {
         flex-basis: 45%;
         flex-grow: 1;
         margin-left: 10px; } }
     @media only screen and (min-width: 830px) {
-      /* line 508, sass/pages/_pocetna.scss */
+      /* line 542, sass/pages/_pocetna.scss */
       .fighting-segments__classes__class--2 {
         flex-basis: 32%;
         flex-grow: initial;
         margin-left: 0; } }
     @media only screen and (min-width: 1025px) {
-      /* line 508, sass/pages/_pocetna.scss */
+      /* line 542, sass/pages/_pocetna.scss */
       .fighting-segments__classes__class--2 {
         flex-basis: 29.5%;
         margin-right: 30px; } }
-  /* line 530, sass/pages/_pocetna.scss */
+  /* line 564, sass/pages/_pocetna.scss */
   .fighting-segments__classes__class--3 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-segments/bjj.jpg) center center/cover no-repeat; }
     @media only screen and (min-width: 480px) {
-      /* line 530, sass/pages/_pocetna.scss */
+      /* line 564, sass/pages/_pocetna.scss */
       .fighting-segments__classes__class--3 {
         flex-grow: 1; } }
     @media only screen and (min-width: 830px) {
-      /* line 530, sass/pages/_pocetna.scss */
+      /* line 564, sass/pages/_pocetna.scss */
       .fighting-segments__classes__class--3 {
         flex-basis: 32%;
         flex-grow: initial;
         margin-bottom: 30px; } }
     @media only screen and (min-width: 1025px) {
-      /* line 530, sass/pages/_pocetna.scss */
+      /* line 564, sass/pages/_pocetna.scss */
       .fighting-segments__classes__class--3 {
         flex-basis: 29.5%; } }
 
-/* line 549, sass/pages/_pocetna.scss */
+/* line 583, sass/pages/_pocetna.scss */
 .fighting-segments__classes > div {
   display: flex;
   align-items: flex-end;
   padding: 18px;
   border: 1px solid #f1ede1cf; }
   @media only screen and (min-width: 830px) {
-    /* line 549, sass/pages/_pocetna.scss */
+    /* line 583, sass/pages/_pocetna.scss */
     .fighting-segments__classes > div {
       justify-content: center; } }
 
-/* line 560, sass/pages/_pocetna.scss */
+/* line 594, sass/pages/_pocetna.scss */
 .fighting-segments__classes > div > h4 {
   line-height: 1;
   font-size: 25px; }
   @media only screen and (min-width: 1280px) {
-    /* line 560, sass/pages/_pocetna.scss */
+    /* line 594, sass/pages/_pocetna.scss */
     .fighting-segments__classes > div > h4 {
       font-size: 33px; } }
 
-/* line 572, sass/pages/_pocetna.scss */
+/* line 606, sass/pages/_pocetna.scss */
 .schedule-section {
   background-color: #f0f0f0; }
 
-/* line 576, sass/pages/_pocetna.scss */
+/* line 610, sass/pages/_pocetna.scss */
 .schedule__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 60px 15px; }
   @media only screen and (min-width: 770px) {
-    /* line 576, sass/pages/_pocetna.scss */
+    /* line 610, sass/pages/_pocetna.scss */
     .schedule__container {
       padding: 80px 15px 100px 15px; } }
 
-/* line 588, sass/pages/_pocetna.scss */
+/* line 622, sass/pages/_pocetna.scss */
 .schedule__title {
   color: #16120f;
   font-size: 30px;
   padding-bottom: 25px;
   text-transform: uppercase; }
   @media only screen and (min-width: 480px) {
-    /* line 588, sass/pages/_pocetna.scss */
+    /* line 622, sass/pages/_pocetna.scss */
     .schedule__title {
       font-size: 35px; } }
   @media only screen and (min-width: 767px) {
-    /* line 588, sass/pages/_pocetna.scss */
+    /* line 622, sass/pages/_pocetna.scss */
     .schedule__title {
       font-size: 45px;
       padding-bottom: 35px; } }
   @media only screen and (min-width: 1024px) {
-    /* line 588, sass/pages/_pocetna.scss */
+    /* line 622, sass/pages/_pocetna.scss */
     .schedule__title {
       padding-bottom: 47px;
       font-size: 58px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 588, sass/pages/_pocetna.scss */
+    /* line 622, sass/pages/_pocetna.scss */
     .schedule__title {
       font-size: 64px; } }
 
-/* line 614, sass/pages/_pocetna.scss */
+/* line 648, sass/pages/_pocetna.scss */
 .schedule__table--mobile__container {
   display: flex;
   justify-content: center;
   width: 100%; }
   @media only screen and (min-width: 770px) {
-    /* line 614, sass/pages/_pocetna.scss */
+    /* line 648, sass/pages/_pocetna.scss */
     .schedule__table--mobile__container {
       display: none; } }
 
-/* line 624, sass/pages/_pocetna.scss */
+/* line 658, sass/pages/_pocetna.scss */
 .schedule__table--mobile__list {
   width: 100%;
   text-align: center;
   border: 4px solid #16120f; }
   @media only screen and (min-width: 480px) {
-    /* line 624, sass/pages/_pocetna.scss */
+    /* line 658, sass/pages/_pocetna.scss */
     .schedule__table--mobile__list {
       max-width: 440px; } }
 
-/* line 635, sass/pages/_pocetna.scss */
+/* line 669, sass/pages/_pocetna.scss */
 .schedule__table--mobile__list > li > div {
   margin: 0 24px 18px 20px;
   border-left: 3px solid #d62326; }
   @media only screen and (min-width: 480px) {
-    /* line 635, sass/pages/_pocetna.scss */
+    /* line 669, sass/pages/_pocetna.scss */
     .schedule__table--mobile__list > li > div {
       margin: 0 33px 18px 30px; } }
 
-/* line 645, sass/pages/_pocetna.scss */
+/* line 679, sass/pages/_pocetna.scss */
 .schedule__table--mobile__list > li {
   margin-top: 25px;
   list-style: none; }
 
-/* line 650, sass/pages/_pocetna.scss */
+/* line 684, sass/pages/_pocetna.scss */
 .schedule__table--mobile__list > li:not(:last-child) {
   border-bottom: 1px solid #00000024; }
 
-/* line 655, sass/pages/_pocetna.scss */
+/* line 689, sass/pages/_pocetna.scss */
 .schedule__table--mobile__list > li > h4 {
   font-size: 26px;
   margin-bottom: 16px;
   text-transform: uppercase; }
   @media only screen and (min-width: 480px) {
-    /* line 655, sass/pages/_pocetna.scss */
+    /* line 689, sass/pages/_pocetna.scss */
     .schedule__table--mobile__list > li > h4 {
       font-size: 30px; } }
 
-/* line 666, sass/pages/_pocetna.scss */
+/* line 700, sass/pages/_pocetna.scss */
 .schedule__table--mobile__list > li > div > p {
   font-family: "Montserrat", serif;
   font-size: 13px;
   text-transform: uppercase; }
   @media only screen and (min-width: 480px) {
-    /* line 666, sass/pages/_pocetna.scss */
+    /* line 700, sass/pages/_pocetna.scss */
     .schedule__table--mobile__list > li > div > p {
       font-size: 14px; } }
 
-/* line 677, sass/pages/_pocetna.scss */
+/* line 711, sass/pages/_pocetna.scss */
 .schedule__table--mobile__list > li > div > p:first-child {
   padding-bottom: 3px; }
 
-/* line 682, sass/pages/_pocetna.scss */
+/* line 716, sass/pages/_pocetna.scss */
 .schedule__table {
   border: 4px solid #16120f;
   border-collapse: collapse;
   text-align: center;
   display: none; }
   @media only screen and (min-width: 770px) {
-    /* line 682, sass/pages/_pocetna.scss */
+    /* line 716, sass/pages/_pocetna.scss */
     .schedule__table {
       display: block; } }
-  /* line 692, sass/pages/_pocetna.scss */
+  /* line 726, sass/pages/_pocetna.scss */
   .schedule__table__head {
     text-transform: uppercase;
     background-color: #16120f;
     color: #f1ede1;
     font-size: 17px; }
     @media only screen and (min-width: 1024px) {
-      /* line 692, sass/pages/_pocetna.scss */
+      /* line 726, sass/pages/_pocetna.scss */
       .schedule__table__head {
         font-size: 19px; } }
     @media only screen and (min-width: 1280px) {
-      /* line 692, sass/pages/_pocetna.scss */
+      /* line 726, sass/pages/_pocetna.scss */
       .schedule__table__head {
         font-size: 21px; } }
-    /* line 706, sass/pages/_pocetna.scss */
+    /* line 740, sass/pages/_pocetna.scss */
     .schedule__table__head tr th {
       text-transform: uppercase;
       height: 27px; }
       @media only screen and (min-width: 1024px) {
-        /* line 706, sass/pages/_pocetna.scss */
+        /* line 740, sass/pages/_pocetna.scss */
         .schedule__table__head tr th {
           height: 35px; } }
       @media only screen and (min-width: 1280px) {
-        /* line 706, sass/pages/_pocetna.scss */
+        /* line 740, sass/pages/_pocetna.scss */
         .schedule__table__head tr th {
           height: 40px; } }
-  /* line 722, sass/pages/_pocetna.scss */
+  /* line 756, sass/pages/_pocetna.scss */
   .schedule__table__body tr td {
     font-family: "Montserrat", serif;
     font-size: 13px;
@@ -1459,74 +1496,74 @@ nav {
     width: 110px;
     height: 65px; }
     @media only screen and (min-width: 1024px) {
-      /* line 722, sass/pages/_pocetna.scss */
+      /* line 756, sass/pages/_pocetna.scss */
       .schedule__table__body tr td {
         font-size: 14px;
         width: 117px;
         height: 73px; } }
     @media only screen and (min-width: 1280px) {
-      /* line 722, sass/pages/_pocetna.scss */
+      /* line 756, sass/pages/_pocetna.scss */
       .schedule__table__body tr td {
         font-size: 15px;
         width: 141px;
         height: 83px;
         padding: 0 10px; } }
 
-/* line 746, sass/pages/_pocetna.scss */
+/* line 780, sass/pages/_pocetna.scss */
 .schedule__table__body > tr > td:first-child {
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   font-size: 17px; }
   @media only screen and (min-width: 1024px) {
-    /* line 746, sass/pages/_pocetna.scss */
+    /* line 780, sass/pages/_pocetna.scss */
     .schedule__table__body > tr > td:first-child {
       font-size: 19px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 746, sass/pages/_pocetna.scss */
+    /* line 780, sass/pages/_pocetna.scss */
     .schedule__table__body > tr > td:first-child {
       font-size: 22px; } }
 
-/* line 762, sass/pages/_pocetna.scss */
+/* line 796, sass/pages/_pocetna.scss */
 .our-team-section {
   background-color: #0f0f0f; }
 
-/* line 766, sass/pages/_pocetna.scss */
+/* line 800, sass/pages/_pocetna.scss */
 .our-team__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 60px 15px; }
   @media only screen and (min-width: 770px) {
-    /* line 766, sass/pages/_pocetna.scss */
+    /* line 800, sass/pages/_pocetna.scss */
     .our-team__container {
       padding: 80px 15px; } }
 
-/* line 778, sass/pages/_pocetna.scss */
+/* line 812, sass/pages/_pocetna.scss */
 .our-team__title {
   color: #f1ede1;
   font-size: 30px;
   padding-bottom: 25px;
   text-transform: uppercase; }
   @media only screen and (min-width: 480px) {
-    /* line 778, sass/pages/_pocetna.scss */
+    /* line 812, sass/pages/_pocetna.scss */
     .our-team__title {
       font-size: 35px; } }
   @media only screen and (min-width: 767px) {
-    /* line 778, sass/pages/_pocetna.scss */
+    /* line 812, sass/pages/_pocetna.scss */
     .our-team__title {
       font-size: 45px;
       padding-bottom: 35px; } }
   @media only screen and (min-width: 1024px) {
-    /* line 778, sass/pages/_pocetna.scss */
+    /* line 812, sass/pages/_pocetna.scss */
     .our-team__title {
       padding-bottom: 40px;
       font-size: 58px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 778, sass/pages/_pocetna.scss */
+    /* line 812, sass/pages/_pocetna.scss */
     .our-team__title {
       font-size: 64px; } }
 
-/* line 803, sass/pages/_pocetna.scss */
+/* line 837, sass/pages/_pocetna.scss */
 .our-team__members {
   display: flex;
   flex-wrap: no-wrap;
@@ -1534,31 +1571,31 @@ nav {
   flex-direction: column;
   text-align: center; }
   @media only screen and (min-width: 480px) {
-    /* line 803, sass/pages/_pocetna.scss */
+    /* line 837, sass/pages/_pocetna.scss */
     .our-team__members {
       flex-wrap: wrap;
       flex-direction: row;
       max-width: 480px; } }
   @media only screen and (min-width: 768px) {
-    /* line 803, sass/pages/_pocetna.scss */
+    /* line 837, sass/pages/_pocetna.scss */
     .our-team__members {
       max-width: 708px; } }
   @media only screen and (min-width: 1024px) {
-    /* line 803, sass/pages/_pocetna.scss */
+    /* line 837, sass/pages/_pocetna.scss */
     .our-team__members {
       max-width: 1024px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 803, sass/pages/_pocetna.scss */
+    /* line 837, sass/pages/_pocetna.scss */
     .our-team__members {
       max-width: 1260px; } }
-  /* line 828, sass/pages/_pocetna.scss */
+  /* line 862, sass/pages/_pocetna.scss */
   .our-team__members__member--1 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center/cover no-repeat; }
     @media only screen and (min-width: 480px) {
-      /* line 828, sass/pages/_pocetna.scss */
+      /* line 862, sass/pages/_pocetna.scss */
       .our-team__members__member--1 {
         margin-right: 15px; } }
-    /* line 835, sass/pages/_pocetna.scss */
+    /* line 869, sass/pages/_pocetna.scss */
     .our-team__members__member--1__hover-mask {
       display: block;
       position: absolute;
@@ -1569,14 +1606,14 @@ nav {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center/cover no-repeat;
       z-index: 0;
       transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1); }
-  /* line 848, sass/pages/_pocetna.scss */
+  /* line 882, sass/pages/_pocetna.scss */
   .our-team__members__member--2 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center/cover no-repeat; }
     @media only screen and (min-width: 480px) {
-      /* line 848, sass/pages/_pocetna.scss */
+      /* line 882, sass/pages/_pocetna.scss */
       .our-team__members__member--2 {
         margin-left: 15px; } }
-    /* line 855, sass/pages/_pocetna.scss */
+    /* line 889, sass/pages/_pocetna.scss */
     .our-team__members__member--2__hover-mask {
       display: block;
       position: absolute;
@@ -1587,14 +1624,14 @@ nav {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center/cover no-repeat;
       z-index: 0;
       transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1); }
-  /* line 868, sass/pages/_pocetna.scss */
+  /* line 902, sass/pages/_pocetna.scss */
   .our-team__members__member--3 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center/cover no-repeat; }
     @media only screen and (min-width: 480px) {
-      /* line 868, sass/pages/_pocetna.scss */
+      /* line 902, sass/pages/_pocetna.scss */
       .our-team__members__member--3 {
         margin-right: 15px; } }
-    /* line 875, sass/pages/_pocetna.scss */
+    /* line 909, sass/pages/_pocetna.scss */
     .our-team__members__member--3__hover-mask {
       display: block;
       position: absolute;
@@ -1605,18 +1642,18 @@ nav {
       background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center/cover no-repeat;
       z-index: 0;
       transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1); }
-  /* line 888, sass/pages/_pocetna.scss */
+  /* line 922, sass/pages/_pocetna.scss */
   .our-team__members__member--4 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center/cover no-repeat; }
     @media only screen and (min-width: 480px) {
-      /* line 888, sass/pages/_pocetna.scss */
+      /* line 922, sass/pages/_pocetna.scss */
       .our-team__members__member--4 {
         margin-left: 15px; } }
     @media only screen and (min-width: 1024px) {
-      /* line 888, sass/pages/_pocetna.scss */
+      /* line 922, sass/pages/_pocetna.scss */
       .our-team__members__member--4 {
         margin-left: 0; } }
-    /* line 899, sass/pages/_pocetna.scss */
+    /* line 933, sass/pages/_pocetna.scss */
     .our-team__members__member--4__hover-mask {
       display: block;
       position: absolute;
@@ -1628,7 +1665,7 @@ nav {
       z-index: 0;
       transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1); }
 
-/* line 913, sass/pages/_pocetna.scss */
+/* line 947, sass/pages/_pocetna.scss */
 .our-team__members__member--1::before,
 .our-team__members__member--2::before,
 .our-team__members__member--3::before,
@@ -1639,14 +1676,14 @@ nav {
   height: 0;
   padding-top: 89%; }
   @media only screen and (min-width: 480px) {
-    /* line 913, sass/pages/_pocetna.scss */
+    /* line 947, sass/pages/_pocetna.scss */
     .our-team__members__member--1::before,
     .our-team__members__member--2::before,
     .our-team__members__member--3::before,
     .our-team__members__member--4::before {
       padding-top: 0%; } }
 
-/* line 929, sass/pages/_pocetna.scss */
+/* line 963, sass/pages/_pocetna.scss */
 .our-team__members__member--1::after,
 .our-team__members__member--2::after,
 .our-team__members__member--3::after,
@@ -1663,16 +1700,16 @@ nav {
   transition: all .4s ease;
   z-index: 998; }
 
-/* line 946, sass/pages/_pocetna.scss */
+/* line 980, sass/pages/_pocetna.scss */
 .our-team__members > div:hover:after {
   opacity: 1; }
 
-/* line 950, sass/pages/_pocetna.scss */
+/* line 984, sass/pages/_pocetna.scss */
 .our-team__members > div:hover span {
   transform: scale(1.075);
   z-index: 997; }
 
-/* line 956, sass/pages/_pocetna.scss */
+/* line 990, sass/pages/_pocetna.scss */
 .our-team__members > div {
   margin-bottom: 30px;
   border: 1px solid #f1ede19a;
@@ -1680,7 +1717,7 @@ nav {
   position: relative;
   overflow: hidden; }
   @media only screen and (min-width: 480px) {
-    /* line 956, sass/pages/_pocetna.scss */
+    /* line 990, sass/pages/_pocetna.scss */
     .our-team__members > div {
       display: flex;
       flex-direction: column;
@@ -1689,28 +1726,28 @@ nav {
       height: 258px;
       max-width: 278px; } }
   @media only screen and (min-width: 768px) {
-    /* line 956, sass/pages/_pocetna.scss */
+    /* line 990, sass/pages/_pocetna.scss */
     .our-team__members > div {
       width: 325px;
       height: 429px;
       max-width: initial; } }
   @media only screen and (min-width: 1024px) {
-    /* line 956, sass/pages/_pocetna.scss */
+    /* line 990, sass/pages/_pocetna.scss */
     .our-team__members > div {
       width: 216px;
       height: 275px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 956, sass/pages/_pocetna.scss */
+    /* line 990, sass/pages/_pocetna.scss */
     .our-team__members > div {
       width: 288px;
       height: 367px; } }
 
 @media only screen and (min-width: 1024px) {
-  /* line 990, sass/pages/_pocetna.scss */
+  /* line 1024, sass/pages/_pocetna.scss */
   .our-team__members > div:not(:last-child) {
     margin: 0 30px 30px 0; } }
 
-/* line 998, sass/pages/_pocetna.scss */
+/* line 1032, sass/pages/_pocetna.scss */
 .our-team__members > div > h4 {
   position: relative;
   color: #f1ede1;
@@ -1723,11 +1760,11 @@ nav {
   backface-visibility: hidden;
   z-index: 999; }
   @media only screen and (min-width: 480px) {
-    /* line 998, sass/pages/_pocetna.scss */
+    /* line 1032, sass/pages/_pocetna.scss */
     .our-team__members > div > h4 {
       line-height: 25px; } }
 
-/* line 1016, sass/pages/_pocetna.scss */
+/* line 1050, sass/pages/_pocetna.scss */
 .our-team__members > div > h5 {
   position: relative;
   font-family: "Montserrat", serif;
@@ -1739,25 +1776,25 @@ nav {
   backface-visibility: hidden;
   z-index: 999; }
   @media only screen and (min-width: 480px) {
-    /* line 1016, sass/pages/_pocetna.scss */
+    /* line 1050, sass/pages/_pocetna.scss */
     .our-team__members > div > h5 {
       margin-bottom: 19px; } }
   @media only screen and (min-width: 768px) {
-    /* line 1016, sass/pages/_pocetna.scss */
+    /* line 1050, sass/pages/_pocetna.scss */
     .our-team__members > div > h5 {
       margin-bottom: 26px; } }
 
-/* line 1037, sass/pages/_pocetna.scss */
+/* line 1071, sass/pages/_pocetna.scss */
 .our-team__members > div:hover h4,
 .our-team__members > div:hover h5 {
   transform: translateY(-51px); }
 
-/* line 1043, sass/pages/_pocetna.scss */
+/* line 1077, sass/pages/_pocetna.scss */
 .our-team__members > div:hover div {
   opacity: 1;
   bottom: 25px; }
 
-/* line 1049, sass/pages/_pocetna.scss */
+/* line 1083, sass/pages/_pocetna.scss */
 .our-team__members > div > div {
   display: flex;
   justify-content: center;
@@ -1769,13 +1806,13 @@ nav {
   transition: bottom .35s .07s ease-out, opacity .25s .04s ease;
   z-index: 999; }
 
-/* line 1062, sass/pages/_pocetna.scss */
+/* line 1096, sass/pages/_pocetna.scss */
 .our-team__members > div > div > div {
   background-color: #f1ede1;
   width: 38px;
   height: 36px; }
 
-/* line 1069, sass/pages/_pocetna.scss */
+/* line 1103, sass/pages/_pocetna.scss */
 .our-team__members > div > div > div > a {
   display: flex;
   justify-content: center;
@@ -1786,25 +1823,25 @@ nav {
   width: 100%;
   height: 100%; }
 
-/* line 1081, sass/pages/_pocetna.scss */
+/* line 1115, sass/pages/_pocetna.scss */
 .our-team__members > div > div > div > a:hover {
   color: #f1ede1;
   background-color: #d62326; }
 
-/* line 1087, sass/pages/_pocetna.scss */
+/* line 1121, sass/pages/_pocetna.scss */
 .our-team__members > div > div > div:first-child {
   margin-right: 10px; }
 
-/* line 1091, sass/pages/_pocetna.scss */
+/* line 1125, sass/pages/_pocetna.scss */
 .our-team__button {
   padding-top: 30px;
   margin-bottom: 4px; }
 
-/* line 1098, sass/pages/_pocetna.scss */
+/* line 1132, sass/pages/_pocetna.scss */
 .events-section {
   background-color: #f0f0f0; }
 
-/* line 1102, sass/pages/_pocetna.scss */
+/* line 1136, sass/pages/_pocetna.scss */
 .events__container {
   display: flex;
   flex-direction: column;
@@ -1813,11 +1850,11 @@ nav {
   padding: 60px 15px;
   overflow: hidden; }
   @media only screen and (min-width: 770px) {
-    /* line 1102, sass/pages/_pocetna.scss */
+    /* line 1136, sass/pages/_pocetna.scss */
     .events__container {
       padding: 80px 15px; } }
 
-/* line 1115, sass/pages/_pocetna.scss */
+/* line 1149, sass/pages/_pocetna.scss */
 .events__title {
   color: #16120f;
   font-size: 30px;
@@ -1825,29 +1862,29 @@ nav {
   text-transform: uppercase;
   opacity: 0; }
   @media only screen and (max-width: 1023px) {
-    /* line 1115, sass/pages/_pocetna.scss */
+    /* line 1149, sass/pages/_pocetna.scss */
     .events__title {
       opacity: 1; } }
   @media only screen and (min-width: 480px) {
-    /* line 1115, sass/pages/_pocetna.scss */
+    /* line 1149, sass/pages/_pocetna.scss */
     .events__title {
       font-size: 35px; } }
   @media only screen and (min-width: 767px) {
-    /* line 1115, sass/pages/_pocetna.scss */
+    /* line 1149, sass/pages/_pocetna.scss */
     .events__title {
       font-size: 45px;
       padding-bottom: 35px; } }
   @media only screen and (min-width: 1024px) {
-    /* line 1115, sass/pages/_pocetna.scss */
+    /* line 1149, sass/pages/_pocetna.scss */
     .events__title {
       padding-bottom: 52px;
       font-size: 58px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 1115, sass/pages/_pocetna.scss */
+    /* line 1149, sass/pages/_pocetna.scss */
     .events__title {
       font-size: 63px; } }
 
-/* line 1146, sass/pages/_pocetna.scss */
+/* line 1180, sass/pages/_pocetna.scss */
 .events__box > div {
   position: relative;
   width: 280px;
@@ -1858,46 +1895,46 @@ nav {
   backface-visibility: hidden;
   opacity: 0; }
   @media only screen and (max-width: 1023px) {
-    /* line 1146, sass/pages/_pocetna.scss */
+    /* line 1180, sass/pages/_pocetna.scss */
     .events__box > div {
       opacity: 1; } }
   @media only screen and (min-width: 480px) {
-    /* line 1146, sass/pages/_pocetna.scss */
+    /* line 1180, sass/pages/_pocetna.scss */
     .events__box > div {
       width: 309px;
       height: 409px; } }
   @media only screen and (min-width: 610px) {
-    /* line 1146, sass/pages/_pocetna.scss */
+    /* line 1180, sass/pages/_pocetna.scss */
     .events__box > div {
       width: 324px;
       height: 421px; } }
   @media only screen and (min-width: 770px) {
-    /* line 1146, sass/pages/_pocetna.scss */
+    /* line 1180, sass/pages/_pocetna.scss */
     .events__box > div {
       width: 216px;
       height: 289px; } }
   @media only screen and (min-width: 1024px) {
-    /* line 1146, sass/pages/_pocetna.scss */
+    /* line 1180, sass/pages/_pocetna.scss */
     .events__box > div {
       width: 301px;
       height: 402px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 1146, sass/pages/_pocetna.scss */
+    /* line 1180, sass/pages/_pocetna.scss */
     .events__box > div {
       width: 400px;
       height: 533px; } }
 
 @media only screen and (min-width: 770px) {
-  /* line 1186, sass/pages/_pocetna.scss */
+  /* line 1220, sass/pages/_pocetna.scss */
   .events__box > div:not(:last-child) {
     margin-right: 20px; } }
 
 @media only screen and (min-width: 1280px) {
-  /* line 1186, sass/pages/_pocetna.scss */
+  /* line 1220, sass/pages/_pocetna.scss */
   .events__box > div:not(:last-child) {
     margin-right: 25px; } }
 
-/* line 1197, sass/pages/_pocetna.scss */
+/* line 1231, sass/pages/_pocetna.scss */
 .events__box > div > a {
   position: relative;
   display: flex;
@@ -1909,7 +1946,7 @@ nav {
   color: #f1ede1;
   padding: 0 10px 22px 22px; }
 
-/* line 1210, sass/pages/_pocetna.scss */
+/* line 1244, sass/pages/_pocetna.scss */
 .events__box > div > a > p {
   font-family: "Montserrat", serif;
   color: #d62326;
@@ -1918,60 +1955,60 @@ nav {
   margin-bottom: 5px;
   z-index: 999; }
   @media only screen and (min-width: 480px) {
-    /* line 1210, sass/pages/_pocetna.scss */
+    /* line 1244, sass/pages/_pocetna.scss */
     .events__box > div > a > p {
       font-size: 14px; } }
   @media only screen and (min-width: 770px) {
-    /* line 1210, sass/pages/_pocetna.scss */
+    /* line 1244, sass/pages/_pocetna.scss */
     .events__box > div > a > p {
       font-size: 13px; } }
   @media only screen and (min-width: 1024px) {
-    /* line 1210, sass/pages/_pocetna.scss */
+    /* line 1244, sass/pages/_pocetna.scss */
     .events__box > div > a > p {
       font-size: 14px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 1210, sass/pages/_pocetna.scss */
+    /* line 1244, sass/pages/_pocetna.scss */
     .events__box > div > a > p {
       font-size: 14px; } }
 
-/* line 1235, sass/pages/_pocetna.scss */
+/* line 1269, sass/pages/_pocetna.scss */
 .events__box > div > a > h4 {
   font-weight: 700;
   text-transform: uppercase;
   z-index: 999; }
 
-/* line 1241, sass/pages/_pocetna.scss */
+/* line 1275, sass/pages/_pocetna.scss */
 .events__box {
   display: flex;
   flex-direction: column;
   align-items: center; }
   @media only screen and (min-width: 770px) {
-    /* line 1241, sass/pages/_pocetna.scss */
+    /* line 1275, sass/pages/_pocetna.scss */
     .events__box {
       flex-direction: row; } }
-  /* line 1250, sass/pages/_pocetna.scss */
+  /* line 1284, sass/pages/_pocetna.scss */
   .events__box__event--1 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/vrbas.jpg) center center/cover no-repeat; }
-    /* line 1253, sass/pages/_pocetna.scss */
+    /* line 1287, sass/pages/_pocetna.scss */
     .events__box__event--1__name {
       font-size: 21px; }
       @media only screen and (min-width: 480px) {
-        /* line 1253, sass/pages/_pocetna.scss */
+        /* line 1287, sass/pages/_pocetna.scss */
         .events__box__event--1__name {
           font-size: 29px; } }
       @media only screen and (min-width: 770px) {
-        /* line 1253, sass/pages/_pocetna.scss */
+        /* line 1287, sass/pages/_pocetna.scss */
         .events__box__event--1__name {
           font-size: 19px; } }
       @media only screen and (min-width: 1024px) {
-        /* line 1253, sass/pages/_pocetna.scss */
+        /* line 1287, sass/pages/_pocetna.scss */
         .events__box__event--1__name {
           font-size: 25px; } }
       @media only screen and (min-width: 1280px) {
-        /* line 1253, sass/pages/_pocetna.scss */
+        /* line 1287, sass/pages/_pocetna.scss */
         .events__box__event--1__name {
           font-size: 31px; } }
-  /* line 1274, sass/pages/_pocetna.scss */
+  /* line 1308, sass/pages/_pocetna.scss */
   .events__box__event--1::before {
     content: '';
     position: absolute;
@@ -1982,32 +2019,32 @@ nav {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/vrbas.jpg) center center/cover no-repeat;
     z-index: 0;
     transition: all .35s ease; }
-  /* line 1286, sass/pages/_pocetna.scss */
+  /* line 1320, sass/pages/_pocetna.scss */
   .events__box__event--1:hover::before {
     transform: scale(1.09); }
-  /* line 1290, sass/pages/_pocetna.scss */
+  /* line 1324, sass/pages/_pocetna.scss */
   .events__box__event--2 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-genesis.jpg) center center/cover no-repeat; }
-    /* line 1293, sass/pages/_pocetna.scss */
+    /* line 1327, sass/pages/_pocetna.scss */
     .events__box__event--2__name {
       font-size: 21px; }
       @media only screen and (min-width: 480px) {
-        /* line 1293, sass/pages/_pocetna.scss */
+        /* line 1327, sass/pages/_pocetna.scss */
         .events__box__event--2__name {
           font-size: 28px; } }
       @media only screen and (min-width: 770px) {
-        /* line 1293, sass/pages/_pocetna.scss */
+        /* line 1327, sass/pages/_pocetna.scss */
         .events__box__event--2__name {
           font-size: 17px; } }
       @media only screen and (min-width: 1024px) {
-        /* line 1293, sass/pages/_pocetna.scss */
+        /* line 1327, sass/pages/_pocetna.scss */
         .events__box__event--2__name {
           font-size: 24px; } }
       @media only screen and (min-width: 1280px) {
-        /* line 1293, sass/pages/_pocetna.scss */
+        /* line 1327, sass/pages/_pocetna.scss */
         .events__box__event--2__name {
           font-size: 28px; } }
-  /* line 1314, sass/pages/_pocetna.scss */
+  /* line 1348, sass/pages/_pocetna.scss */
   .events__box__event--2::before {
     content: '';
     position: absolute;
@@ -2018,32 +2055,32 @@ nav {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-genesis.jpg) center center/cover no-repeat;
     z-index: 0;
     transition: all .35s ease; }
-  /* line 1326, sass/pages/_pocetna.scss */
+  /* line 1360, sass/pages/_pocetna.scss */
   .events__box__event--2:hover::before {
     transform: scale(1.09); }
-  /* line 1330, sass/pages/_pocetna.scss */
+  /* line 1364, sass/pages/_pocetna.scss */
   .events__box__event--3 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-55.jpg) center center/cover no-repeat; }
-    /* line 1333, sass/pages/_pocetna.scss */
+    /* line 1367, sass/pages/_pocetna.scss */
     .events__box__event--3__name {
       font-size: 19px; }
       @media only screen and (min-width: 480px) {
-        /* line 1333, sass/pages/_pocetna.scss */
+        /* line 1367, sass/pages/_pocetna.scss */
         .events__box__event--3__name {
           font-size: 27px; } }
       @media only screen and (min-width: 770px) {
-        /* line 1333, sass/pages/_pocetna.scss */
+        /* line 1367, sass/pages/_pocetna.scss */
         .events__box__event--3__name {
           font-size: 17px; } }
       @media only screen and (min-width: 1024px) {
-        /* line 1333, sass/pages/_pocetna.scss */
+        /* line 1367, sass/pages/_pocetna.scss */
         .events__box__event--3__name {
           font-size: 20px; } }
       @media only screen and (min-width: 1280px) {
-        /* line 1333, sass/pages/_pocetna.scss */
+        /* line 1367, sass/pages/_pocetna.scss */
         .events__box__event--3__name {
           font-size: 27px; } }
-  /* line 1354, sass/pages/_pocetna.scss */
+  /* line 1388, sass/pages/_pocetna.scss */
   .events__box__event--3::before {
     content: '';
     position: absolute;
@@ -2054,16 +2091,16 @@ nav {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-55.jpg) center center/cover no-repeat;
     z-index: 0;
     transition: all .35s ease; }
-  /* line 1366, sass/pages/_pocetna.scss */
+  /* line 1400, sass/pages/_pocetna.scss */
   .events__box__event--3:hover::before {
     transform: scale(1.09); }
 
-/* line 1371, sass/pages/_pocetna.scss */
+/* line 1405, sass/pages/_pocetna.scss */
 .events__button {
   margin-top: 15px;
   opacity: 0; }
   @media only screen and (max-width: 1023px) {
-    /* line 1371, sass/pages/_pocetna.scss */
+    /* line 1405, sass/pages/_pocetna.scss */
     .events__button {
       opacity: 1; } }
 
