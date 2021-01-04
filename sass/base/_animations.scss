@@ -10,7 +10,7 @@
 @keyframes fadeInTop {
     0% {
         opacity: 0;
-        transform: translateY(-200px);
+        transform: translateY(-50px);
     }
     100% {
         opacity: 100%;
@@ -21,7 +21,7 @@
 @keyframes fadeInBottom {
     0% {
         opacity: 0;
-        transform: translateY(200px);
+        transform: translateY(150px);
     }
     100% {
         opacity: 100%;
@@ -32,7 +32,7 @@
 @keyframes fadeInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-200px);
+        transform: translateX(-150px);
     }
     100% {
         opacity: 100%;
@@ -43,7 +43,7 @@
 @keyframes fadeInRight {
     0% {
         opacity: 0;
-        transform: translateX(200px);
+        transform: translateX(150px);
     }
     100% {
         opacity: 100%;

@@ -7,6 +7,12 @@ let options = {
     threshold: 1.0
 }
 
+let optionsEvents = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.6
+}
+
 
 //Animations for Meet Our Team Section
 
@@ -27,14 +33,17 @@ let callbackEvents = (entries, observer) => {
             else if (entry.target.classList.contains('events__box__event--2')) {
                 entry.target.style.animation = 'fadeInBottom 1s forwards';
             }
-            else {
+            else if (entry.target.classList.contains('events__box__event--3')) {
                 entry.target.style.animation = 'fadeInRight 1s forwards';
+            }
+            else {
+                entry.target.style.animation = 'fadeIn 1s .2s forwards';
             }
         }
     });
   };
 
-let observerEvents = new IntersectionObserver(callbackEvents, options);
+let observerEvents = new IntersectionObserver(callbackEvents, optionsEvents);
 
 targetUpcomingEvents.forEach(el => {
     observerEvents.observe(el);
