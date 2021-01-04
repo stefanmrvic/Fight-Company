@@ -1,11 +1,11 @@
-const mediaQuerySmall = window.matchMedia("(min-width: 630px)");
+const mediaQueryMedium = window.matchMedia("(min-width: 1024px)");
 
-if(mediaQuerySmall.matches) {
+if(mediaQueryMedium.matches) {
 
     let targetMeetOurTeam = document.querySelectorAll('.anim1');
     let targetSpecialOffer = document.querySelectorAll('.anim2');
     let targetUpcomingEvents = document.querySelectorAll('.anim3');
-    let targetFooter = document.querySelectorAll('.anim');
+    let targetFooter = document.querySelectorAll('.anim4');
 
     let options = {
         root: null,
@@ -14,49 +14,46 @@ if(mediaQuerySmall.matches) {
     }
 
     //Animations for Meet Our Team Section
-    const mediaQueryMedium = window.matchMedia("(min-width: 1015px)");
 
-    if(mediaQueryMedium.matches) {
+    let callbackOurTeam = (entries, observer) => {
+        
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > 0) {
 
-        let callbackOurTeam = (entries, observer) => {
-            
-            entries.forEach(entry => {
-                if (entry.intersectionRatio > 0) {
-
-                    if (entry.target.classList.contains('meet-our-team__members__intro')) {
-                        entry.target.style.animation = 'fadeInLeft 1.2s forwards';
-                    }
-                    else if (entry.target.classList.contains('meet-our-team__members__member--1')) {
-                        entry.target.style.animation = 'fadeInLeft 1.2s forwards';
-                    }
-                    else if (entry.target.classList.contains('meet-our-team__members__member--2')) {
-                        entry.target.style.animation = 'fadeInLeft 1.2s forwards';
-                    }
-                    else if (entry.target.classList.contains('meet-our-team__members__member--3')) {
-                        entry.target.style.animation = 'fadeInLeft 1.2s forwards';
-                    }
-                    else if (entry.target.classList.contains('meet-our-team__members__member--4')) {
-                        entry.target.style.animation = 'fadeInRight 1.2s forwards';
-                    }
-                    else if (entry.target.classList.contains('meet-our-team__members__member--5')) {
-                        entry.target.style.animation = 'fadeInRight 1.2s forwards';
-                    }
-                    else if (entry.target.classList.contains('meet-our-team__members__member--6')) {
-                        entry.target.style.animation = 'fadeInRight 1.2s forwards';
-                    }
-                    else {
-                        entry.target.style.animation = 'fadeInRight 1.2s forwards';
-                    }
+                if (entry.target.classList.contains('meet-our-team__members__intro')) {
+                    entry.target.style.animation = 'fadeInLeft 1.2s forwards';
                 }
-            });
-        };
+                else if (entry.target.classList.contains('meet-our-team__members__member--1')) {
+                    entry.target.style.animation = 'fadeInLeft 1.2s forwards';
+                }
+                else if (entry.target.classList.contains('meet-our-team__members__member--2')) {
+                    entry.target.style.animation = 'fadeInLeft 1.2s forwards';
+                }
+                else if (entry.target.classList.contains('meet-our-team__members__member--3')) {
+                    entry.target.style.animation = 'fadeInLeft 1.2s forwards';
+                }
+                else if (entry.target.classList.contains('meet-our-team__members__member--4')) {
+                    entry.target.style.animation = 'fadeInRight 1.2s forwards';
+                }
+                else if (entry.target.classList.contains('meet-our-team__members__member--5')) {
+                    entry.target.style.animation = 'fadeInRight 1.2s forwards';
+                }
+                else if (entry.target.classList.contains('meet-our-team__members__member--6')) {
+                    entry.target.style.animation = 'fadeInRight 1.2s forwards';
+                }
+                else {
+                    entry.target.style.animation = 'fadeInRight 1.2s forwards';
+                }
+            }
+        });
+    };
 
     let observerOurTeam = new IntersectionObserver(callbackOurTeam, options);
 
     targetMeetOurTeam.forEach(el => {
-        observerOurTeam.observe(el);
+    observerOurTeam.observe(el);
     });
-    }
+    
     //Animations for Special Offer Section
     let callbackOffer = (entries, observer) => {
         
@@ -149,5 +146,3 @@ if(mediaQuerySmall.matches) {
 
 
 
-
-  

@@ -61,6 +61,14 @@ html {
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes fadeInBottomAboutUs {
+  0% {
+    opacity: 0;
+    transform: translateY(70px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
@@ -541,7 +549,7 @@ nav {
     width: 100%;
     max-width: 1200px;
     opacity: 0; }
-    @media only screen and (max-width: 630px) {
+    @media only screen and (max-width: 1023px) {
       /* line 12, sass/layout/_footer.scss */
       .footer-social__heading {
         opacity: 1; } }
@@ -581,7 +589,7 @@ nav {
     padding: 0 30px;
     margin-bottom: 25px;
     opacity: 0; }
-    @media only screen and (max-width: 630px) {
+    @media only screen and (max-width: 1023px) {
       /* line 51, sass/layout/_footer.scss */
       .footer-social__imgs {
         opacity: 1; } }
@@ -640,7 +648,7 @@ nav {
     max-width: 1200px;
     color: #f1ede1;
     opacity: 0; }
-    @media only screen and (max-width: 630px) {
+    @media only screen and (max-width: 1023px) {
       /* line 116, sass/layout/_footer.scss */
       .footer-social__socials {
         opacity: 1; } }
@@ -1816,6 +1824,10 @@ nav {
   padding-bottom: 25px;
   text-transform: uppercase;
   opacity: 0; }
+  @media only screen and (max-width: 1023px) {
+    /* line 1115, sass/pages/_pocetna.scss */
+    .events__title {
+      opacity: 1; } }
   @media only screen and (min-width: 480px) {
     /* line 1115, sass/pages/_pocetna.scss */
     .events__title {
@@ -1835,7 +1847,7 @@ nav {
     .events__title {
       font-size: 63px; } }
 
-/* line 1142, sass/pages/_pocetna.scss */
+/* line 1146, sass/pages/_pocetna.scss */
 .events__box > div {
   position: relative;
   width: 280px;
@@ -1845,47 +1857,47 @@ nav {
   overflow: hidden;
   backface-visibility: hidden;
   opacity: 0; }
-  @media only screen and (max-width: 630px) {
-    /* line 1142, sass/pages/_pocetna.scss */
+  @media only screen and (max-width: 1023px) {
+    /* line 1146, sass/pages/_pocetna.scss */
     .events__box > div {
       opacity: 1; } }
   @media only screen and (min-width: 480px) {
-    /* line 1142, sass/pages/_pocetna.scss */
+    /* line 1146, sass/pages/_pocetna.scss */
     .events__box > div {
       width: 309px;
       height: 409px; } }
   @media only screen and (min-width: 610px) {
-    /* line 1142, sass/pages/_pocetna.scss */
+    /* line 1146, sass/pages/_pocetna.scss */
     .events__box > div {
       width: 324px;
       height: 421px; } }
   @media only screen and (min-width: 770px) {
-    /* line 1142, sass/pages/_pocetna.scss */
+    /* line 1146, sass/pages/_pocetna.scss */
     .events__box > div {
       width: 216px;
       height: 289px; } }
   @media only screen and (min-width: 1024px) {
-    /* line 1142, sass/pages/_pocetna.scss */
+    /* line 1146, sass/pages/_pocetna.scss */
     .events__box > div {
       width: 301px;
       height: 402px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 1142, sass/pages/_pocetna.scss */
+    /* line 1146, sass/pages/_pocetna.scss */
     .events__box > div {
       width: 400px;
       height: 533px; } }
 
 @media only screen and (min-width: 770px) {
-  /* line 1182, sass/pages/_pocetna.scss */
+  /* line 1186, sass/pages/_pocetna.scss */
   .events__box > div:not(:last-child) {
     margin-right: 20px; } }
 
 @media only screen and (min-width: 1280px) {
-  /* line 1182, sass/pages/_pocetna.scss */
+  /* line 1186, sass/pages/_pocetna.scss */
   .events__box > div:not(:last-child) {
     margin-right: 25px; } }
 
-/* line 1193, sass/pages/_pocetna.scss */
+/* line 1197, sass/pages/_pocetna.scss */
 .events__box > div > a {
   position: relative;
   display: flex;
@@ -1897,7 +1909,7 @@ nav {
   color: #f1ede1;
   padding: 0 10px 22px 22px; }
 
-/* line 1206, sass/pages/_pocetna.scss */
+/* line 1210, sass/pages/_pocetna.scss */
 .events__box > div > a > p {
   font-family: "Montserrat", serif;
   color: #d62326;
@@ -1906,60 +1918,60 @@ nav {
   margin-bottom: 5px;
   z-index: 999; }
   @media only screen and (min-width: 480px) {
-    /* line 1206, sass/pages/_pocetna.scss */
+    /* line 1210, sass/pages/_pocetna.scss */
     .events__box > div > a > p {
       font-size: 14px; } }
   @media only screen and (min-width: 770px) {
-    /* line 1206, sass/pages/_pocetna.scss */
+    /* line 1210, sass/pages/_pocetna.scss */
     .events__box > div > a > p {
       font-size: 13px; } }
   @media only screen and (min-width: 1024px) {
-    /* line 1206, sass/pages/_pocetna.scss */
+    /* line 1210, sass/pages/_pocetna.scss */
     .events__box > div > a > p {
       font-size: 14px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 1206, sass/pages/_pocetna.scss */
+    /* line 1210, sass/pages/_pocetna.scss */
     .events__box > div > a > p {
       font-size: 14px; } }
 
-/* line 1231, sass/pages/_pocetna.scss */
+/* line 1235, sass/pages/_pocetna.scss */
 .events__box > div > a > h4 {
   font-weight: 700;
   text-transform: uppercase;
   z-index: 999; }
 
-/* line 1237, sass/pages/_pocetna.scss */
+/* line 1241, sass/pages/_pocetna.scss */
 .events__box {
   display: flex;
   flex-direction: column;
   align-items: center; }
   @media only screen and (min-width: 770px) {
-    /* line 1237, sass/pages/_pocetna.scss */
+    /* line 1241, sass/pages/_pocetna.scss */
     .events__box {
       flex-direction: row; } }
-  /* line 1246, sass/pages/_pocetna.scss */
+  /* line 1250, sass/pages/_pocetna.scss */
   .events__box__event--1 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/vrbas.jpg) center center/cover no-repeat; }
-    /* line 1249, sass/pages/_pocetna.scss */
+    /* line 1253, sass/pages/_pocetna.scss */
     .events__box__event--1__name {
       font-size: 21px; }
       @media only screen and (min-width: 480px) {
-        /* line 1249, sass/pages/_pocetna.scss */
+        /* line 1253, sass/pages/_pocetna.scss */
         .events__box__event--1__name {
           font-size: 29px; } }
       @media only screen and (min-width: 770px) {
-        /* line 1249, sass/pages/_pocetna.scss */
+        /* line 1253, sass/pages/_pocetna.scss */
         .events__box__event--1__name {
           font-size: 19px; } }
       @media only screen and (min-width: 1024px) {
-        /* line 1249, sass/pages/_pocetna.scss */
+        /* line 1253, sass/pages/_pocetna.scss */
         .events__box__event--1__name {
           font-size: 25px; } }
       @media only screen and (min-width: 1280px) {
-        /* line 1249, sass/pages/_pocetna.scss */
+        /* line 1253, sass/pages/_pocetna.scss */
         .events__box__event--1__name {
           font-size: 31px; } }
-  /* line 1270, sass/pages/_pocetna.scss */
+  /* line 1274, sass/pages/_pocetna.scss */
   .events__box__event--1::before {
     content: '';
     position: absolute;
@@ -1970,32 +1982,32 @@ nav {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/vrbas.jpg) center center/cover no-repeat;
     z-index: 0;
     transition: all .35s ease; }
-  /* line 1282, sass/pages/_pocetna.scss */
+  /* line 1286, sass/pages/_pocetna.scss */
   .events__box__event--1:hover::before {
     transform: scale(1.09); }
-  /* line 1286, sass/pages/_pocetna.scss */
+  /* line 1290, sass/pages/_pocetna.scss */
   .events__box__event--2 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-genesis.jpg) center center/cover no-repeat; }
-    /* line 1289, sass/pages/_pocetna.scss */
+    /* line 1293, sass/pages/_pocetna.scss */
     .events__box__event--2__name {
       font-size: 21px; }
       @media only screen and (min-width: 480px) {
-        /* line 1289, sass/pages/_pocetna.scss */
+        /* line 1293, sass/pages/_pocetna.scss */
         .events__box__event--2__name {
           font-size: 28px; } }
       @media only screen and (min-width: 770px) {
-        /* line 1289, sass/pages/_pocetna.scss */
+        /* line 1293, sass/pages/_pocetna.scss */
         .events__box__event--2__name {
           font-size: 17px; } }
       @media only screen and (min-width: 1024px) {
-        /* line 1289, sass/pages/_pocetna.scss */
+        /* line 1293, sass/pages/_pocetna.scss */
         .events__box__event--2__name {
           font-size: 24px; } }
       @media only screen and (min-width: 1280px) {
-        /* line 1289, sass/pages/_pocetna.scss */
+        /* line 1293, sass/pages/_pocetna.scss */
         .events__box__event--2__name {
           font-size: 28px; } }
-  /* line 1310, sass/pages/_pocetna.scss */
+  /* line 1314, sass/pages/_pocetna.scss */
   .events__box__event--2::before {
     content: '';
     position: absolute;
@@ -2006,32 +2018,32 @@ nav {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-genesis.jpg) center center/cover no-repeat;
     z-index: 0;
     transition: all .35s ease; }
-  /* line 1322, sass/pages/_pocetna.scss */
+  /* line 1326, sass/pages/_pocetna.scss */
   .events__box__event--2:hover::before {
     transform: scale(1.09); }
-  /* line 1326, sass/pages/_pocetna.scss */
+  /* line 1330, sass/pages/_pocetna.scss */
   .events__box__event--3 {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-55.jpg) center center/cover no-repeat; }
-    /* line 1329, sass/pages/_pocetna.scss */
+    /* line 1333, sass/pages/_pocetna.scss */
     .events__box__event--3__name {
       font-size: 19px; }
       @media only screen and (min-width: 480px) {
-        /* line 1329, sass/pages/_pocetna.scss */
+        /* line 1333, sass/pages/_pocetna.scss */
         .events__box__event--3__name {
           font-size: 27px; } }
       @media only screen and (min-width: 770px) {
-        /* line 1329, sass/pages/_pocetna.scss */
+        /* line 1333, sass/pages/_pocetna.scss */
         .events__box__event--3__name {
           font-size: 17px; } }
       @media only screen and (min-width: 1024px) {
-        /* line 1329, sass/pages/_pocetna.scss */
+        /* line 1333, sass/pages/_pocetna.scss */
         .events__box__event--3__name {
           font-size: 20px; } }
       @media only screen and (min-width: 1280px) {
-        /* line 1329, sass/pages/_pocetna.scss */
+        /* line 1333, sass/pages/_pocetna.scss */
         .events__box__event--3__name {
           font-size: 27px; } }
-  /* line 1350, sass/pages/_pocetna.scss */
+  /* line 1354, sass/pages/_pocetna.scss */
   .events__box__event--3::before {
     content: '';
     position: absolute;
@@ -2042,16 +2054,16 @@ nav {
     background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-55.jpg) center center/cover no-repeat;
     z-index: 0;
     transition: all .35s ease; }
-  /* line 1362, sass/pages/_pocetna.scss */
+  /* line 1366, sass/pages/_pocetna.scss */
   .events__box__event--3:hover::before {
     transform: scale(1.09); }
 
-/* line 1367, sass/pages/_pocetna.scss */
+/* line 1371, sass/pages/_pocetna.scss */
 .events__button {
   margin-top: 15px;
   opacity: 0; }
-  @media only screen and (max-width: 630px) {
-    /* line 1367, sass/pages/_pocetna.scss */
+  @media only screen and (max-width: 1023px) {
+    /* line 1371, sass/pages/_pocetna.scss */
     .events__button {
       opacity: 1; } }
 
@@ -2088,92 +2100,105 @@ nav {
     .our-philosofy__container {
       max-width: 1600px; } }
 
-@media only screen and (min-width: 1024px) {
-  /* line 35, sass/pages/_o nama.scss */
-  .our-philosofy__left {
-    flex-basis: 40%; } }
-
-@media only screen and (min-width: 1280px) {
-  /* line 35, sass/pages/_o nama.scss */
-  .our-philosofy__left {
-    flex-basis: 44%; } }
-
-/* line 45, sass/pages/_o nama.scss */
-.our-philosofy__left__title {
-  font-size: 26px;
-  text-transform: uppercase; }
-  @media only screen and (min-width: 480px) {
-    /* line 45, sass/pages/_o nama.scss */
-    .our-philosofy__left__title {
-      font-size: 30px; } }
-  @media only screen and (min-width: 770px) {
-    /* line 45, sass/pages/_o nama.scss */
-    .our-philosofy__left__title {
-      font-size: 38px; } }
+/* line 35, sass/pages/_o nama.scss */
+.our-philosofy__left {
+  opacity: 0; }
+  @media only screen and (max-width: 1023px) {
+    /* line 35, sass/pages/_o nama.scss */
+    .our-philosofy__left {
+      opacity: 1; } }
   @media only screen and (min-width: 1024px) {
-    /* line 45, sass/pages/_o nama.scss */
-    .our-philosofy__left__title {
-      font-size: 48px; } }
-
-/* line 62, sass/pages/_o nama.scss */
-.our-philosofy__left__text {
-  font-family: "Montserrat", serif;
-  color: #16120f;
-  font-size: 14px;
-  margin: 18px 0 29px 0;
-  line-height: 1.75; }
-  @media only screen and (min-width: 480px) {
-    /* line 62, sass/pages/_o nama.scss */
-    .our-philosofy__left__text {
-      margin: 18px 0 29px 0; } }
-  @media only screen and (min-width: 770px) {
-    /* line 62, sass/pages/_o nama.scss */
-    .our-philosofy__left__text {
-      margin: 20px 0 31px 0; } }
-  @media only screen and (min-width: 770px) {
-    /* line 62, sass/pages/_o nama.scss */
-    .our-philosofy__left__text {
-      margin: 18px 0 34px 0; } }
-
-/* line 82, sass/pages/_o nama.scss */
-.our-philosofy__left__button {
-  margin-bottom: 36px; }
-  @media only screen and (min-width: 480px) {
-    /* line 82, sass/pages/_o nama.scss */
-    .our-philosofy__left__button {
-      margin-bottom: 43px; } }
-  @media only screen and (min-width: 770px) {
-    /* line 82, sass/pages/_o nama.scss */
-    .our-philosofy__left__button {
-      margin-bottom: 46px; } }
-  @media only screen and (min-width: 1024px) {
-    /* line 82, sass/pages/_o nama.scss */
-    .our-philosofy__left__button {
-      margin-bottom: 0; } }
-
-@media only screen and (min-width: 1024px) {
-  /* line 99, sass/pages/_o nama.scss */
-  .our-philosofy__right {
-    flex-basis: 50%; } }
-
-@media only screen and (min-width: 1280px) {
-  /* line 99, sass/pages/_o nama.scss */
-  .our-philosofy__right {
-    flex-basis: 44%; } }
+    /* line 35, sass/pages/_o nama.scss */
+    .our-philosofy__left {
+      flex-basis: 40%; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 35, sass/pages/_o nama.scss */
+    .our-philosofy__left {
+      flex-basis: 44%; } }
+  /* line 50, sass/pages/_o nama.scss */
+  .our-philosofy__left__title {
+    font-size: 26px;
+    text-transform: uppercase; }
+    @media only screen and (min-width: 480px) {
+      /* line 50, sass/pages/_o nama.scss */
+      .our-philosofy__left__title {
+        font-size: 30px; } }
+    @media only screen and (min-width: 770px) {
+      /* line 50, sass/pages/_o nama.scss */
+      .our-philosofy__left__title {
+        font-size: 38px; } }
+    @media only screen and (min-width: 1024px) {
+      /* line 50, sass/pages/_o nama.scss */
+      .our-philosofy__left__title {
+        font-size: 48px; } }
+  /* line 67, sass/pages/_o nama.scss */
+  .our-philosofy__left__text {
+    font-family: "Montserrat", serif;
+    color: #16120f;
+    font-size: 14px;
+    margin: 18px 0 29px 0;
+    line-height: 1.75; }
+    @media only screen and (min-width: 480px) {
+      /* line 67, sass/pages/_o nama.scss */
+      .our-philosofy__left__text {
+        margin: 18px 0 29px 0; } }
+    @media only screen and (min-width: 770px) {
+      /* line 67, sass/pages/_o nama.scss */
+      .our-philosofy__left__text {
+        margin: 20px 0 31px 0; } }
+    @media only screen and (min-width: 770px) {
+      /* line 67, sass/pages/_o nama.scss */
+      .our-philosofy__left__text {
+        margin: 18px 0 34px 0; } }
+  /* line 87, sass/pages/_o nama.scss */
+  .our-philosofy__left__button {
+    margin-bottom: 36px;
+    opacity: 0; }
+    @media only screen and (max-width: 1023px) {
+      /* line 87, sass/pages/_o nama.scss */
+      .our-philosofy__left__button {
+        opacity: 1; } }
+    @media only screen and (min-width: 480px) {
+      /* line 87, sass/pages/_o nama.scss */
+      .our-philosofy__left__button {
+        margin-bottom: 43px; } }
+    @media only screen and (min-width: 770px) {
+      /* line 87, sass/pages/_o nama.scss */
+      .our-philosofy__left__button {
+        margin-bottom: 46px; } }
+    @media only screen and (min-width: 1024px) {
+      /* line 87, sass/pages/_o nama.scss */
+      .our-philosofy__left__button {
+        margin-bottom: 0; } }
 
 /* line 109, sass/pages/_o nama.scss */
-.our-philosofy__right__img {
-  width: 100%;
-  height: 100%; }
+.our-philosofy__right {
+  opacity: 0; }
+  @media only screen and (max-width: 1023px) {
+    /* line 109, sass/pages/_o nama.scss */
+    .our-philosofy__right {
+      opacity: 1; } }
+  @media only screen and (min-width: 1024px) {
+    /* line 109, sass/pages/_o nama.scss */
+    .our-philosofy__right {
+      flex-basis: 50%; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 109, sass/pages/_o nama.scss */
+    .our-philosofy__right {
+      flex-basis: 44%; } }
+  /* line 124, sass/pages/_o nama.scss */
+  .our-philosofy__right__img {
+    width: 100%;
+    height: 100%; }
 
-/* line 117, sass/pages/_o nama.scss */
+/* line 132, sass/pages/_o nama.scss */
 .about-club__section {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #0f0f0f; }
 
-/* line 124, sass/pages/_o nama.scss */
+/* line 139, sass/pages/_o nama.scss */
 .about-club__container {
   display: flex;
   flex-direction: column;
@@ -2181,72 +2206,82 @@ nav {
   align-items: center;
   padding: 50px 15px 50px 15px; }
   @media only screen and (min-width: 480px) {
-    /* line 124, sass/pages/_o nama.scss */
+    /* line 139, sass/pages/_o nama.scss */
     .about-club__container {
       max-width: 497px; } }
   @media only screen and (min-width: 770px) {
-    /* line 124, sass/pages/_o nama.scss */
+    /* line 139, sass/pages/_o nama.scss */
     .about-club__container {
       padding: 80px 15px;
       max-width: 659px; } }
   @media only screen and (min-width: 1024px) {
-    /* line 124, sass/pages/_o nama.scss */
+    /* line 139, sass/pages/_o nama.scss */
     .about-club__container {
       flex-direction: row;
       max-width: initial;
       padding: 80px 6%; } }
   @media only screen and (min-width: 1280px) {
-    /* line 124, sass/pages/_o nama.scss */
+    /* line 139, sass/pages/_o nama.scss */
     .about-club__container {
       max-width: 1600px; } }
 
-/* line 151, sass/pages/_o nama.scss */
+/* line 166, sass/pages/_o nama.scss */
 .about-club__left {
-  order: 2; }
+  order: 2;
+  opacity: 0; }
+  @media only screen and (max-width: 1023px) {
+    /* line 166, sass/pages/_o nama.scss */
+    .about-club__left {
+      opacity: 1; } }
   @media only screen and (min-width: 1024px) {
-    /* line 151, sass/pages/_o nama.scss */
+    /* line 166, sass/pages/_o nama.scss */
     .about-club__left {
       flex-basis: 50%;
       order: 1; } }
   @media only screen and (min-width: 1280px) {
-    /* line 151, sass/pages/_o nama.scss */
+    /* line 166, sass/pages/_o nama.scss */
     .about-club__left {
       flex-basis: 44%; } }
-  /* line 163, sass/pages/_o nama.scss */
+  /* line 183, sass/pages/_o nama.scss */
   .about-club__left__img {
     width: 100%;
     height: 100%; }
 
-/* line 169, sass/pages/_o nama.scss */
+/* line 189, sass/pages/_o nama.scss */
 .about-club__right {
-  order: 1; }
+  order: 1;
+  opacity: 0; }
+  @media only screen and (max-width: 1023px) {
+    /* line 189, sass/pages/_o nama.scss */
+    .about-club__right {
+      opacity: 1; } }
   @media only screen and (min-width: 1024px) {
-    /* line 169, sass/pages/_o nama.scss */
+    /* line 189, sass/pages/_o nama.scss */
     .about-club__right {
       flex-basis: 40%;
       order: 2; } }
   @media only screen and (min-width: 1280px) {
-    /* line 169, sass/pages/_o nama.scss */
+    /* line 189, sass/pages/_o nama.scss */
     .about-club__right {
       flex-basis: 44%; } }
-  /* line 181, sass/pages/_o nama.scss */
+  /* line 206, sass/pages/_o nama.scss */
   .about-club__right__title {
     color: #f1ede1;
     font-size: 26px;
     text-transform: uppercase; }
     @media only screen and (min-width: 480px) {
-      /* line 181, sass/pages/_o nama.scss */
+      /* line 206, sass/pages/_o nama.scss */
       .about-club__right__title {
         font-size: 30px; } }
     @media only screen and (min-width: 770px) {
-      /* line 181, sass/pages/_o nama.scss */
+      /* line 206, sass/pages/_o nama.scss */
       .about-club__right__title {
         font-size: 38px; } }
     @media only screen and (min-width: 1024px) {
-      /* line 181, sass/pages/_o nama.scss */
+      /* line 206, sass/pages/_o nama.scss */
       .about-club__right__title {
         font-size: 48px; } }
-  /* line 199, sass/pages/_o nama.scss */
+  /* line 224, sass/pages/_o nama.scss */
   .about-club__right__text--1 {
     font-family: "Montserrat", serif;
     color: #f1ede1;
@@ -2254,18 +2289,18 @@ nav {
     margin: 18px 0 29px 0;
     line-height: 1.75; }
     @media only screen and (min-width: 480px) {
-      /* line 199, sass/pages/_o nama.scss */
+      /* line 224, sass/pages/_o nama.scss */
       .about-club__right__text--1 {
         margin: 18px 0 29px 0; } }
     @media only screen and (min-width: 770px) {
-      /* line 199, sass/pages/_o nama.scss */
+      /* line 224, sass/pages/_o nama.scss */
       .about-club__right__text--1 {
         margin: 20px 0 31px 0; } }
     @media only screen and (min-width: 1024px) {
-      /* line 199, sass/pages/_o nama.scss */
+      /* line 224, sass/pages/_o nama.scss */
       .about-club__right__text--1 {
         margin: 18px 0 34px 0; } }
-  /* line 219, sass/pages/_o nama.scss */
+  /* line 244, sass/pages/_o nama.scss */
   .about-club__right__text--2 {
     font-family: "Montserrat", serif;
     color: #f1ede1;
@@ -2273,37 +2308,42 @@ nav {
     line-height: 1.75;
     display: none; }
     @media only screen and (min-width: 1024px) {
-      /* line 219, sass/pages/_o nama.scss */
+      /* line 244, sass/pages/_o nama.scss */
       .about-club__right__text--2 {
         margin-bottom: 34px; } }
     @media only screen and (min-width: 1280px) {
-      /* line 219, sass/pages/_o nama.scss */
+      /* line 244, sass/pages/_o nama.scss */
       .about-club__right__text--2 {
         display: inline-block; } }
-  /* line 237, sass/pages/_o nama.scss */
+  /* line 260, sass/pages/_o nama.scss */
   .about-club__right__button {
-    margin-bottom: 36px; }
+    margin-bottom: 36px;
+    opacity: 0; }
+    @media only screen and (max-width: 1023px) {
+      /* line 260, sass/pages/_o nama.scss */
+      .about-club__right__button {
+        opacity: 1; } }
     @media only screen and (min-width: 480px) {
-      /* line 237, sass/pages/_o nama.scss */
+      /* line 260, sass/pages/_o nama.scss */
       .about-club__right__button {
         margin-bottom: 43px; } }
     @media only screen and (min-width: 770px) {
-      /* line 237, sass/pages/_o nama.scss */
+      /* line 260, sass/pages/_o nama.scss */
       .about-club__right__button {
         margin-bottom: 46px; } }
     @media only screen and (min-width: 1024px) {
-      /* line 237, sass/pages/_o nama.scss */
+      /* line 260, sass/pages/_o nama.scss */
       .about-club__right__button {
         margin-bottom: 0; } }
 
-/* line 256, sass/pages/_o nama.scss */
+/* line 284, sass/pages/_o nama.scss */
 .our-coaches__section {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0; }
 
-/* line 263, sass/pages/_o nama.scss */
+/* line 291, sass/pages/_o nama.scss */
 .our-coaches__container {
   display: flex;
   flex-direction: column;
@@ -2311,40 +2351,45 @@ nav {
   padding: 60px 15px;
   max-width: 775px; }
   @media only screen and (min-width: 770px) {
-    /* line 263, sass/pages/_o nama.scss */
+    /* line 291, sass/pages/_o nama.scss */
     .our-coaches__container {
       padding: 80px 15px; } }
   @media only screen and (min-width: 980px) {
-    /* line 263, sass/pages/_o nama.scss */
+    /* line 291, sass/pages/_o nama.scss */
     .our-coaches__container {
       max-width: 1365px; } }
 
-/* line 279, sass/pages/_o nama.scss */
+/* line 307, sass/pages/_o nama.scss */
 .our-coaches__title {
   color: #16120f;
   font-size: 30px;
   padding-bottom: 25px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  opacity: 0; }
+  @media only screen and (max-width: 1023px) {
+    /* line 307, sass/pages/_o nama.scss */
+    .our-coaches__title {
+      opacity: 1; } }
   @media only screen and (min-width: 480px) {
-    /* line 279, sass/pages/_o nama.scss */
+    /* line 307, sass/pages/_o nama.scss */
     .our-coaches__title {
       font-size: 35px; } }
   @media only screen and (min-width: 767px) {
-    /* line 279, sass/pages/_o nama.scss */
+    /* line 307, sass/pages/_o nama.scss */
     .our-coaches__title {
       font-size: 45px;
       padding-bottom: 35px; } }
   @media only screen and (min-width: 1024px) {
-    /* line 279, sass/pages/_o nama.scss */
+    /* line 307, sass/pages/_o nama.scss */
     .our-coaches__title {
       padding-bottom: 40px;
       font-size: 58px; } }
   @media only screen and (min-width: 1280px) {
-    /* line 279, sass/pages/_o nama.scss */
+    /* line 307, sass/pages/_o nama.scss */
     .our-coaches__title {
       font-size: 66px; } }
 
-/* line 304, sass/pages/_o nama.scss */
+/* line 337, sass/pages/_o nama.scss */
 .our-coaches__box {
   display: flex;
   flex-direction: column;
@@ -2354,110 +2399,130 @@ nav {
   text-align: center;
   max-width: 300px; }
   @media only screen and (min-width: 480px) {
-    /* line 304, sass/pages/_o nama.scss */
+    /* line 337, sass/pages/_o nama.scss */
     .our-coaches__box {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
       max-width: initial; } }
   @media only screen and (min-width: 980px) {
-    /* line 304, sass/pages/_o nama.scss */
+    /* line 337, sass/pages/_o nama.scss */
     .our-coaches__box {
       flex-wrap: nowrap; } }
-  /* line 326, sass/pages/_o nama.scss */
+  /* line 359, sass/pages/_o nama.scss */
   .our-coaches__box__savo__info {
     order: 2;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    opacity: 0; }
+    @media only screen and (max-width: 1023px) {
+      /* line 359, sass/pages/_o nama.scss */
+      .our-coaches__box__savo__info {
+        opacity: 1; } }
     @media only screen and (min-width: 480px) {
-      /* line 326, sass/pages/_o nama.scss */
+      /* line 359, sass/pages/_o nama.scss */
       .our-coaches__box__savo__info {
         order: 1;
         flex-basis: 48%;
         margin-bottom: 0; } }
     @media only screen and (min-width: 980px) {
-      /* line 326, sass/pages/_o nama.scss */
+      /* line 359, sass/pages/_o nama.scss */
       .our-coaches__box__savo__info {
         margin-right: 34px;
         flex-basis: 36%; } }
-  /* line 343, sass/pages/_o nama.scss */
+  /* line 381, sass/pages/_o nama.scss */
   .our-coaches__box__savo__img {
-    order: 1; }
+    order: 1;
+    opacity: 0; }
+    @media only screen and (max-width: 1023px) {
+      /* line 381, sass/pages/_o nama.scss */
+      .our-coaches__box__savo__img {
+        opacity: 1; } }
     @media only screen and (min-width: 480px) {
-      /* line 343, sass/pages/_o nama.scss */
+      /* line 381, sass/pages/_o nama.scss */
       .our-coaches__box__savo__img {
         order: 2;
         flex-basis: 48%; } }
     @media only screen and (min-width: 980px) {
-      /* line 343, sass/pages/_o nama.scss */
+      /* line 381, sass/pages/_o nama.scss */
       .our-coaches__box__savo__img {
         margin-right: 30px; } }
-  /* line 358, sass/pages/_o nama.scss */
+  /* line 401, sass/pages/_o nama.scss */
   .our-coaches__box__aleksandar__info {
-    order: 4; }
+    order: 4;
+    opacity: 0; }
+    @media only screen and (max-width: 1023px) {
+      /* line 401, sass/pages/_o nama.scss */
+      .our-coaches__box__aleksandar__info {
+        opacity: 1; } }
     @media only screen and (min-width: 480px) {
-      /* line 358, sass/pages/_o nama.scss */
+      /* line 401, sass/pages/_o nama.scss */
       .our-coaches__box__aleksandar__info {
         flex-basis: 48%; } }
     @media only screen and (min-width: 980px) {
-      /* line 358, sass/pages/_o nama.scss */
+      /* line 401, sass/pages/_o nama.scss */
       .our-coaches__box__aleksandar__info {
         margin-left: 34px;
         flex-basis: 36%; } }
-  /* line 371, sass/pages/_o nama.scss */
+  /* line 419, sass/pages/_o nama.scss */
   .our-coaches__box__aleksandar__img {
-    order: 3; }
+    order: 3;
+    opacity: 0; }
+    @media only screen and (max-width: 1023px) {
+      /* line 419, sass/pages/_o nama.scss */
+      .our-coaches__box__aleksandar__img {
+        opacity: 1; } }
     @media only screen and (min-width: 480px) {
-      /* line 371, sass/pages/_o nama.scss */
+      /* line 419, sass/pages/_o nama.scss */
       .our-coaches__box__aleksandar__img {
         margin-top: 10px;
         flex-basis: 48%; } }
     @media only screen and (min-width: 980px) {
-      /* line 371, sass/pages/_o nama.scss */
+      /* line 419, sass/pages/_o nama.scss */
       .our-coaches__box__aleksandar__img {
         margin-top: 0; } }
 
-/* line 387, sass/pages/_o nama.scss */
+/* line 439, sass/pages/_o nama.scss */
 .our-coaches__box > div > img {
   width: 99%;
   height: 100%; }
 
-/* line 393, sass/pages/_o nama.scss */
+/* line 445, sass/pages/_o nama.scss */
 .our-coaches__box > div > p > span {
   color: #16120f;
   padding-right: 5px; }
 
-/* line 399, sass/pages/_o nama.scss */
+/* line 451, sass/pages/_o nama.scss */
 .our-coaches__box > div > p:nth-of-type(1) {
   font-family: 'Poppins';
   font-size: 15px;
   margin: 4px 0 16px 0; }
   @media only screen and (min-width: 480px) {
-    /* line 399, sass/pages/_o nama.scss */
+    /* line 451, sass/pages/_o nama.scss */
     .our-coaches__box > div > p:nth-of-type(1) {
       font-size: 14px;
       margin: 0 0 8px 0; } }
   @media only screen and (min-width: 610px) {
-    /* line 399, sass/pages/_o nama.scss */
+    /* line 451, sass/pages/_o nama.scss */
     .our-coaches__box > div > p:nth-of-type(1) {
       font-size: 15px; } }
   @media only screen and (min-width: 980px) {
-    /* line 399, sass/pages/_o nama.scss */
+    /* line 451, sass/pages/_o nama.scss */
     .our-coaches__box > div > p:nth-of-type(1) {
       font-size: 14px; } }
   @media only screen and (min-width: 1100px) {
-    /* line 399, sass/pages/_o nama.scss */
+    /* line 451, sass/pages/_o nama.scss */
     .our-coaches__box > div > p:nth-of-type(1) {
       font-size: 15px; } }
 
-/* line 423, sass/pages/_o nama.scss */
+/* line 475, sass/pages/_o nama.scss */
 .our-coaches__box > div > h4 {
   font-size: 25px; }
   @media only screen and (min-width: 1280px) {
-    /* line 423, sass/pages/_o nama.scss */
+    /* line 475, sass/pages/_o nama.scss */
     .our-coaches__box > div > h4 {
       font-size: 28px; } }
 
-/* line 432, sass/pages/_o nama.scss */
+/* line 484, sass/pages/_o nama.scss */
 .our-coaches__box > div > p:nth-of-type(2) {
   font-family: 'Montserrat';
   font-size: 14px;
@@ -2465,51 +2530,51 @@ nav {
   color: #d62326;
   font-weight: 600; }
   @media only screen and (min-width: 480px) {
-    /* line 432, sass/pages/_o nama.scss */
+    /* line 484, sass/pages/_o nama.scss */
     .our-coaches__box > div > p:nth-of-type(2) {
       font-size: 13px; } }
   @media only screen and (min-width: 610px) {
-    /* line 432, sass/pages/_o nama.scss */
+    /* line 484, sass/pages/_o nama.scss */
     .our-coaches__box > div > p:nth-of-type(2) {
       font-size: 14px; } }
   @media only screen and (min-width: 980px) {
-    /* line 432, sass/pages/_o nama.scss */
+    /* line 484, sass/pages/_o nama.scss */
     .our-coaches__box > div > p:nth-of-type(2) {
       font-size: 13px; } }
   @media only screen and (min-width: 1100px) {
-    /* line 432, sass/pages/_o nama.scss */
+    /* line 484, sass/pages/_o nama.scss */
     .our-coaches__box > div > p:nth-of-type(2) {
       font-size: 14px; } }
 
-/* line 457, sass/pages/_o nama.scss */
+/* line 509, sass/pages/_o nama.scss */
 .our-coaches__box > div > p:nth-of-type(3) {
   font-family: 'Montserrat';
   font-size: 14px;
   line-height: 1.75;
   margin: 14px 0 22px 0; }
   @media only screen and (min-width: 480px) {
-    /* line 457, sass/pages/_o nama.scss */
+    /* line 509, sass/pages/_o nama.scss */
     .our-coaches__box > div > p:nth-of-type(3) {
       font-size: 13px; } }
   @media only screen and (min-width: 610px) {
-    /* line 457, sass/pages/_o nama.scss */
+    /* line 509, sass/pages/_o nama.scss */
     .our-coaches__box > div > p:nth-of-type(3) {
       font-size: 14px; } }
   @media only screen and (min-width: 980px) {
-    /* line 457, sass/pages/_o nama.scss */
+    /* line 509, sass/pages/_o nama.scss */
     .our-coaches__box > div > p:nth-of-type(3) {
       font-size: 13px; } }
   @media only screen and (min-width: 1125px) {
-    /* line 457, sass/pages/_o nama.scss */
+    /* line 509, sass/pages/_o nama.scss */
     .our-coaches__box > div > p:nth-of-type(3) {
       font-size: 14px;
       margin: 20px 0 27px 0; } }
   @media only screen and (min-width: 1280px) {
-    /* line 457, sass/pages/_o nama.scss */
+    /* line 509, sass/pages/_o nama.scss */
     .our-coaches__box > div > p:nth-of-type(3) {
       margin: 25px 0 32px 0; } }
 
-/* line 486, sass/pages/_o nama.scss */
+/* line 538, sass/pages/_o nama.scss */
 .our-coaches__box > div > a {
   display: inline-flex;
   justify-content: center;
@@ -2519,20 +2584,28 @@ nav {
   color: #f1ede1;
   background-color: #16120f; }
   @media only screen and (min-width: 1100px) {
-    /* line 486, sass/pages/_o nama.scss */
+    /* line 538, sass/pages/_o nama.scss */
     .our-coaches__box > div > a {
       width: 42px;
       height: 41px; } }
 
-/* line 502, sass/pages/_o nama.scss */
+/* line 554, sass/pages/_o nama.scss */
 .our-coaches__box > div > a:nth-of-type(1) {
   margin-right: 2px; }
 
-/* line 507, sass/pages/_o nama.scss */
+/* line 559, sass/pages/_o nama.scss */
 .our-coaches__box > div > a:hover {
   color: #f1ede1;
   background-color: #d62326;
   transition: all .2s ease; }
+
+/* line 565, sass/pages/_o nama.scss */
+.our-coaches__button {
+  opacity: 0; }
+  @media only screen and (max-width: 1023px) {
+    /* line 565, sass/pages/_o nama.scss */
+    .our-coaches__button {
+      opacity: 1; } }
 
 /* line 2, sass/pages/_nas tim.scss */
 .meet-our-team__section {
@@ -2786,7 +2859,7 @@ nav {
   position: relative;
   overflow: hidden;
   opacity: 0; }
-  @media only screen and (max-width: 1015px) {
+  @media only screen and (max-width: 1023px) {
     /* line 267, sass/pages/_nas tim.scss */
     .meet-our-team__members > div {
       opacity: 1; } }
@@ -2898,7 +2971,7 @@ nav {
   font-style: italic;
   margin-bottom: 10px;
   opacity: 0; }
-  @media only screen and (max-width: 630px) {
+  @media only screen and (max-width: 1023px) {
     /* line 409, sass/pages/_nas tim.scss */
     .special-offer__subtitle {
       opacity: 1; } }
@@ -2919,7 +2992,7 @@ nav {
   text-align: center;
   line-height: 1.1;
   opacity: 0; }
-  @media only screen and (max-width: 630px) {
+  @media only screen and (max-width: 1023px) {
     /* line 429, sass/pages/_nas tim.scss */
     .special-offer__text {
       opacity: 1; } }
@@ -2948,7 +3021,7 @@ nav {
 .special-offer__button {
   margin-top: 30px;
   opacity: 0; }
-  @media only screen and (max-width: 630px) {
+  @media only screen and (max-width: 1023px) {
     /* line 462, sass/pages/_nas tim.scss */
     .special-offer__button {
       opacity: 1; } }

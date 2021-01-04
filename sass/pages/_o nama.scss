@@ -33,6 +33,11 @@
 }
 
 .our-philosofy__left {
+    opacity: 0;
+    
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
 
     @media only screen and (min-width: 1024px) {
         flex-basis: 40%;
@@ -81,6 +86,11 @@
 
     &__button {
         margin-bottom: 36px;
+        opacity: 0;
+
+        @media only screen and (max-width: 1023px) {
+            opacity: 1;
+        }
 
         @media only screen and (min-width: 480px) {
             margin-bottom: 43px;
@@ -97,6 +107,11 @@
 }
 
 .our-philosofy__right {
+    opacity: 0;
+    
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
 
     @media only screen and (min-width: 1024px) {
         flex-basis: 50%;
@@ -150,6 +165,11 @@
 
 .about-club__left {
     order: 2;
+    opacity: 0;
+
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
 
     @media only screen and (min-width: 1024px) {
         flex-basis: 50%;
@@ -168,6 +188,11 @@
 
 .about-club__right {
     order: 1;
+    opacity: 0;
+
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
 
     @media only screen and (min-width: 1024px) {
         flex-basis: 40%;
@@ -232,10 +257,13 @@
         }
     }
 
-
-
     &__button {
         margin-bottom: 36px;
+        opacity: 0;
+
+        @media only screen and (max-width: 1023px) {
+            opacity: 1;
+        }
 
         @media only screen and (min-width: 480px) {
             margin-bottom: 43px;
@@ -281,6 +309,11 @@
     font-size: 30px;
     padding-bottom: 25px;
     text-transform: uppercase;
+    opacity: 0;
+    
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
 
     @media only screen and (min-width: 480px) {
         font-size: 35px;
@@ -297,7 +330,7 @@
     }
 
     @media only screen and (min-width: 1280px) {
-        font-size: 66px; //72px;
+        font-size: 66px;
     }
 }
 
@@ -326,6 +359,11 @@
     &__savo__info {
         order: 2;
         margin-bottom: 30px;
+        opacity: 0;
+
+        @media only screen and (max-width: 1023px) {
+            opacity: 1;
+        }
 
         @media only screen and (min-width: 480px) {
             order: 1;
@@ -342,6 +380,11 @@
 
     &__savo__img {
         order: 1;
+        opacity: 0;
+
+        @media only screen and (max-width: 1023px) {
+            opacity: 1;
+        }
 
         @media only screen and (min-width: 480px) {
             order: 2;
@@ -357,6 +400,11 @@
 
     &__aleksandar__info {
         order: 4;
+        opacity: 0;
+
+        @media only screen and (max-width: 1023px) {
+            opacity: 1;
+        }
 
         @media only screen and (min-width: 480px) {
             flex-basis: 48%;
@@ -370,6 +418,11 @@
 
     &__aleksandar__img {
         order: 3;
+        opacity: 0;
+
+        @media only screen and (max-width: 1023px) {
+            opacity: 1;
+        }
 
         @media only screen and (min-width: 480px) {
             margin-top: 10px;
@@ -381,7 +434,6 @@
         }
     }
 }
-
 
 //Selecting Both Coaches Imgs Elements
 .our-coaches__box > div > img {
@@ -510,5 +562,11 @@
     transition: all .2s ease;
 }
 
+.our-coaches__button {
+    opacity: 0;
 
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
+}
 //Our coaches Section End//

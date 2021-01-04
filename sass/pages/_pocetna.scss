@@ -1119,6 +1119,10 @@
     text-transform: uppercase;
     opacity: 0;
 
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
+
     @media only screen and (min-width: 480px) {
         font-size: 35px;
     }
@@ -1149,7 +1153,7 @@
     backface-visibility: hidden;
     opacity: 0;
 
-    @media only screen and (max-width: 630px) {
+    @media only screen and (max-width: 1023px) {
         opacity: 1;
     }
 
@@ -1368,7 +1372,7 @@
     margin-top: 15px;
     opacity: 0;
 
-    @media only screen and (max-width: 630px) {
+    @media only screen and (max-width: 1023px) {
         opacity: 1;
     }
 }

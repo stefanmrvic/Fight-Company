@@ -16,7 +16,7 @@
         max-width: 1200px;
         opacity: 0;
 
-        @media only screen and (max-width: 630px) {
+        @media only screen and (max-width: 1023px) {
             opacity: 1;
         }
 
@@ -59,7 +59,7 @@
         margin-bottom: 25px;
         opacity: 0;
 
-        @media only screen and (max-width: 630px) {
+        @media only screen and (max-width: 1023px) {
             opacity: 1;
         }
 
@@ -122,7 +122,7 @@
         color: $color-primary;
         opacity: 0;
 
-        @media only screen and (max-width: 630px) {
+        @media only screen and (max-width: 1023px) {
             opacity: 1;
         }
 
