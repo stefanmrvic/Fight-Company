@@ -20,29 +20,8 @@ if(mediaQueryMedium.matches) {
         entries.forEach(entry => {
             if (entry.intersectionRatio > 0) {
 
-                if (entry.target.classList.contains('meet-our-team__members__intro')) {
-                    entry.target.style.animation = 'fadeInLeft 1.2s forwards';
-                }
-                else if (entry.target.classList.contains('meet-our-team__members__member--1')) {
-                    entry.target.style.animation = 'fadeInLeft 1.2s forwards';
-                }
-                else if (entry.target.classList.contains('meet-our-team__members__member--2')) {
-                    entry.target.style.animation = 'fadeInLeft 1.2s forwards';
-                }
-                else if (entry.target.classList.contains('meet-our-team__members__member--3')) {
-                    entry.target.style.animation = 'fadeInLeft 1.2s forwards';
-                }
-                else if (entry.target.classList.contains('meet-our-team__members__member--4')) {
-                    entry.target.style.animation = 'fadeInRight 1.2s forwards';
-                }
-                else if (entry.target.classList.contains('meet-our-team__members__member--5')) {
-                    entry.target.style.animation = 'fadeInRight 1.2s forwards';
-                }
-                else if (entry.target.classList.contains('meet-our-team__members__member--6')) {
-                    entry.target.style.animation = 'fadeInRight 1.2s forwards';
-                }
-                else {
-                    entry.target.style.animation = 'fadeInRight 1.2s forwards';
+                if (entry.target.classList.contains('meet-our-team__members')) {
+                    entry.target.style.animation = 'fadeIn .9s forwards';
                 }
             }
         });
@@ -64,7 +43,7 @@ if(mediaQueryMedium.matches) {
                     entry.target.style.animation = 'fadeIn 1.2s forwards';
                 }
                 else if (entry.target.classList.contains('special-offer__text')) {
-                    entry.target.style.animation = 'zoomIn 1.1s forwards';
+                    entry.target.style.animation = 'zoomInOffer .95s forwards';
                 }
                 else {
                     entry.target.style.animation = 'fadeIn 1s .25s forwards';
@@ -94,14 +73,8 @@ if(mediaQueryMedium.matches) {
                 if (entry.target.classList.contains('events__title')) {
                     entry.target.style.animation = 'fadeIn 1s forwards';
                 }
-                else if (entry.target.classList.contains('events__box__event--1')) {
-                    entry.target.style.animation = 'fadeInLeftEvents 1s forwards';
-                }
-                else if (entry.target.classList.contains('events__box__event--2')) {
-                    entry.target.style.animation = 'fadeInBottom 1s forwards';
-                }
-                else if (entry.target.classList.contains('events__box__event--3')) {
-                    entry.target.style.animation = 'fadeInRightEvents 1s forwards';
+                else if (entry.target.classList.contains('events__box')) {
+                    entry.target.style.animation = 'fadeInLeft 1.1s forwards';
                 }
                 else {
                     entry.target.style.animation = 'fadeIn 1s .25s forwards';

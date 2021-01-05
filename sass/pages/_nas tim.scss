@@ -25,6 +25,11 @@
     grid-auto-rows: 310px;
     row-gap: 13px;
     text-align: center;
+    opacity: 0;
+    
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
 
     @media only screen and (min-width: 480px) {
         grid-template-columns: repeat(2, 234px);
@@ -269,11 +274,6 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    opacity: 0;
-    
-    @media only screen and (max-width: 1023px) {
-        opacity: 1;
-    }
 }
 
 //Added Same Selector So It Can Control Just Justify of The Elements

@@ -47,19 +47,10 @@ if(mediaQueryMedium.matches) {
             if (entry.intersectionRatio > 0) {
 
                 if (entry.target.classList.contains('featured-events__title')) {
-                    entry.target.style.animation = 'fadeInLeftEvents 1s forwards';
-                }
-                else if (entry.target.classList.contains('featured-events__box__event--1')) {
-                    entry.target.style.animation = 'fadeInLeftEvents 1s forwards';
-                }
-                else if (entry.target.classList.contains('featured-events__box__event--2')) {
-                    entry.target.style.animation = 'fadeInBottom 1s forwards';
-                }
-                else if (entry.target.classList.contains('featured-events__box__event--3')) {
-                    entry.target.style.animation = 'fadeInRightEvents 1s forwards';
+                    entry.target.style.animation = 'fadeIn 1.5s forwards';
                 }
                 else {
-                    entry.target.style.animation = 'fadeIn 1s .25s forwards';
+                    entry.target.style.animation = 'fadeInLeft 1.1s forwards';
                 }
             }
         });
