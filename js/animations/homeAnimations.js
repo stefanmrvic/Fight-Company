@@ -136,16 +136,7 @@ window.addEventListener("load", (event) => {
                     if (entry.target.classList.contains('our-team__title')) {
                         entry.target.style.animation = 'fadeIn 1.5s forwards';
                     }
-                    else if (entry.target.classList.contains('our-team__members__member--1')) {
-                        entry.target.style.animation = 'fadeInBottomTeam .95s forwards';
-                    }
-                    else if (entry.target.classList.contains('our-team__members__member--2')) {
-                        entry.target.style.animation = 'fadeInBottomTeam .95s forwards';
-                    }
-                    else if (entry.target.classList.contains('our-team__members__member--3')) {
-                        entry.target.style.animation = 'fadeInBottomTeam .95s forwards';
-                    }
-                    else if (entry.target.classList.contains('our-team__members__member--4')) {
+                    else if (entry.target.classList.contains('our-team__members')) {
                         entry.target.style.animation = 'fadeInBottomTeam .95s forwards';
                     }
                     else {
