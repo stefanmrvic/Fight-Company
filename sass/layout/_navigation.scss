@@ -100,6 +100,11 @@ nav {
         width: 98%;
     }
 
+    //Style for Active <li> Navbar Item
+    &__item.active a::before {
+        width: 98%;
+    }
+
     &__item:not(:last-child) {
         padding-right: 38px;
     }
@@ -160,7 +165,7 @@ nav {
 
         &__button {
             position: absolute;
-            top: 15px;
+            top: 13px;  //15px
             right: 14px;
             background-color: $color-mobileNav-button;
             height: 29px;
@@ -192,11 +197,36 @@ nav {
 
         &__menu {
             width: 100%;
-            padding: 45px 30px;
+            padding: 50px 30px 23px 30px;
         }
 
         &__menu__links > li {
+            position: relative;
             padding: 15px 0;
+        }
+
+        &__menu__links li.active-first {
+            margin-top: 5px;
+        }
+
+        &__menu__links > li.active::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -30px;
+            width: 125%;
+            height: 100%;
+            background-color: $color-secondary;
+        }
+
+        &__menu__links > li.active-first::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -30px;
+            width: 125%;
+            height: 100%;
+            background-color: $color-secondary;
         }
 
         &__menu__links > li a {
@@ -204,6 +234,12 @@ nav {
             font-size: 16px;
             color: $color-mobileNav-links;
             text-transform: uppercase;
+            position: relative;
+            z-index: $z-index-max;
+        }
+
+        &__menu__links > li a.active {
+            color: $color-primary;
         }
 
         &__menu__links > li:not(:last-child) {
@@ -230,27 +266,31 @@ nav {
 
         &__location {
             flex-basis: 100%;
-            padding-top: 12px;
-            padding-left: 3px;
+            padding-left: 1px;
+            margin-bottom: 12px;
         }
 
         &__location__text {
             font-family: $font-poppins;
-            font-size: 14px;
+            font-size: 16px;
             color: $color-mobileNav-icons;
+            padding-left: 1px;
         }
 
         &__social {
             flex-basis: 100%;
-            padding-top: 12px;
+        }
+
+        &__social:nth-child(2) {
+            margin-bottom: 21px;
         }
 
         &__social__instagram {
-            padding-right: 5px;
+            padding-right: 8px;
         }
 
         &__social > a > i {
-            font-size: 20px;
+            font-size: 24px;
             color: $color-mobileNav-icons;
         }
 
