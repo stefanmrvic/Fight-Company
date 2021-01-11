@@ -1,12 +1,16 @@
 //Hero Section Start//
 .hero__container {
     height: 80vh;
-    background: url(/imgs/landing-imgs/landing.jpg) center center / cover no-repeat;
+    background: url(/imgs/landing-imgs/landing-mobile.jpg) center center / cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
+
+    @media only screen and (min-width: 480px) {
+        background: url(/imgs/landing-imgs/landing.jpg) center center / cover no-repeat;
+    }
 
     @media only screen and (min-width: 1000px) {
         height: calc(100vh - 48.5px);
