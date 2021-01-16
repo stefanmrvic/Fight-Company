@@ -1,5 +1,5 @@
-.footer-container {
-    background: url(/imgs/footer-imgs/background.jpg);
+.footer__container {
+    background: url(/imgs/footer-imgs/background.webp);
 }
 
 .footer-social {
@@ -7,7 +7,6 @@
     flex-direction: column;
     align-items: center;
     padding: 60px 0 53px 0;
-    background: url(/imgs/footer-imgs/background.jpg);
 
     &__heading {
         font-family: $font-rajdhani;
@@ -107,7 +106,7 @@
             }
         }
 
-        &__wrapper > a > img {
+        &__wrapper > a > picture > img {
             width: 100%;
             height: 100%;
         }
@@ -202,7 +201,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(/imgs/footer-imgs/background.jpg);
 
     &__logo {
         width: 120px;
@@ -212,7 +210,7 @@
             width: 133px;
         }
 
-        &__link img {
+        &__link picture img {
             width: 100%;
             height: 100%;
         }
