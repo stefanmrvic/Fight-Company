@@ -1,3 +1,3 @@
 # Fight - Company 
-Fight Company - Website for MMA Gym
+Fight Company -Website for MMA Gym
  
