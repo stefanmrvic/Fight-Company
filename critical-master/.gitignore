@@ -1,7 +1,0 @@
-/coverage/
-/node_modules/
-/test/fixture/bower_components/bootstrap/dist/css/*
-/test/fixture/test-*
-/test/fixture/tmp-*
-/test/fixtures/styles/bootstrap.56effa17.css
-/test/fixtures/styles/main.d41d8cd9.css
