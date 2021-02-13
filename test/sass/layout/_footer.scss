@@ -1,0 +1,261 @@
+.footer__container {
+    background: url(/imgs/footer-imgs/background.jpg);
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 53px 0;
+
+    &__heading {
+        font-family: $font-rajdhani;
+        text-align: center;
+        width: 100%;
+        max-width: 1200px;
+        opacity: 0;
+
+        @media only screen and (max-width: 1023px) {
+            opacity: 1;
+        }
+
+        &__subtitle {
+            color: $color-subtitle;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 1px;
+
+            @media only screen and (min-width: 770px) {
+                font-size: 20px; 
+            }
+        }
+
+        &__title {
+            color: $color-primary;
+            font-size: 35px;
+            line-height: 0.9;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+
+            @media only screen and (min-width: 330px) {
+                font-size: 42px;
+            }
+
+            @media only screen and (min-width: 770px) {
+                font-size: 53px;
+            }
+        }
+    }
+
+    &__imgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        padding: 0 30px;
+        margin-bottom: 25px;
+        opacity: 0;
+
+        @media only screen and (max-width: 1023px) {
+            opacity: 1;
+        }
+
+        @media only screen and (min-width: 410px) {
+            padding: 0 65px;
+        }
+
+        @media only screen and (min-width: 470px) {
+            padding: 0 80px;
+        }
+
+        @media only screen and (min-width: 580px) {
+            padding: 0 20px;
+        }
+
+        &__image img {
+            width: 100%;
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-basis: 210px;
+            flex-grow: 1;
+            padding: 0 10px 20px 10px;
+            justify-content: center;
+
+            @media only screen and (min-width: 410px) {
+                padding: 0 15px 20px 15px;
+            }
+
+            @media only screen and (min-width: 580px) {
+                padding: 0 10px 20px 10px;
+            }
+
+            @media only screen and (min-width: 630px) {
+                flex-basis: 71px;
+            }
+        }
+
+        &__wrapper:last-child {
+            display: none;
+
+            @media only screen and (min-width: 580px) {
+                display: block;
+            }
+
+            @media only screen and (min-width: 630px) {
+                display: none;
+            }
+        }
+
+        &__wrapper > a > picture > img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
+        color: $color-primary;
+        opacity: 0;
+
+        @media only screen and (max-width: 1023px) {
+            opacity: 1;
+        }
+
+        @media only screen and (min-width: 580px) {
+            flex-direction: row;
+            padding: 0 29px;
+        }
+
+        @media only screen and (min-width: 630px) {
+            padding: 0 29px;
+        }
+
+        &__text {
+            font-family: $font-rajdhani;
+            color: $color-footer-gray-text;
+            font-size: 17px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 12px;
+
+            @media only screen and (min-width: 410px) {
+                font-size: 19px;
+            }
+
+            @media only screen and (min-width: 581px) {
+                margin-bottom: 0;
+            }
+        }
+
+        &__line {
+            display: none;
+            height: 2px;
+            background-color: $color-footer-line;
+            flex-grow: 1;
+            margin: 0 15px;
+
+            @media only screen and (min-width: 581px) {
+                display: block;
+            }
+        }
+
+        &__links {
+            display: flex;
+            justify-content: space-between;
+            flex-basis: 1;
+
+            &__link:first-child {
+                margin-right: 11px;
+            }
+        }
+
+        &__links > li > a {
+            display: inline-block;
+            color: $color-footer-gray-text;
+            border: 2px solid $color-footer-socials-border;
+            transition: all .3s ease;
+        }
+
+        &__links > li > a:hover {
+            color: $color-primary;
+            background-color: $color-footer-social-links-bg-hover;
+            border-color: $color-transparent;
+        }
+
+        &__links__link--1 {
+            padding: 8px 12px 7px 12px;
+        }
+
+        &__links__link--2 {
+            padding: 8px 10px 7px 10px;
+        }
+    }
+}
+
+.footer-sitemap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+        width: 120px;
+        margin-bottom: 35px;
+
+        @media only screen and (min-width: 480px) {
+            width: 133px;
+        }
+
+        &__link img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+
+    &__links > li:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__links > li > a {
+        font-family: $font-rajdhani;
+        color: $color-footer-links;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: all .3s ease;
+    }
+
+    &__links > li > a:hover,
+    &__links > li > a:active {
+        color: $color-primary;
+    }
+
+    &__copyright {
+        margin-bottom: 35px;
+        font-family: $font-montserrat;
+        text-align: center;
+
+        &__text {
+            font-size: 14px;
+            color: $color-footer-copyright-text;
+        }
+
+        &__link {
+            color: $color-footer-copyright-link;
+            font-weight: 400;
+        }
+    }
+}

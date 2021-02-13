@@ -1,0 +1,572 @@
+//Our Philosofy Section Start//
+.our-philosofy__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-philosofy__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 15px 50px 15px;
+
+    @media only screen and (min-width: 480px) {
+        max-width: 497px;
+    }
+
+    @media only screen and (min-width: 770px) {
+        padding: 80px 15px;
+        max-width: 659px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        flex-direction: row;
+        max-width: initial;
+        padding: 80px 6%;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        max-width: 1600px;     
+    }
+}
+
+.our-philosofy__left {
+    opacity: 0;
+    
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        flex-basis: 40%;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        flex-basis: 44%;
+    }
+
+    &__title {
+        font-size: 26px;
+        text-transform: uppercase;
+
+        @media only screen and (min-width: 480px) {
+            font-size: 30px;
+        }
+
+        @media only screen and (min-width: 770px) {
+            font-size: 38px;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 48px;
+        }
+    }
+
+    &__text {
+        font-family: $font-montserrat;
+        color: $color-secondary;
+        font-size: 14px;
+        margin: 18px 0 29px 0;
+        line-height: 1.75;
+
+        @media only screen and (min-width: 480px) {
+            margin: 18px 0 29px 0;
+        }
+
+        @media only screen and (min-width: 770px) {
+            margin: 20px 0 31px 0;
+        }
+
+        @media only screen and (min-width: 770px) {
+            margin: 18px 0 34px 0;
+        }
+    }
+
+    &__button {
+        margin-bottom: 36px;
+        opacity: 0;
+
+        @media only screen and (max-width: 1023px) {
+            opacity: 1;
+        }
+
+        @media only screen and (min-width: 480px) {
+            margin-bottom: 43px;
+        }
+
+        @media only screen and (min-width: 770px) {
+            margin-bottom: 46px;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.our-philosofy__right {
+    opacity: 0;
+    
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        flex-basis: 50%;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        flex-basis: 44%;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+//Our Philosofy Section End//
+
+//About Club Section Start//
+.about-club__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-section-black;
+}
+
+.about-club__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 15px 50px 15px;
+
+    @media only screen and (min-width: 480px) {
+        max-width: 497px;
+    }
+
+    @media only screen and (min-width: 770px) {
+        padding: 80px 15px;
+        max-width: 659px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        flex-direction: row;
+        max-width: initial;
+        padding: 80px 6%;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        max-width: 1600px;     
+    }
+}
+
+.about-club__left {
+    order: 2;
+    opacity: 0;
+
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        flex-basis: 50%;
+        order: 1;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        flex-basis: 44%;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.about-club__right {
+    order: 1;
+    opacity: 0;
+
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        flex-basis: 40%;
+        order: 2;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        flex-basis: 44%;
+    }
+
+    &__title {
+        color: $color-primary;
+        font-size: 26px;
+        text-transform: uppercase;
+
+        @media only screen and (min-width: 480px) {
+            font-size: 30px;
+        }
+
+        @media only screen and (min-width: 770px) {
+            font-size: 38px;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 48px;
+        }
+    }
+
+    &__text--1 {
+        font-family: $font-montserrat;
+        color: $color-primary;
+        font-size: 14px;
+        margin: 18px 0 29px 0;
+        line-height: 1.75;
+
+        @media only screen and (min-width: 480px) {
+            margin: 18px 0 29px 0;
+        }
+
+        @media only screen and (min-width: 770px) {
+            margin: 20px 0 31px 0;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            margin: 18px 0 34px 0;
+        }
+    }
+
+    &__text--2 {
+        font-family: $font-montserrat;
+        color: $color-primary;
+        font-size: 14px;
+        line-height: 1.75;
+        display: none;
+
+        @media only screen and (min-width: 1024px) {
+            margin-bottom: 34px;
+        }
+
+        @media only screen and (min-width: 1280px) {
+            display: inline-block;
+        }
+    }
+
+    &__button {
+        margin-bottom: 36px;
+        opacity: 0;
+
+        @media only screen and (max-width: 1023px) {
+            opacity: 1;
+        }
+
+        @media only screen and (min-width: 480px) {
+            margin-bottom: 43px;
+        }
+
+        @media only screen and (min-width: 770px) {
+            margin-bottom: 46px;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            margin-bottom: 0;
+        }
+    }
+}
+//About Club Section End//
+
+//Our Coaches Section Start//
+.our-coaches__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-section-white;
+}
+
+.our-coaches__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 15px;
+    max-width: 775px;
+
+    @media only screen and (min-width: 770px) {
+        padding: 80px 15px;
+    }
+
+    @media only screen and (min-width: 980px) {
+        max-width: 1365px;
+    }
+}
+
+.our-coaches__title {
+    color: $color-secondary;
+    font-size: 30px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    opacity: 0;
+    
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 480px) {
+        font-size: 35px;
+    }
+
+    @media only screen and (min-width: 767px) {
+        font-size: 45px;
+        padding-bottom: 35px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding-bottom: 40px;
+        font-size: 58px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        font-size: 66px;
+    }
+}
+
+.our-coaches__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 43px;
+    text-align: center;
+    max-width: 300px;
+    
+    @media only screen and (min-width: 480px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: initial;
+    }
+
+    @media only screen and (min-width: 980px) {
+        flex-wrap: nowrap;
+    }
+
+    //Savo Styles
+
+    &__savo__info {
+        order: 2;
+        margin-bottom: 30px;
+        opacity: 0;
+
+        @media only screen and (max-width: 1023px) {
+            opacity: 1;
+        }
+
+        @media only screen and (min-width: 480px) {
+            order: 1;
+            flex-basis: 48%;
+            margin-bottom: 0;
+        }
+
+        @media only screen and (min-width: 980px) {
+            margin-right: 34px;
+            flex-basis: 36%;
+        }
+
+    }
+
+    &__savo__img {
+        order: 1;
+        opacity: 0;
+
+        @media only screen and (max-width: 1023px) {
+            opacity: 1;
+        }
+
+        @media only screen and (min-width: 480px) {
+            order: 2;
+            flex-basis: 48%;
+        }
+
+        @media only screen and (min-width: 980px) {
+            margin-right: 30px;
+        }
+    }
+
+    //Aleksandar Styles
+
+    &__aleksandar__info {
+        order: 4;
+        opacity: 0;
+
+        @media only screen and (max-width: 1023px) {
+            opacity: 1;
+        }
+
+        @media only screen and (min-width: 480px) {
+            flex-basis: 48%;
+        }
+
+        @media only screen and (min-width: 980px) {
+            margin-left: 34px;
+            flex-basis: 36%;
+        }
+    }
+
+    &__aleksandar__img {
+        order: 3;
+        opacity: 0;
+
+        @media only screen and (max-width: 1023px) {
+            opacity: 1;
+        }
+
+        @media only screen and (min-width: 480px) {
+            margin-top: 10px;
+            flex-basis: 48%;
+        }
+
+        @media only screen and (min-width: 980px) {
+            margin-top: 0;
+        }
+    }
+}
+
+//Selecting Both Coaches Imgs Elements
+.our-coaches__box > div > img {
+    width: 99%;
+    height: 100%;
+}
+
+//Selecting Both Location Icons
+.our-coaches__box > div > p > span {
+    color: $color-secondary;
+    padding-right: 5px;
+}
+
+//Selecting Both Location Texts
+.our-coaches__box > div > p:nth-of-type(1) {
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin: 4px 0 16px 0;
+
+    @media only screen and (min-width: 480px) {
+        font-size: 14px;
+        margin: 0 0 8px 0;
+    }
+
+    @media only screen and (min-width: 610px) {
+        font-size: 15px;
+    }
+
+    @media only screen and (min-width: 980px) {
+        font-size: 14px;
+    }
+
+    @media only screen and (min-width: 1100px) {
+        font-size: 15px;
+    }
+}
+
+//Selecting Both Coaches Names
+.our-coaches__box > div > h4 {
+    font-size: 25px;
+
+    @media only screen and (min-width: 1280px) {
+        font-size: 28px;
+    }
+}
+
+//Selecting Both Roles
+.our-coaches__box > div > p:nth-of-type(2) {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 1.75;
+    color: $color-subtitle;
+    font-weight: 600;
+
+    @media only screen and (min-width: 480px) {
+        font-size: 13px;
+    }
+
+    @media only screen and (min-width: 610px) {
+        font-size: 14px;
+    }
+
+    @media only screen and (min-width: 980px) {
+        font-size: 13px;
+    }
+
+    @media only screen and (min-width: 1100px) {
+        font-size: 14px;
+    }
+}
+
+//Selecting Both Abouts
+.our-coaches__box > div > p:nth-of-type(3) {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 1.75;
+    margin: 14px 0 22px 0;
+
+    @media only screen and (min-width: 480px) {
+        font-size: 13px;
+    }
+
+    @media only screen and (min-width: 610px) {
+        font-size: 14px;
+    }
+
+    @media only screen and (min-width: 980px) {
+        font-size: 13px;
+    }
+
+    @media only screen and (min-width: 1125px) {
+        font-size: 14px;
+        margin: 20px 0 27px 0;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        margin: 25px 0 32px 0;
+    }
+}
+
+//Selecting Both Instagram Links
+.our-coaches__box > div > a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 37px;
+    color: $color-primary;
+    background-color: $color-secondary;
+
+    @media only screen and (min-width: 1100px) {
+        width: 42px;
+        height: 41px;
+    }
+}
+
+//Selecting Savo Lazic Instagram Link
+.our-coaches__box > div > a:nth-of-type(1) {
+    margin-right: 2px;
+}
+
+//Selecting Both Instagram Links on hover
+.our-coaches__box > div > a:hover {
+    color: $color-primary;
+    background-color: $color-subtitle;
+    transition: all .2s ease;
+}
+
+.our-coaches__button {
+    opacity: 0;
+
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
+}
+//Our coaches Section End//

@@ -1,0 +1,1464 @@
+//Hero Section Start//
+.hero__container {
+    height: 80vh;
+    background: url(/imgs/landing-imgs/landing-mobile.jpg) center center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    @media only screen and (min-width: 480px) {
+        background: url(/imgs/landing-imgs/landing.jpg) center center / cover no-repeat;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        height: calc(100vh - 48.5px);
+        background-size: cover;
+        background-position-y: 7%;
+    }
+}
+
+.hero__heading {
+    position: relative;
+    margin-top: 45px;
+
+    @media only screen and (min-width: 1000px) {
+        margin-top: 0;
+    }
+
+    &__text--1 span {
+        font-size: 35px;
+
+        @media only screen and (min-width: 580px) {
+            font-size: 55px;
+        }
+
+        @media only screen and (min-width: 980px) {
+            font-size: 77px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 86px; 
+        }
+    }
+
+    &__text--2 span {
+        font-size: 30px;
+
+        @media only screen and (min-width: 580px) {
+            font-size: 57px;
+        }
+
+        @media only screen and (min-width: 980px) {
+            font-size: 78px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 87px; 
+        }
+    }
+}
+
+.hero__heading > h1 {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
+}
+
+.hero__heading > h1 > span:nth-child(odd) {
+    color: $color-primary;
+    font-size: 21px;
+    font-family: $font-poppins;
+    font-weight: 300;
+    line-height: 1.2;
+    padding-top: 4px;
+
+    @media only screen and (min-width: 580px) {
+        font-size: 25px; 
+        line-height: 1;
+        padding-top: 5px;
+    }
+
+    @media only screen and (min-width: 980px) {
+        font-size: 28px;
+        padding-top: 13px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 32px; 
+        padding-top: 12px;
+    }
+}
+
+.hero__heading > h1 > span:nth-child(even) {
+    color: $color-primary;
+    font-family: $font-poppins;
+    font-weight: 700;
+    padding-left: 1px;
+    line-height: 1.2;
+    padding-left: 6px;
+
+    @media only screen and (min-width: 580px) {
+        line-height: 1;
+        padding-left: 10px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        padding-left: 12px;
+    }
+}
+
+.hero__heading > p {
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    font-family: $font-timesNewRoman;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 7px;
+    letter-spacing: .3px;
+    opacity: 0;
+
+    @media only screen and (max-width: 1024px) {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 580px) {
+        font-size: 22px;
+        margin-top: 5px;
+        text-align: start;
+    }
+
+    @media only screen and (min-width: 980px) {
+        font-size: 25px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 28px;
+        margin-top: 16px;
+        width: initial;
+        text-align: initial;
+        letter-spacing: .8px;
+        padding-left: 1px;
+    }
+}
+
+.hero__heading__text--3::before {
+    content: '';
+    position: absolute;
+    top: 12px; //203px;
+    left: -200px;
+    width: 150px;
+    height: 3px;
+    background-color: $color-primary;
+    display: none;
+
+    @media only screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.hero__button {
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+
+        a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            transition: all .35s ease;
+        
+            i {
+            color: #fff;
+            font-size: 19px;
+            }
+        }
+
+        a:hover {
+            background-color: $color-primary;
+        }
+
+        a:hover > i {
+            color: #353535;
+        }
+    }
+}
+//Hero Section End//
+
+//Coach Section Start//
+.coach-section {
+    display: flex;
+    justify-content: center;
+    background-color: $color-section-white;
+}
+
+.coach__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 15px;
+    max-width: 310px;
+
+    @media only screen and (min-width: 479px) {
+        max-width: 470px;
+    }
+
+    @media only screen and (min-width: 770px) {
+        flex-direction: row;
+        padding: 80px 0;
+        max-width: 738px;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        padding: 130px 0;
+        max-width: 994px;
+    }
+
+    @media only screen and (min-width: 1279px) {
+        max-width: 1290px;
+    }
+}
+
+.coach__left {
+    margin-bottom: 22px;
+
+    @media only screen and (min-width: 770px) {
+        padding: 0 40px 0 15px;
+    }
+
+    &__img {
+        opacity: 0;
+
+        @media only screen and(max-width: 1023px) {
+            opacity: 1;
+        }
+
+        @media only screen and(min-width: 1279px) {
+            max-width: 494px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            @media only screen and (min-width: 1025px) {
+                width: 424px;
+                height: 543px;
+            }
+
+            @media only screen and (min-width: 1279px) {
+                width: 461px;
+                height: 605px;
+            }
+        }
+    }
+}
+
+.coach__right {
+
+    @media only screen and (min-width: 770px) {
+        padding: 0 15px;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        padding-top: 77px;
+    }
+
+    &__subtitle {
+        color: $color-subtitle;
+        font-family: $font-rajdhani;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 600;
+        padding-left: 1px;
+        line-height: 1.2;
+        opacity: 0;
+
+        @media only screen and(max-width: 1023px) {
+            opacity: 1;
+        }
+
+        @media only screen and (min-width: 770px) {
+            font-size: 21px;
+        }
+
+        @media only screen and (min-width: 1025px) {
+            font-size: 22px;
+        }
+
+        @media only screen and (min-width: 1279px) {
+            font-size: 24px;
+        }
+    }
+
+    &__title {
+        color: $color-secondary;
+        font-family: $font-rajdhani;
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding-bottom: 11px;
+        opacity: 0;
+
+        @media only screen and(max-width: 1023px) {
+            opacity: 1;
+        }
+
+        @media only screen and (min-width: 479px) {
+            font-size: 37px;
+        }
+
+        @media only screen and (min-width: 770px) {
+            font-size: 45px;
+        }
+
+        @media only screen and (min-width: 1025px) {
+            font-size: 58px;
+            padding-bottom: 14px;
+        }
+
+        @media only screen and (min-width: 1279px) {
+            font-size: 72px;
+            line-height: 1.1;
+            padding-bottom: 19px;
+        }
+    }
+
+    &__text {
+        color: $color-secondary;
+        font-family: $font-montserrat;
+        font-size: 13px;
+        padding-bottom: 20px;
+        line-height: 25px;
+        opacity: 0;
+
+        @media only screen and(max-width: 1023px) {
+            opacity: 1;
+        }
+
+        @media only screen and (min-width: 770px) {
+            font-size: 14px;
+            padding-bottom: 30px;
+        }
+
+        @media only screen and (min-width: 1025px) {
+            padding-right: 90px;
+        }
+
+        @media only screen and (min-width: 1025px) {
+            padding-bottom: 32px;
+            line-height: 26px;
+        }
+
+        @media only screen and (min-width: 1279px) {
+            padding-right: 0;
+            padding-bottom: 40px;
+            line-height: 27px;
+            max-width: 483px;
+        }
+    }
+
+    &__img {
+        opacity: 0;
+
+        @media only screen and(max-width: 1023px) {
+            opacity: 1;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            @media only screen and (min-width: 1279px) {
+                width: 67%;
+            }
+        }
+    }
+}
+//Coach Section End//
+
+//Fighting Segments Section Start//
+.fighting-segments-section {
+    background-color: $color-section-black;
+}
+
+.fighting-segments__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 15px;
+
+    @media only screen and (min-width: 770px) {
+        padding: 80px 15px;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        padding: 80px 3%;
+    }
+}
+
+.fighting-segments__title {
+    color: $color-primary;
+    font-family: $font-rajdhani;
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: uppercase;
+    padding-bottom: 19px;
+    opacity: 0;
+
+    @media only screen and(max-width: 1023px) {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 288px) {
+        font-size: 30px;
+    }
+
+    @media only screen and (min-width: 480px) {
+        font-size: 35px;
+    }
+
+    @media only screen and (min-width: 770px) {
+        font-size: 45px;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        font-size: 58px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        font-size: 67px;
+        padding-bottom: 17px;
+    }
+}
+
+.fighting-segments__text {
+    color: $color-primary;
+    font-family: $font-montserrat;
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 32px;
+    line-height: 24px;
+    max-width: 94%;
+    opacity: 0;
+
+    @media only screen and(max-width: 1023px) {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 380px) {
+        max-width: 85%;
+    }
+
+    @media only screen and (min-width: 480px) {
+        font-size: 14px;
+    }
+
+    @media only screen and (min-width: 770px) {
+        max-width: 54%;
+    }
+
+    @media only screen and (min-width: 830px) {
+        padding-bottom: 44px;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        max-width: 493px;
+    }
+}
+
+.fighting-segments__classes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;    
+    color: $color-primary;
+    font-family: $font-rajdhani;
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: uppercase;
+    max-width: 1350px;
+
+    @media only screen and (min-width: 480px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @media only screen and (min-width: 830px) {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    &__class--1::before,
+    &__class--2::before {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 0;
+        padding-top: 100%;
+    }
+
+    &__class--3::before {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 0;
+        padding-top: 100%;
+
+        @media only screen and (min-width: 480px) {
+            padding-top: 33%;
+        }
+
+        @media only screen and (min-width: 830px) {
+            padding-top: 100%;
+        }
+    }
+
+    &__class--1 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-segments/pocetnici.jpg) center center / cover no-repeat;
+        margin-bottom: 30px;
+
+        @media only screen and (min-width: 480px) {
+            flex-basis: 45%;
+            flex-grow: 1;
+            margin-right: 10px;
+        }
+
+        @media only screen and (min-width: 830px) {
+            flex-basis: 32%;
+            flex-grow: initial;
+            margin-right: 0;
+            margin-right: 17px;
+        }
+
+        @media only screen and (min-width: 1025px) {
+            flex-basis: 29.5%;
+            margin-right: 30px;
+        }
+    }
+
+    &__class--2 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-segments/takmicari.jpg) center center / cover no-repeat;
+        margin-bottom: 30px;
+
+        @media only screen and (min-width: 480px) {
+            flex-basis: 45%;
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+
+        @media only screen and (min-width: 830px) {
+            flex-basis: 32%;
+            flex-grow: initial;
+            margin-left: 0;
+            margin-right: 17px;
+        }
+
+        @media only screen and (min-width: 1025px) {
+            flex-basis: 29.5%;
+            margin-right: 30px;
+        }
+    }
+
+    &__class--3 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-segments/bjj.jpg) center center / cover no-repeat;
+    
+        @media only screen and (min-width: 480px) {
+            flex-grow: 1;
+        }
+
+        @media only screen and (min-width: 830px) {
+            flex-basis: 32%;
+            flex-grow: initial;
+            margin-bottom: 30px;
+        }
+
+        @media only screen and (min-width: 1025px) {
+            flex-basis: 29.5%;
+        }
+    }
+}
+
+.fighting-segments__classes > div {
+    display: flex;
+    align-items: flex-end;
+    padding: 18px;
+    border: 1px solid #f1ede1cf;
+    opacity: 0;
+
+    @media only screen and(max-width: 1023px) {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 830px) {
+        justify-content: center;
+    }
+}
+
+.fighting-segments__classes > div > h4 {
+    line-height: 1;
+    font-size: 25px;
+
+    @media only screen and (min-width: 1280px) {
+        font-size: 33px;
+    }
+}
+//Fighting Segments Section End//
+
+//Schedule Section Start//
+.schedule-section {
+    background-color: $color-section-white;
+}
+
+.schedule__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 60px 15px;
+
+    @media only screen and (min-width: 770px) {
+        padding: 80px 15px 100px 15px;
+    }
+}
+
+.schedule__title {
+    color: $color-secondary;
+    font-size: 30px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    opacity: 0;
+
+    @media only screen and (max-width: 1024px) {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 480px) {
+        font-size: 35px;
+    }
+
+    @media only screen and (min-width: 767px) {
+        font-size: 45px;
+        padding-bottom: 35px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding-bottom: 47px;
+        font-size: 58px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        font-size: 64px;
+    }
+}
+
+//Schedule Table Mobile Version
+.schedule__table--mobile__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @media only screen and (min-width: 770px) {
+        display: none;
+    }
+}
+
+.schedule__table--mobile__list {
+    width: 100%;
+    text-align: center;
+    border: 4px solid $color-secondary;
+
+    @media only screen and (min-width: 480px) {
+        max-width: 440px;
+    }
+}
+
+//Selecting All List Items Boxes
+.schedule__table--mobile__list > li > div {
+    margin: 0 24px 18px 20px;
+    border-left: 3px solid $color-subtitle;
+
+    @media only screen and (min-width: 480px) {
+        margin: 0 33px 18px 30px;
+    }
+}
+
+//Selecting All Items Inside The List
+.schedule__table--mobile__list > li {
+    margin-top: 25px;
+    list-style: none;
+}
+
+.schedule__table--mobile__list > li:not(:last-child) {
+    border-bottom: 1px solid #00000024;
+}
+
+//Selecting All <h4> Elements Inside of List
+.schedule__table--mobile__list > li > h4 {
+    font-size: 26px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+
+    @media only screen and (min-width: 480px) {
+        font-size: 30px;
+    }
+}
+
+//Selecting <p> Elements Inside  of List
+.schedule__table--mobile__list > li > div > p {
+    font-family: $font-montserrat;
+    font-size: 13px;
+    text-transform: uppercase;
+
+    @media only screen and (min-width: 480px) {
+        font-size: 14px;
+    }
+}
+
+//Selecting Only First <p> Inside  of List
+.schedule__table--mobile__list > li > div > p:first-child {
+    padding-bottom: 3px;
+}
+
+//Schedule Table Tablet / Desktop Version
+.schedule__table {
+    border: 4px solid $color-secondary;
+    border-collapse: collapse;
+    text-align: center;
+    display: none;
+    opacity: 0;
+
+    @media only screen and (max-width: 1024px) {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 770px) {
+        display: block;
+    }
+
+    &__head {
+        text-transform: uppercase;
+        background-color: $color-secondary;
+        color: $color-primary;
+        font-size: 17px;
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 19px;
+        }
+
+        @media only screen and (min-width: 1280px) {
+            font-size: 21px;
+        }
+
+        tr th {
+            text-transform: uppercase;
+            height: 27px;
+
+            @media only screen and (min-width: 1024px) {
+                height: 35px;
+            }
+
+            @media only screen and (min-width: 1280px) {
+                height: 40px;
+            }
+        }
+    }
+
+    &__body {
+
+        tr td {
+            font-family: $font-montserrat;
+            font-size: 13px;
+            text-transform: uppercase;
+            border: 1px solid #00000042; 
+            width: 110px;
+            height: 65px;
+
+            @media only screen and (min-width: 1024px) {
+                font-size: 14px;
+                width: 117px;
+                height: 73px;
+            }
+
+            @media only screen and (min-width: 1280px) {
+                font-size: 15px;
+                width: 141px;
+                height: 83px;
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+.schedule__table__body > tr > td:first-child {
+    font-family: $font-rajdhani;
+    font-weight: 700;
+    font-size: 17px;
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 19px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        font-size: 22px;
+    }
+}
+//Schedule Section End//
+
+//Our Team Section Start//
+.our-team-section {
+    background-color: $color-section-black;
+}
+
+.our-team__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 60px 15px;
+
+    @media only screen and (min-width: 770px) {
+        padding: 80px 15px;
+    }
+}
+
+.our-team__title {
+    color: $color-primary;
+    font-size: 30px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    opacity: 0;
+
+    @media only screen and (max-width: 1024px) {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 480px) {
+        font-size: 35px;
+    }
+
+    @media only screen and (min-width: 767px) {
+        font-size: 45px;
+        padding-bottom: 35px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding-bottom: 40px;
+        font-size: 58px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        font-size: 64px;
+    }
+}
+
+.our-team__members {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 480px) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 480px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        max-width: 708px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        max-width: 1024px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        max-width: 1260px;
+    }
+
+    &__member--1 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center / cover no-repeat;
+
+        @media only screen and (min-width: 480px) {
+            margin-right: 15px;
+        }
+
+        &__hover-mask {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/savo.jpg) center center / cover no-repeat;
+            z-index: 0;
+            transition: transform 1.5s cubic-bezier(.19,1,.22,1);
+        }
+    }
+
+    &__member--2 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center / cover no-repeat;
+    
+        @media only screen and (min-width: 480px) {
+            margin-left: 15px;
+        }
+    
+        &__hover-mask {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/vaso.jpg) center center / cover no-repeat;
+            z-index: 0;
+            transition: transform 1.5s cubic-bezier(.19,1,.22,1);
+        }
+    }
+
+    &__member--3 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center / cover no-repeat;
+    
+        @media only screen and (min-width: 480px) {
+            margin-right: 15px;
+        }
+    
+        &__hover-mask {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/jankela.jpg) center center / cover no-repeat;
+            z-index: 0;
+            transition: transform 1.5s cubic-bezier(.19,1,.22,1);
+        }
+    }
+
+    &__member--4 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+    
+        @media only screen and (min-width: 480px) {
+            margin-left: 14px;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            margin-left: 0;
+        }
+
+        &__hover-mask {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/our-team/ilic.jpg) center center / cover no-repeat;
+            z-index: 0;
+            transition: transform 1.5s cubic-bezier(.19,1,.22,1);
+        }
+    }
+}
+
+.our-team__members__member--1::before,
+.our-team__members__member--2::before,
+.our-team__members__member--3::before,
+.our-team__members__member--4::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    padding-top: 89%;
+
+    @media only screen and (min-width: 480px) {
+        padding-top: 0%;
+    }
+}
+
+//Team Members hover mask
+.our-team__members__member--1::after,
+.our-team__members__member--2::after,
+.our-team__members__member--3::after,
+.our-team__members__member--4::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0f0f0fbb;
+    opacity: 0;
+    transition: all .4s ease;
+    z-index: 998;
+}
+
+.our-team__members > div:hover:after {
+    opacity: 1;
+}
+
+.our-team__members > div:hover span {
+    transform: scale(1.075);
+    z-index: 997;
+}
+
+//All Members Containers
+.our-team__members > div {
+    margin-bottom: 30px;
+    border: 1px solid #f1ede19a;
+    max-width: 253px;
+    position: relative;
+    overflow: hidden;
+
+    @media only screen and (min-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 203px;
+        height: 258px;
+        max-width: 278px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 325px;
+        height: 429px;
+        max-width: initial;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: 216px;
+        height: 275px;
+    }
+  
+    @media only screen and (min-width: 1280px) {
+        width: 288px;
+        height: 367px;
+    }
+}
+
+//Every Team Member Container Except Last Member Container
+.our-team__members > div:not(:last-child) {
+
+    @media only screen and (min-width: 1024px) {
+        margin: 0 30px 30px 0;
+    }
+}
+
+//Team Member Name
+.our-team__members > div > h4 {
+    position: relative;
+    color: $color-primary;
+    font-size: 24px;
+    margin-bottom: 1px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    line-height: 26px;
+    transition: all .35s .03s ease;
+    backface-visibility: hidden;
+    z-index: $z-index-max;
+
+    @media only screen and (min-width: 480px) {
+        line-height: 25px;
+    }
+}
+
+//Team Member Role
+.our-team__members > div > h5 {
+    position: relative;
+    font-family: $font-montserrat;
+    color: $color-subtitle;
+    font-size: 13px;
+    margin-bottom: 26px;
+    padding: 0 20px;
+    transition: all .35s .03s ease;
+    backface-visibility: hidden;
+    z-index: $z-index-max;
+
+    @media only screen and (min-width: 480px) {
+        margin-bottom: 19px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        margin-bottom: 26px;
+    }
+}
+
+//Team Member Name & Role on hover
+.our-team__members > div:hover h4,
+.our-team__members > div:hover h5 {
+    transform: translateY(-51px);
+}
+
+//Team Member Socials Container on hover
+.our-team__members > div:hover div {
+    opacity: 1;
+    bottom: 25px;
+}
+
+//Team Members Socials Container
+.our-team__members > div > div {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 9px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: bottom .35s .07s ease-out, opacity .25s .04s ease;
+    z-index: $z-index-max;
+}
+
+//Team Members Social Container
+.our-team__members > div > div > div {
+    background-color: $color-primary;
+    width: 38px;
+    height: 36px;
+}
+
+//Team Member Social Icons
+.our-team__members > div > div > div > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-secondary;
+    background-color: $color-primary;
+    line-height: .8;
+    width: 100%;
+    height: 100%;
+}
+
+//Team Member Social Icons on hover
+.our-team__members > div > div > div > a:hover {
+    color: $color-primary;
+    background-color: $color-subtitle;
+}
+
+//Team Member Instagram Icon Container
+.our-team__members > div > div > div:first-child {
+    margin-right: 10px;
+}
+
+.our-team__button {
+    padding-top: 30px;
+    margin-bottom: 4px;
+    opacity: 0;
+
+    @media only screen and (max-width: 1024px) {
+        opacity: 1;
+    }
+}
+//Our Team Section End//
+
+//Upcoming Events Section Start//
+.events-section {
+    background-color: $color-section-white;
+}
+
+.events__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 15px;
+    overflow: hidden;
+
+    @media only screen and (min-width: 770px) {
+        padding: 80px 15px;
+    }
+}
+
+.events__title {
+    color: $color-secondary;
+    font-size: 30px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    opacity: 0;
+
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 480px) {
+        font-size: 35px;
+    }
+
+    @media only screen and (min-width: 767px) {
+        font-size: 45px;
+        padding-bottom: 35px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding-bottom: 52px;
+        font-size: 58px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        font-size: 63px; //72px;
+    }
+}
+
+//Selects All Events Containers
+.events__box > div {
+    position: relative;
+    width: 280px;
+    height: 374px;
+    margin-bottom: 45px;
+    cursor: pointer;
+    overflow: hidden;
+    backface-visibility: hidden;
+
+    @media only screen and (min-width: 480px) {
+        width: 309px;
+        height: 409px;
+    }
+
+    @media only screen and (min-width: 610px) {
+        width: 324px;
+        height: 421px;
+    }
+
+    @media only screen and (min-width: 770px) {
+        width: 216px;
+        height: 289px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: 301px;
+        height: 402px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        width: 400px;
+        height: 533px;
+    }
+}
+
+.events__box > div:not(:last-child) {
+    @media only screen and (min-width: 770px) {
+        margin-right: 20px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        margin-right: 25px;
+    }
+}
+
+//Selects All Anchor Elements Inside Events Boxes
+.events__box > div > a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    color: $color-primary;
+    padding: 0 10px 22px 22px;
+
+}
+
+.events__box > div > a > p {
+    font-family: $font-montserrat;
+    color: $color-subtitle;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    z-index: $z-index-max;
+
+    @media only screen and (min-width: 480px) {
+        font-size: 14px;
+    }
+
+    @media only screen and (min-width: 770px) {
+        font-size: 13px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 14px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        font-size: 14px;
+    }
+}
+
+.events__box > div > a > h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: $z-index-max;
+}
+
+.events__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateZ(0);
+    
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 770px) {
+        flex-direction: row;
+    }
+
+    &__event--1 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/vrbas.jpg) center center / cover no-repeat;
+        
+        &__name {
+            font-size: 21px;
+
+            @media only screen and (min-width: 480px) {
+                font-size: 29px;
+            }
+
+            @media only screen and (min-width: 770px) {
+                font-size: 19px;
+            }
+        
+            @media only screen and (min-width: 1024px) {
+                font-size: 25px;
+            }
+        
+            @media only screen and (min-width: 1280px) {
+                font-size: 31px;
+            }
+        }
+    }
+
+    &__event--1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/vrbas.jpg) center center / cover no-repeat;
+        z-index: 0;
+        transition: all .35s ease;
+    }
+
+    &__event--1:hover::before {
+        transform: scale(1.09);
+    }
+
+    &__event--2 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-genesis.jpg) center center / cover no-repeat;
+        
+        &__name {
+            font-size: 21px;
+
+            @media only screen and (min-width: 480px) {
+                font-size: 28px;
+            }
+
+            @media only screen and (min-width: 770px) {
+                font-size: 17px;
+            }
+        
+            @media only screen and (min-width: 1024px) {
+                font-size: 24px;
+            }
+        
+            @media only screen and (min-width: 1280px) {
+                font-size: 28px;
+            }
+        }
+    }
+
+    &__event--2::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-genesis.jpg) center center / cover no-repeat;
+        z-index: 0;
+        transition: all .35s ease;
+    }
+
+    &__event--2:hover::before {
+        transform: scale(1.09);
+    }
+
+    &__event--3 {
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-55.jpg) center center / cover no-repeat;
+        
+        &__name {
+            font-size: 19px;
+
+            @media only screen and (min-width: 480px) {
+                font-size: 27px;
+            }
+
+            @media only screen and (min-width: 770px) {
+                font-size: 17px;
+            }
+        
+            @media only screen and (min-width: 1024px) {
+                font-size: 20px;
+            }
+        
+            @media only screen and (min-width: 1280px) {
+                font-size: 27px;
+            }
+        }
+    }
+
+    &__event--3::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/events-section/ksw-55.jpg) center center / cover no-repeat;
+        z-index: 0;
+        transition: all .35s ease;
+    }
+
+    &__event--3:hover::before {
+        transform: scale(1.09);
+    }
+}
+
+.events__button {
+    margin-top: 15px;
+    opacity: 0;
+
+    @media only screen and (max-width: 1023px) {
+        opacity: 1;
+    }
+}
+//Upcoming Events Section End//

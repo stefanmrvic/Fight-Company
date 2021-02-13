@@ -1,0 +1,20 @@
+@import 'sass/utilities/variables';
+@import 'sass/utilities/placeholders';
+
+@import 'sass/base/typography';
+@import 'sass/base/reset';
+@import 'sass/base/animations';
+
+@import 'sass/components/button';
+
+@import 'sass/layout/navigation-top';
+@import 'sass/layout/navigation';
+@import 'sass/layout/page-name';
+@import 'sass/layout/footer';
+
+@import 'sass/pages/pocetna';
+@import 'sass/pages/o nama';
+@import 'sass/pages/nas tim';
+@import 'sass/pages/eventi';
+@import 'sass/pages/event-details';
+@import 'sass/pages/kontakt';

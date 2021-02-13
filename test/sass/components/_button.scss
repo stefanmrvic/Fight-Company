@@ -1,0 +1,59 @@
+//White Button
+.button--white {
+    border: none;
+    background: none;
+
+    &__link {
+        display: inline-block;
+        font-family: $font-rajdhani;
+        font-weight: 600;
+        color: $color-secondary;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: $color-primary;
+        padding: 11px 20px;
+        width: 100%;
+        height: 100%;
+        transition: all .3s ease;
+
+        @media only screen and (min-width: 770px) {
+            padding: 14px 22px;
+        }
+    }
+
+    &__link:hover {
+        color: $color-primary;
+        background-color: $color-subtitle;
+    }
+}
+
+//Black Button
+.button--black {
+    border: none;
+    background: none;
+
+    &__link {
+        display: inline-block;
+        font-family: $font-rajdhani;
+        font-weight: 600;
+        color: $color-primary;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: $color-secondary;
+        padding: 11px 20px;
+        width: 100%;
+        height: 100%;
+        transition: all .3s ease;
+
+        @media only screen and (min-width: 770px) {
+            padding: 14px 22px;
+        }
+    }
+
+    &__link:hover {
+        color: $color-primary;
+        background-color: $color-subtitle;
+    }
+}
