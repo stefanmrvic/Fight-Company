@@ -398,12 +398,12 @@
 }
 //Coach Section End//
 
-//Fighting Segments Section Start//
-.fighting-segments-section {
+//Fighting Classes Section Start//
+.fighting-classes__section {
     background-color: $color-section-black;
 }
 
-.fighting-segments__container {
+.fighting-classes__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -419,7 +419,7 @@
     }
 }
 
-.fighting-segments__title {
+.fighting-classes__title {
     color: $color-primary;
     font-family: $font-rajdhani;
     font-weight: 700;
@@ -454,7 +454,7 @@
     }
 }
 
-.fighting-segments__text {
+.fighting-classes__text {
     color: $color-primary;
     font-family: $font-montserrat;
     font-size: 13px;
@@ -489,7 +489,7 @@
     }
 }
 
-.fighting-segments__classes {
+.fighting-classes__classes {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -537,7 +537,7 @@
     }
 
     &__class--1 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-segments/pocetnici.jpg) center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-classes/pocetnici.jpg) center center / cover no-repeat;
         margin-bottom: 30px;
 
         @media only screen and (min-width: 480px) {
@@ -560,7 +560,7 @@
     }
 
     &__class--2 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-segments/takmicari.jpg) center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-classes/takmicari.jpg) center center / cover no-repeat;
         margin-bottom: 30px;
 
         @media only screen and (min-width: 480px) {
@@ -583,7 +583,7 @@
     }
 
     &__class--3 {
-        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-segments/bjj.jpg) center center / cover no-repeat;
+        background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-classes/bjj.jpg) center center / cover no-repeat;
     
         @media only screen and (min-width: 480px) {
             flex-grow: 1;
@@ -601,7 +601,7 @@
     }
 }
 
-.fighting-segments__classes > div {
+.fighting-classes__classes > div {
     display: flex;
     align-items: flex-end;
     padding: 18px;
@@ -617,7 +617,7 @@
     }
 }
 
-.fighting-segments__classes > div > h4 {
+.fighting-classes__classes > div > h4 {
     line-height: 1;
     font-size: 25px;
 
@@ -625,7 +625,7 @@
         font-size: 33px;
     }
 }
-//Fighting Segments Section End//
+//Fighting Classes Section End//
 
 //Schedule Section Start//
 .schedule-section {

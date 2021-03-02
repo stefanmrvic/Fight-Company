@@ -1994,11 +1994,11 @@ nav {
   }
 }
 
-.fighting-segments-section {
+.fighting-classes__section {
   background-color: #0f0f0f;
 }
 
-.fighting-segments__container {
+.fighting-classes__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2016,18 +2016,18 @@ nav {
 }
 
 @media only screen and (min-width: 770px) {
-  .fighting-segments__container {
+  .fighting-classes__container {
     padding: 80px 15px;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .fighting-segments__container {
+  .fighting-classes__container {
     padding: 80px 3%;
   }
 }
 
-.fighting-segments__title {
+.fighting-classes__title {
   color: #f1ede1;
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
@@ -2038,43 +2038,43 @@ nav {
 }
 
 @media only screen and (max-width: 1023px) {
-  .fighting-segments__title {
+  .fighting-classes__title {
     opacity: 1;
   }
 }
 
 @media only screen and (min-width: 288px) {
-  .fighting-segments__title {
+  .fighting-classes__title {
     font-size: 30px;
   }
 }
 
 @media only screen and (min-width: 480px) {
-  .fighting-segments__title {
+  .fighting-classes__title {
     font-size: 35px;
   }
 }
 
 @media only screen and (min-width: 770px) {
-  .fighting-segments__title {
+  .fighting-classes__title {
     font-size: 45px;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .fighting-segments__title {
+  .fighting-classes__title {
     font-size: 58px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .fighting-segments__title {
+  .fighting-classes__title {
     font-size: 67px;
     padding-bottom: 17px;
   }
 }
 
-.fighting-segments__text {
+.fighting-classes__text {
   color: #f1ede1;
   font-family: "Montserrat", serif;
   font-size: 13px;
@@ -2086,42 +2086,42 @@ nav {
 }
 
 @media only screen and (max-width: 1023px) {
-  .fighting-segments__text {
+  .fighting-classes__text {
     opacity: 1;
   }
 }
 
 @media only screen and (min-width: 380px) {
-  .fighting-segments__text {
+  .fighting-classes__text {
     max-width: 85%;
   }
 }
 
 @media only screen and (min-width: 480px) {
-  .fighting-segments__text {
+  .fighting-classes__text {
     font-size: 14px;
   }
 }
 
 @media only screen and (min-width: 770px) {
-  .fighting-segments__text {
+  .fighting-classes__text {
     max-width: 54%;
   }
 }
 
 @media only screen and (min-width: 830px) {
-  .fighting-segments__text {
+  .fighting-classes__text {
     padding-bottom: 44px;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .fighting-segments__text {
+  .fighting-classes__text {
     max-width: 493px;
   }
 }
 
-.fighting-segments__classes {
+.fighting-classes__classes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2140,7 +2140,7 @@ nav {
 }
 
 @media only screen and (min-width: 480px) {
-  .fighting-segments__classes {
+  .fighting-classes__classes {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2151,7 +2151,7 @@ nav {
 }
 
 @media only screen and (min-width: 830px) {
-  .fighting-segments__classes {
+  .fighting-classes__classes {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: center;
@@ -2160,7 +2160,7 @@ nav {
   }
 }
 
-.fighting-segments__classes__class--1::before, .fighting-segments__classes__class--2::before {
+.fighting-classes__classes__class--1::before, .fighting-classes__classes__class--2::before {
   content: '';
   display: inline-block;
   width: 0;
@@ -2168,7 +2168,7 @@ nav {
   padding-top: 100%;
 }
 
-.fighting-segments__classes__class--3::before {
+.fighting-classes__classes__class--3::before {
   content: '';
   display: inline-block;
   width: 0;
@@ -2177,25 +2177,25 @@ nav {
 }
 
 @media only screen and (min-width: 480px) {
-  .fighting-segments__classes__class--3::before {
+  .fighting-classes__classes__class--3::before {
     padding-top: 33%;
   }
 }
 
 @media only screen and (min-width: 830px) {
-  .fighting-segments__classes__class--3::before {
+  .fighting-classes__classes__class--3::before {
     padding-top: 100%;
   }
 }
 
-.fighting-segments__classes__class--1 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, rgba(22, 18, 15, 0)), color-stop(47%, rgba(22, 18, 15, 0)), to(#000000)), url(/imgs/landing-imgs/fighting-segments/pocetnici.jpg) center center/cover no-repeat;
-  background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-segments/pocetnici.jpg) center center/cover no-repeat;
+.fighting-classes__classes__class--1 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, rgba(22, 18, 15, 0)), color-stop(47%, rgba(22, 18, 15, 0)), to(#000000)), url(/imgs/landing-imgs/fighting-classes/pocetnici.jpg) center center/cover no-repeat;
+  background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-classes/pocetnici.jpg) center center/cover no-repeat;
   margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 480px) {
-  .fighting-segments__classes__class--1 {
+  .fighting-classes__classes__class--1 {
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
     -webkit-box-flex: 1;
@@ -2206,7 +2206,7 @@ nav {
 }
 
 @media only screen and (min-width: 830px) {
-  .fighting-segments__classes__class--1 {
+  .fighting-classes__classes__class--1 {
     -ms-flex-preferred-size: 32%;
         flex-basis: 32%;
     -webkit-box-flex: initial;
@@ -2218,21 +2218,21 @@ nav {
 }
 
 @media only screen and (min-width: 1025px) {
-  .fighting-segments__classes__class--1 {
+  .fighting-classes__classes__class--1 {
     -ms-flex-preferred-size: 29.5%;
         flex-basis: 29.5%;
     margin-right: 30px;
   }
 }
 
-.fighting-segments__classes__class--2 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, rgba(22, 18, 15, 0)), color-stop(47%, rgba(22, 18, 15, 0)), to(#000000)), url(/imgs/landing-imgs/fighting-segments/takmicari.jpg) center center/cover no-repeat;
-  background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-segments/takmicari.jpg) center center/cover no-repeat;
+.fighting-classes__classes__class--2 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, rgba(22, 18, 15, 0)), color-stop(47%, rgba(22, 18, 15, 0)), to(#000000)), url(/imgs/landing-imgs/fighting-classes/takmicari.jpg) center center/cover no-repeat;
+  background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-classes/takmicari.jpg) center center/cover no-repeat;
   margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 480px) {
-  .fighting-segments__classes__class--2 {
+  .fighting-classes__classes__class--2 {
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
     -webkit-box-flex: 1;
@@ -2243,7 +2243,7 @@ nav {
 }
 
 @media only screen and (min-width: 830px) {
-  .fighting-segments__classes__class--2 {
+  .fighting-classes__classes__class--2 {
     -ms-flex-preferred-size: 32%;
         flex-basis: 32%;
     -webkit-box-flex: initial;
@@ -2255,20 +2255,20 @@ nav {
 }
 
 @media only screen and (min-width: 1025px) {
-  .fighting-segments__classes__class--2 {
+  .fighting-classes__classes__class--2 {
     -ms-flex-preferred-size: 29.5%;
         flex-basis: 29.5%;
     margin-right: 30px;
   }
 }
 
-.fighting-segments__classes__class--3 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, rgba(22, 18, 15, 0)), color-stop(47%, rgba(22, 18, 15, 0)), to(#000000)), url(/imgs/landing-imgs/fighting-segments/bjj.jpg) center center/cover no-repeat;
-  background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-segments/bjj.jpg) center center/cover no-repeat;
+.fighting-classes__classes__class--3 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, rgba(22, 18, 15, 0)), color-stop(47%, rgba(22, 18, 15, 0)), to(#000000)), url(/imgs/landing-imgs/fighting-classes/bjj.jpg) center center/cover no-repeat;
+  background: linear-gradient(to bottom, rgba(22, 18, 15, 0) 34%, rgba(22, 18, 15, 0) 47%, #000000 100%), url(/imgs/landing-imgs/fighting-classes/bjj.jpg) center center/cover no-repeat;
 }
 
 @media only screen and (min-width: 480px) {
-  .fighting-segments__classes__class--3 {
+  .fighting-classes__classes__class--3 {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -2276,7 +2276,7 @@ nav {
 }
 
 @media only screen and (min-width: 830px) {
-  .fighting-segments__classes__class--3 {
+  .fighting-classes__classes__class--3 {
     -ms-flex-preferred-size: 32%;
         flex-basis: 32%;
     -webkit-box-flex: initial;
@@ -2287,13 +2287,13 @@ nav {
 }
 
 @media only screen and (min-width: 1025px) {
-  .fighting-segments__classes__class--3 {
+  .fighting-classes__classes__class--3 {
     -ms-flex-preferred-size: 29.5%;
         flex-basis: 29.5%;
   }
 }
 
-.fighting-segments__classes > div {
+.fighting-classes__classes > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2306,26 +2306,26 @@ nav {
 }
 
 @media only screen and (max-width: 1023px) {
-  .fighting-segments__classes > div {
+  .fighting-classes__classes > div {
     opacity: 1;
   }
 }
 
 @media only screen and (min-width: 830px) {
-  .fighting-segments__classes > div {
+  .fighting-classes__classes > div {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-.fighting-segments__classes > div > h4 {
+.fighting-classes__classes > div > h4 {
   line-height: 1;
   font-size: 25px;
 }
 
 @media only screen and (min-width: 1280px) {
-  .fighting-segments__classes > div > h4 {
+  .fighting-classes__classes > div > h4 {
     font-size: 33px;
   }
 }

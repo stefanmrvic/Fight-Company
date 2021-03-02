@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KSW 55 | Fight Company</title>
+    <!--Main CSS Style-->
+    <link rel="stylesheet" href="/css/main.css">
+    <!--Favicon Links-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/ca90894ee4.js" crossorigin="anonymous"></script>
+    <!--Leaflet CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <!--Leaflet.js-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+</head>
+<body>
+    <div class="nav-distance"></div>
+    <!--Nav Top Bar Start-->
+    <div class="nav-top">
+        <div class="nav-top__wrapper">
+            <ul class="nav-top__contact">
+                <li class="nav-top__contact__item">
+                    <div class="item-wrapper">
+                        <a href="/kontakt" class="nav-top__contact__item__link">
+                            <i class="fas fa-map-marker-alt location"></i>
+                            <span>Banjica</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-top__contact__item">
+                    <div class="item-wrapper">
+                        <a href="/kontakt" class="nav-top__contact__item__link">
+                            <i class="fas fa-map-marker-alt location"></i>
+                            <span>Borča</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="nav-top__social">
+                <li class="nav-top__social__item">
+                    <a href="https://www.facebook.com/Fight-Company-MMA-112986410561728" class="nav-top__social__item__link" target="_blank">
+                        <i class="fab fa-facebook-f facebook"></i>
+                    </a>
+                </li>
+                <li class="nav-top__social__item">
+                    <a href="https://www.instagram.com/fightcompanymma/" class="nav-top__social__item__link" target="_blank">
+                        <i class="fab fa-instagram instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Nav Top Bar End-->
+    <header>
+        <!--Nav Start-->
+        <nav id="main-nav">
+            <div class="navbar">
+                <a href="/index" class="navbar__logo">
+                    <img src="/imgs/logo.png" alt="Website Logo">
+                </a>
+                <ul class="navbar__links">
+                    <li class="navbar__item">
+                        <a href="/o-nama" class="navbar__item__link">O nama</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/nas-tim" class="navbar__item__link">Naš tim</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/eventi" class="navbar__item__link">Eventi</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/kontakt" class="navbar__item__link">Kontakt</a>
+                    </li>
+                </ul>
+                <!--Mobile Navbar Start-->
+                <div class="navbar__hamburger">
+                    <span class="navbar__hamburger__icon"></span>
+                    <span class="navbar__hamburger__icon"></span>
+                    <span class="navbar__hamburger__icon"></span>
+                </div>
+                <div class="navbar__mobile__darken"></div>
+                <div class="navbar__mobile">
+                    <!--Mobile Navbar Close Button Start-->
+                    <div class="navbar__mobile__button">
+                        <span class="navbar__mobile__button--1"></span>
+                        <span class="navbar__mobile__button--2"></span>
+                    </div>
+                    <!--Mobile Navbar Close Button End-->
+
+                    <!--Mobile Navbar Menu Start-->
+                    <div class="navbar__mobile__menu">
+                        <ul class="navbar__mobile__menu__links">
+                            <li class="navbar__mobile__menu__item">
+                                <a href="/index">Početna</a>
+                            </li>
+                            <li class="navbar__mobile__menu__item">
+                                <a href="/o-nama">O nama</a>
+                            </li>
+                            <li class="navbar__mobile__menu__item">
+                                <a href="/nas-tim">Naš tim</a>
+                            </li>
+                            <li class="navbar__mobile__menu__item">
+                                <a href="/eventi">Eventi</a>
+                            </li>
+                            <li class="navbar__mobile__menu__item">
+                                <a href="/kontakt">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Mobile Navbar Menu End-->
+
+                    <!--Mobile Navbar Info Start-->
+                    <div class="navbar__mobile__info">
+                        <div class="navbar__mobile__location">
+                            <i class="fas fa-map-marker-alt mobile-location"></i>
+                            <a href="kontakt" class="navbar__mobile__location__text">Banjica</a>
+                        </div>
+                        <div class="navbar__mobile__social">
+                            <a href="https://www.instagram.com/fightcompanymma/" class="navbar__mobile__social__instagram" target="_blank">
+                                <i class="fab fa-instagram mobile-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/Fight-Company-MMA-112986410561728" class="navbar__mobile__social__facebook" target="_blank">
+                                <i class="fab fa-facebook mobile-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="navbar__mobile__location">
+                            <i class="fas fa-map-marker-alt mobile-location"></i>
+                            <a href="kontakt" class="navbar__mobile__location__text">Borča</a>
+                        </div>
+                        <div class="navbar__mobile__social">
+                            <a href="https://www.instagram.com/fightcompany_borca/" class="navbar__mobile__social__instagram" target="_blank">
+                                <i class="fab fa-instagram mobile-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Mobile Navbar Info End-->
+                </div>
+                <!--Mobile Navbar End-->
+            </div>
+        </nav>
+        <!--Nav End-->
+        <!--Nav JS File-->
+        <script type="text/javascript" src="/js/nav/nav.js"></script>
+    </header>
+
+    <main>
+        <!--Section Name Start-->
+        <section class="page-name-section">
+            <div class="page-name__container">
+                <h1 class="page-name__title">KSW 55</h1>
+                <div class="page-name__subtitle">
+                    <a href="/index" class="page-name__subtitle__link">Početna</a>
+                    <span class="page-name__subtitle__slash"> / </span>
+                    <a href="/eventi" class="page-name__subtitle__link">Eventi</a>
+                    <span class="page-name__subtitle__slash"> / </span>
+                    <span class="page-name__subtitle__current-page">KSW 55</span>
+                </div>
+            </div>
+        </section>
+        <!--Section Name End-->
+
+        <!--Event Details Section Start-->
+        <section class="event-details__section">
+            <div class="event-details__container">
+                <div class="event-details__text-and-img__container">
+                    <img src="/imgs/landing-imgs/events-section/ksw-55.jpg" alt="" class="event-details__img">
+                    <div class="event-details__text">
+                        <p class="event-details__text--1">
+                            Aleksandar Joker Ilić boriće se protiv bivšeg KSW šampiona Michela Materle potvrdila je danas KSW organizacija.
+                            Joker i Materla će biti co-main event KSW 55 koji predovdi borba za titulu za prvaka KSW srednje kategorije između Scott Askhama i Mamed Khalidova.
+                            Aleksandar Ilić je ovaj meč prihvatio kao “short notice” samo 2 nedelje pred borbu, što je za svako poštovanje.
+                        </p>
+                        <p class="event-details__text--2">
+                            Aleksandar Ilić se nije borio još od KSW 51 u Zagrebu, 9. novembra 2019 godine.
+                            Za protivnika ima jako nezgodnog borca, bivšeg šampiona. Verovatno će pobednik ovog meča biti jedan od potencijalnih izazivača za titulu.
+                            Michal Materla iza sebe ima pobedu nad Wilhem Ottom. Pre toga je poražen od šampiona Scott Askhama u borbi za titulu.
+                            Izuzetno fizički jak borac sa odličnim BJJ, gde je nosioc crnog pojasa.
+                            U svojoj karijeri je pobedio velika imena kao što su Martin Zawada, Rousimar Palharesa,Tomasz Drwala,Antoni Chmielewskog, Damiana Janikowskog…
+                        </p>
+                    </div>
+                </div>
+                <div class="event-details__buttons">
+                    <div class="event-details__buttons__previous">
+                        <button class="button--black">
+                            <a href="/pages/vrbas-event" class="button--black__link">
+                                <span class="event-details__buttons__previous__arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213">
+                                        <path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
+                                        </path>
+                                    </svg>
+                                </span>
+                                Prethodni event
+                            </a>
+                        </button>
+                    </div>
+                    <div class="event-details__buttons__next">
+                        <button class="button--black">
+                            <a href="/pages/bareknuckle-event" class="button--black__link">
+                                Sledeći Event
+                                <span class="event-details__buttons__next__arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213">
+                                        <path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="event-details__info">
+                    <div class="event-details__info__date">
+                        <h5 class="event-details__info__date__title">Datum</h5>
+                        <p class="event-details__info__date__fight-day">10.10.2020 / 19:00</p>
+                    </div>
+                    <div class="event-details__info__organization">
+                        <h5 class="event-details__info__organization__title">Organizacija</h5>
+                        <p class="event-details__info__organization__name">KSW</p>
+                        <p class="event-details__info__organization__website">Website: <br>
+                            <a href="https://www.kswmma.com/" target="_blank">www.kswmma.com</a>
+                        </p>
+                    </div>
+                    <div class="event-details__info__location">
+                        <h5 class="event-details__info__location__title">Lokacija</h5>
+                        <p class="event-details__info__location__city">Warsaw, Poland</p>
+                    </div>
+                    <div class="event-details__info__map">
+                        <div id="ksw-map" class="event-details__info__map__location"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Event Details Section End-->
+        <script src="/js/map/eventMaps/kswMap.js"></script>
+    </main>
+    <!--Footer Start-->
+    <footer id="footer">
+        <div class="footer__container">
+            <div class="footer-social">
+                <div class="footer-social__heading anim1">
+                    <h4 class="footer-social__heading__subtitle">Fight Company</h4>
+                    <h1 class="footer-social__heading__title">Instagram</h1>
+                </div>
+                <div class="footer-social__imgs anim1">
+                    <div class="footer-social__imgs__wrapper">
+                        <a href="https://www.instagram.com/p/CGa7ZFijlJ3/" class="footer-social__imgs__image" target="_blank">
+                            <img load="lazy" src="/imgs/footer-imgs/instagram-1.jpg" alt="Vaso Bakocevic Bare Knuckle Fight Poster">
+                        </a>
+                    </div>
+                    <div class="footer-social__imgs__wrapper">
+                        <a href="https://www.instagram.com/p/CGLABemDgqR/" class="footer-social__imgs__image" target="_blank">
+                            <img load="lazy" src="/imgs/footer-imgs/instagram-2.jpg" alt="Aleksandar Joker Ilic, MMA Fighter">
+                        </a>
+                    </div>
+                    <div class="footer-social__imgs__wrapper">
+                        <a href="https://www.instagram.com/p/CGCwigODNQQ/" class="footer-social__imgs__image" target="_blank">
+                            <img load="lazy" src="/imgs/footer-imgs/instagram-3.jpg" alt="Two MMA Fighters Training">
+                        </a>
+                    </div>
+                    <div class="footer-social__imgs__wrapper">
+                        <a href="https://www.instagram.com/p/CGkVbs5jURG/" class="footer-social__imgs__image" target="_blank">
+                            <img load="lazy" src="/imgs/footer-imgs/instagram-4.jpg" alt="Fight Company Owners and Manager">
+                        </a>
+                    </div>
+                    <div class="footer-social__imgs__wrapper">
+                        <a href="https://www.instagram.com/p/CFrcWQIjdVn/" class="footer-social__imgs__image" target="_blank">
+                            <img load="lazy" src="/imgs/footer-imgs/instagram-5.jpg" alt="Two MMA Fighters working out">
+                        </a>
+                    </div>
+                    <div class="footer-social__imgs__wrapper">
+                        <a href="https://www.instagram.com/p/CF9mOLpjc6h/" class="footer-social__imgs__image" target="_blank">
+                            <img load="lazy" src="/imgs/footer-imgs/instagram-6.jpg" alt="MMA poster for fight for Aleksandar 'Joker' Ilic">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-social__socials anim1">
+                    <p class="footer-social__socials__text">Zaprati Fight Company</p>
+                    <div class="footer-social__socials__line"></div>
+                    <ul class="footer-social__socials__links">
+                        <li class="footer-social__socials__links__link">
+                            <a href="https://www.facebook.com/Fight-Company-MMA-112986410561728" class="footer-social__socials__links__link--1" target="_blank">
+                                <i class="fab fa-facebook-f facebook"></i>
+                            </a>
+                        </li>
+                        <li class="footer-social__socials__links__link">
+                            <a href="https://www.instagram.com/fightcompanymma/" class="footer-social__socials__links__link--2" target="_blank">
+                                <i class="fab fa-instagram mobile-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-sitemap">
+                <div class="footer-sitemap__logo">
+                    <a href="#top" class="footer-sitemap__logo__link">
+                        <img load="lazy" src="/imgs/logo.png" alt="Fight Company Logo">
+                    </a>
+                </div>
+                <div class="footer-sitemap__links__container">
+                    <ul class="footer-sitemap__links">
+                        <li class="footer-sitemap__links__1">
+                            <a href="o-nama">O nama</a>
+                        </li>
+                        <li class="footer-sitemap__links__2">
+                            <a href="nas-tim">Naš tim</a>
+                        </li>
+                        <li class="footer-sitemap__links__3">
+                            <a href="eventi">Eventi</a>
+                        </li>
+                        <li class="footer-sitemap__links__4">
+                            <a href="kontakt">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-sitemap__copyright">
+                    <p class="footer-sitemap__copyright__text">
+                        <a href="#" class="footer-sitemap__copyright__link">Fight Company </a>
+                        &copy; 2020. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+    <script src="/js/animations/eventAnimations.js"></script>
+
+    <!-- Async load cross-site CSS, mostly interesting for production -->
+    <script>
+        function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})}
+        loadCSS('css/main.css');
+    </script>
+</body>
+</html>
