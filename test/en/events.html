@@ -50,6 +50,19 @@
                     </a>
                 </li>
             </ul>
+            <ul class="nav-top__translation">
+                <li class="nav-top__translation__en">
+                    <span class="active-language">en</span>
+                </li>
+                <li class="nav-top__translation__divider">
+                   <span>/</span>
+                </li>
+                <li class="nav-top__translation__sr">
+                    <a href="/eventi" class="nav-top__social__item__link selectable-language">
+                        sr
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
     <!--Nav Top Bar End-->
@@ -88,6 +101,19 @@
                         <span class="navbar__mobile__button--2"></span>
                     </div>
                     <!--Mobile Navbar Close Button End-->
+
+                    <!--Mobile Navbar Language Selector Start-->
+                    <div class="navbar__mobile__language">
+                        <select onchange="location = this.value;" class="navbar__mobile__language__selector">
+                            <option value="/en/events">
+                                EN
+                            </option>
+                            <option value="/eventi">
+                                SR
+                            </option>
+                        </select>
+                    </div>
+                    <!--Mobile Navbar Language Selector End-->
 
                     <!--Mobile Navbar Menu Start-->
                     <div class="navbar__mobile__menu">
@@ -151,7 +177,7 @@
             <div class="page-name__container">
                 <h1 class="page-name__title">Events</h1>
                 <div class="page-name__subtitle">
-                    <a href="/en/index.html" class="page-name__subtitle__link">Home</a>
+                    <a href="/en/index" class="page-name__subtitle__link">Home</a>
                     <span class="page-name__subtitle__slash"> / </span>
                     <span class="page-name__subtitle__current-page">Events</span>
                 </div>
@@ -275,7 +301,7 @@
             </div>
             <div class="footer-sitemap">
                 <div class="footer-sitemap__logo">
-                    <a href="/en/index.html" class="footer-sitemap__logo__link">
+                    <a href="/en/index" class="footer-sitemap__logo__link">
                         <img load="lazy" src="/imgs/logo.png" alt="Fight Company Logo">
                     </a>
                 </div>
@@ -285,7 +311,7 @@
                             <a href="/en/about-us">About Us</a>
                         </li>
                         <li class="footer-sitemap__links__2">
-                            <a href="/en/our-team.html">Our Team</a>
+                            <a href="/en/our-team">Our Team</a>
                         </li>
                         <li class="footer-sitemap__links__3">
                             <a href="/en/events">Events</a>

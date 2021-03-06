@@ -58,6 +58,19 @@
                     </a>
                 </li>
             </ul>
+            <ul class="nav-top__translation">
+                <li class="nav-top__translation__en">
+                    <a href="/en/contact-us" class="nav-top__social__item__link selectable-language">
+                        en
+                    </a>
+                </li>
+                <li class="nav-top__translation__divider">
+                   <span>/</span>
+                </li>
+                <li class="nav-top__translation__sr">
+                    <span class="active-language">sr</span>
+                </li>
+            </ul>
         </div>
     </div>
     <!--Nav Top Bar End-->
@@ -96,6 +109,19 @@
                         <span class="navbar__mobile__button--2"></span>
                     </div>
                     <!--Mobile Navbar Close Button End-->
+
+                    <!--Mobile Navbar Language Selector Start-->
+                    <div class="navbar__mobile__language">
+                        <select onchange="location = this.value;" class="navbar__mobile__language__selector">
+                            <option value="kontakt">
+                                SR
+                            </option>
+                            <option value="/en/contact-us">
+                                EN
+                            </option>
+                        </select>
+                    </div>
+                    <!--Mobile Navbar Language Selector End-->
 
                     <!--Mobile Navbar Menu Start-->
                     <div class="navbar__mobile__menu">
@@ -223,11 +249,11 @@
     <footer id="footer">
         <div class="footer__container">
             <div class="footer-social">
-                <div class="footer-social__heading anim2">
+                <div class="footer-social__heading anim1">
                     <h4 class="footer-social__heading__subtitle">Fight Company</h4>
                     <h1 class="footer-social__heading__title">Instagram</h1>
                 </div>
-                <div class="footer-social__imgs anim2">
+                <div class="footer-social__imgs anim1">
                     <div class="footer-social__imgs__wrapper">
                         <a href="https://www.instagram.com/p/CGa7ZFijlJ3/" class="footer-social__imgs__image" target="_blank">
                             <img src="/imgs/footer-imgs/instagram-1.jpg" alt="Vaso Bakocevic Bare Knuckle Fight Poster">
@@ -259,7 +285,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="footer-social__socials anim2">
+                <div class="footer-social__socials anim1">
                     <p class="footer-social__socials__text">Zaprati Fight Company</p>
                     <div class="footer-social__socials__line"></div>
                     <ul class="footer-social__socials__links">

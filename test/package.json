@@ -4,7 +4,7 @@
   "description": "Fight Company Website",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -watch",
+    "watch:sass": "node-sass sass/main.scss css/main.css -watch",
     "live": "live-server",
     "clean": "rimraf css",
     "compile": "node-sass --output-style=expanded sass/main.scss css/style.css",

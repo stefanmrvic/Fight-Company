@@ -195,9 +195,31 @@ nav {
             transform: rotate(45deg);
         }
 
+        &__language {
+            position: absolute;
+            top: 13px;
+            left: 13px;
+            width: 44px;
+            height: 29px;
+        }
+
+        &__language__selector {
+            color: #fff;
+            background-color: #000;
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            border-radius: 0;
+            align-items: center;
+            font-family: 'Montserrat';
+            padding-left: 2px;
+            width: 100%;
+            height: 100%;
+        }
+
         &__menu {
             width: 100%;
-            padding: 50px 30px 23px 30px;
+            padding: 52px 30px 23px 30px;
         }
 
         &__menu__links > li {

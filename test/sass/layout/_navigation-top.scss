@@ -1,7 +1,7 @@
 .nav-top {
     display: flex;
     justify-content: center;
-    padding: 12px 15px;
+    padding: 14px 15px 11px 15px;
     background-color: $color-navTop-background;
 
     &__wrapper {
@@ -28,7 +28,6 @@
         }
 
         &__item div a i.location {
-           
            padding-right: 5px;
         }
     }
@@ -77,6 +76,38 @@
 
     &__social > li:not(:last-child) {
         padding-right: 35px;
+    }
+
+    &__translation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $font-montserrat;
+        text-transform: uppercase;
+        font-size: 14px;
+        
+        .selectable-language {
+            color: #fff;
+            opacity: .4;
+        }
+
+        &__divider span {
+            color: #fff;
+            opacity: .4;
+        }
+
+        .active-language {
+            color: #fff;
+        }
+
+        .selectable-language:hover {
+            opacity: 1;
+            transition: all .3s ease-in-out;
+        }
+    }
+
+    &__translation > li:not(:last-child) {
+        padding-right: 7px;
     }
 }
 

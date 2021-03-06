@@ -4,8 +4,7 @@ window.addEventListener("load", (event) => {
 
     if(mediaQueryMedium.matches) {
 
-        let targetContactUs = document.querySelectorAll('.anim1');
-        let targetFooter = document.querySelectorAll('.anim2');
+        let targetFooter = document.querySelectorAll('.anim1');
 
         let options = {
             root: null,

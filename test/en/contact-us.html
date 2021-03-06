@@ -58,6 +58,19 @@
                     </a>
                 </li>
             </ul>
+            <ul class="nav-top__translation">
+                <li class="nav-top__translation__en">
+                    <span class="active-language">en</span>
+                </li>
+                <li class="nav-top__translation__divider">
+                   <span>/</span>
+                </li>
+                <li class="nav-top__translation__sr">
+                    <a href="/kontakt" class="nav-top__social__item__link selectable-language">
+                        sr
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
     <!--Nav Top Bar End-->
@@ -76,7 +89,7 @@
                         <a href="nas-tim" class="navbar__item__link">Our Team</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="eventi" class="navbar__item__link">Events</a>
+                        <a href="events" class="navbar__item__link">Events</a>
                     </li>
                     <li class="navbar__item active">
                         <a href="#" class="navbar__item__link">Contact Us</a>
@@ -96,6 +109,19 @@
                         <span class="navbar__mobile__button--2"></span>
                     </div>
                     <!--Mobile Navbar Close Button End-->
+
+                    <!--Mobile Navbar Language Selector Start-->
+                    <div class="navbar__mobile__language">
+                        <select onchange="location = this.value;" class="navbar__mobile__language__selector">
+                            <option value="/en/contact-us">
+                                EN
+                            </option>
+                            <option value="/kontakt">
+                                SR
+                            </option>
+                        </select>
+                    </div>
+                    <!--Mobile Navbar Language Selector End-->
 
                     <!--Mobile Navbar Menu Start-->
                     <div class="navbar__mobile__menu">
@@ -223,11 +249,11 @@
     <footer id="footer">
         <div class="footer__container">
             <div class="footer-social">
-                <div class="footer-social__heading anim3">
+                <div class="footer-social__heading anim1">
                     <h4 class="footer-social__heading__subtitle">Fight Company</h4>
                     <h1 class="footer-social__heading__title">Instagram</h1>
                 </div>
-                <div class="footer-social__imgs anim3">
+                <div class="footer-social__imgs anim1">
                     <div class="footer-social__imgs__wrapper">
                         <a href="https://www.instagram.com/p/CGa7ZFijlJ3/" class="footer-social__imgs__image" target="_blank">
                             <img load="lazy" src="/imgs/footer-imgs/instagram-1.jpg" alt="Vaso Bakocevic Bare Knuckle Fight Poster">
@@ -259,7 +285,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="footer-social__socials anim3">
+                <div class="footer-social__socials anim1">
                     <p class="footer-social__socials__text">Follow Fight Company</p>
                     <div class="footer-social__socials__line"></div>
                     <ul class="footer-social__socials__links">
@@ -278,7 +304,7 @@
             </div>
             <div class="footer-sitemap">
                 <div class="footer-sitemap__logo">
-                    <a href="/en/index.html" class="footer-sitemap__logo__link">
+                    <a href="/en/index" class="footer-sitemap__logo__link">
                         <img load="lazy" src="/imgs/logo.png" alt="Fight Company Logo">
                     </a>
                 </div>
@@ -288,7 +314,7 @@
                             <a href="/en/about-us">About Us</a>
                         </li>
                         <li class="footer-sitemap__links__2">
-                            <a href="/en/our-team.html">Our Team</a>
+                            <a href="/en/our-team">Our Team</a>
                         </li>
                         <li class="footer-sitemap__links__3">
                             <a href="/en/events">Events</a>
