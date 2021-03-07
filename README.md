@@ -1,5 +1,5 @@
 # Fight Company
-Fight Company is a newly opened MMA club run by Savo Lazić and Vaso Bakočević based in Belgrade, Serbia that aspires to be the best in what they do. Their team counts over 118 professional fights with over 77 wins. Some of the organizations include: Megdan, FFC, SBC, FNC, FNG, KSW, Bellator, and many more.
+Fight Company is a newly opened MMA club run by Savo Lazić and Vaso Bakočević based in Belgrade, Serbia that aspires to be the best in what they do. Their team counts over 118 professional fights with over 77 wins. Some of the organizations include: Megdan, FFC, SBC, FNC, FNG, KSW, Bellator, and many others.
 
 I did the design and Front-end coding for this project.
 
