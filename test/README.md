@@ -15,7 +15,7 @@ To run the project locally:
 * Clone this repository.
 * Run `npm install` to install the necessary dependencies.
 * Run `npm run start` to start the live server and to enable live code changes preview of SaSS.
-* Run `npm run build` to delete the old `main.css` and to compile the new one, prefixed, minified and inlined `main.css` and `main.css.map` file.
+* Run `npm run build` to delete the old `main.css` and compile the new one, prefixed, minified and inlined `main.css` and `main.css.map` file.
 
 ## Technologies Used
 * HTML / CSS
