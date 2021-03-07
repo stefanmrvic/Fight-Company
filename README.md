@@ -28,6 +28,7 @@ To run the project locally:
 ## What I Learned
 * How to properly structure `HTML` and how to use `BEM` methodology for class naming.
 * How to leave a memorable impression to a website with the help of `CSS` animations.
+* How to create a multilingual webiste.
 * I learned fundamentials of `CSS3`: `Flexbox` and `Grid`.
 * I learned how to use an API.
 * I also learned how to write a content that will provoke the user engagement.
