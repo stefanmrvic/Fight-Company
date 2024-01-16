@@ -34,4 +34,4 @@ To run the project locally:
 * I also learned how to write a content that will provoke the user engagement.
 
 ## License
-Exclusive copyright. That means that nobody can copy, distribute, or modify my work without my permission.
+Exclusive copyright. That means that nobody can copy, distribute, or modify the work without my permission.
